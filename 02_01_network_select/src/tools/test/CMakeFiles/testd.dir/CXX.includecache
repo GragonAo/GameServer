@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../libs/network/base_buffer.h
+disposable.h
+../../libs/network/disposable.h
+
+../../libs/network/disposable.h
+
+../../libs/network/network_buffer.h
+base_buffer.h
+../../libs/network/base_buffer.h
+
+../../libs/network/packet.h
+base_buffer.h
+../../libs/network/base_buffer.h
+
+/root/Gameserver/02_01_network_select/src/tools/test/test.cpp
+network/network_buffer.h
+/root/Gameserver/02_01_network_select/src/tools/test/network/network_buffer.h
+string
+-
+cstring
+-
+network/packet.h
+/root/Gameserver/02_01_network_select/src/tools/test/network/packet.h
+algorithm
+-
+iostream
+-
+
