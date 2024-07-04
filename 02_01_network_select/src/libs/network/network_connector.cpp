@@ -63,8 +63,8 @@ bool NetworkConnector::Update() {
                 Connect(_ip, _port); // 重新连接
             }
         }
-        return br; // 返回连接状态
     }
+    return br; // 返回连接状态
 }
 
 // 检查是否有接收到数据

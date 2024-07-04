@@ -1,3 +1,0 @@
-/root/Gameserver/02_01_network_select/src/tools/test/CMakeFiles/rebuild_cache.dir
-/root/Gameserver/02_01_network_select/src/tools/test/CMakeFiles/edit_cache.dir
-/root/Gameserver/02_01_network_select/src/tools/test/CMakeFiles/testd.dir

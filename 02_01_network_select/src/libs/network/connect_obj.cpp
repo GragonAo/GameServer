@@ -49,7 +49,7 @@ bool ConnectObj::Recv() const {
         // 从 socket 接收数据到缓冲区
         const int dataSize = ::recv(_socket, pBuffer, emptySize,0);
         if (dataSize > 0) {
-            _recvBuffer->FillData(dataSize);  // 填充接收缓冲区
+            _recvBuffer->FillDate(dataSize);  // 修改缓冲区的下标位置
         } else if (dataSize == 0) {
             return false;  // 连接已关闭
         } else {

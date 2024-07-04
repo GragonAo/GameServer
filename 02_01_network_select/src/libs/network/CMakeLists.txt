@@ -28,6 +28,5 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "../../../libs")
 set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread")
 set(CMAKE_CXX_FLAGS_DEBUG "-D_DEBUG -O0 -g -ggdb")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG")
-
 # 添加静态库
 add_library(${MyProjectName} STATIC ${SRCS})

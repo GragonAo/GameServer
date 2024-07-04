@@ -23,7 +23,7 @@ public:
     unsigned int GetWriteSize() const;  //获取可写入数据大小
     unsigned int GetReadSize() const; //获取可读取数据大小
 
-    void FillData(unsigned int size); // 填充缓冲区数据
+    void FillDate(unsigned int size); // 填充缓冲区长度
     void RemoveData(unsigned int size); // 从缓冲区移除数据
     void ReAllocBuffer(); // 重新分配缓冲区大小
 protected:

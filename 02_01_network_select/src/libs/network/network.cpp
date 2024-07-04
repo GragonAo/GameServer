@@ -72,6 +72,10 @@ void Network::SetSocketOpt(SOCKET socket) {
     if (getsockopt(socket, SOL_SOCKET, SO_KEEPALIVE, &keepAlive, &optlen) < 0) {
         std::cout << "getsockopt SO_KEEPALIVE failed." << std::endl;
     }
+    setsockopt(socket, SOL_TCP, TCP_KEEPIDLE, (void *)&keepIdle, optlen);  // 设置保活选项
+    if (getsockopt(socket, SOL_TCP, TCP_KEEPIDLE, &keepIdle, &optlen) < 0) {    // 检查保活选项是否设置成功
+        std::cout << "getsockopt TCP_KEEPIDLE failed." << std::endl;
+    }
     /* 功能
         设置保活探测间隔：控制发送保活探测包的间隔时间。
     */

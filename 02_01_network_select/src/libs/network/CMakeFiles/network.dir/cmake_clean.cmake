@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/Gameserver/02_01_network_select/libs/libnetwork.a"
-  "/root/Gameserver/02_01_network_select/libs/libnetwork.pdb"
+  "/root/workspace/GameServer/02_01_network_select/libs/libnetwork.a"
+  "/root/workspace/GameServer/02_01_network_select/libs/libnetwork.pdb"
   "CMakeFiles/network.dir/base_buffer.cpp.o"
   "CMakeFiles/network.dir/connect_obj.cpp.o"
   "CMakeFiles/network.dir/network.cpp.o"

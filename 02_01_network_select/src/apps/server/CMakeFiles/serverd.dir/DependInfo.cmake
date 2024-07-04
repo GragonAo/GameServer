@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/root/Gameserver/02_01_network_select/src/apps/server/main.cpp" "/root/Gameserver/02_01_network_select/src/apps/server/CMakeFiles/serverd.dir/main.cpp.o"
-  "/root/Gameserver/02_01_network_select/src/apps/server/server.cpp" "/root/Gameserver/02_01_network_select/src/apps/server/CMakeFiles/serverd.dir/server.cpp.o"
+  "/root/workspace/GameServer/02_01_network_select/src/apps/server/main.cpp" "/root/workspace/GameServer/02_01_network_select/src/apps/server/CMakeFiles/serverd.dir/main.cpp.o"
+  "/root/workspace/GameServer/02_01_network_select/src/apps/server/server.cpp" "/root/workspace/GameServer/02_01_network_select/src/apps/server/CMakeFiles/serverd.dir/server.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

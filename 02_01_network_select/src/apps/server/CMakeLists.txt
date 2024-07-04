@@ -27,9 +27,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../../../bin")
 
 # 设置编译选项
 set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread")
+set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS_DEBUG "-D_DEBUG -O0 -g -ggdb")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG")
-
 # 设置链接目录
 link_directories(${CMAKE_BINARY_DIR}/../../../libs)
 

@@ -52,8 +52,8 @@ unsigned int NetWorkBuffer::GetReadSize() const{
     return _bufferSize - _beginIndex; // 否则为读取索引到缓冲区结尾之间的空间大小
 }
 
-// 填充数据
-void NetWorkBuffer::FillData(unsigned int size){
+//填充缓冲区的长度 作用：修改EndIndex的位置。
+void NetWorkBuffer::FillDate(unsigned int size){
     _dataSize += size;              // 增加数据大小
     if((_bufferSize - _endIndex) <= size){ // 如果剩余空间不足以容纳size大小的数据
         size -= _bufferSize -_endIndex;    // 计算剩余需要填充的数据大小
@@ -183,5 +183,5 @@ void SendNetworkBuffer::MemcpyToBuffer(char* pVoid,const unsigned int size){
     }else{
         ::memcpy(_buffer + _endIndex,pVoid,size); // 直接复制缓冲区结尾到可写入数据结尾之间的数据
     }
-    FillData(size);                         // 填充数据后更新数据大小
+    FillDate(size);                         // 填充数据后更新数据大小
 }
