@@ -1,0 +1,57 @@
+[
+{
+  "directory": "/root/workspace/GameServer/02_02_network_epoll/src/tools/robots",
+  "command": "/usr/local/bin/g++    -Wall -std=c++14 -pthread -DEPOLL -D_DEBUG -O0 -g -ggdb -I/root/workspace/GameServer/02_02_network_epoll/src/tools/robots/../../libs    -o CMakeFiles/robotsd.dir/client.cpp.o -c /root/workspace/GameServer/02_02_network_epoll/src/tools/robots/client.cpp",
+  "file": "/root/workspace/GameServer/02_02_network_epoll/src/tools/robots/client.cpp"
+},
+{
+  "directory": "/root/workspace/GameServer/02_02_network_epoll/src/tools/robots",
+  "command": "/usr/local/bin/g++    -Wall -std=c++14 -pthread -DEPOLL -D_DEBUG -O0 -g -ggdb -I/root/workspace/GameServer/02_02_network_epoll/src/tools/robots/../../libs    -o CMakeFiles/robotsd.dir/client_thread.cpp.o -c /root/workspace/GameServer/02_02_network_epoll/src/tools/robots/client_thread.cpp",
+  "file": "/root/workspace/GameServer/02_02_network_epoll/src/tools/robots/client_thread.cpp"
+},
+{
+  "directory": "/root/workspace/GameServer/02_02_network_epoll/src/tools/robots",
+  "command": "/usr/local/bin/g++    -Wall -std=c++14 -pthread -DEPOLL -D_DEBUG -O0 -g -ggdb -I/root/workspace/GameServer/02_02_network_epoll/src/tools/robots/../../libs    -o CMakeFiles/robotsd.dir/robots.cpp.o -c /root/workspace/GameServer/02_02_network_epoll/src/tools/robots/robots.cpp",
+  "file": "/root/workspace/GameServer/02_02_network_epoll/src/tools/robots/robots.cpp"
+},
+{
+  "directory": "/root/workspace/GameServer/02_02_network_epoll/src/tools/robots",
+  "command": "/usr/local/bin/g++    -Wall -std=c++14 -pthread -DEPOLL -D_DEBUG -O0 -g -ggdb -I/root/workspace/GameServer/02_02_network_epoll/src/tools/robots/../../libs    -o CMakeFiles/robotsd.dir/root/workspace/GameServer/02_02_network_epoll/src/libs/network/thread.cpp.o -c /root/workspace/GameServer/02_02_network_epoll/src/libs/network/thread.cpp",
+  "file": "/root/workspace/GameServer/02_02_network_epoll/src/libs/network/thread.cpp"
+},
+{
+  "directory": "/root/workspace/GameServer/02_02_network_epoll/src/tools/robots",
+  "command": "/usr/local/bin/g++    -Wall -std=c++14 -pthread -DEPOLL -D_DEBUG -O0 -g -ggdb -I/root/workspace/GameServer/02_02_network_epoll/src/tools/robots/../../libs    -o CMakeFiles/robotsd.dir/root/workspace/GameServer/02_02_network_epoll/src/libs/network/packet.cpp.o -c /root/workspace/GameServer/02_02_network_epoll/src/libs/network/packet.cpp",
+  "file": "/root/workspace/GameServer/02_02_network_epoll/src/libs/network/packet.cpp"
+},
+{
+  "directory": "/root/workspace/GameServer/02_02_network_epoll/src/tools/robots",
+  "command": "/usr/local/bin/g++    -Wall -std=c++14 -pthread -DEPOLL -D_DEBUG -O0 -g -ggdb -I/root/workspace/GameServer/02_02_network_epoll/src/tools/robots/../../libs    -o CMakeFiles/robotsd.dir/root/workspace/GameServer/02_02_network_epoll/src/libs/network/base_buffer.cpp.o -c /root/workspace/GameServer/02_02_network_epoll/src/libs/network/base_buffer.cpp",
+  "file": "/root/workspace/GameServer/02_02_network_epoll/src/libs/network/base_buffer.cpp"
+},
+{
+  "directory": "/root/workspace/GameServer/02_02_network_epoll/src/tools/robots",
+  "command": "/usr/local/bin/g++    -Wall -std=c++14 -pthread -DEPOLL -D_DEBUG -O0 -g -ggdb -I/root/workspace/GameServer/02_02_network_epoll/src/tools/robots/../../libs    -o CMakeFiles/robotsd.dir/root/workspace/GameServer/02_02_network_epoll/src/libs/network/network_buffer.cpp.o -c /root/workspace/GameServer/02_02_network_epoll/src/libs/network/network_buffer.cpp",
+  "file": "/root/workspace/GameServer/02_02_network_epoll/src/libs/network/network_buffer.cpp"
+},
+{
+  "directory": "/root/workspace/GameServer/02_02_network_epoll/src/tools/robots",
+  "command": "/usr/local/bin/g++    -Wall -std=c++14 -pthread -DEPOLL -D_DEBUG -O0 -g -ggdb -I/root/workspace/GameServer/02_02_network_epoll/src/tools/robots/../../libs    -o CMakeFiles/robotsd.dir/root/workspace/GameServer/02_02_network_epoll/src/libs/network/connect_obj.cpp.o -c /root/workspace/GameServer/02_02_network_epoll/src/libs/network/connect_obj.cpp",
+  "file": "/root/workspace/GameServer/02_02_network_epoll/src/libs/network/connect_obj.cpp"
+},
+{
+  "directory": "/root/workspace/GameServer/02_02_network_epoll/src/tools/robots",
+  "command": "/usr/local/bin/g++    -Wall -std=c++14 -pthread -DEPOLL -D_DEBUG -O0 -g -ggdb -I/root/workspace/GameServer/02_02_network_epoll/src/tools/robots/../../libs    -o CMakeFiles/robotsd.dir/root/workspace/GameServer/02_02_network_epoll/src/libs/network/network.cpp.o -c /root/workspace/GameServer/02_02_network_epoll/src/libs/network/network.cpp",
+  "file": "/root/workspace/GameServer/02_02_network_epoll/src/libs/network/network.cpp"
+},
+{
+  "directory": "/root/workspace/GameServer/02_02_network_epoll/src/tools/robots",
+  "command": "/usr/local/bin/g++    -Wall -std=c++14 -pthread -DEPOLL -D_DEBUG -O0 -g -ggdb -I/root/workspace/GameServer/02_02_network_epoll/src/tools/robots/../../libs    -o CMakeFiles/robotsd.dir/root/workspace/GameServer/02_02_network_epoll/src/libs/network/network_listen.cpp.o -c /root/workspace/GameServer/02_02_network_epoll/src/libs/network/network_listen.cpp",
+  "file": "/root/workspace/GameServer/02_02_network_epoll/src/libs/network/network_listen.cpp"
+},
+{
+  "directory": "/root/workspace/GameServer/02_02_network_epoll/src/tools/robots",
+  "command": "/usr/local/bin/g++    -Wall -std=c++14 -pthread -DEPOLL -D_DEBUG -O0 -g -ggdb -I/root/workspace/GameServer/02_02_network_epoll/src/tools/robots/../../libs    -o CMakeFiles/robotsd.dir/root/workspace/GameServer/02_02_network_epoll/src/libs/network/network_connector.cpp.o -c /root/workspace/GameServer/02_02_network_epoll/src/libs/network/network_connector.cpp",
+  "file": "/root/workspace/GameServer/02_02_network_epoll/src/libs/network/network_connector.cpp"
+}
+]

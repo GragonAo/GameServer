@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/workspace/GameServer/02_03_protobuf/src/libs/network/disposable.h
+
+/root/workspace/GameServer/02_03_protobuf/src/libs/network/thread.cpp
+thread.h
+/root/workspace/GameServer/02_03_protobuf/src/libs/network/thread.h
+iostream
+-
+
+/root/workspace/GameServer/02_03_protobuf/src/libs/network/thread.h
+thread
+-
+disposable.h
+/root/workspace/GameServer/02_03_protobuf/src/libs/network/disposable.h
+

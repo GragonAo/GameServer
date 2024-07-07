@@ -71,5 +71,6 @@
         "netfwd": "cpp",
         "socket": "cpp",
         "timer": "cpp"
-    }
+    },
+    "C_Cpp.default.compilerPath": "/root/workspace/GameServer/02_03_protobuf/src/libs/network/CMakeLists.txt"
 }
