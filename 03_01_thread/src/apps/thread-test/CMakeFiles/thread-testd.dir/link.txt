@@ -1,0 +1,1 @@
+/usr/local/bin/g++  -Wall -std=c++14 -pthread -D_DEBUG -O0 -g -ggdb  -rdynamic CMakeFiles/thread-testd.dir/main.cpp.o  -o /root/workspace/GameServer/03_01_thread/bin/thread-testd   -L/root/workspace/GameServer/03_01_thread/src/apps/thread-test/../../../libs 
