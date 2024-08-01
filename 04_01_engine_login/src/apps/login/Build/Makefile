@@ -345,6 +345,30 @@ root/workspace/GameServer/04_01_engine_login/src/libs/libserver/connect_obj.cpp.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/login.dir/build.make CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/connect_obj.cpp.s
 .PHONY : root/workspace/GameServer/04_01_engine_login/src/libs/libserver/connect_obj.cpp.s
 
+root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.o: root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.o
+.PHONY : root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.o
+
+# target to build an object file
+root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/login.dir/build.make CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.o
+.PHONY : root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.o
+
+root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.i: root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.i
+.PHONY : root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.i
+
+# target to preprocess a source file
+root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/login.dir/build.make CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.i
+.PHONY : root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.i
+
+root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.s: root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.s
+.PHONY : root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.s
+
+# target to generate assembly for a file
+root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/login.dir/build.make CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.s
+.PHONY : root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.s
+
 root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.o: root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.cpp.o
 .PHONY : root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.o
 
@@ -693,6 +717,9 @@ help:
 	@echo "... root/workspace/GameServer/04_01_engine_login/src/libs/libserver/connect_obj.o"
 	@echo "... root/workspace/GameServer/04_01_engine_login/src/libs/libserver/connect_obj.i"
 	@echo "... root/workspace/GameServer/04_01_engine_login/src/libs/libserver/connect_obj.s"
+	@echo "... root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.o"
+	@echo "... root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.i"
+	@echo "... root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.s"
 	@echo "... root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.o"
 	@echo "... root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.i"
 	@echo "... root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.s"

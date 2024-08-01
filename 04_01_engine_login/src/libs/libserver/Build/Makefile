@@ -177,6 +177,30 @@ connect_obj.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/connect_obj.cpp.s
 .PHONY : connect_obj.cpp.s
 
+console.o: console.cpp.o
+.PHONY : console.o
+
+# target to build an object file
+console.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/console.cpp.o
+.PHONY : console.cpp.o
+
+console.i: console.cpp.i
+.PHONY : console.i
+
+# target to preprocess a source file
+console.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/console.cpp.i
+.PHONY : console.cpp.i
+
+console.s: console.cpp.s
+.PHONY : console.s
+
+# target to generate assembly for a file
+console.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/console.cpp.s
+.PHONY : console.cpp.s
+
 global.o: global.cpp.o
 .PHONY : global.o
 
@@ -456,6 +480,9 @@ help:
 	@echo "... connect_obj.o"
 	@echo "... connect_obj.i"
 	@echo "... connect_obj.s"
+	@echo "... console.o"
+	@echo "... console.i"
+	@echo "... console.s"
 	@echo "... global.o"
 	@echo "... global.i"
 	@echo "... global.s"

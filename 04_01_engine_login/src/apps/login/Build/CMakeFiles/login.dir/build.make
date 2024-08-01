@@ -195,10 +195,24 @@ CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libse
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/connect_obj.cpp.s"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/connect_obj.cpp -o CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/connect_obj.cpp.s
 
+CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.o: CMakeFiles/login.dir/flags.make
+CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.o: /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp
+CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.o: CMakeFiles/login.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.o"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.o -MF CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.o.d -o CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.o -c /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp
+
+CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp > CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.i
+
+CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp -o CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.s
+
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.cpp.o: CMakeFiles/login.dir/flags.make
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.cpp.o: /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.cpp
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.cpp.o: CMakeFiles/login.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.cpp.o -MF CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.cpp.o.d -o CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.cpp.o -c /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.cpp
 
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libse
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/message_list.cpp.o: CMakeFiles/login.dir/flags.make
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/message_list.cpp.o: /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/message_list.cpp
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/message_list.cpp.o: CMakeFiles/login.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/message_list.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/message_list.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/message_list.cpp.o -MF CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/message_list.cpp.o.d -o CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/message_list.cpp.o -c /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/message_list.cpp
 
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/message_list.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libse
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network.cpp.o: CMakeFiles/login.dir/flags.make
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network.cpp.o: /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network.cpp
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network.cpp.o: CMakeFiles/login.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network.cpp.o -MF CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network.cpp.o.d -o CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network.cpp.o -c /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network.cpp
 
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libse
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_buffer.cpp.o: CMakeFiles/login.dir/flags.make
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_buffer.cpp.o: /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_buffer.cpp
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_buffer.cpp.o: CMakeFiles/login.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_buffer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_buffer.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_buffer.cpp.o -MF CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_buffer.cpp.o.d -o CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_buffer.cpp.o -c /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_buffer.cpp
 
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_buffer.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libse
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_connector.cpp.o: CMakeFiles/login.dir/flags.make
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_connector.cpp.o: /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_connector.cpp
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_connector.cpp.o: CMakeFiles/login.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_connector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_connector.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_connector.cpp.o -MF CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_connector.cpp.o.d -o CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_connector.cpp.o -c /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_connector.cpp
 
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_connector.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libse
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_listen.cpp.o: CMakeFiles/login.dir/flags.make
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_listen.cpp.o: /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_listen.cpp
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_listen.cpp.o: CMakeFiles/login.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_listen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_listen.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_listen.cpp.o -MF CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_listen.cpp.o.d -o CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_listen.cpp.o -c /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_listen.cpp
 
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network_listen.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libse
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/packet.cpp.o: CMakeFiles/login.dir/flags.make
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/packet.cpp.o: /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/packet.cpp
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/packet.cpp.o: CMakeFiles/login.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/packet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/packet.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/packet.cpp.o -MF CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/packet.cpp.o.d -o CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/packet.cpp.o -c /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/packet.cpp
 
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/packet.cpp.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libse
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/server_app.cpp.o: CMakeFiles/login.dir/flags.make
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/server_app.cpp.o: /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/server_app.cpp
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/server_app.cpp.o: CMakeFiles/login.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/server_app.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/server_app.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/server_app.cpp.o -MF CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/server_app.cpp.o.d -o CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/server_app.cpp.o -c /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/server_app.cpp
 
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/server_app.cpp.i: cmake_force
@@ -310,7 +324,7 @@ CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libse
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread.cpp.o: CMakeFiles/login.dir/flags.make
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread.cpp.o: /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread.cpp
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread.cpp.o: CMakeFiles/login.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread.cpp.o -MF CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread.cpp.o.d -o CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread.cpp.o -c /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread.cpp
 
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread.cpp.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libse
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_mgr.cpp.o: CMakeFiles/login.dir/flags.make
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_mgr.cpp.o: /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_mgr.cpp
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_mgr.cpp.o: CMakeFiles/login.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_mgr.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_mgr.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_mgr.cpp.o -MF CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_mgr.cpp.o.d -o CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_mgr.cpp.o -c /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_mgr.cpp
 
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_mgr.cpp.i: cmake_force
@@ -338,7 +352,7 @@ CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libse
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_obj.cpp.o: CMakeFiles/login.dir/flags.make
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_obj.cpp.o: /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_obj.cpp
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_obj.cpp.o: CMakeFiles/login.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_obj.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_obj.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_obj.cpp.o -MF CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_obj.cpp.o.d -o CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_obj.cpp.o -c /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_obj.cpp
 
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/thread_obj.cpp.i: cmake_force
@@ -352,7 +366,7 @@ CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libse
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/msg.pb.cc.o: CMakeFiles/login.dir/flags.make
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/msg.pb.cc.o: /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/msg.pb.cc
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/msg.pb.cc.o: CMakeFiles/login.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/msg.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/msg.pb.cc.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/msg.pb.cc.o -MF CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/msg.pb.cc.o.d -o CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/msg.pb.cc.o -c /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/msg.pb.cc
 
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/msg.pb.cc.i: cmake_force
@@ -366,7 +380,7 @@ CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libse
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/proto_id.pb.cc.o: CMakeFiles/login.dir/flags.make
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/proto_id.pb.cc.o: /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/proto_id.pb.cc
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/proto_id.pb.cc.o: CMakeFiles/login.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/proto_id.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/proto_id.pb.cc.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/proto_id.pb.cc.o -MF CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/proto_id.pb.cc.o.d -o CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/proto_id.pb.cc.o -c /root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/proto_id.pb.cc
 
 CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/proto_id.pb.cc.i: cmake_force
@@ -388,6 +402,7 @@ login_OBJECTS = \
 "CMakeFiles/login.dir/player_mgr.cpp.o" \
 "CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/base_buffer.cpp.o" \
 "CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/connect_obj.cpp.o" \
+"CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.o" \
 "CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.cpp.o" \
 "CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/message_list.cpp.o" \
 "CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network.cpp.o" \
@@ -414,6 +429,7 @@ login_EXTERNAL_OBJECTS =
 /root/workspace/GameServer/04_01_engine_login/bin/login: CMakeFiles/login.dir/player_mgr.cpp.o
 /root/workspace/GameServer/04_01_engine_login/bin/login: CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/base_buffer.cpp.o
 /root/workspace/GameServer/04_01_engine_login/bin/login: CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/connect_obj.cpp.o
+/root/workspace/GameServer/04_01_engine_login/bin/login: CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.o
 /root/workspace/GameServer/04_01_engine_login/bin/login: CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.cpp.o
 /root/workspace/GameServer/04_01_engine_login/bin/login: CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/message_list.cpp.o
 /root/workspace/GameServer/04_01_engine_login/bin/login: CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/network.cpp.o
@@ -429,7 +445,7 @@ login_EXTERNAL_OBJECTS =
 /root/workspace/GameServer/04_01_engine_login/bin/login: CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/protobuf/proto_id.pb.cc.o
 /root/workspace/GameServer/04_01_engine_login/bin/login: CMakeFiles/login.dir/build.make
 /root/workspace/GameServer/04_01_engine_login/bin/login: CMakeFiles/login.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable /root/workspace/GameServer/04_01_engine_login/bin/login"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/workspace/GameServer/04_01_engine_login/src/apps/login/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable /root/workspace/GameServer/04_01_engine_login/bin/login"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/login.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

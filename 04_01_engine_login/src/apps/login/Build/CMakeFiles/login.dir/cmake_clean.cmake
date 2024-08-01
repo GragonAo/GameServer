@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/base_buffer.cpp.o.d"
   "CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/connect_obj.cpp.o"
   "CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/connect_obj.cpp.o.d"
+  "CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.o"
+  "CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/console.cpp.o.d"
   "CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.cpp.o"
   "CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/global.cpp.o.d"
   "CMakeFiles/login.dir/root/workspace/GameServer/04_01_engine_login/src/libs/libserver/message_list.cpp.o"
