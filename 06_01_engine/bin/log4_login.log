@@ -1,0 +1,16 @@
+2024-08-13 10:03:16 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 10:03:16 -> [INFO] -  epoll model. listen127.0.0.1:5550
+2024-08-13 10:04:09 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 10:04:09 -> [INFO] -  epoll model. listen127.0.0.1:2233
+2024-08-13 18:06:19 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 18:06:19 -> [INFO] -  epoll model. listen127.0.0.1:2233
+2024-08-13 18:06:34 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 18:06:34 -> [INFO] -  epoll model. listen127.0.0.1:2233
+2024-08-13 18:09:46 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 18:09:46 -> [INFO] -  epoll model. listen127.0.0.1:2233
+2024-08-13 18:11:50 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 18:11:50 -> [INFO] -  epoll model. listen127.0.0.1:2233
+2024-08-13 18:12:56 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 18:12:56 -> [INFO] -  epoll model. listen127.0.0.1:2233
+2024-08-13 18:13:43 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 18:13:43 -> [INFO] -  epoll model. listen127.0.0.1:2233

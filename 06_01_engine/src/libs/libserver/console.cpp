@@ -5,6 +5,7 @@
 #include <iostream>
 #include <thread>
 #include <vector>
+#include "log4_help.h"
 // 清空命令处理器的所有处理函数
 void ConsoleCmd::Dispose() { _handles.clear(); }
 
@@ -30,7 +31,7 @@ void ConsoleCmd::Process(std::vector<std::string> &params) {
       return;
     }
     // 如果命令关键字没有找到，打印错误信息
-    std::cout << "input error. can't find cmd:" << key.c_str() << std::endl;
+    LOG_ERROR("input error. can't find cmd:" << key.c_str());
     return;
   }
   params.erase(params.begin(), params.begin() + 2);
@@ -112,7 +113,7 @@ void Console::Update() {
             }
             return;
         }
-        std::cout << "input error. cmd:" << cmd.c_str() << std::endl;
+        LOG_ERROR("input error. cmd:" << cmd.c_str());
         return;
   }
 

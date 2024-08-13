@@ -1,3 +1,0 @@
-/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles/robots.dir
-/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles/edit_cache.dir
-/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles/rebuild_cache.dir

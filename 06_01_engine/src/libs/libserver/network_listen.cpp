@@ -1,4 +1,5 @@
 #include "network_listen.h"
+#include "log4_help.h"
 #include "thread_mgr.h"
 #include "network_locator.h"
 void NetworkListen::AwakeFromPool(std::string ip,int port){
@@ -18,17 +19,17 @@ void NetworkListen::AwakeFromPool(std::string ip,int port){
 
   if (::bind(_masterSocket, reinterpret_cast<sockaddr *>(&addr), sizeof(addr)) <
       0) {
-    std::cout << "::bind failed. err:" << _sock_err() << std::endl;
+    LOG_ERROR("::bind failed. err:" << _sock_err());
     return;
   }
   if (::listen(_masterSocket, SOMAXCONN) < 0) {
-    std::cout << "::listen failed." << _sock_err() << std::endl;
+    LOG_ERROR("::listen failed." << _sock_err());
   }
 #ifdef EPOLL
-  std::cout << "epoll model" << std::endl;
+  LOG_INFO("epoll model. listen " << ip.c_str() << ":" << port);
   InitEpoll();
 #else
-  std::cout << "select model" << std::endl;
+  LOG_INFO("select model. listen " << ip.c_str() << ":" << port);
 #endif
   return;
 }

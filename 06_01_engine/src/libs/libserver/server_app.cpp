@@ -5,6 +5,7 @@
 #include <sys/time.h>
 #include "console_cmd_pool.h"
 #include "network_locator.h"
+#include "log4.h"
 #include "yaml.h"
 ServerApp::ServerApp(APP_TYPE appType) {
 
@@ -15,6 +16,7 @@ ServerApp::ServerApp(APP_TYPE appType) {
 
   AppTypeMgr::Instance();
   ResPath::Instance();
+  Log4::Instance(_appType);
   Yaml::Instance();
   DynamicObjectPoolMgr::Instance();
 

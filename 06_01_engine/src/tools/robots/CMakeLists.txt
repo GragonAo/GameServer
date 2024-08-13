@@ -13,7 +13,7 @@ include_directories(/usr/local/include)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../../../../bin")
 
-set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -lyaml-cpp -DEPOLL -D_DEBUG -O0 -g -ggdb")
+set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -lyaml-cpp -llog4cplus -DEPOLL -D_DEBUG -O0 -g -ggdb")
 link_directories(${CMAKE_BINARY_DIR}/../../../libs)
 
 add_executable(${MyProjectName} ${SRCS})

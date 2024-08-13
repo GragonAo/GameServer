@@ -1,0 +1,14 @@
+2024-08-13 10:03:35 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 10:04:13 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 10:06:42 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 10:08:21 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 10:09:10 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 10:09:50 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 10:10:24 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 10:10:51 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 10:11:20 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 10:11:58 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 10:12:23 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 10:13:02 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 10:13:47 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-13 10:13:53 -> [ERROR] -  [0;31minput error. can't find cmd:ex[0m
