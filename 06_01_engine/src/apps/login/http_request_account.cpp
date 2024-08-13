@@ -1,7 +1,9 @@
 #include "http_request_account.h"
 #include "http_request.h"
+#include "libserver/app_type_mgr.h"
 #include "libserver/message_system.h"
 #include "libserver/packet.h"
+#include "libserver/yaml.h"
 
 void HttpRequestAccount::AwakeFromPool(std::string account, std::string password)
 {
@@ -9,8 +11,12 @@ void HttpRequestAccount::AwakeFromPool(std::string account, std::string password
     _password = password;
     _curlRs = CRS_None;
     _method = HttpResquestMethod::HRM_Post;
+
+    auto pYaml = Yaml::GetInstance();
+    const auto pLoginConfig = dynamic_cast<LoginConfig*>(pYaml->GetConfig(APP_LOGIN));
+
     // _url = "http://192.168.1.134:3001/account/login";
-    _url = "http://127.0.0.1:3001/account/login";
+    _url = pLoginConfig->UrlLogin;
 
     // 创建 JSON 对象
     Json::Value jsonData;

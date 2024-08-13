@@ -22,7 +22,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../../../../bin")
 # 设置调试和发布配置
 # set(CMAKE_CXX_FLAGS_DEBUG "-Wall -std=c++14 -pthread -lprotobuf -lcurl -ljsoncpp -DEPOLL -g")
 # set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -lcurl -ljsoncpp -DEPOLL -O3 -DNDEBUG")
-set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -lcurl -ljsoncpp -DEPOLL -g")
+set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -lcurl -ljsoncpp -lyaml-cpp -DEPOLL -g")
 
 # # 默认构建类型
 # if(NOT CMAKE_BUILD_TYPE)

@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/root/workspace/GameServer/06_01_engine/src/tools/robots/../../libs
 
-CXX_FLAGS = -Wall -std=c++14 -pthread -lprotobuf -DEPOLL -D_DEBUG -O0 -g -ggdb
+CXX_FLAGS = -Wall -std=c++14 -pthread -lprotobuf -lyaml-cpp -DEPOLL -D_DEBUG -O0 -g -ggdb
 

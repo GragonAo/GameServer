@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/robots.dir/robot_test.cpp.o.d"
   "CMakeFiles/robots.dir/robots_app.cpp.o"
   "CMakeFiles/robots.dir/robots_app.cpp.o.d"
+  "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.o"
+  "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.o.d"
   "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp.o"
   "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp.o.d"
   "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/component.cpp.o"
@@ -59,12 +61,16 @@ file(REMOVE_RECURSE
   "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/msg.pb.cc.o.d"
   "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc.o"
   "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc.o.d"
+  "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.o"
+  "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.o.d"
   "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp.o"
   "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp.o.d"
   "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.cpp.o"
   "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.cpp.o.d"
   "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.o"
   "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.o.d"
+  "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.o"
+  "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

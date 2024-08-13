@@ -1,16 +1,20 @@
 #include "robot_mgr.h"
+#include "global_robots.h"
 #include "libserver/global.h"
 #include "libserver/network_connector.h"
 #include "libserver/protobuf/msg.pb.h"
 #include "libserver/protobuf/proto_id.pb.h"
 #include "libserver/util_time.h"
+#include "libserver/yaml.h"
+#include "robot_state_type.h"
 #include <algorithm>
 #include <sstream>
-#include "global_robots.h"
-#include "robot_state_type.h"
 
 void RobotMgr::AwakeFromPool() {
-  this->Connect("127.0.0.1", 2233);
+  auto pYaml = Yaml::GetInstance();
+  const auto pLoginConfig =
+      dynamic_cast<LoginConfig *>(pYaml->GetConfig(APP_LOGIN));
+  this->Connect(pLoginConfig->Ip, pLoginConfig->Port);
 }
 
 void RobotMgr::Update() {
@@ -22,11 +26,11 @@ void RobotMgr::Update() {
 }
 
 void RobotMgr::RegisterMsgFunction() {
-    auto pMsgCallBack = new MessageCallBackFunction();
-    AttachCallbackHandler(pMsgCallBack);
+  auto pMsgCallBack = new MessageCallBackFunction();
+  AttachCallbackHandler(pMsgCallBack);
 
-    pMsgCallBack->RegisterFunction(Proto::MsgId::MI_RobotSyncState, BindFunP1(this, &RobotMgr::HandleRobotState));
-
+  pMsgCallBack->RegisterFunction(Proto::MsgId::MI_RobotSyncState,
+                                 BindFunP1(this, &RobotMgr::HandleRobotState));
 }
 
 void RobotMgr::ShowInfo() {
@@ -79,24 +83,23 @@ void RobotMgr::HandleRobotState(Packet *pPacket) {
 }
 
 void RobotMgr::NofityServer(RobotStateType iType) {
-      if (_robots.size() != GlobalRobots::GetInstance()->GetRobotsCount())
-        return;
+  if (_robots.size() != GlobalRobots::GetInstance()->GetRobotsCount())
+    return;
 
-    auto iter = std::find_if(_robots.begin(), _robots.end(), [&iType](auto pair)
-    {
-        if (pair.second < iType)
-            return true;
+  auto iter = std::find_if(_robots.begin(), _robots.end(), [&iType](auto pair) {
+    if (pair.second < iType)
+      return true;
 
-        return false;
-    });
+    return false;
+  });
 
-    if (iter == _robots.end())
-    {
-        std::cout << "test over " << GetRobotStatetypeShortName(iType) << std::endl;;
-        Packet* pPacketEnd = new Packet(Proto::MsgId::MI_RobotTestEnd, GetSocket());
-        Proto::RobotTestEnd protoEnd;
-        protoEnd.set_state(iType);
-        pPacketEnd->SerializeToBuffer(protoEnd);
-        SendPacket(pPacketEnd);
-    }
+  if (iter == _robots.end()) {
+    std::cout << "test over " << GetRobotStatetypeShortName(iType) << std::endl;
+    ;
+    Packet *pPacketEnd = new Packet(Proto::MsgId::MI_RobotTestEnd, GetSocket());
+    Proto::RobotTestEnd protoEnd;
+    protoEnd.set_state(iType);
+    pPacketEnd->SerializeToBuffer(protoEnd);
+    SendPacket(pPacketEnd);
+  }
 }

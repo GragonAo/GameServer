@@ -1,30 +1,37 @@
-#include "common.h"
 #include "server_app.h"
+#include "app_type_mgr.h"
+#include "res_path.h"
 #include "object_pool_mgr.h"
 #include <sys/time.h>
 #include "console_cmd_pool.h"
 #include "network_locator.h"
+#include "yaml.h"
 ServerApp::ServerApp(APP_TYPE appType) {
 
   signal(SIGINT, Signalhandler);
 
   _appType = appType;
+  Global::Instance(_appType,1);
 
+  AppTypeMgr::Instance();
+  ResPath::Instance();
+  Yaml::Instance();
   DynamicObjectPoolMgr::Instance();
-  Global::Instance();
-  Global::GetInstance()->SetAppInfo(_appType, 1);
 
   _pThreadMgr = ThreadMgr::Instance();
   UpdateTime();
 
-  for (int i = 0; i < 3; i++) {
-    _pThreadMgr->CreateThread();
-  }
-  _pThreadMgr->StartAllThread();
-
   _pThreadMgr->AddComponent<NetworkLocator>();
   auto pConsole = _pThreadMgr->AddComponent<Console>();
   pConsole->Register<ConsoleCmdPool>("pool");
+
+  const auto pLoginConfig = dynamic_cast<AppConfig*>(Yaml::GetInstance()->GetConfig(appType));
+  for (int i = 0; i < pLoginConfig->ThreadNum; i++) {
+    _pThreadMgr->CreateThread();
+  }
+  _pThreadMgr->InitComponent();
+  _pThreadMgr->StartAllThread();
+  
 }
 
 ServerApp::~ServerApp() { _pThreadMgr->DestroyInstance(); }

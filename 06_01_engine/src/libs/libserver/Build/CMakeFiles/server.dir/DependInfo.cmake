@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp" "CMakeFiles/server.dir/app_type_mgr.cpp.o" "gcc" "CMakeFiles/server.dir/app_type_mgr.cpp.o.d"
   "/root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp" "CMakeFiles/server.dir/base_buffer.cpp.o" "gcc" "CMakeFiles/server.dir/base_buffer.cpp.o.d"
   "/root/workspace/GameServer/06_01_engine/src/libs/libserver/component.cpp" "CMakeFiles/server.dir/component.cpp.o" "gcc" "CMakeFiles/server.dir/component.cpp.o.d"
   "/root/workspace/GameServer/06_01_engine/src/libs/libserver/connect_obj.cpp" "CMakeFiles/server.dir/connect_obj.cpp.o" "gcc" "CMakeFiles/server.dir/connect_obj.cpp.o.d"
@@ -26,9 +27,11 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_locator.cpp" "CMakeFiles/server.dir/network_locator.cpp.o" "gcc" "CMakeFiles/server.dir/network_locator.cpp.o.d"
   "/root/workspace/GameServer/06_01_engine/src/libs/libserver/object_pool_mgr.cpp" "CMakeFiles/server.dir/object_pool_mgr.cpp.o" "gcc" "CMakeFiles/server.dir/object_pool_mgr.cpp.o.d"
   "/root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp" "CMakeFiles/server.dir/packet.cpp.o" "gcc" "CMakeFiles/server.dir/packet.cpp.o.d"
+  "/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp" "CMakeFiles/server.dir/res_path.cpp.o" "gcc" "CMakeFiles/server.dir/res_path.cpp.o.d"
   "/root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp" "CMakeFiles/server.dir/server_app.cpp.o" "gcc" "CMakeFiles/server.dir/server_app.cpp.o.d"
   "/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.cpp" "CMakeFiles/server.dir/thread.cpp.o" "gcc" "CMakeFiles/server.dir/thread.cpp.o.d"
   "/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp" "CMakeFiles/server.dir/thread_mgr.cpp.o" "gcc" "CMakeFiles/server.dir/thread_mgr.cpp.o.d"
+  "/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp" "CMakeFiles/server.dir/yaml.cpp.o" "gcc" "CMakeFiles/server.dir/yaml.cpp.o.d"
   )
 
 # Targets to which this target links.

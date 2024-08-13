@@ -2,32 +2,16 @@ CMakeFiles/server.dir/global.cpp.o: \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/global.cpp \
  /usr/include/stdc-predef.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/global.h \
- /root/workspace/GameServer/06_01_engine/src/libs/libserver/common.h \
- /usr/local/include/c++/9.1.0/climits \
+ /root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.h \
+ /usr/local/include/c++/9.1.0/map \
+ /usr/local/include/c++/9.1.0/bits/stl_tree.h \
+ /usr/local/include/c++/9.1.0/bits/stl_algobase.h \
  /usr/local/include/c++/9.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/local/include/c++/9.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/sys/cdefs.h \
  /usr/include/bits/wordsize.h /usr/include/bits/long-double.h \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/local/include/c++/9.1.0/x86_64-pc-linux-gnu/bits/cpu_defines.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed/limits.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed/syslimits.h \
- /usr/include/limits.h /usr/include/bits/libc-header-start.h \
- /usr/include/bits/posix1_lim.h /usr/include/bits/local_lim.h \
- /usr/include/linux/limits.h /usr/include/bits/posix2_lim.h \
- /usr/include/bits/xopen_lim.h /usr/include/bits/uio_lim.h \
- /usr/local/include/c++/9.1.0/cstdint \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/types.h \
- /usr/include/bits/timesize.h /usr/include/bits/typesizes.h \
- /usr/include/bits/time64.h /usr/include/bits/wchar.h \
- /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.h \
- /usr/local/include/c++/9.1.0/limits /usr/local/include/c++/9.1.0/string \
- /usr/local/include/c++/9.1.0/bits/stringfwd.h \
- /usr/local/include/c++/9.1.0/bits/memoryfwd.h \
- /usr/local/include/c++/9.1.0/bits/char_traits.h \
- /usr/local/include/c++/9.1.0/bits/stl_algobase.h \
  /usr/local/include/c++/9.1.0/bits/functexcept.h \
  /usr/local/include/c++/9.1.0/bits/exception_defines.h \
  /usr/local/include/c++/9.1.0/bits/cpp_type_traits.h \
@@ -44,15 +28,6 @@ CMakeFiles/server.dir/global.cpp.o: \
  /usr/local/include/c++/9.1.0/bits/ptr_traits.h \
  /usr/local/include/c++/9.1.0/debug/debug.h \
  /usr/local/include/c++/9.1.0/bits/predefined_ops.h \
- /usr/local/include/c++/9.1.0/bits/postypes.h \
- /usr/local/include/c++/9.1.0/cwchar /usr/include/wchar.h \
- /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include/stddef.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include/stdarg.h \
- /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
- /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
- /usr/include/bits/types/FILE.h /usr/include/bits/types/locale_t.h \
- /usr/include/bits/types/__locale_t.h \
  /usr/local/include/c++/9.1.0/bits/allocator.h \
  /usr/local/include/c++/9.1.0/x86_64-pc-linux-gnu/bits/c++allocator.h \
  /usr/local/include/c++/9.1.0/ext/new_allocator.h \
@@ -60,9 +35,41 @@ CMakeFiles/server.dir/global.cpp.o: \
  /usr/local/include/c++/9.1.0/bits/exception.h \
  /usr/local/include/c++/9.1.0/bits/exception_ptr.h \
  /usr/local/include/c++/9.1.0/bits/cxxabi_init_exception.h \
+ /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include/stddef.h \
  /usr/local/include/c++/9.1.0/typeinfo \
  /usr/local/include/c++/9.1.0/bits/hash_bytes.h \
  /usr/local/include/c++/9.1.0/bits/nested_exception.h \
+ /usr/local/include/c++/9.1.0/bits/memoryfwd.h \
+ /usr/local/include/c++/9.1.0/bits/stl_function.h \
+ /usr/local/include/c++/9.1.0/backward/binders.h \
+ /usr/local/include/c++/9.1.0/ext/alloc_traits.h \
+ /usr/local/include/c++/9.1.0/bits/alloc_traits.h \
+ /usr/local/include/c++/9.1.0/ext/aligned_buffer.h \
+ /usr/local/include/c++/9.1.0/bits/stl_map.h \
+ /usr/local/include/c++/9.1.0/initializer_list \
+ /usr/local/include/c++/9.1.0/tuple /usr/local/include/c++/9.1.0/utility \
+ /usr/local/include/c++/9.1.0/bits/stl_relops.h \
+ /usr/local/include/c++/9.1.0/array \
+ /usr/local/include/c++/9.1.0/stdexcept \
+ /usr/local/include/c++/9.1.0/string \
+ /usr/local/include/c++/9.1.0/bits/stringfwd.h \
+ /usr/local/include/c++/9.1.0/bits/char_traits.h \
+ /usr/local/include/c++/9.1.0/bits/postypes.h \
+ /usr/local/include/c++/9.1.0/cwchar /usr/include/wchar.h \
+ /usr/include/bits/libc-header-start.h /usr/include/bits/floatn.h \
+ /usr/include/bits/floatn-common.h \
+ /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include/stdarg.h \
+ /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
+ /usr/include/bits/types/mbstate_t.h \
+ /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
+ /usr/include/bits/types/FILE.h /usr/include/bits/types/locale_t.h \
+ /usr/include/bits/types/__locale_t.h \
+ /usr/local/include/c++/9.1.0/cstdint \
+ /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/types.h \
+ /usr/include/bits/timesize.h /usr/include/bits/typesizes.h \
+ /usr/include/bits/time64.h /usr/include/bits/stdint-intn.h \
+ /usr/include/bits/stdint-uintn.h \
  /usr/local/include/c++/9.1.0/bits/localefwd.h \
  /usr/local/include/c++/9.1.0/x86_64-pc-linux-gnu/bits/c++locale.h \
  /usr/local/include/c++/9.1.0/clocale /usr/include/locale.h \
@@ -71,10 +78,7 @@ CMakeFiles/server.dir/global.cpp.o: \
  /usr/include/bits/endian.h /usr/include/bits/endianness.h \
  /usr/local/include/c++/9.1.0/bits/ostream_insert.h \
  /usr/local/include/c++/9.1.0/bits/cxxabi_forced.h \
- /usr/local/include/c++/9.1.0/bits/stl_function.h \
- /usr/local/include/c++/9.1.0/backward/binders.h \
  /usr/local/include/c++/9.1.0/bits/range_access.h \
- /usr/local/include/c++/9.1.0/initializer_list \
  /usr/local/include/c++/9.1.0/bits/basic_string.h \
  /usr/local/include/c++/9.1.0/ext/atomicity.h \
  /usr/local/include/c++/9.1.0/x86_64-pc-linux-gnu/bits/gthr.h \
@@ -92,8 +96,6 @@ CMakeFiles/server.dir/global.cpp.o: \
  /usr/include/bits/pthreadtypes-arch.h /usr/include/bits/struct_mutex.h \
  /usr/include/bits/struct_rwlock.h /usr/include/bits/setjmp.h \
  /usr/local/include/c++/9.1.0/x86_64-pc-linux-gnu/bits/atomic_word.h \
- /usr/local/include/c++/9.1.0/ext/alloc_traits.h \
- /usr/local/include/c++/9.1.0/bits/alloc_traits.h \
  /usr/local/include/c++/9.1.0/ext/string_conversions.h \
  /usr/local/include/c++/9.1.0/cstdlib /usr/include/stdlib.h \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
@@ -116,16 +118,30 @@ CMakeFiles/server.dir/global.cpp.o: \
  /usr/include/bits/types/error_t.h \
  /usr/local/include/c++/9.1.0/bits/functional_hash.h \
  /usr/local/include/c++/9.1.0/bits/basic_string.tcc \
+ /usr/local/include/c++/9.1.0/bits/uses_allocator.h \
+ /usr/local/include/c++/9.1.0/bits/invoke.h \
+ /usr/local/include/c++/9.1.0/bits/stl_multimap.h \
+ /usr/local/include/c++/9.1.0/bits/erase_if.h \
+ /root/workspace/GameServer/06_01_engine/src/libs/libserver/singleton.h \
+ /root/workspace/GameServer/06_01_engine/src/libs/libserver/util_time.h \
+ /root/workspace/GameServer/06_01_engine/src/libs/libserver/common.h \
+ /usr/local/include/c++/9.1.0/climits \
+ /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed/limits.h \
+ /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h \
+ /root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.h \
+ /usr/local/include/c++/9.1.0/limits \
  /usr/local/include/google/protobuf/port_def.inc \
  /usr/local/include/google/protobuf/port_undef.inc \
  /usr/local/include/google/protobuf/io/coded_stream.h \
  /usr/include/assert.h /usr/local/include/c++/9.1.0/atomic \
  /usr/local/include/c++/9.1.0/bits/atomic_base.h \
  /usr/local/include/c++/9.1.0/bits/atomic_lockfree_defines.h \
- /usr/local/include/c++/9.1.0/utility \
- /usr/local/include/c++/9.1.0/bits/stl_relops.h /usr/include/sys/param.h \
- /usr/include/signal.h /usr/include/bits/signum.h \
- /usr/include/bits/signum-generic.h \
+ /usr/include/sys/param.h /usr/include/signal.h \
+ /usr/include/bits/signum.h /usr/include/bits/signum-generic.h \
  /usr/include/bits/types/sig_atomic_t.h \
  /usr/include/bits/types/siginfo_t.h /usr/include/bits/types/__sigval_t.h \
  /usr/include/bits/siginfo-arch.h /usr/include/bits/siginfo-consts.h \
@@ -153,7 +169,6 @@ CMakeFiles/server.dir/global.cpp.o: \
  /usr/local/include/c++/9.1.0/bits/locale_classes.tcc \
  /usr/local/include/c++/9.1.0/system_error \
  /usr/local/include/c++/9.1.0/x86_64-pc-linux-gnu/bits/error_constants.h \
- /usr/local/include/c++/9.1.0/stdexcept \
  /usr/local/include/c++/9.1.0/streambuf \
  /usr/local/include/c++/9.1.0/bits/streambuf.tcc \
  /usr/local/include/c++/9.1.0/bits/basic_ios.h \
@@ -168,15 +183,6 @@ CMakeFiles/server.dir/global.cpp.o: \
  /usr/local/include/c++/9.1.0/bits/ostream.tcc \
  /usr/local/include/c++/9.1.0/istream \
  /usr/local/include/c++/9.1.0/bits/istream.tcc \
- /usr/local/include/c++/9.1.0/map \
- /usr/local/include/c++/9.1.0/bits/stl_tree.h \
- /usr/local/include/c++/9.1.0/ext/aligned_buffer.h \
- /usr/local/include/c++/9.1.0/bits/stl_map.h \
- /usr/local/include/c++/9.1.0/tuple /usr/local/include/c++/9.1.0/array \
- /usr/local/include/c++/9.1.0/bits/uses_allocator.h \
- /usr/local/include/c++/9.1.0/bits/invoke.h \
- /usr/local/include/c++/9.1.0/bits/stl_multimap.h \
- /usr/local/include/c++/9.1.0/bits/erase_if.h \
  /usr/local/include/c++/9.1.0/memory \
  /usr/local/include/c++/9.1.0/bits/stl_uninitialized.h \
  /usr/local/include/c++/9.1.0/bits/stl_raw_storage_iter.h \
@@ -253,7 +259,5 @@ CMakeFiles/server.dir/global.cpp.o: \
  /usr/local/include/c++/9.1.0/cassert \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/msg.pb.h \
  /usr/local/include/google/protobuf/message.h \
- /root/workspace/GameServer/06_01_engine/src/libs/libserver/singleton.h \
- /root/workspace/GameServer/06_01_engine/src/libs/libserver/util_time.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/util_string.h \
  /usr/local/include/c++/9.1.0/cstdarg

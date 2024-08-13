@@ -195,10 +195,24 @@ CMakeFiles/robots.dir/robots_app.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robots.dir/robots_app.cpp.s"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/06_01_engine/src/tools/robots/robots_app.cpp -o CMakeFiles/robots.dir/robots_app.cpp.s
 
+CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.o: CMakeFiles/robots.dir/flags.make
+CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp
+CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.o"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp
+
+CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp > CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.i
+
+CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.s
+
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/component.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/component.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/component.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/component.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/component.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/component.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/component.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/component.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/component.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/component.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/component.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/connect_obj.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/connect_obj.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/connect_obj.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/connect_obj.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/connect_obj.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/connect_obj.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/connect_obj.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/connect_obj.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/connect_obj.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/connect_obj.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/connect_obj.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/console.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/console.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console_cmd_pool.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console_cmd_pool.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/console_cmd_pool.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console_cmd_pool.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console_cmd_pool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console_cmd_pool.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console_cmd_pool.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console_cmd_pool.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console_cmd_pool.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/console_cmd_pool.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/console_cmd_pool.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/create_component.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/create_component.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/create_component.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/create_component.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/create_component.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/create_component.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/create_component.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/create_component.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/create_component.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/create_component.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/create_component.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/entity.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/entity.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity.cpp.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity_system.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity_system.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/entity_system.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity_system.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity_system.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity_system.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity_system.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity_system.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity_system.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/entity_system.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/entity_system.cpp.i: cmake_force
@@ -310,7 +324,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/global.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/global.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/global.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/global.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/global.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/global.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/global.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/global.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/global.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/global.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/global.cpp.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_list.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_list.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/message_list.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_list.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_list.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_list.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_list.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_list.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_list.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/message_list.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_list.cpp.i: cmake_force
@@ -338,7 +352,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_system.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_system.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/message_system.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_system.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_system.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_system.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_system.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_system.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_system.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/message_system.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/message_system.cpp.i: cmake_force
@@ -352,7 +366,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/network.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/network.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network.cpp.i: cmake_force
@@ -366,7 +380,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_buffer.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_buffer.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/network_buffer.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_buffer.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_buffer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_buffer.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_buffer.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_buffer.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_buffer.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/network_buffer.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_buffer.cpp.i: cmake_force
@@ -380,7 +394,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_connector.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_connector.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/network_connector.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_connector.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_connector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_connector.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_connector.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_connector.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_connector.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/network_connector.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_connector.cpp.i: cmake_force
@@ -394,7 +408,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_listen.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_listen.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/network_listen.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_listen.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_listen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_listen.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_listen.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_listen.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_listen.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/network_listen.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_listen.cpp.i: cmake_force
@@ -408,7 +422,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_locator.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_locator.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/network_locator.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_locator.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_locator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_locator.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_locator.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_locator.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_locator.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/network_locator.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_locator.cpp.i: cmake_force
@@ -422,7 +436,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/object_pool_mgr.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/object_pool_mgr.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/object_pool_mgr.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/object_pool_mgr.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/object_pool_mgr.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/object_pool_mgr.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/object_pool_mgr.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/object_pool_mgr.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/object_pool_mgr.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/object_pool_mgr.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/object_pool_mgr.cpp.i: cmake_force
@@ -436,7 +450,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp.i: cmake_force
@@ -447,10 +461,24 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp.s"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp.s
 
+CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.o: CMakeFiles/robots.dir/flags.make
+CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp
+CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.o"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp
+
+CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp > CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.i
+
+CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.s
+
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp.i: cmake_force
@@ -464,7 +492,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.cpp.i: cmake_force
@@ -478,7 +506,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.i: cmake_force
@@ -489,10 +517,24 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.s"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.s
 
+CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.o: CMakeFiles/robots.dir/flags.make
+CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp
+CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.o: CMakeFiles/robots.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.o"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp
+
+CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp > CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.i
+
+CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.s
+
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/msg.pb.cc.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/msg.pb.cc.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/msg.pb.cc
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/msg.pb.cc.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/msg.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/msg.pb.cc.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/msg.pb.cc.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/msg.pb.cc.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/msg.pb.cc.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/msg.pb.cc
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/msg.pb.cc.i: cmake_force
@@ -506,7 +548,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc.o: CMakeFiles/robots.dir/flags.make
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc.o: /root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc.o: CMakeFiles/robots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc.o"
 	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc.o -MF CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc.o.d -o CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc.o -c /root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc
 
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc.i: cmake_force
@@ -528,6 +570,7 @@ robots_OBJECTS = \
 "CMakeFiles/robots.dir/robot_state_login.cpp.o" \
 "CMakeFiles/robots.dir/robot_test.cpp.o" \
 "CMakeFiles/robots.dir/robots_app.cpp.o" \
+"CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.o" \
 "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp.o" \
 "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/component.cpp.o" \
 "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/connect_obj.cpp.o" \
@@ -546,9 +589,11 @@ robots_OBJECTS = \
 "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_locator.cpp.o" \
 "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/object_pool_mgr.cpp.o" \
 "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp.o" \
+"CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.o" \
 "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp.o" \
 "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.cpp.o" \
 "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.o" \
+"CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.o" \
 "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/msg.pb.cc.o" \
 "CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc.o"
 
@@ -564,6 +609,7 @@ robots_EXTERNAL_OBJECTS =
 /root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/robot_state_login.cpp.o
 /root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/robot_test.cpp.o
 /root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/robots_app.cpp.o
+/root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.o
 /root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp.o
 /root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/component.cpp.o
 /root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/connect_obj.cpp.o
@@ -582,14 +628,16 @@ robots_EXTERNAL_OBJECTS =
 /root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/network_locator.cpp.o
 /root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/object_pool_mgr.cpp.o
 /root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/packet.cpp.o
+/root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.o
 /root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp.o
 /root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.cpp.o
 /root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.o
+/root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.o
 /root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/msg.pb.cc.o
 /root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc.o
 /root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/build.make
 /root/workspace/GameServer/06_01_engine/bin/robots: CMakeFiles/robots.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX executable /root/workspace/GameServer/06_01_engine/bin/robots"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/workspace/GameServer/06_01_engine/src/tools/robots/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX executable /root/workspace/GameServer/06_01_engine/bin/robots"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robots.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,0 +1,8 @@
+login:
+  thread_num: 0
+  url_login: http://127.0.0.1:3001/account/login
+  ip: 127.0.0.1
+  port: 5550
+
+robot:
+  thread_num: 0

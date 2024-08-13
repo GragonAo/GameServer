@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "/root/workspace/GameServer/06_01_engine/libs/libserver.a"
   "/root/workspace/GameServer/06_01_engine/libs/libserver.pdb"
+  "CMakeFiles/server.dir/app_type_mgr.cpp.o"
+  "CMakeFiles/server.dir/app_type_mgr.cpp.o.d"
   "CMakeFiles/server.dir/base_buffer.cpp.o"
   "CMakeFiles/server.dir/base_buffer.cpp.o.d"
   "CMakeFiles/server.dir/component.cpp.o"
@@ -37,12 +39,16 @@ file(REMOVE_RECURSE
   "CMakeFiles/server.dir/object_pool_mgr.cpp.o.d"
   "CMakeFiles/server.dir/packet.cpp.o"
   "CMakeFiles/server.dir/packet.cpp.o.d"
+  "CMakeFiles/server.dir/res_path.cpp.o"
+  "CMakeFiles/server.dir/res_path.cpp.o.d"
   "CMakeFiles/server.dir/server_app.cpp.o"
   "CMakeFiles/server.dir/server_app.cpp.o.d"
   "CMakeFiles/server.dir/thread.cpp.o"
   "CMakeFiles/server.dir/thread.cpp.o.d"
   "CMakeFiles/server.dir/thread_mgr.cpp.o"
   "CMakeFiles/server.dir/thread_mgr.cpp.o.d"
+  "CMakeFiles/server.dir/yaml.cpp.o"
+  "CMakeFiles/server.dir/yaml.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -254,6 +254,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
  /usr/local/include/google/protobuf/message.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/sn_object.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/global.h \
+ /root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/singleton.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/util_time.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/util_string.h \

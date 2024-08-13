@@ -267,6 +267,7 @@ CMakeFiles/robots.dir/main.cpp.o: \
  /root/workspace/GameServer/06_01_engine/src/tools/robots/../../libs/libserver/component.h \
  /root/workspace/GameServer/06_01_engine/src/tools/robots/../../libs/libserver/sn_object.h \
  /root/workspace/GameServer/06_01_engine/src/tools/robots/../../libs/libserver/global.h \
+ /root/workspace/GameServer/06_01_engine/src/tools/robots/../../libs/libserver/app_type_mgr.h \
  /root/workspace/GameServer/06_01_engine/src/tools/robots/../../libs/libserver/util_time.h \
  /root/workspace/GameServer/06_01_engine/src/tools/robots/../../libs/libserver/util_string.h \
  /usr/local/include/c++/9.1.0/cstdarg \

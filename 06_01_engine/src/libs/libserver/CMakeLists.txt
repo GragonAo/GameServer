@@ -8,6 +8,6 @@ aux_source_directory(. SRCS)
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "../../../../libs")
 
-set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -DEPOLL -O3 -DNDEBUG")
+set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -lyaml-cpp -DEPOLL -O3 -DNDEBUG")
 
 add_library(${MyProjectName} STATIC ${SRCS})

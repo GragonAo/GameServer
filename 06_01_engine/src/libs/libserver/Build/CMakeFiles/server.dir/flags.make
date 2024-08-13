@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS = -Wall -std=c++14 -pthread -lprotobuf -DEPOLL -O3 -DNDEBUG
+CXX_FLAGS = -Wall -std=c++14 -pthread -lprotobuf -lyaml-cpp -DEPOLL -O3 -DNDEBUG
 

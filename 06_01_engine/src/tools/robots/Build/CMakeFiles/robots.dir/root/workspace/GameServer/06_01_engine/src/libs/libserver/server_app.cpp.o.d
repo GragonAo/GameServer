@@ -1,6 +1,8 @@
 CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp.o: \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp \
  /usr/include/stdc-predef.h \
+ /root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.h \
+ /root/workspace/GameServer/06_01_engine/src/libs/libserver/disposable.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/common.h \
  /usr/local/include/c++/9.1.0/climits \
  /usr/local/include/c++/9.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -250,8 +252,6 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
  /usr/local/include/c++/9.1.0/cassert \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/msg.pb.h \
  /usr/local/include/google/protobuf/message.h \
- /root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.h \
- /root/workspace/GameServer/06_01_engine/src/libs/libserver/disposable.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/entity_system.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/cache_swap.h \
@@ -261,6 +261,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/component.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/sn_object.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/global.h \
+ /root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/singleton.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/util_time.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/util_string.h \
@@ -286,6 +287,7 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/thread.h \
  /usr/local/include/c++/9.1.0/thread \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/regist_to_factory.h \
+ /root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.h \
  /usr/include/sys/time.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/console_cmd_pool.h \
  /root/workspace/GameServer/06_01_engine/src/libs/libserver/console.h \
@@ -308,4 +310,51 @@ CMakeFiles/robots.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/
  /usr/include/asm-generic/sockios.h \
  /usr/include/bits/types/struct_osockaddr.h /usr/include/bits/in.h \
  /usr/include/netinet/tcp.h /usr/include/sys/epoll.h \
- /usr/include/bits/epoll.h
+ /usr/include/bits/epoll.h \
+ /root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.h \
+ /usr/local/include/yaml-cpp/node/node.h \
+ /usr/local/include/yaml-cpp/dll.h \
+ /usr/local/include/yaml-cpp/emitterstyle.h \
+ /usr/local/include/yaml-cpp/mark.h \
+ /usr/local/include/yaml-cpp/node/detail/iterator_fwd.h \
+ /usr/local/include/yaml-cpp/node/ptr.h \
+ /usr/local/include/yaml-cpp/node/type.h \
+ /usr/local/include/yaml-cpp/yaml.h /usr/local/include/yaml-cpp/parser.h \
+ /usr/local/include/yaml-cpp/emitter.h /usr/local/include/c++/9.1.0/cmath \
+ /usr/include/math.h /usr/include/bits/math-vector.h \
+ /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h /usr/local/include/yaml-cpp/binary.h \
+ /usr/local/include/yaml-cpp/emitterdef.h \
+ /usr/local/include/yaml-cpp/emittermanip.h \
+ /usr/local/include/yaml-cpp/null.h \
+ /usr/local/include/yaml-cpp/ostream_wrapper.h \
+ /usr/local/include/yaml-cpp/stlemitter.h \
+ /usr/local/include/yaml-cpp/exceptions.h \
+ /usr/local/include/yaml-cpp/noexcept.h \
+ /usr/local/include/yaml-cpp/traits.h \
+ /usr/local/include/yaml-cpp/node/impl.h \
+ /usr/local/include/yaml-cpp/node/detail/memory.h \
+ /usr/local/include/yaml-cpp/node/detail/node.h \
+ /usr/local/include/yaml-cpp/node/detail/node_ref.h \
+ /usr/local/include/yaml-cpp/node/detail/node_data.h \
+ /usr/local/include/yaml-cpp/node/detail/node_iterator.h \
+ /usr/local/include/yaml-cpp/node/iterator.h \
+ /usr/local/include/yaml-cpp/node/detail/iterator.h \
+ /usr/local/include/yaml-cpp/node/convert.h \
+ /usr/local/include/c++/9.1.0/valarray \
+ /usr/local/include/c++/9.1.0/bits/valarray_array.h \
+ /usr/local/include/c++/9.1.0/bits/valarray_array.tcc \
+ /usr/local/include/c++/9.1.0/bits/valarray_before.h \
+ /usr/local/include/c++/9.1.0/bits/slice_array.h \
+ /usr/local/include/c++/9.1.0/bits/valarray_after.h \
+ /usr/local/include/c++/9.1.0/bits/gslice.h \
+ /usr/local/include/c++/9.1.0/bits/gslice_array.h \
+ /usr/local/include/c++/9.1.0/bits/mask_array.h \
+ /usr/local/include/c++/9.1.0/bits/indirect_array.h \
+ /usr/local/include/yaml-cpp/node/detail/impl.h \
+ /usr/local/include/yaml-cpp/node/parse.h \
+ /usr/local/include/yaml-cpp/node/emit.h

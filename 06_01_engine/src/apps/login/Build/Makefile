@@ -297,6 +297,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/login.dir/build.make CMakeFiles/login.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.o: root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.o
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.o
+
+# target to build an object file
+root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/login.dir/build.make CMakeFiles/login.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.o
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.o
+
+root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.i: root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.i
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.i
+
+# target to preprocess a source file
+root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/login.dir/build.make CMakeFiles/login.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.i
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.i
+
+root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.s: root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.s
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.s
+
+# target to generate assembly for a file
+root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/login.dir/build.make CMakeFiles/login.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.s
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.cpp.s
+
 root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.o: root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.cpp.o
 .PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.o
 
@@ -777,6 +801,30 @@ root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.c
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/login.dir/build.make CMakeFiles/login.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc.s
 .PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.cc.s
 
+root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.o: root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.o
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.o
+
+# target to build an object file
+root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/login.dir/build.make CMakeFiles/login.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.o
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.o
+
+root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.i: root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.i
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.i
+
+# target to preprocess a source file
+root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/login.dir/build.make CMakeFiles/login.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.i
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.i
+
+root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.s: root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.s
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.s
+
+# target to generate assembly for a file
+root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/login.dir/build.make CMakeFiles/login.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.s
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.cpp.s
+
 root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.o: root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.cpp.o
 .PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.o
 
@@ -849,6 +897,30 @@ root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/login.dir/build.make CMakeFiles/login.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.s
 .PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.cpp.s
 
+root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.o: root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.o
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.o
+
+# target to build an object file
+root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/login.dir/build.make CMakeFiles/login.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.o
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.o
+
+root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.i: root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.i
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.i
+
+# target to preprocess a source file
+root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/login.dir/build.make CMakeFiles/login.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.i
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.i
+
+root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.s: root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.s
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.s
+
+# target to generate assembly for a file
+root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/login.dir/build.make CMakeFiles/login.dir/root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.s
+.PHONY : root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.cpp.s
+
 root/workspace/GameServer/06_01_engine/src/tools/robots/robot_test.o: root/workspace/GameServer/06_01_engine/src/tools/robots/robot_test.cpp.o
 .PHONY : root/workspace/GameServer/06_01_engine/src/tools/robots/robot_test.o
 
@@ -903,6 +975,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.o"
+	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.i"
+	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/app_type_mgr.s"
 	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.o"
 	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.i"
 	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/base_buffer.s"
@@ -963,6 +1038,9 @@ help:
 	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.o"
 	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.i"
 	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/protobuf/proto_id.pb.s"
+	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.o"
+	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.i"
+	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/res_path.s"
 	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.o"
 	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.i"
 	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/server_app.s"
@@ -972,6 +1050,9 @@ help:
 	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.o"
 	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.i"
 	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/thread_mgr.s"
+	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.o"
+	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.i"
+	@echo "... root/workspace/GameServer/06_01_engine/src/libs/libserver/yaml.s"
 	@echo "... root/workspace/GameServer/06_01_engine/src/tools/robots/robot_test.o"
 	@echo "... root/workspace/GameServer/06_01_engine/src/tools/robots/robot_test.i"
 	@echo "... root/workspace/GameServer/06_01_engine/src/tools/robots/robot_test.s"

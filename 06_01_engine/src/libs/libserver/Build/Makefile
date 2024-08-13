@@ -129,6 +129,30 @@ server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
+app_type_mgr.o: app_type_mgr.cpp.o
+.PHONY : app_type_mgr.o
+
+# target to build an object file
+app_type_mgr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/app_type_mgr.cpp.o
+.PHONY : app_type_mgr.cpp.o
+
+app_type_mgr.i: app_type_mgr.cpp.i
+.PHONY : app_type_mgr.i
+
+# target to preprocess a source file
+app_type_mgr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/app_type_mgr.cpp.i
+.PHONY : app_type_mgr.cpp.i
+
+app_type_mgr.s: app_type_mgr.cpp.s
+.PHONY : app_type_mgr.s
+
+# target to generate assembly for a file
+app_type_mgr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/app_type_mgr.cpp.s
+.PHONY : app_type_mgr.cpp.s
+
 base_buffer.o: base_buffer.cpp.o
 .PHONY : base_buffer.o
 
@@ -561,6 +585,30 @@ packet.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/packet.cpp.s
 .PHONY : packet.cpp.s
 
+res_path.o: res_path.cpp.o
+.PHONY : res_path.o
+
+# target to build an object file
+res_path.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/res_path.cpp.o
+.PHONY : res_path.cpp.o
+
+res_path.i: res_path.cpp.i
+.PHONY : res_path.i
+
+# target to preprocess a source file
+res_path.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/res_path.cpp.i
+.PHONY : res_path.cpp.i
+
+res_path.s: res_path.cpp.s
+.PHONY : res_path.s
+
+# target to generate assembly for a file
+res_path.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/res_path.cpp.s
+.PHONY : res_path.cpp.s
+
 server_app.o: server_app.cpp.o
 .PHONY : server_app.o
 
@@ -633,6 +681,30 @@ thread_mgr.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/thread_mgr.cpp.s
 .PHONY : thread_mgr.cpp.s
 
+yaml.o: yaml.cpp.o
+.PHONY : yaml.o
+
+# target to build an object file
+yaml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/yaml.cpp.o
+.PHONY : yaml.cpp.o
+
+yaml.i: yaml.cpp.i
+.PHONY : yaml.i
+
+# target to preprocess a source file
+yaml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/yaml.cpp.i
+.PHONY : yaml.cpp.i
+
+yaml.s: yaml.cpp.s
+.PHONY : yaml.s
+
+# target to generate assembly for a file
+yaml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/yaml.cpp.s
+.PHONY : yaml.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -642,6 +714,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... server"
+	@echo "... app_type_mgr.o"
+	@echo "... app_type_mgr.i"
+	@echo "... app_type_mgr.s"
 	@echo "... base_buffer.o"
 	@echo "... base_buffer.i"
 	@echo "... base_buffer.s"
@@ -696,6 +771,9 @@ help:
 	@echo "... packet.o"
 	@echo "... packet.i"
 	@echo "... packet.s"
+	@echo "... res_path.o"
+	@echo "... res_path.i"
+	@echo "... res_path.s"
 	@echo "... server_app.o"
 	@echo "... server_app.i"
 	@echo "... server_app.s"
@@ -705,6 +783,9 @@ help:
 	@echo "... thread_mgr.o"
 	@echo "... thread_mgr.i"
 	@echo "... thread_mgr.s"
+	@echo "... yaml.o"
+	@echo "... yaml.i"
+	@echo "... yaml.s"
 .PHONY : help
 
 
