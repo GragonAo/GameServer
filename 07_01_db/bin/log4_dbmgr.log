@@ -1,0 +1,44 @@
+2024-08-15 10:22:02 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-15 10:22:02 -> [DEBUG] -  Mysql udpate connect. 47.122.48.37:33066 starting...id: 140181519444096
+2024-08-15 10:22:03 -> [ERROR] -  [0;31mMysqlConnector::CheckError. mysql_error = 1049[0m
+2024-08-15 10:22:03 -> [DEBUG] -  Mysql. try create database: e_gamedata
+2024-08-15 10:22:04 -> [DEBUG] -  Mysql Update successully! addr: 47.122.48.37:33066
+2024-08-15 10:22:04 -> [DEBUG] -  MysqlConnector::Awake. id:140181398259456
+2024-08-15 10:22:04 -> [DEBUG] -  MysqlConnector::Connect. 47.122.48.37:33066starting... id :140181398259456
+2024-08-15 10:22:04 -> [INFO] -  epoll model. listen 127.0.0.1:5800
+2024-08-15 10:22:04 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr: 47.122.48.37:33066
+2024-08-15 10:22:04 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-08-15 12:55:22 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-15 12:55:22 -> [DEBUG] -  Mysql udpate connect. 47.122.48.37:33066 starting...id: 139647130339456
+2024-08-15 12:55:23 -> [DEBUG] -  Mysql Update successully! addr: 47.122.48.37:33066
+2024-08-15 12:55:23 -> [DEBUG] -  MysqlConnector::Awake. id:139646902204160
+2024-08-15 12:55:23 -> [DEBUG] -  MysqlConnector::Connect. 47.122.48.37:33066starting... id :139646902204160
+2024-08-15 12:55:23 -> [INFO] -  epoll model. listen 127.0.0.1:5800
+2024-08-15 12:55:23 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr: 47.122.48.37:33066
+2024-08-15 12:55:23 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-08-15 12:55:43 -> [DEBUG] -  player list. account: test player list size: 0 socket:8
+2024-08-15 13:12:32 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-15 13:12:32 -> [DEBUG] -  Mysql udpate connect. 47.122.48.37:33066 starting...id: 140506715252864
+2024-08-15 13:12:33 -> [DEBUG] -  Mysql Update successully! addr: 47.122.48.37:33066
+2024-08-15 13:12:33 -> [DEBUG] -  MysqlConnector::Awake. id:140506594068224
+2024-08-15 13:12:33 -> [DEBUG] -  MysqlConnector::Connect. 47.122.48.37:33066starting... id :140506594068224
+2024-08-15 13:12:33 -> [INFO] -  epoll model. listen 127.0.0.1:5800
+2024-08-15 13:12:34 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr: 47.122.48.37:33066
+2024-08-15 13:12:34 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-08-15 13:12:43 -> [DEBUG] -  player list. account: test player list size: 0 socket:8
+2024-08-15 13:12:43 -> [INFO] -  HandlePlayerCreate sn:6209139726251720738 account: test name: test-6821
+2024-08-15 13:12:43 -> [DEBUG] -  player list. account: test player list size: 1 socket:8
+2024-08-15 13:18:38 -> [DEBUG] -  player list. account: test player list size: 1 socket:8
+2024-08-15 21:45:53 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-15 21:45:53 -> [DEBUG] -  Mysql udpate connect. 47.122.48.37:33066 starting...id: 140423686547584
+2024-08-15 21:45:54 -> [DEBUG] -  Mysql Update successully! addr: 47.122.48.37:33066
+2024-08-15 21:45:54 -> [DEBUG] -  MysqlConnector::Awake. id:140423565362944
+2024-08-15 21:45:54 -> [DEBUG] -  MysqlConnector::Connect. 47.122.48.37:33066starting... id :140423565362944
+2024-08-15 21:45:54 -> [INFO] -  epoll model. listen 127.0.0.1:5800
+2024-08-15 21:45:55 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr: 47.122.48.37:33066
+2024-08-15 21:45:55 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-08-15 21:46:07 -> [DEBUG] -  player list. account: test player list size: 1 socket:8
+2024-08-15 21:46:16 -> [DEBUG] -  player list. account: test1 player list size: 0 socket:8
+2024-08-15 21:46:16 -> [INFO] -  HandlePlayerCreate sn:6217783485373874213 account: test1 name: test1-5700
+2024-08-15 21:46:16 -> [DEBUG] -  player list. account: test1 player list size: 1 socket:8
+2024-08-15 21:47:05 -> [DEBUG] -  player list. account: test1 player list size: 1 socket:8

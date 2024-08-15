@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package Proto;
+
+enum MsgId{
+    
+    None = 0;
+    MI_NetworkConnect = 1;
+    MI_NetworkListen = 2;
+
+    MI_NetworkDisconnect = 3;
+    MI_NetworkDisconnectEx  = 4;
+
+    MI_NetworkDisconnectToNet = 5;
+
+    MI_RemoveComponent = 50;
+    MI_CreateComponent = 51;
+    MI_Ping = 101;
+
+    C2L_AccountCheck = 1001;
+    C2L_AccountCheckRs = 1002;
+
+    MI_AccountQueryOnlineToRedis = 1003;
+    MI_AccountQueryOnlineToRedisRs = 1004;
+
+    MI_AccountCheckToHttpRs = 1005;
+
+    L2DB_QueryPlayerList = 1010;
+    L2DB_QueryPlayerListRs = 1011;
+
+    G2DB_QueryPlayer = 1101;
+    G2DB_QueryPlayerRs = 1102;
+
+    L2C_PlayerList = 1103;
+
+    C2L_CreatePlayer = 1105;
+    C2L_CreatePlayerRs = 1106;
+
+    L2DB_CreatePlayer = 1107;
+    L2DB_CreatePlayerRs = 1108;
+    
+    G2DB_SavePlayer = 1800;
+
+    MI_RobotSyncState = 5001;
+
+    MI_RobotTestBegin = 5100;
+    MI_RobotTestEnd =5101;
+}

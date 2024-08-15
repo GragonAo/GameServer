@@ -1,0 +1,13 @@
+2024-08-15 10:22:53 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-15 12:55:39 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-15 13:12:40 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-15 13:12:43 -> [DEBUG] -  create. name: test-6821 gender: 1
+2024-08-15 13:12:43 -> [DEBUG] -  recv players. size: 1
+2024-08-15 13:18:34 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-15 13:18:38 -> [DEBUG] -  recv players. size: 1
+2024-08-15 21:46:04 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-15 21:46:07 -> [DEBUG] -  recv players. size: 1
+2024-08-15 21:46:16 -> [DEBUG] -  create. name: test1-5700 gender: 1
+2024-08-15 21:46:16 -> [DEBUG] -  recv players. size: 1
+2024-08-15 21:47:00 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-15 21:47:05 -> [DEBUG] -  recv players. size: 1
