@@ -1,0 +1,37 @@
+2024-08-16 22:56:01 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-16 22:56:01 -> [DEBUG] -  Mysql udpate connect. 47.122.48.37:33066 starting...id: 140493865359488
+2024-08-16 22:56:02 -> [DEBUG] -  Mysql Update successully! addr: 47.122.48.37:33066
+2024-08-16 22:56:02 -> [DEBUG] -  MysqlConnector::Awake. id:140493744174848
+2024-08-16 22:56:02 -> [DEBUG] -  MysqlConnector::Connect. 47.122.48.37:33066starting... id :140493744174848
+2024-08-16 22:56:02 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr: 47.122.48.37:33066
+2024-08-16 22:56:02 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-08-16 22:56:02 -> [INFO] -  epoll model. listen 127.0.0.1:5800
+2024-08-16 22:56:10 -> [DEBUG] -  player list. account: test player list size: 1 socket:8
+2024-08-16 22:56:33 -> [DEBUG] -  player list. account: test3 player list size: 0 socket:8
+2024-08-16 22:56:34 -> [DEBUG] -  player list. account: test9 player list size: 0 socket:8
+2024-08-16 22:56:34 -> [DEBUG] -  player list. account: test7 player list size: 0 socket:8
+2024-08-16 22:56:34 -> [DEBUG] -  player list. account: test6 player list size: 0 socket:8
+2024-08-16 22:56:34 -> [DEBUG] -  player list. account: test4 player list size: 0 socket:8
+2024-08-16 22:56:34 -> [DEBUG] -  player list. account: test2 player list size: 0 socket:8
+2024-08-16 22:56:34 -> [DEBUG] -  player list. account: test5 player list size: 0 socket:8
+2024-08-16 22:56:34 -> [DEBUG] -  player list. account: test1 player list size: 1 socket:8
+2024-08-16 22:56:34 -> [DEBUG] -  player list. account: test10 player list size: 0 socket:8
+2024-08-16 22:56:34 -> [DEBUG] -  player list. account: test8 player list size: 0 socket:8
+2024-08-16 22:56:34 -> [INFO] -  HandlePlayerCreate sn:6606986206192337008 account: test3 name: test3-6728
+2024-08-16 22:56:34 -> [DEBUG] -  player list. account: test3 player list size: 1 socket:8
+2024-08-16 22:56:34 -> [INFO] -  HandlePlayerCreate sn:6606986206192337009 account: test9 name: test9-6728
+2024-08-16 22:56:34 -> [DEBUG] -  player list. account: test9 player list size: 1 socket:8
+2024-08-16 22:56:34 -> [INFO] -  HandlePlayerCreate sn:6606986231962140786 account: test7 name: test7-5212
+2024-08-16 22:56:34 -> [DEBUG] -  player list. account: test7 player list size: 1 socket:8
+2024-08-16 22:56:34 -> [INFO] -  HandlePlayerCreate sn:6606986231962140787 account: test2 name: test2-8369
+2024-08-16 22:56:35 -> [DEBUG] -  player list. account: test2 player list size: 1 socket:8
+2024-08-16 22:56:35 -> [INFO] -  HandlePlayerCreate sn:6606986231962140788 account: test5 name: test5-8369
+2024-08-16 22:56:35 -> [DEBUG] -  player list. account: test5 player list size: 1 socket:8
+2024-08-16 22:56:35 -> [INFO] -  HandlePlayerCreate sn:6606986231962140789 account: test8 name: test8-8369
+2024-08-16 22:56:35 -> [DEBUG] -  player list. account: test8 player list size: 1 socket:8
+2024-08-16 22:56:35 -> [INFO] -  HandlePlayerCreate sn:6606986240552075382 account: test4 name: test4-5212
+2024-08-16 22:56:35 -> [DEBUG] -  player list. account: test4 player list size: 1 socket:8
+2024-08-16 22:56:35 -> [INFO] -  HandlePlayerCreate sn:6606986240552075383 account: test10 name: test10-5212
+2024-08-16 22:56:35 -> [DEBUG] -  player list. account: test10 player list size: 1 socket:8
+2024-08-16 22:56:35 -> [INFO] -  HandlePlayerCreate sn:6606986249142009976 account: test6 name: test6-6728
+2024-08-16 22:56:35 -> [DEBUG] -  player list. account: test6 player list size: 1 socket:8

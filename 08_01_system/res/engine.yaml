@@ -1,0 +1,26 @@
+login:
+  thread_num: 3
+  url_login: http://127.0.0.1:3001/account/login
+  ip: 127.0.0.1
+  port: 2233
+
+dbmgr:
+  thread_num: 1
+  ip: 127.0.0.1
+  port: 5800 
+  dbs:
+    - type: redis
+      ip: 192.168.0.120
+      port: 6379
+
+    - type: mysql
+      ip: 47.122.48.37
+      port: 33066
+      user: root
+      password: aoliao
+      database_name: e_gamedata
+      character_set: utf8
+      collation: utf8_general_ci
+
+robot:
+  thread_num: 3
