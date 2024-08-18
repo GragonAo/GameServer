@@ -1,6 +1,7 @@
 #include "server_app.h"
 #include "app_type_mgr.h"
 #include "global.h"
+#include "console_cmd_thread.h"
 #include "thread_mgr.h"
 #include "res_path.h"
 #include "object_pool_mgr.h"
@@ -32,6 +33,7 @@ void ServerApp::Initialize(){
   _pThreadMgr->GetEntitySystem()->AddComponent<NetworkLocator>();
   auto pConsole = _pThreadMgr->GetEntitySystem()->AddComponent<Console>();
   pConsole->Register<ConsoleCmdPool>("pool");
+  pConsole->Register<ConsoleCmdThread>("thread");
 
   const auto pLoginConfig = dynamic_cast<AppConfig*>(Yaml::GetInstance()->GetConfig(_appType));
   for (int i = 0; i < pLoginConfig->ThreadNum; i++) {

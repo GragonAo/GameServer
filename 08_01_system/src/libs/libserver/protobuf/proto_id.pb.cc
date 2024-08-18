@@ -25,7 +25,7 @@ static constexpr ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema* schemas = n
 static constexpr ::PROTOBUF_NAMESPACE_ID::Message* const* file_default_instances = nullptr;
 
 const char descriptor_table_protodef_proto_5fid_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\016proto_id.proto\022\005Proto*\243\005\n\005MsgId\022\010\n\004Non"
+  "\n\016proto_id.proto\022\005Proto*\302\005\n\005MsgId\022\010\n\004Non"
   "e\020\000\022\025\n\021MI_NetworkConnect\020\001\022\024\n\020MI_Network"
   "Listen\020\002\022\030\n\024MI_NetworkDisconnect\020\003\022\032\n\026MI"
   "_NetworkDisconnectEx\020\004\022\037\n\033MI_NetworkRequ"
@@ -42,7 +42,8 @@ const char descriptor_table_protodef_proto_5fid_2eproto[] PROTOBUF_SECTION_VARIA
   "\026\n\021L2DB_CreatePlayer\020\323\010\022\030\n\023L2DB_CreatePl"
   "ayerRs\020\324\010\022\024\n\017G2DB_SavePlayer\020\210\016\022\026\n\021MI_Ro"
   "botSyncState\020\211\'\022\026\n\021MI_RobotTestBegin\020\354\'\022"
-  "\024\n\017MI_RobotTestEnd\020\355\'b\006proto3"
+  "\024\n\017MI_RobotTestEnd\020\355\'\022\035\n\027MI_CmdShowThrea"
+  "dEntites\020\243\234\001b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_proto_5fid_2eproto_deps[1] = {
 };
@@ -51,7 +52,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_pro
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_proto_5fid_2eproto_once;
 static bool descriptor_table_proto_5fid_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_proto_5fid_2eproto = {
-  &descriptor_table_proto_5fid_2eproto_initialized, descriptor_table_protodef_proto_5fid_2eproto, "proto_id.proto", 709,
+  &descriptor_table_proto_5fid_2eproto_initialized, descriptor_table_protodef_proto_5fid_2eproto, "proto_id.proto", 740,
   &descriptor_table_proto_5fid_2eproto_once, descriptor_table_proto_5fid_2eproto_sccs, descriptor_table_proto_5fid_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_proto_5fid_2eproto::offsets,
   file_level_metadata_proto_5fid_2eproto, 0, file_level_enum_descriptors_proto_5fid_2eproto, file_level_service_descriptors_proto_5fid_2eproto,
@@ -93,6 +94,7 @@ bool MsgId_IsValid(int value) {
     case 5001:
     case 5100:
     case 5101:
+    case 20003:
       return true;
     default:
       return false;

@@ -1,5 +1,6 @@
 #include "thread_mgr.h"
 #include "entity_system.h"
+#include "message_system.h"
 #include "system_manager.h"
 #include "thread.h"
 #include <mutex>

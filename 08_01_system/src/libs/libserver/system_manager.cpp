@@ -1,6 +1,7 @@
 #include "system_manager.h"
 #include "create_component.h"
 #include "entity_system.h"
+#include "console_thread_component.h"
 #include "update_system.h"
 #include <random>
 #include <sstream>
@@ -21,6 +22,7 @@ SystemManager::SystemManager() {
 
 void SystemManager::InitComponent() {
   _pEntitySystem->AddComponent<CreateComponentC>();
+  _pEntitySystem->AddComponent<ConsoleThreadComponent>();
 }
 
 void SystemManager::Update() {

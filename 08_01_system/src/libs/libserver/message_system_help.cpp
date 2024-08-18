@@ -1,8 +1,9 @@
 #include "message_system_help.h"
+#include "global.h"
+#include "log4_help.h"
+#include "network_locator.h"
 #include "packet.h"
 #include "thread_mgr.h"
-#include "network_locator.h"
-#include "log4_help.h"
 
 void MessageSystemHelp::DispatchPacket(Packet *pPacket) {
   ThreadMgr::GetInstance()->DispatchPacket(pPacket);
@@ -40,36 +41,41 @@ void MessageSystemHelp::SendPacket(const Proto::MsgId msgId,
 
 void MessageSystemHelp::SendPacket(Packet *packet, APP_TYPE appType,
                                    int appId) {
-  auto pNetworkLocator =
-      ThreadMgr::GetInstance()->GetEntitySystem()->GetComponent<NetworkLocator>();
-  auto pNetwork = pNetworkLocator->GetNetworkConnector(appType, appId);
-
-  if (pNetwork != nullptr) {
-    packet->SetSocket(pNetwork->GetSocket());
-    pNetwork->SendPacket(packet);
-    return;
-  }
 
   if ((Global::GetInstance()->GetCurAppType() & appType) != 0) {
+    //正好在当前进程中，直接转发，例如curapptype == all 的时候
     DispatchPacket(packet);
   } else {
-    LOG_ERROR("can't find network. appType:"
-              << AppTypeMgr::GetInstance()->GetAppName(appType).c_str()
-              << " appId:" << appId);
+    auto pNetworkLocator = ThreadMgr::GetInstance()
+                               ->GetEntitySystem()
+                               ->GetComponent<NetworkLocator>();
+    auto pNetwork = pNetworkLocator->GetNetworkConnector(appType, appId);
+
+    if (pNetwork != nullptr) {
+      packet->SetSocket(pNetwork->GetSocket());
+      pNetwork->SendPacket(packet);
+      return;
+    } else {
+      LOG_ERROR("can't find network. appType:"
+                << AppTypeMgr::GetInstance()->GetAppName(appType).c_str()
+                << " appId:" << appId);
+    }
   }
 }
 
 void MessageSystemHelp::SendPacket(Packet *pPacket) {
-  auto pNetworkLocator =
-      ThreadMgr::GetInstance()->GetEntitySystem()->GetComponent<NetworkLocator>();
+
+  if(pPacket->GetSocket() == 0){
+    DispatchPacket(pPacket);
+    return;
+  }
+
+  auto pNetworkLocator = ThreadMgr::GetInstance()
+                             ->GetEntitySystem()
+                             ->GetComponent<NetworkLocator>();
   auto pNetwork = pNetworkLocator->GetNetworkConnector(pPacket->GetSocket());
   if (pNetwork != nullptr) {
     pNetwork->SendPacket(pPacket);
-    return;
-  }
-  if (Global::GetInstance()->GetCurAppType() == APP_ALL &&
-      pPacket->GetSocket() == 0) {
-    DispatchPacket(pPacket);
     return;
   }
 

@@ -21,6 +21,7 @@ Yaml::Yaml() {
   const std::string path = pResPath->FindResPath("/engine.yaml");
   YAML::Node config = YAML::LoadFile(path);
 
+  LoadConfig(APP_TYPE::APP_ALLINONE, config);
   LoadConfig(APP_TYPE::APP_LOGIN, config);
   LoadConfig(APP_TYPE::APP_ROBOT, config);
   LoadConfig(APP_TYPE::APP_DB_MGR, config);

@@ -45,4 +45,6 @@ enum MsgId{
 
     MI_RobotTestBegin = 5100;
     MI_RobotTestEnd =5101;
+
+    MI_CmdShowThreadEntites = 20003;
 }

@@ -16,7 +16,7 @@ AppTypeMgr::AppTypeMgr() {
   _names.insert(std::make_pair(APP_TYPE::APP_SPACE, "space"));
   _names.insert(std::make_pair(APP_TYPE::APP_ROBOT, "robot"));
 
-  _names.insert(std::make_pair(APP_TYPE::APP_ALL, "all"));
+  _names.insert(std::make_pair(APP_TYPE::APP_ALLINONE, "allinone"));
 }
 
 std::string AppTypeMgr::GetAppName(const APP_TYPE appType) {
