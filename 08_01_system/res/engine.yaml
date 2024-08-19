@@ -1,16 +1,18 @@
 allinone:
-  thread_num: 4
+  thread_logic: 2
+  thread_mysql: 2
   ip: 127.0.0.1
   port: 2233
 
 login:
-  thread_num: 3
+  thread_logic: 2
   url_login: http://127.0.0.1:3001/account/login
   ip: 127.0.0.1
   port: 2233
 
 dbmgr:
-  thread_num: 1
+  thread_logic: 1
+  thread_mysql: 3
   ip: 127.0.0.1
   port: 5800 
   dbs:
@@ -28,4 +30,4 @@ dbmgr:
       collation: utf8_general_ci
 
 robot:
-  thread_num: 3
+  thread_logic: 5

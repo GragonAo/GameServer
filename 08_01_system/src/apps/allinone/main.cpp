@@ -1,5 +1,6 @@
 
 #include "libserver/server_app.h"
+#include "libserver/thread_type.h"
 #include "login/login.h"
 #include "dbmgr/dbmgr.h"
 #include "libserver/network_listen.h"
@@ -21,7 +22,8 @@ int main(int argc, char* argv[])
 
     auto pYaml = Yaml::GetInstance();
     auto pCommonConfig = pYaml->GetIPEndPoint(curAppType);
-    pThreadMgr->CreateComponent<NetworkListen>(pCommonConfig->Ip, pCommonConfig->Port);
+    pThreadMgr->CreateThread(ListenThread, 1);
+    pThreadMgr->CreateComponent<NetworkListen>(ListenThread,pCommonConfig->Ip, pCommonConfig->Port);
 
     app.Run();
     app.Dispose();

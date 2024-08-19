@@ -35,13 +35,7 @@ void ServerApp::Initialize(){
   pConsole->Register<ConsoleCmdPool>("pool");
   pConsole->Register<ConsoleCmdThread>("thread");
 
-  const auto pLoginConfig = dynamic_cast<AppConfig*>(Yaml::GetInstance()->GetConfig(_appType));
-  for (int i = 0; i < pLoginConfig->ThreadNum; i++) {
-    _pThreadMgr->CreateThread();
-  }
-
-  _pThreadMgr->InitComponent();
-  _pThreadMgr->StartAllThread();
+  _pThreadMgr->InitializeThread();
 }
 
 void ServerApp::Dispose(){

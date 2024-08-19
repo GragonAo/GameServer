@@ -3,11 +3,16 @@
 #include <chrono>
 #include <log4cplus/config.hxx>
 
-Thread::Thread() { _state = ThreadState_Init; }
+Thread::Thread(ThreadType threadType) {
+  _threadType = threadType;
+  _state = ThreadState_Init;
+}
+
+void Thread::BackToPool(){}
 
 void Thread::Start() {
   _thread = std::thread([this]() {
-    InitComponent();
+    InitComponent(_threadType);
     _state = ThreadState_Run;
     while (!Global::GetInstance()->IsStop) {
       Update();

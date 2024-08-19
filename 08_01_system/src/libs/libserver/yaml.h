@@ -12,7 +12,8 @@ struct YamlConfig {
 };
 
 struct AppConfig : public YamlConfig {
-  int ThreadNum{1};
+  int LogicThreadNum{0};
+  int MysqlThreadNum{0};
 };
 
 struct CommonConfig : public AppConfig {

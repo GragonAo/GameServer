@@ -1,15 +1,16 @@
 #include "console_thread_component.h"
+#include "common.h"
 #include "create_component.h"
 #include "entity_system.h"
-#include "common.h"
 #include "log4_help.h"
-#include "protobuf/proto_id.pb.h"
 #include "message_component.h"
 #include "update_component.h"
 #include <sstream>
 #include <thread>
 
-void ConsoleThreadComponent::AwakeFromPool() {
+void ConsoleThreadComponent::AwakeFromPool(ThreadType iType) {
+  _threadType = iType;
+
   auto pMsgCallBack = new MessageCallBackFunction();
   AddComponent<MessageComponent>(pMsgCallBack);
   pMsgCallBack->RegisterFunction(
@@ -29,6 +30,8 @@ void ConsoleThreadComponent::HandleCmdShowThreadEntites(Packet *pPacket) {
   std::stringstream log;
   log << "*************************** " << "\n";
   log << " thread id:" << std::this_thread::get_id() << "\n";
+  log << " thread type:" << GetThreadTypeName(_threadType) << "\n";
+
   const auto collects = GetSystemManager()->GetEntitySystem()->GetObjgSystem();
   int total = 0;
   for (const auto one : collects) {

@@ -20,9 +20,9 @@ SystemManager::SystemManager() {
   _pRandomEngine = new std::default_random_engine(generator);
 }
 
-void SystemManager::InitComponent() {
+void SystemManager::InitComponent(ThreadType threadType) {
   _pEntitySystem->AddComponent<CreateComponentC>();
-  _pEntitySystem->AddComponent<ConsoleThreadComponent>();
+  _pEntitySystem->AddComponent<ConsoleThreadComponent>(threadType);
 }
 
 void SystemManager::Update() {

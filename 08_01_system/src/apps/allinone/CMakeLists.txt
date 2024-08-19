@@ -21,7 +21,7 @@ include_directories(/usr/local/include)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../../../../bin")
 
-set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -lcurl -ljsoncpp -lyaml-cpp -llog4cplus -DEPOLL -D_DEBUG -O0 -g -ggdb")
+set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -lcurl -ljsoncpp -lyaml-cpp -llog4cplus -DEPOLL -Wno-unknown-pragmas -D_DEBUG -O0 -g -ggdb")
 
 add_executable(${MyProjectName} ${SRCS})
 target_link_libraries(${MyProjectName} -L/usr/lib64/mysql -lmysqlclient -lpthread -lz -lm -lssl -lcrypto -ldl) # mysql

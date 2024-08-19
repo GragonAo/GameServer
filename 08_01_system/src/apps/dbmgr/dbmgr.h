@@ -3,5 +3,5 @@
 #include "mysql_connector.h"
 
 inline void InitializeComponentDBMgr(ThreadMgr *pThreadMgr) {
-  pThreadMgr->CreateComponent<MysqlConnector>();
+  pThreadMgr->CreateComponent<MysqlConnector>(MysqlThread);
 }

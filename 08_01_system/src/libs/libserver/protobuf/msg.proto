@@ -16,9 +16,10 @@ message CreateComponentParam{
 }
 
 message CreateComponent{
-    string class_name = 1;
-    uint64 parent_sn = 2;
-    repeated CreateComponentParam params = 3;
+    int32 thread_type = 1;
+    string class_name = 2;
+    uint64 parent_sn = 3;
+    repeated CreateComponentParam params = 4;
 }
 
 message RemoveComponent{

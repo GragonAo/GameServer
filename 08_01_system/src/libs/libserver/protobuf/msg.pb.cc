@@ -423,6 +423,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_msg_2eproto::offsets[] PROTOBU
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::CreateComponent, thread_type_),
   PROTOBUF_FIELD_OFFSET(::Proto::CreateComponent, class_name_),
   PROTOBUF_FIELD_OFFSET(::Proto::CreateComponent, parent_sn_),
   PROTOBUF_FIELD_OFFSET(::Proto::CreateComponent, params_),
@@ -556,25 +557,25 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_msg_2eproto::offsets[] PROTOBU
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::Proto::CreateComponentParam)},
   { 8, -1, sizeof(::Proto::CreateComponent)},
-  { 16, -1, sizeof(::Proto::RemoveComponent)},
-  { 22, -1, sizeof(::Proto::AccountCheck)},
-  { 29, -1, sizeof(::Proto::AccountCheckRs)},
-  { 35, -1, sizeof(::Proto::AccountCheckToHttpRs)},
-  { 42, -1, sizeof(::Proto::RobotState)},
-  { 49, -1, sizeof(::Proto::RobotSyncState)},
-  { 55, -1, sizeof(::Proto::RobotTestEnd)},
-  { 61, -1, sizeof(::Proto::PlayerLittle)},
-  { 70, -1, sizeof(::Proto::PlayerList)},
-  { 77, -1, sizeof(::Proto::QueryPlayerList)},
-  { 83, -1, sizeof(::Proto::QueryPlayer)},
-  { 89, -1, sizeof(::Proto::QueryPlayerRs)},
-  { 96, -1, sizeof(::Proto::CreatePlayer)},
-  { 103, -1, sizeof(::Proto::CreatePlayerRs)},
-  { 109, -1, sizeof(::Proto::CreatePlayerToDB)},
-  { 116, -1, sizeof(::Proto::CreatePlayerToDBRs)},
-  { 123, -1, sizeof(::Proto::SelectPlayer)},
-  { 129, -1, sizeof(::Proto::SelectPlayerRs)},
-  { 135, -1, sizeof(::Proto::SavePlayer)},
+  { 17, -1, sizeof(::Proto::RemoveComponent)},
+  { 23, -1, sizeof(::Proto::AccountCheck)},
+  { 30, -1, sizeof(::Proto::AccountCheckRs)},
+  { 36, -1, sizeof(::Proto::AccountCheckToHttpRs)},
+  { 43, -1, sizeof(::Proto::RobotState)},
+  { 50, -1, sizeof(::Proto::RobotSyncState)},
+  { 56, -1, sizeof(::Proto::RobotTestEnd)},
+  { 62, -1, sizeof(::Proto::PlayerLittle)},
+  { 71, -1, sizeof(::Proto::PlayerList)},
+  { 78, -1, sizeof(::Proto::QueryPlayerList)},
+  { 84, -1, sizeof(::Proto::QueryPlayer)},
+  { 90, -1, sizeof(::Proto::QueryPlayerRs)},
+  { 97, -1, sizeof(::Proto::CreatePlayer)},
+  { 104, -1, sizeof(::Proto::CreatePlayerRs)},
+  { 110, -1, sizeof(::Proto::CreatePlayerToDB)},
+  { 117, -1, sizeof(::Proto::CreatePlayerToDBRs)},
+  { 124, -1, sizeof(::Proto::SelectPlayer)},
+  { 130, -1, sizeof(::Proto::SelectPlayerRs)},
+  { 136, -1, sizeof(::Proto::SavePlayer)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -606,46 +607,46 @@ const char descriptor_table_protodef_msg_2eproto[] PROTOBUF_SECTION_VARIABLE(pro
   "omponentParam\0223\n\004type\030\001 \001(\0162%.Proto.Crea"
   "teComponentParam.ParamType\022\021\n\tint_param\030"
   "\002 \001(\005\022\024\n\014string_param\030\003 \001(\t\" \n\tParamType"
-  "\022\007\n\003Int\020\000\022\n\n\006String\020\001\"e\n\017CreateComponent"
-  "\022\022\n\nclass_name\030\001 \001(\t\022\021\n\tparent_sn\030\002 \001(\004\022"
-  "+\n\006params\030\003 \003(\0132\033.Proto.CreateComponentP"
-  "aram\"\035\n\017RemoveComponent\022\n\n\002sn\030\001 \001(\004\"1\n\014A"
-  "ccountCheck\022\017\n\007account\030\001 \001(\t\022\020\n\010password"
-  "\030\002 \001(\t\"D\n\016AccountCheckRs\0222\n\013return_code\030"
-  "\001 \001(\0162\035.Proto.AccountCheckReturnCode\"[\n\024"
-  "AccountCheckToHttpRs\0222\n\013return_code\030\001 \001("
-  "\0162\035.Proto.AccountCheckReturnCode\022\017\n\007acco"
-  "unt\030\002 \001(\t\",\n\nRobotState\022\017\n\007account\030\001 \001(\t"
-  "\022\r\n\005state\030\002 \001(\005\"3\n\016RobotSyncState\022!\n\006sta"
-  "tes\030\001 \003(\0132\021.Proto.RobotState\"\035\n\014RobotTes"
-  "tEnd\022\r\n\005state\030\001 \001(\005\"V\n\014PlayerLittle\022\n\n\002s"
-  "n\030\001 \001(\004\022\014\n\004name\030\002 \001(\t\022\035\n\006gender\030\003 \001(\0162\r."
-  "Proto.Gender\022\r\n\005level\030\004 \001(\005\"B\n\nPlayerLis"
-  "t\022\017\n\007account\030\001 \001(\t\022#\n\006player\030\002 \003(\0132\023.Pro"
-  "to.PlayerLittle\"\"\n\017QueryPlayerList\022\017\n\007ac"
-  "count\030\001 \001(\t\" \n\013QueryPlayer\022\021\n\tplayer_sn\030"
-  "\001 \001(\004\"\?\n\rQueryPlayerRs\022\017\n\007account\030\001 \001(\t\022"
-  "\035\n\006Player\030\002 \001(\0132\r.Proto.Player\";\n\014Create"
-  "Player\022\014\n\004name\030\001 \001(\t\022\035\n\006gender\030\002 \001(\0162\r.P"
-  "roto.Gender\"D\n\016CreatePlayerRs\0222\n\013return_"
-  "code\030\002 \001(\0162\035.Proto.CreatePlayerReturnCod"
-  "e\"B\n\020CreatePlayerToDB\022\017\n\007account\030\001 \001(\t\022\035"
-  "\n\006player\030\002 \001(\0132\r.Proto.Player\"Y\n\022CreateP"
-  "layerToDBRs\022\017\n\007account\030\001 \001(\t\0222\n\013return_c"
-  "ode\030\002 \001(\0162\035.Proto.CreatePlayerReturnCode"
-  "\"!\n\014SelectPlayer\022\021\n\tplayer_sn\030\001 \001(\004\"\215\001\n\016"
-  "SelectPlayerRs\022A\n\013return_code\030\001 \001(\0162,.Pr"
-  "oto.SelectPlayerRs.SelectPlayerReturnCod"
-  "e\"8\n\026SelectPlayerReturnCode\022\013\n\007SPRC_OK\020\000"
-  "\022\021\n\rSPRC_NotFound\020\001\">\n\nSavePlayer\022\021\n\tpla"
-  "yer_sn\030\001 \001(\004\022\035\n\006player\030\002 \001(\0132\r.Proto.Pla"
-  "yer*\232\001\n\026AccountCheckReturnCode\022\n\n\006ARC_OK"
-  "\020\000\022\017\n\013ARC_UNKONWN\020\001\022\031\n\025ARC_NOT_FOUND_ACC"
-  "OUNT\020\002\022\026\n\022ARC_PASSWORD_WRONG\020\003\022\017\n\013ARC_LO"
-  "GGING\020\004\022\017\n\013ARC_TIMEOUT\020\005\022\016\n\nARC_ONLINE\020\006"
-  "*L\n\026CreatePlayerReturnCode\022\021\n\rCPR_Create"
-  "_OK\020\000\022\017\n\013CPR_Unkonwn\020\001\022\016\n\nCPR_Rename\020\002b\006"
-  "proto3"
+  "\022\007\n\003Int\020\000\022\n\n\006String\020\001\"z\n\017CreateComponent"
+  "\022\023\n\013thread_type\030\001 \001(\005\022\022\n\nclass_name\030\002 \001("
+  "\t\022\021\n\tparent_sn\030\003 \001(\004\022+\n\006params\030\004 \003(\0132\033.P"
+  "roto.CreateComponentParam\"\035\n\017RemoveCompo"
+  "nent\022\n\n\002sn\030\001 \001(\004\"1\n\014AccountCheck\022\017\n\007acco"
+  "unt\030\001 \001(\t\022\020\n\010password\030\002 \001(\t\"D\n\016AccountCh"
+  "eckRs\0222\n\013return_code\030\001 \001(\0162\035.Proto.Accou"
+  "ntCheckReturnCode\"[\n\024AccountCheckToHttpR"
+  "s\0222\n\013return_code\030\001 \001(\0162\035.Proto.AccountCh"
+  "eckReturnCode\022\017\n\007account\030\002 \001(\t\",\n\nRobotS"
+  "tate\022\017\n\007account\030\001 \001(\t\022\r\n\005state\030\002 \001(\005\"3\n\016"
+  "RobotSyncState\022!\n\006states\030\001 \003(\0132\021.Proto.R"
+  "obotState\"\035\n\014RobotTestEnd\022\r\n\005state\030\001 \001(\005"
+  "\"V\n\014PlayerLittle\022\n\n\002sn\030\001 \001(\004\022\014\n\004name\030\002 \001"
+  "(\t\022\035\n\006gender\030\003 \001(\0162\r.Proto.Gender\022\r\n\005lev"
+  "el\030\004 \001(\005\"B\n\nPlayerList\022\017\n\007account\030\001 \001(\t\022"
+  "#\n\006player\030\002 \003(\0132\023.Proto.PlayerLittle\"\"\n\017"
+  "QueryPlayerList\022\017\n\007account\030\001 \001(\t\" \n\013Quer"
+  "yPlayer\022\021\n\tplayer_sn\030\001 \001(\004\"\?\n\rQueryPlaye"
+  "rRs\022\017\n\007account\030\001 \001(\t\022\035\n\006Player\030\002 \001(\0132\r.P"
+  "roto.Player\";\n\014CreatePlayer\022\014\n\004name\030\001 \001("
+  "\t\022\035\n\006gender\030\002 \001(\0162\r.Proto.Gender\"D\n\016Crea"
+  "tePlayerRs\0222\n\013return_code\030\002 \001(\0162\035.Proto."
+  "CreatePlayerReturnCode\"B\n\020CreatePlayerTo"
+  "DB\022\017\n\007account\030\001 \001(\t\022\035\n\006player\030\002 \001(\0132\r.Pr"
+  "oto.Player\"Y\n\022CreatePlayerToDBRs\022\017\n\007acco"
+  "unt\030\001 \001(\t\0222\n\013return_code\030\002 \001(\0162\035.Proto.C"
+  "reatePlayerReturnCode\"!\n\014SelectPlayer\022\021\n"
+  "\tplayer_sn\030\001 \001(\004\"\215\001\n\016SelectPlayerRs\022A\n\013r"
+  "eturn_code\030\001 \001(\0162,.Proto.SelectPlayerRs."
+  "SelectPlayerReturnCode\"8\n\026SelectPlayerRe"
+  "turnCode\022\013\n\007SPRC_OK\020\000\022\021\n\rSPRC_NotFound\020\001"
+  "\">\n\nSavePlayer\022\021\n\tplayer_sn\030\001 \001(\004\022\035\n\006pla"
+  "yer\030\002 \001(\0132\r.Proto.Player*\232\001\n\026AccountChec"
+  "kReturnCode\022\n\n\006ARC_OK\020\000\022\017\n\013ARC_UNKONWN\020\001"
+  "\022\031\n\025ARC_NOT_FOUND_ACCOUNT\020\002\022\026\n\022ARC_PASSW"
+  "ORD_WRONG\020\003\022\017\n\013ARC_LOGGING\020\004\022\017\n\013ARC_TIME"
+  "OUT\020\005\022\016\n\nARC_ONLINE\020\006*L\n\026CreatePlayerRet"
+  "urnCode\022\021\n\rCPR_Create_OK\020\000\022\017\n\013CPR_Unkonw"
+  "n\020\001\022\016\n\nCPR_Rename\020\002b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_msg_2eproto_deps[1] = {
   &::descriptor_table_db_2eproto,
@@ -676,7 +677,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_msg
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_msg_2eproto_once;
 static bool descriptor_table_msg_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_msg_2eproto = {
-  &descriptor_table_msg_2eproto_initialized, descriptor_table_protodef_msg_2eproto, "msg.proto", 1726,
+  &descriptor_table_msg_2eproto_initialized, descriptor_table_protodef_msg_2eproto, "msg.proto", 1747,
   &descriptor_table_msg_2eproto_once, descriptor_table_msg_2eproto_sccs, descriptor_table_msg_2eproto_deps, 21, 1,
   schemas, file_default_instances, TableStruct_msg_2eproto::offsets,
   file_level_metadata_msg_2eproto, 21, file_level_enum_descriptors_msg_2eproto, file_level_service_descriptors_msg_2eproto,
@@ -1147,14 +1148,18 @@ CreateComponent::CreateComponent(const CreateComponent& from)
   if (!from.class_name().empty()) {
     class_name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.class_name_);
   }
-  parent_sn_ = from.parent_sn_;
+  ::memcpy(&parent_sn_, &from.parent_sn_,
+    static_cast<size_t>(reinterpret_cast<char*>(&thread_type_) -
+    reinterpret_cast<char*>(&parent_sn_)) + sizeof(thread_type_));
   // @@protoc_insertion_point(copy_constructor:Proto.CreateComponent)
 }
 
 void CreateComponent::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_CreateComponent_msg_2eproto.base);
   class_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  parent_sn_ = PROTOBUF_ULONGLONG(0);
+  ::memset(&parent_sn_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&thread_type_) -
+      reinterpret_cast<char*>(&parent_sn_)) + sizeof(thread_type_));
 }
 
 CreateComponent::~CreateComponent() {
@@ -1183,7 +1188,9 @@ void CreateComponent::Clear() {
 
   params_.Clear();
   class_name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  parent_sn_ = PROTOBUF_ULONGLONG(0);
+  ::memset(&parent_sn_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&thread_type_) -
+      reinterpret_cast<char*>(&parent_sn_)) + sizeof(thread_type_));
   _internal_metadata_.Clear();
 }
 
@@ -1195,30 +1202,37 @@ const char* CreateComponent::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // string class_name = 1;
+      // int32 thread_type = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          thread_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string class_name = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_class_name(), ptr, ctx, "Proto.CreateComponent.class_name");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // uint64 parent_sn = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+      // uint64 parent_sn = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           parent_sn_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .Proto.CreateComponentParam params = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+      // repeated .Proto.CreateComponentParam params = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr -= 1;
           do {
             ptr += 1;
             ptr = ctx->ParseMessage(add_params(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 26);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 34);
         } else goto handle_unusual;
         continue;
       default: {
@@ -1251,9 +1265,22 @@ bool CreateComponent::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string class_name = 1;
+      // int32 thread_type = 1;
       case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &thread_type_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string class_name = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_class_name()));
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
@@ -1266,9 +1293,9 @@ bool CreateComponent::MergePartialFromCodedStream(
         break;
       }
 
-      // uint64 parent_sn = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+      // uint64 parent_sn = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
 
           DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
                    ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
@@ -1279,9 +1306,9 @@ bool CreateComponent::MergePartialFromCodedStream(
         break;
       }
 
-      // repeated .Proto.CreateComponentParam params = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+      // repeated .Proto.CreateComponentParam params = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
           DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                 input, add_params()));
         } else {
@@ -1317,26 +1344,31 @@ void CreateComponent::SerializeWithCachedSizes(
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // string class_name = 1;
+  // int32 thread_type = 1;
+  if (this->thread_type() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->thread_type(), output);
+  }
+
+  // string class_name = 2;
   if (this->class_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->class_name().data(), static_cast<int>(this->class_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "Proto.CreateComponent.class_name");
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      1, this->class_name(), output);
+      2, this->class_name(), output);
   }
 
-  // uint64 parent_sn = 2;
+  // uint64 parent_sn = 3;
   if (this->parent_sn() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(2, this->parent_sn(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(3, this->parent_sn(), output);
   }
 
-  // repeated .Proto.CreateComponentParam params = 3;
+  // repeated .Proto.CreateComponentParam params = 4;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->params_size()); i < n; i++) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3,
+      4,
       this->params(static_cast<int>(i)),
       output);
   }
@@ -1354,7 +1386,12 @@ void CreateComponent::SerializeWithCachedSizes(
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // string class_name = 1;
+  // int32 thread_type = 1;
+  if (this->thread_type() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->thread_type(), target);
+  }
+
+  // string class_name = 2;
   if (this->class_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->class_name().data(), static_cast<int>(this->class_name().length()),
@@ -1362,20 +1399,20 @@ void CreateComponent::SerializeWithCachedSizes(
       "Proto.CreateComponent.class_name");
     target =
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        1, this->class_name(), target);
+        2, this->class_name(), target);
   }
 
-  // uint64 parent_sn = 2;
+  // uint64 parent_sn = 3;
   if (this->parent_sn() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(2, this->parent_sn(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(3, this->parent_sn(), target);
   }
 
-  // repeated .Proto.CreateComponentParam params = 3;
+  // repeated .Proto.CreateComponentParam params = 4;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->params_size()); i < n; i++) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->params(static_cast<int>(i)), target);
+        4, this->params(static_cast<int>(i)), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -1399,7 +1436,7 @@ size_t CreateComponent::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .Proto.CreateComponentParam params = 3;
+  // repeated .Proto.CreateComponentParam params = 4;
   {
     unsigned int count = static_cast<unsigned int>(this->params_size());
     total_size += 1UL * count;
@@ -1410,18 +1447,25 @@ size_t CreateComponent::ByteSizeLong() const {
     }
   }
 
-  // string class_name = 1;
+  // string class_name = 2;
   if (this->class_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->class_name());
   }
 
-  // uint64 parent_sn = 2;
+  // uint64 parent_sn = 3;
   if (this->parent_sn() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
         this->parent_sn());
+  }
+
+  // int32 thread_type = 1;
+  if (this->thread_type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->thread_type());
   }
 
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
@@ -1459,6 +1503,9 @@ void CreateComponent::MergeFrom(const CreateComponent& from) {
   if (from.parent_sn() != 0) {
     set_parent_sn(from.parent_sn());
   }
+  if (from.thread_type() != 0) {
+    set_thread_type(from.thread_type());
+  }
 }
 
 void CreateComponent::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -1486,6 +1533,7 @@ void CreateComponent::InternalSwap(CreateComponent* other) {
   class_name_.Swap(&other->class_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(parent_sn_, other->parent_sn_);
+  swap(thread_type_, other->thread_type_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CreateComponent::GetMetadata() const {

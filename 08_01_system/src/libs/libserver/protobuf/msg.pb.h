@@ -548,11 +548,12 @@ class CreateComponent :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kParamsFieldNumber = 3,
-    kClassNameFieldNumber = 1,
-    kParentSnFieldNumber = 2,
+    kParamsFieldNumber = 4,
+    kClassNameFieldNumber = 2,
+    kParentSnFieldNumber = 3,
+    kThreadTypeFieldNumber = 1,
   };
-  // repeated .Proto.CreateComponentParam params = 3;
+  // repeated .Proto.CreateComponentParam params = 4;
   int params_size() const;
   void clear_params();
   ::Proto::CreateComponentParam* mutable_params(int index);
@@ -563,7 +564,7 @@ class CreateComponent :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Proto::CreateComponentParam >&
       params() const;
 
-  // string class_name = 1;
+  // string class_name = 2;
   void clear_class_name();
   const std::string& class_name() const;
   void set_class_name(const std::string& value);
@@ -574,10 +575,15 @@ class CreateComponent :
   std::string* release_class_name();
   void set_allocated_class_name(std::string* class_name);
 
-  // uint64 parent_sn = 2;
+  // uint64 parent_sn = 3;
   void clear_parent_sn();
   ::PROTOBUF_NAMESPACE_ID::uint64 parent_sn() const;
   void set_parent_sn(::PROTOBUF_NAMESPACE_ID::uint64 value);
+
+  // int32 thread_type = 1;
+  void clear_thread_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 thread_type() const;
+  void set_thread_type(::PROTOBUF_NAMESPACE_ID::int32 value);
 
   // @@protoc_insertion_point(class_scope:Proto.CreateComponent)
  private:
@@ -587,6 +593,7 @@ class CreateComponent :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Proto::CreateComponentParam > params_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr class_name_;
   ::PROTOBUF_NAMESPACE_ID::uint64 parent_sn_;
+  ::PROTOBUF_NAMESPACE_ID::int32 thread_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_msg_2eproto;
 };
@@ -3374,7 +3381,21 @@ inline void CreateComponentParam::set_allocated_string_param(std::string* string
 
 // CreateComponent
 
-// string class_name = 1;
+// int32 thread_type = 1;
+inline void CreateComponent::clear_thread_type() {
+  thread_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CreateComponent::thread_type() const {
+  // @@protoc_insertion_point(field_get:Proto.CreateComponent.thread_type)
+  return thread_type_;
+}
+inline void CreateComponent::set_thread_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  thread_type_ = value;
+  // @@protoc_insertion_point(field_set:Proto.CreateComponent.thread_type)
+}
+
+// string class_name = 2;
 inline void CreateComponent::clear_class_name() {
   class_name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -3425,7 +3446,7 @@ inline void CreateComponent::set_allocated_class_name(std::string* class_name) {
   // @@protoc_insertion_point(field_set_allocated:Proto.CreateComponent.class_name)
 }
 
-// uint64 parent_sn = 2;
+// uint64 parent_sn = 3;
 inline void CreateComponent::clear_parent_sn() {
   parent_sn_ = PROTOBUF_ULONGLONG(0);
 }
@@ -3439,7 +3460,7 @@ inline void CreateComponent::set_parent_sn(::PROTOBUF_NAMESPACE_ID::uint64 value
   // @@protoc_insertion_point(field_set:Proto.CreateComponent.parent_sn)
 }
 
-// repeated .Proto.CreateComponentParam params = 3;
+// repeated .Proto.CreateComponentParam params = 4;
 inline int CreateComponent::params_size() const {
   return params_.size();
 }

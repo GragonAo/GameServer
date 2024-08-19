@@ -1,6 +1,7 @@
 #pragma once
 
 #include "disposable.h"
+#include "thread_type.h"
 #include "system.h"
 #include <list>
 #include <random>
@@ -11,7 +12,7 @@ class MessageSystem;
 class SystemManager : virtual public IDisposable {
 public:
   SystemManager();
-  void InitComponent();
+  void InitComponent(ThreadType threadType);
 
   virtual void Update();
   void Dispose() override;
