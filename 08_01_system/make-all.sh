@@ -10,6 +10,9 @@ fi
 
 build(){
     for i in `ls -d */`;do
+        if [ ! -d "$i/Build" ];then
+            mkdir $i/Build
+        fi
         cd $i/Build
         if ${clean};then
             rm -rf *

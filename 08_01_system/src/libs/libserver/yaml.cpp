@@ -1,5 +1,6 @@
 #include "yaml.h"
-#include "app_type_mgr.h"
+#include "app_type.h"
+#include "component_help.h"
 #include "log4_help.h"
 #include "res_path.h"
 #include <cstddef>
@@ -11,8 +12,8 @@
 std::string DBMgrConfig::DBTypeMysql{"mysql"};
 std::string DBMgrConfig::DBTypeRedis{"redis"};
 
-Yaml::Yaml() {
-  auto pResPath = ResPath::GetInstance();
+void Yaml::Awake() {
+  auto pResPath = ComponentHelp::GetResPath();
   if (pResPath == nullptr) {
     std::cout << "yaml awake failed. can't get ResPath" << std::endl;
     return;
@@ -29,18 +30,19 @@ Yaml::Yaml() {
   std::cout << "Yaml awake is Ok " << std::endl;
 }
 
+void Yaml::BackToPool() {}
+
 YamlConfig *Yaml::GetConfig(APP_TYPE appType) {
   if (_configs.find(appType) != _configs.end()) {
     return _configs[appType];
   }
-  std::string appTypeName = AppTypeMgr::GetInstance()->GetAppName(appType);
-  std::cout << "load config failed. appType: " << appTypeName.c_str()
+  std::cout << "load config failed. appType: " << GetAppName(appType)
             << std::endl;
   return nullptr;
 }
 
 void Yaml::LoadConfig(APP_TYPE appType, YAML::Node &config) {
-  std::string appTypeName = AppTypeMgr::GetInstance()->GetAppName(appType);
+  std::string appTypeName = GetAppName(appType);
   YAML::Node node = config[appTypeName];
   if (node.IsNull()) {
     std::cout << "load config failed. " << appTypeName.c_str() << std::endl;

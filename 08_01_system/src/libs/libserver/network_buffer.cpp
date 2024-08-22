@@ -1,7 +1,7 @@
 #include "packet.h"
 #include "network_buffer.h"
 #include "connect_obj.h"
-
+#include "message_system_help.h"
 #include <cstdlib>
 #include <cstring>
 
@@ -109,9 +109,6 @@ RecvNetworkBuffer::RecvNetworkBuffer(const unsigned int size, ConnectObj* pConne
 
 }
 
-void RecvNetworkBuffer::Dispose() {
-
-}
 
 int RecvNetworkBuffer::GetBuffer(char*& pBuffer) const
 {
@@ -155,7 +152,7 @@ Packet* RecvNetworkBuffer::GetPacket()
     }
 
     const auto socket = _pConnectObj->GetSocket();
-    Packet* pPacket = new Packet((Proto::MsgId)head.MsgId, socket);
+    Packet* pPacket = MessageSystemHelp::CreatePacket((Proto::MsgId)head.MsgId, socket);
     const auto dataLength = totalSize - sizeof(PacketHead) - sizeof(TotalSizeType);
     while (pPacket->GetTotalSize() < dataLength)
     {
@@ -189,11 +186,6 @@ void RecvNetworkBuffer::MemcpyFromBuffer(char* pVoid, const unsigned int size)
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 SendNetworkBuffer::SendNetworkBuffer(const unsigned int size, ConnectObj* pConnectObj) : NetworkBuffer(size, pConnectObj)
-{
-
-}
-
-void SendNetworkBuffer::Dispose()
 {
 
 }

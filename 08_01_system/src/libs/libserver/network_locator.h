@@ -8,9 +8,9 @@
 #include <tuple>
 
 class NetworkLocator : public Component<NetworkLocator>,
-                       public IAwakeFromPoolSystem<> {
+                       public IAwakeSystem<> {
 public:
-  void AwakeFromPool() override{};
+  void Awake() override{};
   void BackToPool() override;
   void AddConnectorLocator(INetwork *pNetwork, APP_TYPE aooType, int appId);
   void AddListenLocator(INetwork *pNetwork, NetworkType networkType);

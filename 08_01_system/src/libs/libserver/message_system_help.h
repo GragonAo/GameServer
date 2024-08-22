@@ -1,7 +1,7 @@
 #pragma once
 
 #include "common.h"
-#include "app_type_mgr.h"
+#include "app_type.h"
 
 class Packet;
 

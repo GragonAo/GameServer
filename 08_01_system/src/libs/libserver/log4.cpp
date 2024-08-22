@@ -1,5 +1,4 @@
 #include "log4.h"
-#include "app_type_mgr.h"
 #include "protobuf/proto_id.pb.h"
 #include "log4_help.h"
 #include "res_path.h"
@@ -12,15 +11,14 @@
 #include <log4cplus/spi/appenderattachable.h>
 #include <log4cplus/spi/loggingevent.h>
 #include <log4cplus/tstring.h>
+#include "component_help.h"
 
-Log4::Log4(int appType) {
+void Log4::Awake(APP_TYPE appType) {
   _appType = static_cast<APP_TYPE>(appType);
 
-  auto pResPath = ResPath::GetInstance();
-  auto pAppTypeMgr = AppTypeMgr::GetInstance();
-
+  auto pResPath = ComponentHelp::GetResPath();
   const std::string filename = strutil::format(
-      "/log4/log4_%s.properties", pAppTypeMgr->GetAppName(_appType).c_str());
+      "/log4/log4_%s.properties", GetAppName(_appType));
   std::string filePath = pResPath->FindResPath(filename);
   if (filePath.empty()) {
     std::cout << "!!!! log4 properties not fourd! filename." << std::endl;
@@ -37,7 +35,7 @@ Log4::Log4(int appType) {
   LOG_DEBUG("Log4::Initialize is Ok.");
 }
 
-Log4::~Log4() { log4cplus::deinitialize(); }
+void Log4::BackToPool(){ log4cplus::deinitialize(); }
 
 std::string Log4::GetMsgIdName(Proto::MsgId msgId) {
   const google::protobuf::EnumDescriptor *descriptor =

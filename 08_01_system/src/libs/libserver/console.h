@@ -26,9 +26,9 @@ private:
   std::map<std::string, HandleConsole> _handles;
 };
 
-class Console : public Entity<Console>,public IAwakeFromPoolSystem<>{
+class Console : public Entity<Console>,public IAwakeSystem<>{
 public:
-  void AwakeFromPool() override;
+  void Awake() override;
   void BackToPool() override;
   void Update();
 

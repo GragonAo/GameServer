@@ -1,5 +1,5 @@
 #include "robot.h"
-#include "libserver/app_type_mgr.h"
+#include "libserver/app_type.h"
 #include "libserver/common.h"
 #include "libserver/log4_help.h"
 #include "libserver/message_callback.h"
@@ -19,8 +19,9 @@
 #include <random>
 #include <sstream>
 #include <thread>
+#include "libserver/component_help.h"
 
-void Robot::AwakeFromPool(std::string account) {
+void Robot::Awake(std::string account) {
   _account = account;
   _isBroadcast = false;
   InitStateTemplateMgr(RobotStateType::RobotState_Login_Connecting);
@@ -44,7 +45,7 @@ void Robot::AwakeFromPool(std::string account) {
   auto pUpdateComponent = AddComponent<UpdateComponent>();
   pUpdateComponent->UpdateFunction = BindFunP0(this, &Robot::Update);
 
-  auto pYaml = Yaml::GetInstance();
+  auto pYaml = ComponentHelp::GetYaml();
   const auto pLoginConfig =
       dynamic_cast<LoginConfig *>(pYaml->GetConfig(APP_LOGIN));
 

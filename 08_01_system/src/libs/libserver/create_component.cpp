@@ -52,7 +52,7 @@ struct DynamicCall<0>
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-void CreateComponentC::AwakeFromPool()
+void CreateComponentC::Awake()
 {
     auto pMsgCallBack = new MessageCallBackFunction();
     AddComponent<MessageComponent>(pMsgCallBack);

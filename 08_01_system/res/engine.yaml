@@ -1,5 +1,5 @@
 allinone:
-  thread_logic: 2
+  thread_logic: 1
   thread_mysql: 2
   ip: 127.0.0.1
   port: 2233
@@ -21,8 +21,9 @@ dbmgr:
       port: 6379
 
     - type: mysql
-      ip: 47.122.48.37
-      port: 33066
+      # ip: 47.122.48.37
+      ip: 127.0.0.1
+      port: 33060
       user: root
       password: aoliao
       database_name: e_gamedata

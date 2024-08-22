@@ -54,6 +54,11 @@ void EntitySystem::Dispose() {
     delete iter.second;     // 删除该系统对象，释放内存
   }
 
+  auto pCollections = _systemManager->GetPoolCollector();
+  pCollections->Update();
+  pCollections->Dispose();
+  pCollections->Show();
+  
   _objSystems.clear(); // 清空系统容器，确保所有指针都无效化
 }
 

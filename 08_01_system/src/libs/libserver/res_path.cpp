@@ -6,7 +6,7 @@
 #include "util_string.h"  // 包含字符串处理的自定义库
 
 // 构造函数：初始化资源路径
-ResPath::ResPath() {
+void ResPath::Awake() {
     // 尝试从环境变量 "GENGINE_RES_PATH" 获取路径
     char* envValue = getenv("GENGINE_RES_PATH");
     _resPath = envValue == nullptr? "" : envValue;
@@ -34,6 +34,10 @@ ResPath::ResPath() {
 
     _resPath += "/res"; // 在路径末尾加上 "/res" 子目录
     std::cout << "GENGINE_RES_PATH=" << _resPath << std::endl; // 打印最终的资源路径
+}
+
+void ResPath::BackToPool()
+{
 }
 
 // 查找资源路径：将给定的资源文件名拼接到资源路径上

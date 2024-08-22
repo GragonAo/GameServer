@@ -72,8 +72,10 @@ SOCKET Network::CreateSocket() {
 
 // 创建连接对象
 void Network::CreateConnectObj(SOCKET socket) {
-  ConnectObj *pConnectObj =
-      DynamicObjectPool<ConnectObj>::GetInstance()->MallocObject(GetSystemManager(),socket);
+  auto pCollector = GetSystemManager()->GetPoolCollector();
+  auto pPool =
+      (DynamicObjectPool<ConnectObj> *)pCollector->GetPool<ConnectObj>();
+  ConnectObj *pConnectObj = pPool->MallocObject(GetSystemManager(), socket);
   pConnectObj->SetParent(this);
   pConnectObj->SetSystemManager(GetSystemManager());
   if (_connects.find(socket) != _connects.end()) {

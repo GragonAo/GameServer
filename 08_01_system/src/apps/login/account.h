@@ -6,9 +6,9 @@
 
 #include "login_obj_mgr.h"
 
-class Account : public Entity<Account>, public IAwakeFromPoolSystem<> {
+class Account : public Entity<Account>, public IAwakeSystem<> {
 public:
-  void AwakeFromPool() override;
+  void Awake() override;
   virtual void BackToPool() override;
 
 private:

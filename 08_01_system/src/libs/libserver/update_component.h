@@ -6,7 +6,7 @@
 class UpdateComponent : public Component<UpdateComponent>,
                         public IAwakeFromPoolSystem<> {
 public:
-  void AwakeFromPool() override;
+  void Awake() override;
   void BackToPool() override;
 
   std::function<void()> UpdateFunction{nullptr};

@@ -2,6 +2,7 @@
 
 #include "base_buffer.h"
 #include "common.h"
+#include "entity.h"
 
 #pragma pack(push)
 #pragma pack(4)
@@ -13,10 +14,11 @@ struct PacketHead {
 
 #define DEAULT_PACKET_BUFFER_SIZE 1024 * 10
 
-class Packet : public Buffer {
+class Packet : public Entity<Packet>,  public Buffer,public IAwakeFromPoolSystem<Proto::MsgId, SOCKET> {
 public:
-  Packet(const Proto::MsgId msgId, SOCKET socket);
+  Packet();
   ~Packet();
+  void Awake(const Proto::MsgId msgId, SOCKET socket) override;
   template <class ProtoClass> ProtoClass ParseToProto() {
     ProtoClass proto;
     proto.ParsePartialFromArray(GetBuffer(), GetDataLength());
@@ -30,8 +32,9 @@ public:
     protoClass.SerializePartialToArray(GetBuffer(), total);
     FillData(total);
   }
-  void Dispose() override;
+  void BackToPool() override;
   void CleanBuffer();
+  
   char *GetBuffer() const;
   unsigned short GetDataLength() const;
   int GetMsgId() const;

@@ -4,6 +4,7 @@
 #include "network_locator.h"
 #include "packet.h"
 #include "thread_mgr.h"
+#include "object_pool_packet.h"
 
 void MessageSystemHelp::DispatchPacket(Packet *pPacket) {
   ThreadMgr::GetInstance()->DispatchPacket(pPacket);
@@ -57,7 +58,7 @@ void MessageSystemHelp::SendPacket(Packet *packet, APP_TYPE appType,
       return;
     } else {
       LOG_ERROR("can't find network. appType:"
-                << AppTypeMgr::GetInstance()->GetAppName(appType).c_str()
+                << GetAppName(appType)
                 << " appId:" << appId);
     }
   }
@@ -84,6 +85,5 @@ void MessageSystemHelp::SendPacket(Packet *pPacket) {
 }
 
 Packet *MessageSystemHelp::CreatePacket(Proto::MsgId msgId, SOCKET socket) {
-  auto pPacket = new Packet(msgId, socket);
-  return pPacket;
+  return DynamicPacketPool::GetInstance()->MallocPacket(msgId, socket);
 }

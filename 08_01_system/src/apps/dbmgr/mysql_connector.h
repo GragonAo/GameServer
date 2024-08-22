@@ -39,9 +39,9 @@ struct DatabaseStmt {
 
 class MysqlConnector : public MysqlBase,
                        public Entity<MysqlConnector>,
-                       public IAwakeFromPoolSystem<> {
+                       public IAwakeSystem<> {
 public:
-  void AwakeFromPool() override;
+  void Awake() override;
   void BackToPool() override;
   void InitMessageComponent();
 

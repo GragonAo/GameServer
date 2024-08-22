@@ -1,8 +1,8 @@
 #pragma once
 
-#include "app_type_mgr.h"
+#include "app_type.h"
 #include "common.h"
-#include "singleton.h"
+#include "system.h"
 #include <vector>
 #include <yaml-cpp/node/node.h>
 #include <yaml-cpp/yaml.h>
@@ -68,9 +68,11 @@ struct DBMgrConfig : public CommonConfig {
 
 struct RobotConfig : public AppConfig {};
 
-struct Yaml : public Singleton<Yaml> {
+struct Yaml : public Component<Yaml>, public IAwakeSystem<> {
 public:
-  Yaml();
+  void Awake() override;
+  void BackToPool() override;
+
   YamlConfig *GetConfig(APP_TYPE appType);
   CommonConfig *GetIPEndPoint(APP_TYPE appType, int appId = 0);
 

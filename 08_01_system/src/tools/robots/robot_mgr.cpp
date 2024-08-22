@@ -9,11 +9,12 @@
 #include "libserver/protobuf/proto_id.pb.h"
 #include "libserver/update_component.h"
 #include "libserver/yaml.h"
+#include "libserver/component_help.h"
 #include "robot_state_type.h"
 #include <algorithm>
 #include <sstream>
 
-void RobotMgr::AwakeFromPool() {
+void RobotMgr::Awake() {
 
   auto pUpdateComponent = AddComponent<UpdateComponent>();
   pUpdateComponent->UpdateFunction = BindFunP0(this, &RobotMgr::Update);
@@ -23,7 +24,7 @@ void RobotMgr::AwakeFromPool() {
   pMsgCallBack->RegisterFunction(Proto::MsgId::MI_RobotSyncState,
                                  BindFunP1(this, &RobotMgr::HandleRobotState));
 
-  auto pYaml = Yaml::GetInstance();
+  auto pYaml = ComponentHelp::GetYaml();
   const auto pLoginConfig =
       dynamic_cast<LoginConfig *>(pYaml->GetConfig(APP_LOGIN));
   this->Connect(pLoginConfig->Ip, pLoginConfig->Port);
@@ -70,7 +71,7 @@ void RobotMgr::HandleRobotState(Packet *pPacket) {
     std::cout << "test begin" << std::endl;
     _nextShowInfoTime = 0;
     Packet *pPacketBegin =
-        new Packet(Proto::MsgId::MI_RobotTestBegin, GetSocket());
+        MessageSystemHelp::CreatePacket(Proto::MsgId::MI_RobotTestBegin, GetSocket());
     SendPacket(pPacketBegin);
   }
   RobotStateType iType = RobotState_Space_EnterWorld;
@@ -100,7 +101,7 @@ void RobotMgr::NofityServer(RobotStateType iType) {
   if (iter == _robots.end()) {
     std::cout << "test over " << GetRobotStatetypeShortName(iType) << std::endl;
     ;
-    Packet *pPacketEnd = new Packet(Proto::MsgId::MI_RobotTestEnd, GetSocket());
+    Packet *pPacketEnd = MessageSystemHelp::CreatePacket(Proto::MsgId::MI_RobotTestEnd, GetSocket());
     Proto::RobotTestEnd protoEnd;
     protoEnd.set_state(iType);
     pPacketEnd->SerializeToBuffer(protoEnd);

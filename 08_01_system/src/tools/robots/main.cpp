@@ -1,5 +1,5 @@
 #include "global_robots.h"
-#include "libserver/app_type_mgr.h"
+#include "libserver/app_type.h"
 #include "libserver/server_app.h"
 #include "libserver/thread_mgr.h"
 #include "robot_console_login.h"

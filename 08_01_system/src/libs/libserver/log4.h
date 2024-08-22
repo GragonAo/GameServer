@@ -1,13 +1,15 @@
 #pragma once
-#include "app_type_mgr.h"
+#include "app_type.h"
+#include "component.h"
+#include "system.h"
 #include "protobuf/proto_id.pb.h"
-#include "singleton.h"
 #include <log4cplus/logger.h>
 
-class Log4 : public Singleton<Log4> {
+class Log4 : public Component<Log4>,public IAwakeSystem<APP_TYPE> {
 public:
-  Log4(int appType);
-  ~Log4();
+  void Awake(APP_TYPE appType);
+  void BackToPool();
+
   static std::string GetMsgIdName(Proto::MsgId msgId);
 
 protected:

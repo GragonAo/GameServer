@@ -7,7 +7,7 @@ MessageComponent::~MessageComponent() {
   }
 }
 
-void MessageComponent::AwakeFromPool(IMessageCallBackFunction *pCallback) {
+void MessageComponent::Awake(IMessageCallBackFunction *pCallback) {
   _pCallBackFuns = pCallback;
 }
 

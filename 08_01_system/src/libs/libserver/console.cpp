@@ -1,5 +1,4 @@
 #include "console.h"
-#include "console_cmd_pool.h"
 #include "global.h"
 #include "update_component.h"
 #include "log4_help.h"
@@ -46,7 +45,7 @@ void ConsoleCmd::OnRegisterHandler(std::string key, HandleConsole handler) {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-void Console::AwakeFromPool() {
+void Console::Awake() {
   _thread = std::thread([this]() {
     char _buffer[ConsoleMaxBuffer];
     do {

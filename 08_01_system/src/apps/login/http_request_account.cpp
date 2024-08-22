@@ -1,12 +1,13 @@
 #include "http_request_account.h"
 #include "http_request.h"
-#include "libserver/app_type_mgr.h"
+#include "libserver/app_type.h"
 #include "libserver/message_system_help.h"
 #include "libserver/protobuf/msg.pb.h"
 #include "libserver/update_component.h"
 #include "libserver/yaml.h"
+#include "libserver/component_help.h"
 
-void HttpRequestAccount::AwakeFromPool(std::string account, std::string password)
+void HttpRequestAccount::Awake(std::string account, std::string password)
 {
 
     // update
@@ -18,7 +19,7 @@ void HttpRequestAccount::AwakeFromPool(std::string account, std::string password
     _curlRs = CRS_None;
     _method = HttpResquestMethod::HRM_Post;
 
-    auto pYaml = Yaml::GetInstance();
+    auto pYaml = ComponentHelp::GetYaml();
     const auto pLoginConfig = dynamic_cast<LoginConfig*>(pYaml->GetConfig(APP_LOGIN));
 
     // _url = "http://192.168.1.134:3001/account/login";

@@ -3,6 +3,7 @@
 #include "libserver/log4_help.h"
 #include "libserver/util_string.h"
 #include "libserver/yaml.h"
+#include "libserver/component_help.h"
 #include <log4cplus/tstring.h>
 #include <mysql/mysql.h>
 #include <mysql/mysqld_error.h>
@@ -21,7 +22,7 @@ void MysqlTableUpdate::Check() {
   }
 
   // 获取数据库配置
-  auto pYaml = Yaml::GetInstance();
+  auto pYaml = ComponentHelp::GetYaml();
   auto pDbMgrConfig = dynamic_cast<DBMgrConfig *>(pYaml->GetConfig(APP_DB_MGR));
   _pDbCfg = pDbMgrConfig->GetDBConfig(DBMgrConfig::DBTypeMysql);
   

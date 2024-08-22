@@ -4,6 +4,15 @@ package Proto;
 
 ////////////////////////////////////////////////////////////////
 
+message CmdThread{
+    enum CmdType{
+        Entity = 0;
+        Pool = 1;
+    }
+
+    CmdType cmd_type = 1;
+}
+
 message CreateComponentParam{
     enum ParamType{
         Int = 0;

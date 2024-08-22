@@ -24,7 +24,7 @@ ConnectObj::~ConnectObj() {
     delete _sendBuffer;
 }
 
-void ConnectObj::AwakeFromPool(SOCKET socket) { _socket = socket; }
+void ConnectObj::Awake(SOCKET socket) { _socket = socket; }
 
 void ConnectObj::BackToPool() {
   // std::cout << "close socket:" << _socket << std::endl;
@@ -135,6 +135,6 @@ bool ConnectObj::Send() const {
 // 关闭连接
 void ConnectObj::Close() {
   const auto pPacketDis =
-      new Packet(Proto::MsgId::MI_NetworkRequestDisconnect, GetSocket());
+      MessageSystemHelp::CreatePacket(Proto::MsgId::MI_NetworkRequestDisconnect, GetSocket());
   GetSystemManager()->GetMessageSystem()->AddPacketToList(pPacketDis);
 }

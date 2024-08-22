@@ -20,6 +20,10 @@ extern PROTOBUF_INTERNAL_EXPORT_db_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SC
 extern PROTOBUF_INTERNAL_EXPORT_msg_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PlayerLittle_msg_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_msg_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RobotState_msg_2eproto;
 namespace Proto {
+class CmdThreadDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CmdThread> _instance;
+} _CmdThread_default_instance_;
 class CreateComponentParamDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CreateComponentParam> _instance;
@@ -146,6 +150,20 @@ static void InitDefaultsscc_info_AccountCheckToHttpRs_msg_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AccountCheckToHttpRs_msg_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_AccountCheckToHttpRs_msg_2eproto}, {}};
+
+static void InitDefaultsscc_info_CmdThread_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_CmdThread_default_instance_;
+    new (ptr) ::Proto::CmdThread();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::CmdThread::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CmdThread_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_CmdThread_msg_2eproto}, {}};
 
 static void InitDefaultsscc_info_CreateComponent_msg_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -405,11 +423,17 @@ static void InitDefaultsscc_info_SelectPlayerRs_msg_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SelectPlayerRs_msg_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_SelectPlayerRs_msg_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_msg_2eproto[21];
-static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_msg_2eproto[4];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_msg_2eproto[22];
+static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_msg_2eproto[5];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_msg_2eproto = nullptr;
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_msg_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::CmdThread, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::CmdThread, cmd_type_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Proto::CreateComponentParam, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -555,30 +579,32 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_msg_2eproto::offsets[] PROTOBU
   PROTOBUF_FIELD_OFFSET(::Proto::SavePlayer, player_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::Proto::CreateComponentParam)},
-  { 8, -1, sizeof(::Proto::CreateComponent)},
-  { 17, -1, sizeof(::Proto::RemoveComponent)},
-  { 23, -1, sizeof(::Proto::AccountCheck)},
-  { 30, -1, sizeof(::Proto::AccountCheckRs)},
-  { 36, -1, sizeof(::Proto::AccountCheckToHttpRs)},
-  { 43, -1, sizeof(::Proto::RobotState)},
-  { 50, -1, sizeof(::Proto::RobotSyncState)},
-  { 56, -1, sizeof(::Proto::RobotTestEnd)},
-  { 62, -1, sizeof(::Proto::PlayerLittle)},
-  { 71, -1, sizeof(::Proto::PlayerList)},
-  { 78, -1, sizeof(::Proto::QueryPlayerList)},
-  { 84, -1, sizeof(::Proto::QueryPlayer)},
-  { 90, -1, sizeof(::Proto::QueryPlayerRs)},
-  { 97, -1, sizeof(::Proto::CreatePlayer)},
-  { 104, -1, sizeof(::Proto::CreatePlayerRs)},
-  { 110, -1, sizeof(::Proto::CreatePlayerToDB)},
-  { 117, -1, sizeof(::Proto::CreatePlayerToDBRs)},
-  { 124, -1, sizeof(::Proto::SelectPlayer)},
-  { 130, -1, sizeof(::Proto::SelectPlayerRs)},
-  { 136, -1, sizeof(::Proto::SavePlayer)},
+  { 0, -1, sizeof(::Proto::CmdThread)},
+  { 6, -1, sizeof(::Proto::CreateComponentParam)},
+  { 14, -1, sizeof(::Proto::CreateComponent)},
+  { 23, -1, sizeof(::Proto::RemoveComponent)},
+  { 29, -1, sizeof(::Proto::AccountCheck)},
+  { 36, -1, sizeof(::Proto::AccountCheckRs)},
+  { 42, -1, sizeof(::Proto::AccountCheckToHttpRs)},
+  { 49, -1, sizeof(::Proto::RobotState)},
+  { 56, -1, sizeof(::Proto::RobotSyncState)},
+  { 62, -1, sizeof(::Proto::RobotTestEnd)},
+  { 68, -1, sizeof(::Proto::PlayerLittle)},
+  { 77, -1, sizeof(::Proto::PlayerList)},
+  { 84, -1, sizeof(::Proto::QueryPlayerList)},
+  { 90, -1, sizeof(::Proto::QueryPlayer)},
+  { 96, -1, sizeof(::Proto::QueryPlayerRs)},
+  { 103, -1, sizeof(::Proto::CreatePlayer)},
+  { 110, -1, sizeof(::Proto::CreatePlayerRs)},
+  { 116, -1, sizeof(::Proto::CreatePlayerToDB)},
+  { 123, -1, sizeof(::Proto::CreatePlayerToDBRs)},
+  { 130, -1, sizeof(::Proto::SelectPlayer)},
+  { 136, -1, sizeof(::Proto::SelectPlayerRs)},
+  { 142, -1, sizeof(::Proto::SavePlayer)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_CmdThread_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_CreateComponentParam_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_CreateComponent_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_RemoveComponent_default_instance_),
@@ -603,58 +629,61 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 };
 
 const char descriptor_table_protodef_msg_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\tmsg.proto\022\005Proto\032\010db.proto\"\226\001\n\024CreateC"
-  "omponentParam\0223\n\004type\030\001 \001(\0162%.Proto.Crea"
-  "teComponentParam.ParamType\022\021\n\tint_param\030"
-  "\002 \001(\005\022\024\n\014string_param\030\003 \001(\t\" \n\tParamType"
-  "\022\007\n\003Int\020\000\022\n\n\006String\020\001\"z\n\017CreateComponent"
-  "\022\023\n\013thread_type\030\001 \001(\005\022\022\n\nclass_name\030\002 \001("
-  "\t\022\021\n\tparent_sn\030\003 \001(\004\022+\n\006params\030\004 \003(\0132\033.P"
-  "roto.CreateComponentParam\"\035\n\017RemoveCompo"
-  "nent\022\n\n\002sn\030\001 \001(\004\"1\n\014AccountCheck\022\017\n\007acco"
-  "unt\030\001 \001(\t\022\020\n\010password\030\002 \001(\t\"D\n\016AccountCh"
-  "eckRs\0222\n\013return_code\030\001 \001(\0162\035.Proto.Accou"
-  "ntCheckReturnCode\"[\n\024AccountCheckToHttpR"
-  "s\0222\n\013return_code\030\001 \001(\0162\035.Proto.AccountCh"
-  "eckReturnCode\022\017\n\007account\030\002 \001(\t\",\n\nRobotS"
-  "tate\022\017\n\007account\030\001 \001(\t\022\r\n\005state\030\002 \001(\005\"3\n\016"
-  "RobotSyncState\022!\n\006states\030\001 \003(\0132\021.Proto.R"
-  "obotState\"\035\n\014RobotTestEnd\022\r\n\005state\030\001 \001(\005"
-  "\"V\n\014PlayerLittle\022\n\n\002sn\030\001 \001(\004\022\014\n\004name\030\002 \001"
-  "(\t\022\035\n\006gender\030\003 \001(\0162\r.Proto.Gender\022\r\n\005lev"
-  "el\030\004 \001(\005\"B\n\nPlayerList\022\017\n\007account\030\001 \001(\t\022"
-  "#\n\006player\030\002 \003(\0132\023.Proto.PlayerLittle\"\"\n\017"
-  "QueryPlayerList\022\017\n\007account\030\001 \001(\t\" \n\013Quer"
-  "yPlayer\022\021\n\tplayer_sn\030\001 \001(\004\"\?\n\rQueryPlaye"
-  "rRs\022\017\n\007account\030\001 \001(\t\022\035\n\006Player\030\002 \001(\0132\r.P"
-  "roto.Player\";\n\014CreatePlayer\022\014\n\004name\030\001 \001("
-  "\t\022\035\n\006gender\030\002 \001(\0162\r.Proto.Gender\"D\n\016Crea"
-  "tePlayerRs\0222\n\013return_code\030\002 \001(\0162\035.Proto."
-  "CreatePlayerReturnCode\"B\n\020CreatePlayerTo"
-  "DB\022\017\n\007account\030\001 \001(\t\022\035\n\006player\030\002 \001(\0132\r.Pr"
-  "oto.Player\"Y\n\022CreatePlayerToDBRs\022\017\n\007acco"
-  "unt\030\001 \001(\t\0222\n\013return_code\030\002 \001(\0162\035.Proto.C"
-  "reatePlayerReturnCode\"!\n\014SelectPlayer\022\021\n"
-  "\tplayer_sn\030\001 \001(\004\"\215\001\n\016SelectPlayerRs\022A\n\013r"
-  "eturn_code\030\001 \001(\0162,.Proto.SelectPlayerRs."
-  "SelectPlayerReturnCode\"8\n\026SelectPlayerRe"
-  "turnCode\022\013\n\007SPRC_OK\020\000\022\021\n\rSPRC_NotFound\020\001"
-  "\">\n\nSavePlayer\022\021\n\tplayer_sn\030\001 \001(\004\022\035\n\006pla"
-  "yer\030\002 \001(\0132\r.Proto.Player*\232\001\n\026AccountChec"
-  "kReturnCode\022\n\n\006ARC_OK\020\000\022\017\n\013ARC_UNKONWN\020\001"
-  "\022\031\n\025ARC_NOT_FOUND_ACCOUNT\020\002\022\026\n\022ARC_PASSW"
-  "ORD_WRONG\020\003\022\017\n\013ARC_LOGGING\020\004\022\017\n\013ARC_TIME"
-  "OUT\020\005\022\016\n\nARC_ONLINE\020\006*L\n\026CreatePlayerRet"
-  "urnCode\022\021\n\rCPR_Create_OK\020\000\022\017\n\013CPR_Unkonw"
-  "n\020\001\022\016\n\nCPR_Rename\020\002b\006proto3"
+  "\n\tmsg.proto\022\005Proto\032\010db.proto\"X\n\tCmdThrea"
+  "d\022*\n\010cmd_type\030\001 \001(\0162\030.Proto.CmdThread.Cm"
+  "dType\"\037\n\007CmdType\022\n\n\006Entity\020\000\022\010\n\004Pool\020\001\"\226"
+  "\001\n\024CreateComponentParam\0223\n\004type\030\001 \001(\0162%."
+  "Proto.CreateComponentParam.ParamType\022\021\n\t"
+  "int_param\030\002 \001(\005\022\024\n\014string_param\030\003 \001(\t\" \n"
+  "\tParamType\022\007\n\003Int\020\000\022\n\n\006String\020\001\"z\n\017Creat"
+  "eComponent\022\023\n\013thread_type\030\001 \001(\005\022\022\n\nclass"
+  "_name\030\002 \001(\t\022\021\n\tparent_sn\030\003 \001(\004\022+\n\006params"
+  "\030\004 \003(\0132\033.Proto.CreateComponentParam\"\035\n\017R"
+  "emoveComponent\022\n\n\002sn\030\001 \001(\004\"1\n\014AccountChe"
+  "ck\022\017\n\007account\030\001 \001(\t\022\020\n\010password\030\002 \001(\t\"D\n"
+  "\016AccountCheckRs\0222\n\013return_code\030\001 \001(\0162\035.P"
+  "roto.AccountCheckReturnCode\"[\n\024AccountCh"
+  "eckToHttpRs\0222\n\013return_code\030\001 \001(\0162\035.Proto"
+  ".AccountCheckReturnCode\022\017\n\007account\030\002 \001(\t"
+  "\",\n\nRobotState\022\017\n\007account\030\001 \001(\t\022\r\n\005state"
+  "\030\002 \001(\005\"3\n\016RobotSyncState\022!\n\006states\030\001 \003(\013"
+  "2\021.Proto.RobotState\"\035\n\014RobotTestEnd\022\r\n\005s"
+  "tate\030\001 \001(\005\"V\n\014PlayerLittle\022\n\n\002sn\030\001 \001(\004\022\014"
+  "\n\004name\030\002 \001(\t\022\035\n\006gender\030\003 \001(\0162\r.Proto.Gen"
+  "der\022\r\n\005level\030\004 \001(\005\"B\n\nPlayerList\022\017\n\007acco"
+  "unt\030\001 \001(\t\022#\n\006player\030\002 \003(\0132\023.Proto.Player"
+  "Little\"\"\n\017QueryPlayerList\022\017\n\007account\030\001 \001"
+  "(\t\" \n\013QueryPlayer\022\021\n\tplayer_sn\030\001 \001(\004\"\?\n\r"
+  "QueryPlayerRs\022\017\n\007account\030\001 \001(\t\022\035\n\006Player"
+  "\030\002 \001(\0132\r.Proto.Player\";\n\014CreatePlayer\022\014\n"
+  "\004name\030\001 \001(\t\022\035\n\006gender\030\002 \001(\0162\r.Proto.Gend"
+  "er\"D\n\016CreatePlayerRs\0222\n\013return_code\030\002 \001("
+  "\0162\035.Proto.CreatePlayerReturnCode\"B\n\020Crea"
+  "tePlayerToDB\022\017\n\007account\030\001 \001(\t\022\035\n\006player\030"
+  "\002 \001(\0132\r.Proto.Player\"Y\n\022CreatePlayerToDB"
+  "Rs\022\017\n\007account\030\001 \001(\t\0222\n\013return_code\030\002 \001(\016"
+  "2\035.Proto.CreatePlayerReturnCode\"!\n\014Selec"
+  "tPlayer\022\021\n\tplayer_sn\030\001 \001(\004\"\215\001\n\016SelectPla"
+  "yerRs\022A\n\013return_code\030\001 \001(\0162,.Proto.Selec"
+  "tPlayerRs.SelectPlayerReturnCode\"8\n\026Sele"
+  "ctPlayerReturnCode\022\013\n\007SPRC_OK\020\000\022\021\n\rSPRC_"
+  "NotFound\020\001\">\n\nSavePlayer\022\021\n\tplayer_sn\030\001 "
+  "\001(\004\022\035\n\006player\030\002 \001(\0132\r.Proto.Player*\232\001\n\026A"
+  "ccountCheckReturnCode\022\n\n\006ARC_OK\020\000\022\017\n\013ARC"
+  "_UNKONWN\020\001\022\031\n\025ARC_NOT_FOUND_ACCOUNT\020\002\022\026\n"
+  "\022ARC_PASSWORD_WRONG\020\003\022\017\n\013ARC_LOGGING\020\004\022\017"
+  "\n\013ARC_TIMEOUT\020\005\022\016\n\nARC_ONLINE\020\006*L\n\026Creat"
+  "ePlayerReturnCode\022\021\n\rCPR_Create_OK\020\000\022\017\n\013"
+  "CPR_Unkonwn\020\001\022\016\n\nCPR_Rename\020\002b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_msg_2eproto_deps[1] = {
   &::descriptor_table_db_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_msg_2eproto_sccs[21] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_msg_2eproto_sccs[22] = {
   &scc_info_AccountCheck_msg_2eproto.base,
   &scc_info_AccountCheckRs_msg_2eproto.base,
   &scc_info_AccountCheckToHttpRs_msg_2eproto.base,
+  &scc_info_CmdThread_msg_2eproto.base,
   &scc_info_CreateComponent_msg_2eproto.base,
   &scc_info_CreateComponentParam_msg_2eproto.base,
   &scc_info_CreatePlayer_msg_2eproto.base,
@@ -677,18 +706,39 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_msg
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_msg_2eproto_once;
 static bool descriptor_table_msg_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_msg_2eproto = {
-  &descriptor_table_msg_2eproto_initialized, descriptor_table_protodef_msg_2eproto, "msg.proto", 1747,
-  &descriptor_table_msg_2eproto_once, descriptor_table_msg_2eproto_sccs, descriptor_table_msg_2eproto_deps, 21, 1,
+  &descriptor_table_msg_2eproto_initialized, descriptor_table_protodef_msg_2eproto, "msg.proto", 1837,
+  &descriptor_table_msg_2eproto_once, descriptor_table_msg_2eproto_sccs, descriptor_table_msg_2eproto_deps, 22, 1,
   schemas, file_default_instances, TableStruct_msg_2eproto::offsets,
-  file_level_metadata_msg_2eproto, 21, file_level_enum_descriptors_msg_2eproto, file_level_service_descriptors_msg_2eproto,
+  file_level_metadata_msg_2eproto, 22, file_level_enum_descriptors_msg_2eproto, file_level_service_descriptors_msg_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_msg_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_msg_2eproto), true);
 namespace Proto {
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CreateComponentParam_ParamType_descriptor() {
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CmdThread_CmdType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_msg_2eproto);
   return file_level_enum_descriptors_msg_2eproto[0];
+}
+bool CmdThread_CmdType_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
+constexpr CmdThread_CmdType CmdThread::Entity;
+constexpr CmdThread_CmdType CmdThread::Pool;
+constexpr CmdThread_CmdType CmdThread::CmdType_MIN;
+constexpr CmdThread_CmdType CmdThread::CmdType_MAX;
+constexpr int CmdThread::CmdType_ARRAYSIZE;
+#endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CreateComponentParam_ParamType_descriptor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_msg_2eproto);
+  return file_level_enum_descriptors_msg_2eproto[1];
 }
 bool CreateComponentParam_ParamType_IsValid(int value) {
   switch (value) {
@@ -709,7 +759,7 @@ constexpr int CreateComponentParam::ParamType_ARRAYSIZE;
 #endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* SelectPlayerRs_SelectPlayerReturnCode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_msg_2eproto);
-  return file_level_enum_descriptors_msg_2eproto[1];
+  return file_level_enum_descriptors_msg_2eproto[2];
 }
 bool SelectPlayerRs_SelectPlayerReturnCode_IsValid(int value) {
   switch (value) {
@@ -730,7 +780,7 @@ constexpr int SelectPlayerRs::SelectPlayerReturnCode_ARRAYSIZE;
 #endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* AccountCheckReturnCode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_msg_2eproto);
-  return file_level_enum_descriptors_msg_2eproto[2];
+  return file_level_enum_descriptors_msg_2eproto[3];
 }
 bool AccountCheckReturnCode_IsValid(int value) {
   switch (value) {
@@ -749,7 +799,7 @@ bool AccountCheckReturnCode_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CreatePlayerReturnCode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_msg_2eproto);
-  return file_level_enum_descriptors_msg_2eproto[3];
+  return file_level_enum_descriptors_msg_2eproto[4];
 }
 bool CreatePlayerReturnCode_IsValid(int value) {
   switch (value) {
@@ -760,6 +810,258 @@ bool CreatePlayerReturnCode_IsValid(int value) {
     default:
       return false;
   }
+}
+
+
+// ===================================================================
+
+void CmdThread::InitAsDefaultInstance() {
+}
+class CmdThread::_Internal {
+ public:
+};
+
+CmdThread::CmdThread()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.CmdThread)
+}
+CmdThread::CmdThread(const CmdThread& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  cmd_type_ = from.cmd_type_;
+  // @@protoc_insertion_point(copy_constructor:Proto.CmdThread)
+}
+
+void CmdThread::SharedCtor() {
+  cmd_type_ = 0;
+}
+
+CmdThread::~CmdThread() {
+  // @@protoc_insertion_point(destructor:Proto.CmdThread)
+  SharedDtor();
+}
+
+void CmdThread::SharedDtor() {
+}
+
+void CmdThread::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const CmdThread& CmdThread::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_CmdThread_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void CmdThread::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.CmdThread)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cmd_type_ = 0;
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CmdThread::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // .Proto.CmdThread.CmdType cmd_type = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+          set_cmd_type(static_cast<::Proto::CmdThread_CmdType>(val));
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool CmdThread::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.CmdThread)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .Proto.CmdThread.CmdType cmd_type = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
+          int value = 0;
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_cmd_type(static_cast< ::Proto::CmdThread_CmdType >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.CmdThread)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.CmdThread)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void CmdThread::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.CmdThread)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .Proto.CmdThread.CmdType cmd_type = 1;
+  if (this->cmd_type() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
+      1, this->cmd_type(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.CmdThread)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* CmdThread::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.CmdThread)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .Proto.CmdThread.CmdType cmd_type = 1;
+  if (this->cmd_type() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+      1, this->cmd_type(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.CmdThread)
+  return target;
+}
+
+size_t CmdThread::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.CmdThread)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .Proto.CmdThread.CmdType cmd_type = 1;
+  if (this->cmd_type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->cmd_type());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void CmdThread::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.CmdThread)
+  GOOGLE_DCHECK_NE(&from, this);
+  const CmdThread* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CmdThread>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.CmdThread)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.CmdThread)
+    MergeFrom(*source);
+  }
+}
+
+void CmdThread::MergeFrom(const CmdThread& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.CmdThread)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.cmd_type() != 0) {
+    set_cmd_type(from.cmd_type());
+  }
+}
+
+void CmdThread::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.CmdThread)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void CmdThread::CopyFrom(const CmdThread& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.CmdThread)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CmdThread::IsInitialized() const {
+  return true;
+}
+
+void CmdThread::InternalSwap(CmdThread* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(cmd_type_, other->cmd_type_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CmdThread::GetMetadata() const {
+  return GetMetadataStatic();
 }
 
 
@@ -7134,6 +7436,9 @@ void SavePlayer::InternalSwap(SavePlayer* other) {
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace Proto
 PROTOBUF_NAMESPACE_OPEN
+template<> PROTOBUF_NOINLINE ::Proto::CmdThread* Arena::CreateMaybeMessage< ::Proto::CmdThread >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::CmdThread >(arena);
+}
 template<> PROTOBUF_NOINLINE ::Proto::CreateComponentParam* Arena::CreateMaybeMessage< ::Proto::CreateComponentParam >(Arena* arena) {
   return Arena::CreateInternal< ::Proto::CreateComponentParam >(arena);
 }

@@ -6,7 +6,7 @@
 #include "network_locator.h"
 #include "thread_mgr.h"
 #include "update_component.h"
-void NetworkListen::AwakeFromPool(std::string ip, int port) {
+void NetworkListen::Awake(std::string ip, int port) {
 
   auto pNetworkLocator = ThreadMgr::GetInstance()
                              ->GetEntitySystem()

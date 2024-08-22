@@ -47,7 +47,7 @@ public:
   // 执行发送数据操作
   bool Send() const;
 
-  void AwakeFromPool(SOCKET socket) override;
+  void Awake(SOCKET socket) override;
   virtual void BackToPool()override;
 
 

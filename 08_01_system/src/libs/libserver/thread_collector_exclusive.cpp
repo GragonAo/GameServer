@@ -7,7 +7,7 @@ ThreadCollectorExclusive::ThreadCollectorExclusive(ThreadType threadType,
     : ThreadCollector(threadType, initNum) {}
 
 void ThreadCollectorExclusive::HandleMessage(Packet *pPacket) {
-  if (pPacket->GetMsgId() == Proto::MsgId::MI_CmdShowThreadEntites) {
+  if (pPacket->GetMsgId() == Proto::MsgId::MI_CmdThread) {
     HandlerCreateMessage(pPacket);
   } else {
     auto vectors = *(_threads.GetReaderCache());

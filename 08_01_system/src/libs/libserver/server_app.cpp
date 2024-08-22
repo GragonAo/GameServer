@@ -1,46 +1,31 @@
 #include "server_app.h"
-#include "app_type_mgr.h"
+#include "app_type.h"
 #include "global.h"
-#include "console_cmd_thread.h"
+#include "object_pool_packet.h"
 #include "thread_mgr.h"
-#include "res_path.h"
-#include "object_pool_mgr.h"
 #include <csignal>
-#include <sys/time.h>
-#include "console_cmd_pool.h"
-#include "network_locator.h"
-#include "log4.h"
-#include "yaml.h"
 
-ServerApp::ServerApp(APP_TYPE appType,int argc,char* argv[]) {
+ServerApp::ServerApp(APP_TYPE appType, int argc, char *argv[]) {
   _appType = appType;
   _argc = argc;
   _argv = argv;
 }
 
-void ServerApp::Initialize(){
-  signal(SIGINT,Signalhandler);
-  Global::Instance(_appType,1);
-  AppTypeMgr::Instance();
-  DynamicObjectPoolMgr::Instance();
-  ResPath::Instance();
-  Log4::Instance(_appType);
-  Yaml::Instance();
+void ServerApp::Initialize() {
+  signal(SIGINT, Signalhandler);
+  
+  Global::Instance(_appType, 0);
+  DynamicPacketPool::Instance();
 
   _pThreadMgr = ThreadMgr::Instance();
-  UpdateTime();
-
-  _pThreadMgr->GetEntitySystem()->AddComponent<NetworkLocator>();
-  auto pConsole = _pThreadMgr->GetEntitySystem()->AddComponent<Console>();
-  pConsole->Register<ConsoleCmdPool>("pool");
-  pConsole->Register<ConsoleCmdThread>("thread");
+  _pThreadMgr->InitializeGloablComponent(_appType, 0);
 
   _pThreadMgr->InitializeThread();
 }
 
-void ServerApp::Dispose(){
+void ServerApp::Dispose() {
+  DynamicPacketPool::DestroyInstance();
   ThreadMgr::DestroyInstance();
-  Global::DestroyInstance();
 }
 
 void ServerApp::Signalhandler(const int signalValue) {
@@ -56,11 +41,11 @@ void ServerApp::Signalhandler(const int signalValue) {
 }
 
 void ServerApp::Run() {
-
-  while (!Global::GetInstance()->IsStop) {
-    UpdateTime();
+  auto pGlobal = Global::GetInstance();
+  while (!pGlobal->IsStop) {
+    pGlobal->UpdateTime();
     _pThreadMgr->Update();
-    DynamicObjectPoolMgr::GetInstance()->Update();
+    DynamicPacketPool::GetInstance()->Update();
     std::this_thread::sleep_for(std::chrono::milliseconds(1));
   }
 
@@ -80,15 +65,5 @@ void ServerApp::Run() {
   } while (!isDispose);
 
   _pThreadMgr->Dispose();
-
   std::cout << "disposing all pool ...." << std::endl;
-  DynamicObjectPoolMgr::GetInstance()->Update();
-  DynamicObjectPoolMgr::GetInstance()->Dispose();
-  DynamicObjectPoolMgr::DestroyInstance();
-}
-
-void ServerApp::UpdateTime() const {
-  struct timeval tv;
-  gettimeofday(&tv, nullptr);
-  Global::GetInstance()->TimeTick = tv.tv_sec * 1000 + tv.tv_usec * 0.001;
 }

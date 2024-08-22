@@ -7,10 +7,12 @@ class Robot : public NetworkConnector,
               public StateTemplateMgr<RobotStateType, RobotState, Robot>,
               public IAwakeFromPoolSystem<std::string> {
 public:
-  void AwakeFromPool(std::string account) override;
+  void Awake(std::string account) override;
   void Update() override;
   std::string GetAccount() const;
   void SendMsgAccountCheck();
+
+  static bool IsSingle() { return false; }
 
 protected:
   void RegisterState() override;

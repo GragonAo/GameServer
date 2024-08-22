@@ -13,7 +13,6 @@ public:
   void Dispose() override;
 
   void Run();
-  void UpdateTime() const;
 
   static void Signalhandler(int signalValue);
 

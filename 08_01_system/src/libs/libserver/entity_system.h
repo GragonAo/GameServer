@@ -1,21 +1,22 @@
 #pragma once
 
-#include "component.h"
-#include "global.h"
 #include "cache_swap.h"
-#include "disposable.h"
-#include "component_factory.h"
-#include "object_pool.h"
+#include "component.h"
 #include "component_collections.h"
-#include "system_manager.h"
+#include "component_factory.h"
+#include "disposable.h"
+#include "global.h"
 #include "log4_help.h"
+#include "object_pool.h"
+#include "object_pool_collector.h"
+#include "system_manager.h"
 
 class Packet;
 
 class EntitySystem : public IDisposable {
 public:
   friend class ConsoleThreadComponent;
-  
+
   EntitySystem(SystemManager *pMgr);
   virtual ~EntitySystem();
 
@@ -56,8 +57,13 @@ template <class T> inline void EntitySystem::AddComponent(T *pComponent) {
 
 template <class T, typename... TArgs>
 T *EntitySystem::AddComponent(TArgs... args) {
-  auto pComponent = DynamicObjectPool<T>::GetInstance()->MallocObject(
-      _systemManager, std::forward<TArgs>(args)...);
+  auto pCollector = _systemManager->GetPoolCollector();
+  auto pPool = (DynamicObjectPool<T> *)pCollector->GetPool<T>();
+  auto pComponent =
+      pPool->MallocObject(_systemManager, std::forward<TArgs>(args)...);
+
+  if (pComponent == nullptr)
+    return nullptr;
   AddComponent(pComponent);
   return pComponent;
 }

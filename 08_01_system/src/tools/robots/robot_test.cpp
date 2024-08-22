@@ -6,7 +6,7 @@
 #include "robot_state_type.h"
 #include <chrono>
 
-void RobotTest::AwakeFromPool() {
+void RobotTest::Awake() {
   auto pMsgCallBack = new MessageCallBackFunction();
   AddComponent<MessageComponent>(pMsgCallBack);
 

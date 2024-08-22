@@ -6,7 +6,7 @@
 
 #define MAX_SIZE 1024 * 1024
 
-class Buffer : public IDisposable {
+class Buffer{
 public:
   virtual unsigned int GetEmptySize();
   void ReAllocBuffer(unsigned int dataLength);

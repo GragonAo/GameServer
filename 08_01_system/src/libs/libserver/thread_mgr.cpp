@@ -1,7 +1,12 @@
 #include "thread_mgr.h"
+#include "console.h"
+#include "console_cmd_thread.h"
+#include "log4.h"
 #include "message_system.h"
-#include "yaml.h"
+#include "network_locator.h"
 #include "packet.h"
+#include "res_path.h"
+#include "yaml.h"
 
 #include "log4_help.h"
 #include "thread_collector_exclusive.h"
@@ -11,11 +16,9 @@
 ThreadMgr::ThreadMgr() {}
 
 void ThreadMgr::InitializeThread() {
-  const auto pConfig =
-      Yaml::GetInstance()->GetConfig(Global::GetInstance()->GetCurAppType());
+  const auto pConfig = GetEntitySystem()->GetComponent<Yaml>()->GetConfig(
+      Global::GetInstance()->GetCurAppType());
   auto pAppConfig = dynamic_cast<AppConfig *>(pConfig);
-
-  InitComponent(ThreadType::MainThread);
 
   if (pAppConfig->LogicThreadNum > 0) {
     CreateThread(LogicThread, pAppConfig->LogicThreadNum);
@@ -26,8 +29,8 @@ void ThreadMgr::InitializeThread() {
 }
 
 void ThreadMgr::CreateThread(ThreadType iType, int num) {
-  const auto pConfig =
-      Yaml::GetInstance()->GetConfig(Global::GetInstance()->GetCurAppType());
+  const auto pConfig = GetEntitySystem()->GetComponent<Yaml>()->GetConfig(
+      Global::GetInstance()->GetCurAppType());
   auto pAppConfig = dynamic_cast<AppConfig *>(pConfig);
   if (pAppConfig->LogicThreadNum == 0 && pAppConfig->MysqlThreadNum == 0)
     return;
@@ -46,7 +49,19 @@ void ThreadMgr::CreateThread(ThreadType iType, int num) {
   }
 }
 
-void ThreadMgr::Update(){
+void ThreadMgr::InitializeGloablComponent(APP_TYPE ppType, int appId) {
+  GetEntitySystem()->AddComponent<ResPath>();
+  GetEntitySystem()->AddComponent<Log4>(ppType);
+  GetEntitySystem()->AddComponent<Yaml>();
+  GetEntitySystem()->AddComponent<NetworkLocator>();
+
+  auto pConsole = GetEntitySystem()->AddComponent<Console>();
+  pConsole->Register<ConsoleCmdThread>("thread");
+
+  InitComponent(ThreadType::MainThread);
+}
+
+void ThreadMgr::Update() {
   UpdateCreatePacket();
   UpdateDispatchPacket();
   SystemManager::Update();

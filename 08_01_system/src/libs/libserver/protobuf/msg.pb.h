@@ -49,7 +49,7 @@ struct TableStruct_msg_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxillaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[21]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[22]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -66,6 +66,9 @@ extern AccountCheckRsDefaultTypeInternal _AccountCheckRs_default_instance_;
 class AccountCheckToHttpRs;
 class AccountCheckToHttpRsDefaultTypeInternal;
 extern AccountCheckToHttpRsDefaultTypeInternal _AccountCheckToHttpRs_default_instance_;
+class CmdThread;
+class CmdThreadDefaultTypeInternal;
+extern CmdThreadDefaultTypeInternal _CmdThread_default_instance_;
 class CreateComponent;
 class CreateComponentDefaultTypeInternal;
 extern CreateComponentDefaultTypeInternal _CreateComponent_default_instance_;
@@ -125,6 +128,7 @@ PROTOBUF_NAMESPACE_OPEN
 template<> ::Proto::AccountCheck* Arena::CreateMaybeMessage<::Proto::AccountCheck>(Arena*);
 template<> ::Proto::AccountCheckRs* Arena::CreateMaybeMessage<::Proto::AccountCheckRs>(Arena*);
 template<> ::Proto::AccountCheckToHttpRs* Arena::CreateMaybeMessage<::Proto::AccountCheckToHttpRs>(Arena*);
+template<> ::Proto::CmdThread* Arena::CreateMaybeMessage<::Proto::CmdThread>(Arena*);
 template<> ::Proto::CreateComponent* Arena::CreateMaybeMessage<::Proto::CreateComponent>(Arena*);
 template<> ::Proto::CreateComponentParam* Arena::CreateMaybeMessage<::Proto::CreateComponentParam>(Arena*);
 template<> ::Proto::CreatePlayer* Arena::CreateMaybeMessage<::Proto::CreatePlayer>(Arena*);
@@ -146,6 +150,31 @@ template<> ::Proto::SelectPlayerRs* Arena::CreateMaybeMessage<::Proto::SelectPla
 PROTOBUF_NAMESPACE_CLOSE
 namespace Proto {
 
+enum CmdThread_CmdType : int {
+  CmdThread_CmdType_Entity = 0,
+  CmdThread_CmdType_Pool = 1,
+  CmdThread_CmdType_CmdThread_CmdType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  CmdThread_CmdType_CmdThread_CmdType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+};
+bool CmdThread_CmdType_IsValid(int value);
+constexpr CmdThread_CmdType CmdThread_CmdType_CmdType_MIN = CmdThread_CmdType_Entity;
+constexpr CmdThread_CmdType CmdThread_CmdType_CmdType_MAX = CmdThread_CmdType_Pool;
+constexpr int CmdThread_CmdType_CmdType_ARRAYSIZE = CmdThread_CmdType_CmdType_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CmdThread_CmdType_descriptor();
+template<typename T>
+inline const std::string& CmdThread_CmdType_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CmdThread_CmdType>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function CmdThread_CmdType_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    CmdThread_CmdType_descriptor(), enum_t_value);
+}
+inline bool CmdThread_CmdType_Parse(
+    const std::string& name, CmdThread_CmdType* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CmdThread_CmdType>(
+    CmdThread_CmdType_descriptor(), name, value);
+}
 enum CreateComponentParam_ParamType : int {
   CreateComponentParam_ParamType_Int = 0,
   CreateComponentParam_ParamType_String = 1,
@@ -254,6 +283,167 @@ inline bool CreatePlayerReturnCode_Parse(
 }
 // ===================================================================
 
+class CmdThread :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.CmdThread) */ {
+ public:
+  CmdThread();
+  virtual ~CmdThread();
+
+  CmdThread(const CmdThread& from);
+  CmdThread(CmdThread&& from) noexcept
+    : CmdThread() {
+    *this = ::std::move(from);
+  }
+
+  inline CmdThread& operator=(const CmdThread& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CmdThread& operator=(CmdThread&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const CmdThread& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const CmdThread* internal_default_instance() {
+    return reinterpret_cast<const CmdThread*>(
+               &_CmdThread_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    0;
+
+  friend void swap(CmdThread& a, CmdThread& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CmdThread* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline CmdThread* New() const final {
+    return CreateMaybeMessage<CmdThread>(nullptr);
+  }
+
+  CmdThread* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<CmdThread>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const CmdThread& from);
+  void MergeFrom(const CmdThread& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CmdThread* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.CmdThread";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  typedef CmdThread_CmdType CmdType;
+  static constexpr CmdType Entity =
+    CmdThread_CmdType_Entity;
+  static constexpr CmdType Pool =
+    CmdThread_CmdType_Pool;
+  static inline bool CmdType_IsValid(int value) {
+    return CmdThread_CmdType_IsValid(value);
+  }
+  static constexpr CmdType CmdType_MIN =
+    CmdThread_CmdType_CmdType_MIN;
+  static constexpr CmdType CmdType_MAX =
+    CmdThread_CmdType_CmdType_MAX;
+  static constexpr int CmdType_ARRAYSIZE =
+    CmdThread_CmdType_CmdType_ARRAYSIZE;
+  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
+  CmdType_descriptor() {
+    return CmdThread_CmdType_descriptor();
+  }
+  template<typename T>
+  static inline const std::string& CmdType_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, CmdType>::value ||
+      ::std::is_integral<T>::value,
+      "Incorrect type passed to function CmdType_Name.");
+    return CmdThread_CmdType_Name(enum_t_value);
+  }
+  static inline bool CmdType_Parse(const std::string& name,
+      CmdType* value) {
+    return CmdThread_CmdType_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCmdTypeFieldNumber = 1,
+  };
+  // .Proto.CmdThread.CmdType cmd_type = 1;
+  void clear_cmd_type();
+  ::Proto::CmdThread_CmdType cmd_type() const;
+  void set_cmd_type(::Proto::CmdThread_CmdType value);
+
+  // @@protoc_insertion_point(class_scope:Proto.CmdThread)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  int cmd_type_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
 class CreateComponentParam :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.CreateComponentParam) */ {
  public:
@@ -296,7 +486,7 @@ class CreateComponentParam :
                &_CreateComponentParam_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    0;
+    1;
 
   friend void swap(CreateComponentParam& a, CreateComponentParam& b) {
     a.Swap(&b);
@@ -477,7 +667,7 @@ class CreateComponent :
                &_CreateComponent_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    1;
+    2;
 
   friend void swap(CreateComponent& a, CreateComponent& b) {
     a.Swap(&b);
@@ -641,7 +831,7 @@ class RemoveComponent :
                &_RemoveComponent_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    2;
+    3;
 
   friend void swap(RemoveComponent& a, RemoveComponent& b) {
     a.Swap(&b);
@@ -772,7 +962,7 @@ class AccountCheck :
                &_AccountCheck_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    4;
 
   friend void swap(AccountCheck& a, AccountCheck& b) {
     a.Swap(&b);
@@ -922,7 +1112,7 @@ class AccountCheckRs :
                &_AccountCheckRs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    5;
 
   friend void swap(AccountCheckRs& a, AccountCheckRs& b) {
     a.Swap(&b);
@@ -1053,7 +1243,7 @@ class AccountCheckToHttpRs :
                &_AccountCheckToHttpRs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    6;
 
   friend void swap(AccountCheckToHttpRs& a, AccountCheckToHttpRs& b) {
     a.Swap(&b);
@@ -1197,7 +1387,7 @@ class RobotState :
                &_RobotState_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    7;
 
   friend void swap(RobotState& a, RobotState& b) {
     a.Swap(&b);
@@ -1341,7 +1531,7 @@ class RobotSyncState :
                &_RobotSyncState_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   friend void swap(RobotSyncState& a, RobotSyncState& b) {
     a.Swap(&b);
@@ -1478,7 +1668,7 @@ class RobotTestEnd :
                &_RobotTestEnd_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   friend void swap(RobotTestEnd& a, RobotTestEnd& b) {
     a.Swap(&b);
@@ -1609,7 +1799,7 @@ class PlayerLittle :
                &_PlayerLittle_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   friend void swap(PlayerLittle& a, PlayerLittle& b) {
     a.Swap(&b);
@@ -1767,7 +1957,7 @@ class PlayerList :
                &_PlayerList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   friend void swap(PlayerList& a, PlayerList& b) {
     a.Swap(&b);
@@ -1917,7 +2107,7 @@ class QueryPlayerList :
                &_QueryPlayerList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    12;
 
   friend void swap(QueryPlayerList& a, QueryPlayerList& b) {
     a.Swap(&b);
@@ -2054,7 +2244,7 @@ class QueryPlayer :
                &_QueryPlayer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    13;
 
   friend void swap(QueryPlayer& a, QueryPlayer& b) {
     a.Swap(&b);
@@ -2185,7 +2375,7 @@ class QueryPlayerRs :
                &_QueryPlayerRs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    14;
 
   friend void swap(QueryPlayerRs& a, QueryPlayerRs& b) {
     a.Swap(&b);
@@ -2332,7 +2522,7 @@ class CreatePlayer :
                &_CreatePlayer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    15;
 
   friend void swap(CreatePlayer& a, CreatePlayer& b) {
     a.Swap(&b);
@@ -2476,7 +2666,7 @@ class CreatePlayerRs :
                &_CreatePlayerRs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    16;
 
   friend void swap(CreatePlayerRs& a, CreatePlayerRs& b) {
     a.Swap(&b);
@@ -2607,7 +2797,7 @@ class CreatePlayerToDB :
                &_CreatePlayerToDB_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    17;
 
   friend void swap(CreatePlayerToDB& a, CreatePlayerToDB& b) {
     a.Swap(&b);
@@ -2754,7 +2944,7 @@ class CreatePlayerToDBRs :
                &_CreatePlayerToDBRs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    18;
 
   friend void swap(CreatePlayerToDBRs& a, CreatePlayerToDBRs& b) {
     a.Swap(&b);
@@ -2898,7 +3088,7 @@ class SelectPlayer :
                &_SelectPlayer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    19;
 
   friend void swap(SelectPlayer& a, SelectPlayer& b) {
     a.Swap(&b);
@@ -3029,7 +3219,7 @@ class SelectPlayerRs :
                &_SelectPlayerRs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    20;
 
   friend void swap(SelectPlayerRs& a, SelectPlayerRs& b) {
     a.Swap(&b);
@@ -3190,7 +3380,7 @@ class SavePlayer :
                &_SavePlayer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    21;
 
   friend void swap(SavePlayer& a, SavePlayer& b) {
     a.Swap(&b);
@@ -3296,6 +3486,24 @@ class SavePlayer :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
+// CmdThread
+
+// .Proto.CmdThread.CmdType cmd_type = 1;
+inline void CmdThread::clear_cmd_type() {
+  cmd_type_ = 0;
+}
+inline ::Proto::CmdThread_CmdType CmdThread::cmd_type() const {
+  // @@protoc_insertion_point(field_get:Proto.CmdThread.cmd_type)
+  return static_cast< ::Proto::CmdThread_CmdType >(cmd_type_);
+}
+inline void CmdThread::set_cmd_type(::Proto::CmdThread_CmdType value) {
+  
+  cmd_type_ = value;
+  // @@protoc_insertion_point(field_set:Proto.CmdThread.cmd_type)
+}
+
+// -------------------------------------------------------------------
+
 // CreateComponentParam
 
 // .Proto.CreateComponentParam.ParamType type = 1;
@@ -4575,6 +4783,8 @@ inline void SavePlayer::set_allocated_player(::Proto::Player* player) {
 
 // -------------------------------------------------------------------
 
+// -------------------------------------------------------------------
+
 
 // @@protoc_insertion_point(namespace_scope)
 
@@ -4582,6 +4792,11 @@ inline void SavePlayer::set_allocated_player(::Proto::Player* player) {
 
 PROTOBUF_NAMESPACE_OPEN
 
+template <> struct is_proto_enum< ::Proto::CmdThread_CmdType> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::Proto::CmdThread_CmdType>() {
+  return ::Proto::CmdThread_CmdType_descriptor();
+}
 template <> struct is_proto_enum< ::Proto::CreateComponentParam_ParamType> : ::std::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::Proto::CreateComponentParam_ParamType>() {

@@ -1,4 +1,5 @@
 #include "robot_state.h"
+#include "libserver/message_system_help.h"
 #include "libserver/packet.h"
 #include "libserver/protobuf/msg.pb.h"
 #include "libserver/thread_mgr.h"
@@ -20,7 +21,7 @@ void RobotState::EnterState() {
   pState->set_account(_pParentObj->GetAccount());
   pState->set_state(GetState());
 
-  auto pPacket = new Packet(Proto::MsgId::MI_RobotSyncState, 0);
+  auto pPacket = MessageSystemHelp::CreatePacket(Proto::MsgId::MI_RobotSyncState, 0);
   pPacket->SerializeToBuffer(protoState);
   ThreadMgr::GetInstance()->GetMessageSystem()->AddPacketToList(pPacket);
   

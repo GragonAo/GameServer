@@ -13,6 +13,7 @@
 #include "message_system_help.h"
 #include "thread_collector.h"
 #include "thread_type.h"
+#include "packet.h"
 
 
 class ThreadMgr : public Singleton<ThreadMgr>, public SystemManager {
@@ -22,6 +23,7 @@ public:
   void InitializeThread();
   void CreateThread(ThreadType iType, int num);
 
+  void InitializeGloablComponent(APP_TYPE ppType, int appId);
   void Update() override;
   void UpdateCreatePacket();
   void UpdateDispatchPacket();

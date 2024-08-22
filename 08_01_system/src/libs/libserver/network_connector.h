@@ -7,14 +7,16 @@ class ConnectObj;
 class Packet;
 
 class NetworkConnector : public Network,
-                         public IAwakeFromPoolSystem<std::string, int>,
-                         public IAwakeFromPoolSystem<int, int> {
+                         public IAwakeSystem<std::string, int>,
+                         public IAwakeSystem<int, int> {
 public:
-  void AwakeFromPool(std::string ip, int port) override;
-  void AwakeFromPool(int appType, int appId) override;
+  void Awake(std::string ip, int port) override;
+  void Awake(int appType, int appId) override;
   virtual void Update();
   bool IsConnected() const;
   const char *GetTypeName() override;
+
+  static bool IsSingle() { return true; }
 
 protected:
   bool Connect(std::string ip, int port);

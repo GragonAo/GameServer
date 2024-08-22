@@ -2,7 +2,7 @@
 #include "component_factory.h"
 #include "object_pool.h"
 #include <typeinfo>
-
+#include "object_pool_collector.h"
 template <typename T, typename... Targs> class RegistToFactory {
 public:
   RegistToFactory() {
@@ -10,7 +10,8 @@ public:
                                                       CreateComponent);
   }
   static T *CreateComponent(SystemManager* pSysMgr,Targs... args) {
-    return DynamicObjectPool<T>::GetInstance()->MallocObject(pSysMgr,
-        std::forward<Targs>(args)...);
+    auto pCollector = pSysMgr->GetPoolCollector();
+    auto pPool = (DynamicObjectPool<T>*) pCollector->GetPool<T>();
+    return pPool->MallocObject(pSysMgr,std::forward<Targs>(args)...);
   }
 };

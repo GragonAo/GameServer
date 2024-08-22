@@ -10,4 +10,5 @@ public:
 
 private:
   void HandleEntity(std::vector<std::string> &params);
+  void HandlePool(std::vector<std::string> &params);
 };

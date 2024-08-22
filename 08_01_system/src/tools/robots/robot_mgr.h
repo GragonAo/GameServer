@@ -7,10 +7,12 @@
 
 class RobotMgr : public NetworkConnector, IAwakeFromPoolSystem<> {
 public:
-  void AwakeFromPool() override;
+  void Awake() override;
   void Update() override;
 
   void ShowInfo();
+  
+  static bool IsSingle() { return true; }
 
 private:
   void HandleRobotState(Packet *pPacket);

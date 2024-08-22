@@ -56,9 +56,6 @@ public:
   // 构造函数，接受缓冲区大小和连接对象指针
   RecvNetworkBuffer(unsigned int _size, ConnectObj *pConnectObj);
 
-  // 重写 Dispose 方法，释放资源
-  void Dispose() override;
-
   // 获取缓冲区数据
   int GetBuffer(char *&pBuffer) const;
 
@@ -75,9 +72,6 @@ class SendNetworkBuffer : public NetworkBuffer {
 public:
   // 构造函数，接受缓冲区大小和连接对象指针
   SendNetworkBuffer(unsigned int _size, ConnectObj *pConnectObj);
-
-  // 重写 Dispose 方法，释放资源
-  void Dispose() override;
 
   // 获取缓冲区数据
   int GetBuffer(char *&pBuffer) const;

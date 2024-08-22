@@ -85,13 +85,13 @@ enum MsgId : int {
   MI_RobotSyncState = 5001,
   MI_RobotTestBegin = 5100,
   MI_RobotTestEnd = 5101,
-  MI_CmdShowThreadEntites = 20003,
+  MI_CmdThread = 20003,
   MsgId_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   MsgId_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool MsgId_IsValid(int value);
 constexpr MsgId MsgId_MIN = None;
-constexpr MsgId MsgId_MAX = MI_CmdShowThreadEntites;
+constexpr MsgId MsgId_MAX = MI_CmdThread;
 constexpr int MsgId_ARRAYSIZE = MsgId_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* MsgId_descriptor();

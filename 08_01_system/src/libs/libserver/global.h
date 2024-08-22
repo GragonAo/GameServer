@@ -1,5 +1,5 @@
 #pragma once
-#include "app_type_mgr.h"
+#include "app_type.h"
 #include "singleton.h"
 #include "util_time.h"
 #include <mutex>
@@ -7,6 +7,8 @@
 class Global : public Singleton<Global> {
 public:
   Global(APP_TYPE appType, int appId);
+  void UpdateTime();
+  
   uint64 GenerateSN();
 
   APP_TYPE GetCurAppType() const;

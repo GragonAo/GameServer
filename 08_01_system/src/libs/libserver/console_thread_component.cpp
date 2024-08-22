@@ -4,33 +4,56 @@
 #include "entity_system.h"
 #include "log4_help.h"
 #include "message_component.h"
+#include "object_pool_collector.h"
 #include "update_component.h"
-#include <sstream>
+#include <mutex>
 #include <thread>
 
-void ConsoleThreadComponent::AwakeFromPool(ThreadType iType) {
+std::mutex ConsoleThreadComponent::_show_lock;
+
+void ConsoleThreadComponent::Awake(ThreadType iType) {
   _threadType = iType;
 
   auto pMsgCallBack = new MessageCallBackFunction();
   AddComponent<MessageComponent>(pMsgCallBack);
   pMsgCallBack->RegisterFunction(
-      Proto::MsgId::MI_CmdShowThreadEntites,
-      BindFunP1(this, &ConsoleThreadComponent::HandleCmdShowThreadEntites));
+      Proto::MsgId::MI_CmdThread,
+      BindFunP1(this, &ConsoleThreadComponent::HandleCmdThread));
 }
 
 void ConsoleThreadComponent::BackToPool() {}
 
+void ConsoleThreadComponent::HandleCmdThread(Packet *pPacket) {
+  auto cmdProto = pPacket->ParseToProto<Proto::CmdThread>();
+  auto cmdType = cmdProto.cmd_type();
+  if (cmdType == Proto::CmdThread_CmdType_Entity)
+    HandleCmdShowThreadEntites(pPacket);
+  else
+    HandleCmdThreadPool(pPacket);
+}
+
+void ConsoleThreadComponent::HandleCmdThreadPool(Packet *pPacket) {
+  std::lock_guard<std::mutex> guard(_show_lock);
+  LOG_DEBUG("------------------------------------");
+  LOG_DEBUG(" thread id:" << std::this_thread::get_id());
+  LOG_DEBUG(" thread type:" << GetThreadTypeName(_threadType));
+
+  auto pPool = GetSystemManager()->GetPoolCollector();
+  pPool->Show();
+}
+
 void ConsoleThreadComponent::HandleCmdShowThreadEntites(Packet *pPacket) {
+  std::lock_guard<std::mutex> guard(_show_lock);
+  
   std::list<uint64> excludes;
   excludes.push_back(typeid(MessageComponent).hash_code());
   excludes.push_back(typeid(CreateComponentC).hash_code());
   excludes.push_back(typeid(UpdateComponent).hash_code());
   excludes.push_back(typeid(ConsoleThreadComponent).hash_code());
 
-  std::stringstream log;
-  log << "*************************** " << "\n";
-  log << " thread id:" << std::this_thread::get_id() << "\n";
-  log << " thread type:" << GetThreadTypeName(_threadType) << "\n";
+  LOG_DEBUG("------------------------------------");
+  LOG_DEBUG(" thread id:" << std::this_thread::get_id());
+  LOG_DEBUG(" thread type:" << GetThreadTypeName(_threadType));
 
   const auto collects = GetSystemManager()->GetEntitySystem()->GetObjgSystem();
   int total = 0;
@@ -43,9 +66,7 @@ void ConsoleThreadComponent::HandleCmdShowThreadEntites(Packet *pPacket) {
     if (size <= 0)
       continue;
     total += size;
-    log << "\t " << pCollect->GetClassType().c_str() << " count: " << size
-        << "\n";
+    LOG_DEBUG("\t" << pCollect->GetClassType().c_str() << " count:" << size);
   }
-  log << " total count: " << total << "\n";
-  LOG_DEBUG(log.str().c_str());
+  LOG_DEBUG(" total count:" << total);
 }

@@ -88,7 +88,7 @@ inline CURLMRS curl_multi_select(CURLM *curl_m) {
   FD_ZERO(&fd_except);
 
   // 设置超时时间为1秒
-  timeout_tv.tv_sec = 5;
+  timeout_tv.tv_sec = 10;
   timeout_tv.tv_usec = 0;
 
   // 获取CURL的文件描述符集合，并更新max_fd

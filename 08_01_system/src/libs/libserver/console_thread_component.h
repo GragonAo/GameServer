@@ -8,14 +8,17 @@
 class Packet;
 
 class ConsoleThreadComponent : public Entity<ConsoleThreadComponent>,
-                               public IAwakeFromPoolSystem<ThreadType> {
+                               public IAwakeSystem<ThreadType> {
 public:
-  void AwakeFromPool(ThreadType iType) override;
+  void Awake(ThreadType iType) override;
   void BackToPool() override;
 
 private:
   void HandleCmdShowThreadEntites(Packet *pPacket);
-
+  void HandleCmdThread(Packet* pPacket);
+  void HandleCmdThreadPool(Packet* pPacket);
 private:
   ThreadType _threadType;
+
+  static std::mutex _show_lock;
 };

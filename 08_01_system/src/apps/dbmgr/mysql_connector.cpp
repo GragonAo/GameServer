@@ -1,5 +1,5 @@
 #include "mysql_connector.h"
-#include "libserver/app_type_mgr.h"
+#include "libserver/app_type.h"
 #include "libserver/common.h"
 #include "libserver/log4_help.h"
 #include "libserver/yaml.h"
@@ -11,14 +11,15 @@
 #include <mysql/mysql_com.h>
 #include <thread>
 #include <utility>
+#include "libserver/component_help.h"
 
 // 从连接池中唤醒并初始化 MySQL 连接配置
-void MysqlConnector::AwakeFromPool() {
+void MysqlConnector::Awake() {
   // 记录当前线程的 ID 及唤醒日志
   LOG_DEBUG("MysqlConnector::Awake. id:" << std::this_thread::get_id());
 
   // 获取 YAML 配置实例
-  auto pYaml = Yaml::GetInstance();
+  auto pYaml = ComponentHelp::GetYaml();
   // 从配置中获取数据库管理器的配置
   auto pConfig = pYaml->GetConfig(APP_DB_MGR);
   // 将配置转换为具体的数据库管理配置

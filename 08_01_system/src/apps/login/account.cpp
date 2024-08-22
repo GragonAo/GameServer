@@ -1,6 +1,6 @@
 #include "account.h"
 #include "http_request_account.h"
-#include "libserver/app_type_mgr.h"
+#include "libserver/app_type.h"
 #include "libserver/common.h"
 #include "libserver/log4_help.h"
 #include "libserver/message_component.h"
@@ -11,7 +11,7 @@
 #include "libserver/thread_mgr.h"
 #include "login_obj.h"
 
-void Account::AwakeFromPool() {
+void Account::Awake() {
   auto pMsgCallBack = new MessageCallBackFunction();
   AddComponent<MessageComponent>(pMsgCallBack);
 

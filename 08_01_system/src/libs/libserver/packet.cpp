@@ -1,18 +1,21 @@
 #include "packet.h"
 
-Packet::Packet(const Proto::MsgId msgId, SOCKET socket) {
-  _socket = socket;
-  _msgId = msgId;
+Packet::Packet(){
   CleanBuffer();
-
   _bufferSize = DEAULT_PACKET_BUFFER_SIZE;
-  _beginIndex = 0;
-  _endIndex = 0;
   _buffer = new char[_bufferSize];
 }
 
+void Packet::Awake(const Proto::MsgId msgId, SOCKET socket) {
+  _socket = socket;
+  _msgId = msgId;
+  _beginIndex = 0;
+  _endIndex = 0;
+}
+
 Packet::~Packet() { CleanBuffer(); }
-void Packet::Dispose() {
+
+void Packet::BackToPool() {
   _msgId = Proto::MsgId::None;
   _beginIndex = 0;
   _endIndex = 0;

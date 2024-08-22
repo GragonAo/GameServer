@@ -3,9 +3,9 @@
 #include "system.h"
 
 class NetworkListen : public Network,
-                      public IAwakeFromPoolSystem<std::string, int> {
+                      public IAwakeSystem<std::string, int> {
 public:
-  void AwakeFromPool(std::string ip, int port) override;
+  void Awake(std::string ip, int port) override;
   void Update();
   const char *GetTypeName() override;
 
