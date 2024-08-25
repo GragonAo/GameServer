@@ -1,0 +1,3 @@
+2024-08-25 09:52:10 -> [ERROR] /root/workspace/GameServer/08_01_system/src/libs/libserver/network_listen.cpp:39 -  [0;31m::bind failed. err:98[0m
+2024-08-25 09:55:48 -> [ERROR] /root/workspace/GameServer/08_01_system/src/libs/libserver/network_listen.cpp:39 -  [0;31m::bind failed. err:98[0m
+2024-08-25 09:56:18 -> [ERROR] /root/workspace/GameServer/08_01_system/src/libs/libserver/network_listen.cpp:39 -  [0;31m::bind failed. err:98[0m

@@ -1,0 +1,18 @@
+2024-08-25 17:47:39 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-25 17:47:39 -> [DEBUG] -  Initialize thread: LogicThread thread num: 5
+2024-08-25 17:52:40 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-25 17:52:40 -> [DEBUG] -  Initialize thread: LogicThread thread num: 5
+2024-08-25 17:56:41 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-25 17:56:41 -> [DEBUG] -  Initialize thread: LogicThread thread num: 5
+2024-08-25 17:57:44 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-25 17:57:44 -> [DEBUG] -  Initialize thread: LogicThread thread num: 5
+2024-08-25 17:57:54 -> [DEBUG] -  recv players. size:1
+2024-08-25 18:03:02 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-25 18:03:02 -> [DEBUG] -  Initialize thread: LogicThread thread num: 5
+2024-08-25 18:03:09 -> [DEBUG] -  recv players. size:1
+2024-08-25 18:03:55 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-25 18:03:55 -> [DEBUG] -  Initialize thread: LogicThread thread num: 5
+2024-08-25 18:26:04 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-25 18:26:04 -> [DEBUG] -  Initialize thread: LogicThread thread num: 5
+2024-08-25 18:26:13 -> [DEBUG] -  recv players. size:1
+2024-08-25 18:27:04 -> [ERROR] -  [0;31minput error. cmd:-ext[0m

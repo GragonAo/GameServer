@@ -24,6 +24,7 @@ void ServerApp::Initialize() {
 }
 
 void ServerApp::Dispose() {
+  DynamicPacketPool::GetInstance()->Dispose();
   DynamicPacketPool::DestroyInstance();
   ThreadMgr::DestroyInstance();
 }
@@ -41,7 +42,9 @@ void ServerApp::Signalhandler(const int signalValue) {
 }
 
 void ServerApp::Run() {
+  log4cplus::initialize();
   auto pGlobal = Global::GetInstance();
+
   while (!pGlobal->IsStop) {
     pGlobal->UpdateTime();
     _pThreadMgr->Update();
@@ -53,17 +56,20 @@ void ServerApp::Run() {
   bool isStop;
   do {
     isStop = _pThreadMgr->IsStopAll();
-    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    std::this_thread::sleep_for(std::chrono::milliseconds(10));
   } while (!isStop);
 
   std::cout << "disposing all threads..." << std::endl;
-
+  _pThreadMgr->DestroyThread();
+  
+  std::cout << "disposing all pool ...." << std::endl;
   bool isDispose;
   do {
     isDispose = _pThreadMgr->IsDisposeAll();
-    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    std::this_thread::sleep_for(std::chrono::milliseconds(10));
   } while (!isDispose);
 
   _pThreadMgr->Dispose();
-  std::cout << "disposing all pool ...." << std::endl;
+
+  log4cplus::deinitialize();
 }

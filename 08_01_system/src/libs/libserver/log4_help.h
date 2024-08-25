@@ -17,7 +17,7 @@
 
 #define LogColorGrey 90 // dark grey
 
-#define LogColorRedEx 91 // ��ɫ
+#define LogColorRedEx 91
 #define LogColorGreenEx 92
 #define LogColorYellowEx 93
 #define LogColorBlueEx 94

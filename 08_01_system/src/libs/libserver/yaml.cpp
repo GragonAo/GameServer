@@ -30,7 +30,13 @@ void Yaml::Awake() {
   std::cout << "Yaml awake is Ok " << std::endl;
 }
 
-void Yaml::BackToPool() {}
+void Yaml::BackToPool() {
+
+  for (auto pObj : _configs) {
+    delete pObj.second;
+  }
+  _configs.clear();
+}
 
 YamlConfig *Yaml::GetConfig(APP_TYPE appType) {
   if (_configs.find(appType) != _configs.end()) {

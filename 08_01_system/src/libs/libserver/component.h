@@ -17,9 +17,9 @@ public:
   void SetParent(IEntity *pObj);
   void SetSystemManager(SystemManager *pSys);
 
-  bool IsActive() const { return _active; }
-
   template <class T> T *GetParent();
+
+  IEntity* GetParent() const;
 
   SystemManager *GetSystemManager() const;
   virtual void BackToPool() = 0;
@@ -28,8 +28,6 @@ public:
   virtual const char* GetTypeName() = 0;
   virtual uint64 GetTypeHashCode() = 0;
 
-protected:
-  bool _active{true};
 
 private:
   IEntity *_parent{nullptr};
@@ -45,8 +43,8 @@ T* IComponent::GetParent()
 
 template <class T> class Component : public IComponent {
 public:
-  const char *GetTypeName();
-  uint64 GetTypeHashCode();
+  const char *GetTypeName() override;
+  uint64 GetTypeHashCode() override;
 };
 
 template <class T> const char *Component<T>::GetTypeName() {

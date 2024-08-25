@@ -42,23 +42,14 @@ void EntitySystem::Update() {
 
 // 释放系统资源的方法：销毁不在baseClass列表中的系统
 void EntitySystem::Dispose() {
-  std::set<uint64> baseClass; // 创建一个set用于存储不应销毁的基础类的类型哈希码
-  baseClass.insert(typeid(Log4).hash_code()); // 将Log4类的哈希码加入集合
-  baseClass.insert(typeid(Console).hash_code()); // 将Console类的哈希码加入集合
-
   for (auto iter : _objSystems) { // 遍历所有的组件系统
-    if (baseClass.find(iter.first) !=
-        baseClass.end()) // 如果该系统属于基础类，则跳过销毁
-      continue;
-    iter.second->Dispose(); // 调用系统的Dispose方法，释放资源
-    delete iter.second;     // 删除该系统对象，释放内存
+    iter.second->Dispose();       // 调用系统的Dispose方法，释放资源
   }
 
-  auto pCollections = _systemManager->GetPoolCollector();
-  pCollections->Update();
-  pCollections->Dispose();
-  pCollections->Show();
-  
+  for (auto iter : _objSystems) {
+    delete iter.second;
+  }
+
   _objSystems.clear(); // 清空系统容器，确保所有指针都无效化
 }
 

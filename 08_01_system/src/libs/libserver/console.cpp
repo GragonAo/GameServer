@@ -50,6 +50,7 @@ void Console::Awake() {
     char _buffer[ConsoleMaxBuffer];
     do {
       std::cin.getline(_buffer, ConsoleMaxBuffer);
+
       _lock.lock();
       _commands.push(std::string(_buffer));
       _lock.unlock();
@@ -71,6 +72,7 @@ void Console::Awake() {
 void Console::BackToPool() {
   for (auto &pair : _handles) {
     pair.second->Dispose();
+    delete pair.second;
   }
 
   _handles.clear();
@@ -79,12 +81,13 @@ void Console::BackToPool() {
     _thread.detach();
   else
     _thread.join();
+  std::cout << "Console BackToPool _thread close"<<std::endl;
 }
 
 // 更新控制台，处理输入命令
 void Console::Update() {
   _lock.lock();
-  if (_commands.size() <= 0) {
+  if (_commands.empty()) {
     _lock.unlock();
     return;
   }
@@ -96,7 +99,7 @@ void Console::Update() {
   std::vector<std::string> params;
   strutil::split(cmd, ' ', params);
 
-  if (params.size() <= 0)
+  if (params.empty())
     return;
 
   const std::string key = params[0];

@@ -14,6 +14,11 @@ MysqlTableUpdate::MysqlTableUpdate() {
   _update_func.push_back(BindFunP0(this, &MysqlTableUpdate::Update00));
 }
 
+MysqlTableUpdate::~MysqlTableUpdate()
+{
+    Disconnect();
+}
+
 // 核心检查函数，用于检查数据库连接和执行必要的更新操作
 void MysqlTableUpdate::Check() {
   // 初始化数据库连接

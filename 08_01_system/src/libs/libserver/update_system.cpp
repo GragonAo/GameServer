@@ -6,7 +6,9 @@ void UpdateSystem::Update(EntitySystem *pEntities) {
   auto pCollections = pEntities->GetComponentCollections<UpdateComponent>();
   if (pCollections == nullptr)
     return;
+
   pCollections->Swap();
+  
   auto lists = pCollections->GetAll();
   for (const auto one : lists) {
     const auto pComponent = one.second;

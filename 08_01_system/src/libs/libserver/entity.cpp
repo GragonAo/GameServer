@@ -1,26 +1,29 @@
 #include "entity.h"
-#include "entity_system.h"
 #include "component.h"
+#include "entity_system.h"
 
-void IEntity::BackToPool() {
-  for (const auto &one : _components) {
-    const auto pEntitySystem = GetSystemManager()->GetEntitySystem();
-    if (pEntitySystem != nullptr)
-      pEntitySystem->RemoveComponent(one.second);
+void IEntity::ComponentBackToPool() {
+  auto pSystemManager = GetSystemManager();
+  for (auto pair : _components) {
+    if (pSystemManager != nullptr)
+      pSystemManager->GetEntitySystem()->RemoveComponent(pair.second);
     else
-      one.second->ComponentBackToPool();
+      pair.second->ComponentBackToPool();
   }
+
   _components.clear();
+
+  IComponent::ComponentBackToPool();
 }
 
 void IEntity::RemoveComponent(IComponent *pComponent) {
   const auto typeHashCode = pComponent->GetTypeHashCode();
   _components.erase(typeHashCode);
 
-  const auto pEntitySystem = GetSystemManager()->GetEntitySystem();
-  if (pEntitySystem == nullptr) {
+  const auto pSystemManager = GetSystemManager();
+  if (pSystemManager == nullptr) {
     pComponent->ComponentBackToPool();
   } else {
-    pEntitySystem->RemoveComponent(pComponent);
+    pSystemManager->GetEntitySystem()->RemoveComponent(pComponent);
   }
 }

@@ -56,9 +56,10 @@ void MysqlConnector::CheckPing() {
 }
 
 // 将连接返回池中时断开 MySQL 连接
-void MysqlConnector::BackToPool() {
-  // 调用 Disconnect 方法断开 MySQL 连接
-  Disconnect();
+void MysqlConnector::BackToPool()
+{
+    Disconnect();
+    mysql_thread_end();
 }
 
 // 初始化并连接到 MySQL 数据库
@@ -176,6 +177,7 @@ void MysqlConnector::CleanStmts() {
   // 遍历语句映射表，并关闭所有语句
   for (auto one : _mapStmt) {
     one.second->Close();
+    delete one.second;
   }
   // 清空语句映射表
   _mapStmt.clear();

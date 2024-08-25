@@ -24,6 +24,8 @@ int main(int argc, char *argv[]) {
 
   auto pYaml = ComponentHelp::GetYaml();
   auto pCommonConfig = pYaml->GetIPEndPoint(curAppType, 0);
+  
+  pThreadMgr->CreateThread(ListenThread, 1);
   pThreadMgr->CreateComponent<NetworkListen>(pCommonConfig->Ip,
                                              pCommonConfig->Port);
 

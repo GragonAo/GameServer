@@ -7,8 +7,10 @@ DynamicObjectPoolCollector::DynamicObjectPoolCollector(SystemManager *pSys) {
 
 void DynamicObjectPoolCollector::Dispose() {
   for (auto iter = _pools.begin(); iter != _pools.end(); ++iter) {
+    iter->second->Dispose();
     delete iter->second;
   }
+  
   _pools.clear();
 }
 

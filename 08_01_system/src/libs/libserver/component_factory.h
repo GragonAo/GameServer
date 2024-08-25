@@ -9,7 +9,7 @@
 #include <utility>
 template <typename... Targs> class ComponentFactory {
 public:
-  typedef std::function<IComponent *(SystemManager *pSysMgr, Targs...)>
+  typedef std::function<IComponent *(SystemManager*, Targs...)>
       FactoryFunction;
 
   static ComponentFactory<Targs...>* GetInstance() {

@@ -16,6 +16,7 @@ void ConsoleThreadComponent::Awake(ThreadType iType) {
 
   auto pMsgCallBack = new MessageCallBackFunction();
   AddComponent<MessageComponent>(pMsgCallBack);
+
   pMsgCallBack->RegisterFunction(
       Proto::MsgId::MI_CmdThread,
       BindFunP1(this, &ConsoleThreadComponent::HandleCmdThread));
@@ -34,7 +35,7 @@ void ConsoleThreadComponent::HandleCmdThread(Packet *pPacket) {
 
 void ConsoleThreadComponent::HandleCmdThreadPool(Packet *pPacket) {
   std::lock_guard<std::mutex> guard(_show_lock);
-  LOG_DEBUG("------------------------------------");
+  LOG_DEBUG("-----------------------------------------------------");
   LOG_DEBUG(" thread id:" << std::this_thread::get_id());
   LOG_DEBUG(" thread type:" << GetThreadTypeName(_threadType));
 
@@ -61,8 +62,10 @@ void ConsoleThreadComponent::HandleCmdShowThreadEntites(Packet *pPacket) {
     if (std::find(excludes.begin(), excludes.end(), one.first) !=
         excludes.end())
       continue;
+
     auto pCollect = one.second;
     const auto size = pCollect->GetAll().size();
+
     if (size <= 0)
       continue;
     total += size;

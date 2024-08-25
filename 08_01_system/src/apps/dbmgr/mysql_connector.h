@@ -21,15 +21,18 @@ struct DatabaseStmt {
   int bind_index;
   int bind_buffer_index;
 
-  void Close() const {
+  void Close(){
     if (bind != nullptr) {
       delete[] bind;
+      bind = nullptr;
     }
     if (bind_buffer != nullptr) {
-      delete bind_buffer;
+      delete[] bind_buffer;
+      bind_buffer = nullptr;
     }
     if (stmt != nullptr) {
       mysql_stmt_close(stmt);
+      stmt = nullptr;
     }
   }
 };

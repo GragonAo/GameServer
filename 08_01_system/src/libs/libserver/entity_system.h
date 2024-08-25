@@ -53,6 +53,7 @@ template <class T> inline void EntitySystem::AddComponent(T *pComponent) {
   }
   auto pEntities = _objSystems[typeHashCode];
   pEntities->Add(dynamic_cast<IComponent *>(pComponent));
+  pComponent->SetSystemManager(_systemManager);
 }
 
 template <class T, typename... TArgs>
@@ -64,6 +65,7 @@ T *EntitySystem::AddComponent(TArgs... args) {
 
   if (pComponent == nullptr)
     return nullptr;
+  
   AddComponent(pComponent);
   return pComponent;
 }

@@ -6,21 +6,23 @@
 #include <thread>
 
 enum ThreadState {
-  ThreadState_Init,
-  ThreadState_Run,
-  ThreadState_Stoped,
+  Init,
+  Run,
+  Stop,
+  Destroy
 };
 
 class Thread : public SystemManager,public SnObject {
 public:
   Thread(ThreadType threadType);
-  void BackToPool();
+  ~Thread();
   
   void Start();
-  bool IsStop() const;
-  bool IsRun() const;
-  bool IsDispose();
+  void DestroyThread();
+  void Dispose() override;
 
+  bool IsStop() const;
+  bool IsDestroy() const;
 private:
   ThreadType _threadType;
 

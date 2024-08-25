@@ -11,7 +11,7 @@
 class IEntity : public IComponent {
 public:
   virtual ~IEntity() = default;
-  void BackToPool() override;
+  void ComponentBackToPool() override;
 
   template <class T, typename... TArgs> T *AddComponent(TArgs... args);
 
@@ -34,12 +34,8 @@ inline T *IEntity::AddComponent(TArgs... args) {
 }
 
 template <class T> T *IEntity::GetComponent() {
-  auto iter =
-      std::find_if(_components.begin(), _components.end(), [](auto pair) {
-        if (dynamic_cast<T *>(pair.second) != nullptr)
-          return true;
-        return false;
-      });
+  const auto typeHashCode = typeid(T).hash_code();
+  const auto iter = _components.find(typeHashCode);
   if (iter == _components.end())
     return nullptr;
   return dynamic_cast<T *>(iter->second);

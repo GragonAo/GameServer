@@ -36,6 +36,7 @@ void Account::Awake() {
   pMsgCallBack->RegisterFunction(
       Proto::MsgId::L2DB_QueryPlayerListRs,
       BindFunP1(this, &Account::HandleQueryPlayerListRs));
+
 }
 
 void Account::BackToPool() { _playerMgr.BackToPool(); }

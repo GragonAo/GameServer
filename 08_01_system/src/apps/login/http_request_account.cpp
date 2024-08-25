@@ -18,11 +18,11 @@ void HttpRequestAccount::Awake(std::string account, std::string password)
     _password = password;
     _curlRs = CRS_None;
     _method = HttpResquestMethod::HRM_Post;
+    _state = HttpResquestState::HRS_Send;
 
     auto pYaml = ComponentHelp::GetYaml();
     const auto pLoginConfig = dynamic_cast<LoginConfig*>(pYaml->GetConfig(APP_LOGIN));
 
-    // _url = "http://192.168.1.134:3001/account/login";
     _url = pLoginConfig->UrlLogin;
 
     // 创建 JSON 对象

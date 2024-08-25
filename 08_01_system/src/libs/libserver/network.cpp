@@ -77,7 +77,6 @@ void Network::CreateConnectObj(SOCKET socket) {
       (DynamicObjectPool<ConnectObj> *)pCollector->GetPool<ConnectObj>();
   ConnectObj *pConnectObj = pPool->MallocObject(GetSystemManager(), socket);
   pConnectObj->SetParent(this);
-  pConnectObj->SetSystemManager(GetSystemManager());
   if (_connects.find(socket) != _connects.end()) {
     std::cout << "Network::CreateConnectObj. socket is exist. socket:" << socket
               << std::endl;

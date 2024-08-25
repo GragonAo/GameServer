@@ -5,6 +5,16 @@ ComponentCollections::ComponentCollections(std::string componentName) {
   _componentName = componentName;
 }
 
+ComponentCollections::~ComponentCollections()
+{
+    if (!_objs.empty() || !_addObjs.empty())
+    {
+        std::cout << " class:" << _componentName.c_str() << " still reachable. " << std::endl;
+    }
+
+    _removeObjs.clear();
+}
+
 void ComponentCollections::Add(IComponent *pObj) {
   if (_objs.find(pObj->GetSN()) != _objs.end() ||
       _addObjs.find(pObj->GetSN()) != _addObjs.end()) {
@@ -20,9 +30,9 @@ void ComponentCollections::Add(IComponent *pObj) {
 
 IComponent *ComponentCollections::Get(const uint64 sn) {
   if (sn == 0) {
-    if (_objs.size() > 0)
+    if (!_objs.empty())
       return _objs.begin()->second;
-    if (_addObjs.size() > 0)
+    if (!_addObjs.empty())
       return _addObjs.begin()->second;
   } else {
 
@@ -42,13 +52,14 @@ void ComponentCollections::Remove(uint64 sn) { _removeObjs.push_back(sn); }
 std::map<uint64, IComponent *> &ComponentCollections::GetAll() { return _objs; }
 
 void ComponentCollections::Swap() {
-  if (_addObjs.size() > 0) {
+  if (!_addObjs.empty()) {
     for (auto pair : _addObjs) {
       _objs.insert(std::make_pair(pair.first, pair.second));
     }
     _addObjs.clear();
   }
-  if (_removeObjs.size() > 0) {
+  
+  if (!_removeObjs.empty()) {
     for (auto sn : _removeObjs) {
       const auto iter = _objs.find(sn);
       if (iter != _objs.end()) {
@@ -64,14 +75,14 @@ void ComponentCollections::Swap() {
 }
 
 void ComponentCollections::Dispose() {
-  for (auto pair : _objs) {
+  for (const auto pair : _objs) {
     auto pComponent = pair.second;
     if (pComponent->GetSN() == 0)
       continue;
     pComponent->ComponentBackToPool();
   }
   _objs.clear();
-  for (auto pair : _addObjs) {
+  for (const auto pair : _addObjs) {
     auto pComponent = pair.second;
     if (pComponent->GetSN() == 0)
       continue;

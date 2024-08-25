@@ -55,7 +55,6 @@ void MessageSystemHelp::SendPacket(Packet *packet, APP_TYPE appType,
     if (pNetwork != nullptr) {
       packet->SetSocket(pNetwork->GetSocket());
       pNetwork->SendPacket(packet);
-      return;
     } else {
       LOG_ERROR("can't find network. appType:"
                 << GetAppName(appType)

@@ -6,6 +6,8 @@ Global::Global(APP_TYPE appType, int appId){
   _appType = appType;
   _appId = appId;
   std::cout << "app type:" << appType << "id:" << _appId << std::endl;
+
+  UpdateTime();
 }
 
 uint64 Global::GenerateSN() {

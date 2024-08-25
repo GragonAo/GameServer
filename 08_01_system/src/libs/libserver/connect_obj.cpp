@@ -9,6 +9,8 @@
 #include "entity_system.h"
 #include "message_system_help.h"
 #include "system_manager.h"
+#include "object_pool_packet.h"
+
 // 构造函数，接受一个 Network 对象指针和一个 socket 描述符
 ConnectObj::ConnectObj() {
   _socket = INVALID_SOCKET;
@@ -20,6 +22,7 @@ ConnectObj::ConnectObj() {
 ConnectObj::~ConnectObj() {
   if (_recvBuffer != nullptr)
     delete _recvBuffer;
+  
   if (_sendBuffer != nullptr)
     delete _sendBuffer;
 }
@@ -50,9 +53,11 @@ bool ConnectObj::Recv() {
   bool isRs = false;
   char *pBuffer = nullptr;
   while (true) {
+
     if (_recvBuffer->GetEmptySize() <
         (sizeof(PacketHead) + sizeof(TotalSizeType)))
       _recvBuffer->ReAllocBuffer();
+
     const int emptySize = _recvBuffer->GetBuffer(pBuffer);
     const int dataSize = ::recv(_socket, pBuffer, emptySize, 0);
     if (dataSize > 0) {
@@ -68,6 +73,7 @@ bool ConnectObj::Recv() {
       break;
     }
   }
+  
   if (isRs) {
     while (true) {
       const auto pPacket = _recvBuffer->GetPacket();
@@ -82,6 +88,7 @@ bool ConnectObj::Recv() {
           ThreadMgr::GetInstance()->DispatchPacket(pPacket);
         } else {
           GetSystemManager()->GetMessageSystem()->AddPacketToList(pPacket);
+          pPacket->OpenRef();
         }
       }
     }
@@ -94,12 +101,8 @@ bool ConnectObj::HasSendData() const { return _sendBuffer->HasData(); }
 
 // 发送数据包
 void ConnectObj::SendPacket(Packet *pPacket) const {
-  // const google::protobuf::EnumDescriptor *descriptor =
-  //     Proto::MsgId_descriptor();
-  // auto name = descriptor->FindValueByNumber(pPacket->GetMsgId())->name();
-  // std::cout << "send msg:" << name.c_str() << std::endl;
-
   _sendBuffer->AddPacket(pPacket);
+  DynamicPacketPool::GetInstance()->FreeObject(pPacket);
 }
 
 // 执行发送数据操作
@@ -137,4 +140,5 @@ void ConnectObj::Close() {
   const auto pPacketDis =
       MessageSystemHelp::CreatePacket(Proto::MsgId::MI_NetworkRequestDisconnect, GetSocket());
   GetSystemManager()->GetMessageSystem()->AddPacketToList(pPacketDis);
+  pPacketDis->OpenRef();
 }

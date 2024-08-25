@@ -1,6 +1,8 @@
 #include "robot.h"
+#include "global_robots.h"
 #include "libserver/app_type.h"
 #include "libserver/common.h"
+#include "libserver/component_help.h"
 #include "libserver/log4_help.h"
 #include "libserver/message_callback.h"
 #include "libserver/message_component.h"
@@ -19,7 +21,6 @@
 #include <random>
 #include <sstream>
 #include <thread>
-#include "libserver/component_help.h"
 
 void Robot::Awake(std::string account) {
   _account = account;
@@ -77,15 +78,22 @@ void Robot::RegisterState() {
                      DynamicStateBind(RobotStateLoginConnected));
   RegisterStateClass(RobotStateType::RobotState_Login_Logined,
                      DynamicStateBind(RobotStateLoginLogined));
+  RegisterStateClass(RobotStateType::RobotState_Login_SelectPlayer,
+                     DynamicStateBind(RobotStateLoginSelectPlayer));
 }
 
 void Robot::HandleAccountCheckRs(Robot *pRobot, Packet *pPacket) {
   Proto::AccountCheckRs proto = pPacket->ParseToProto<Proto::AccountCheckRs>();
-  std::cout << "account check result account:" << _account
-            << " code:" << proto.return_code() << std::endl;
+
+  // std::cout << "account check result account:" << _account
+  //           << " code:" << proto.return_code() << std::endl;
 
   if (proto.return_code() == Proto::AccountCheckReturnCode::ARC_OK)
     ChangeState(RobotStateType::RobotState_Login_Logined);
+  else {
+    std::cout << "account check failed. account:" << _account
+              << " code:" << proto.return_code() << std::endl;
+  }
 }
 
 void Robot::HandlePlayerList(Robot *pRobot, Packet *pPacket) {
@@ -123,11 +131,9 @@ void Robot::HandlePlayerList(Robot *pRobot, Packet *pPacket) {
     pPacketCreate->SerializeToBuffer(protoCreate);
     SendPacket(pPacketCreate);
   } else {
-    if (protoList.player_size() > 0) {
-      LOG_DEBUG("recv players. size: " << protoList.player_size()
-                                       << protoList.player(0).name());
-    } else {
-      LOG_DEBUG("recv players. size: " << protoList.player_size());
-    }
+    if (GlobalRobots::GetInstance()->GetRobotsCount() == 1)
+      LOG_DEBUG("recv players. size:" << protoList.player_size());
+
+    ChangeState(RobotStateType::RobotState_Login_SelectPlayer);
   }
 }

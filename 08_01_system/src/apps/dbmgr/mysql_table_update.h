@@ -9,11 +9,12 @@
 class MysqlTableUpdate : public MysqlBase, public Singleton<MysqlTableUpdate> {
 public:
   MysqlTableUpdate();
-  virtual ~MysqlTableUpdate() = default;
+  virtual ~MysqlTableUpdate();
   void Check();
 
 private:
   bool CreateDatabaseIfNotExist();
+  
   bool UpdateToVersion();
   bool Update00();
 

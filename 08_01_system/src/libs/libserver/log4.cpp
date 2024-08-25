@@ -24,8 +24,8 @@ void Log4::Awake(APP_TYPE appType) {
     std::cout << "!!!! log4 properties not fourd! filename." << std::endl;
     return;
   }
-  log4cplus::initialize();
   const log4cplus::tstring configFile = LOG4CPLUS_STRING_TO_TSTRING(filePath);
+
   log4cplus::PropertyConfigurator config(configFile);
   config.configure();
 
@@ -35,7 +35,7 @@ void Log4::Awake(APP_TYPE appType) {
   LOG_DEBUG("Log4::Initialize is Ok.");
 }
 
-void Log4::BackToPool(){ log4cplus::deinitialize(); }
+void Log4::BackToPool(){}
 
 std::string Log4::GetMsgIdName(Proto::MsgId msgId) {
   const google::protobuf::EnumDescriptor *descriptor =

@@ -13,7 +13,7 @@
 
 template <typename T> class DynamicObjectPool : public IDynamicObjectPool {
 public:
-  ~DynamicObjectPool();
+  void Dispose() override;
 
   template <typename... Targs>
   T *MallocObject(SystemManager *pSysMgr, Targs... args);
@@ -23,15 +23,22 @@ public:
 
   void Show() override;
 
-private:
+protected:
   std::queue<T *> _free;
   CacheRefresh<T> _objInUse;
+
+  int _totalCall{0};
 };
 
-template <typename T> DynamicObjectPool<T>::~DynamicObjectPool() {
-  std::cout << "dispose object pool. type:" << typeid(T).name() << std::endl;
+template <typename T> void DynamicObjectPool<T>::Dispose() {
+  std::cout << "delete pool. type: " << typeid(T).name() << std::endl;
 
-  while (_free.size() > 0) {
+  if (_objInUse.Count() > 0) {
+    std::cout << "type: " << typeid(T).name() << " count:" << _objInUse.Count()
+              << std::endl;
+  }
+
+  while (!_free.empty()) {
     auto iter = _free.front();
     delete iter;
     _free.pop();
@@ -41,7 +48,7 @@ template <typename T> DynamicObjectPool<T>::~DynamicObjectPool() {
 template <typename T>
 template <typename... Targs>
 T *DynamicObjectPool<T>::MallocObject(SystemManager *pSys, Targs... args) {
-  if (_free.size() == 0) {
+  if (_free.empty()) {
     if (T::IsSingle()) {
       T *pObj = new T();
       pObj->SetPool(this);
@@ -55,6 +62,8 @@ T *DynamicObjectPool<T>::MallocObject(SystemManager *pSys, Targs... args) {
     }
   }
 
+  _totalCall++;
+
   auto pObj = _free.front();
   _free.pop();
 
@@ -63,35 +72,33 @@ T *DynamicObjectPool<T>::MallocObject(SystemManager *pSys, Targs... args) {
   pObj->SetSystemManager(pSys);
   pObj->Awake(std::forward<Targs>(args)...);
 
-  _objInUse.GetAddCache()->push_back(pObj);
+  _objInUse.AddObj(pObj);
   return pObj;
 }
 
 template <typename T> void DynamicObjectPool<T>::Update() {
-  std::list<T *> freeObjs;
   if (_objInUse.CanSwap()) {
-    freeObjs = _objInUse.Swap();
-  }
-  for (auto one : freeObjs) {
-    _free.push(one);
+    _objInUse.Swap(&_free);
   }
 }
 
 template <typename T>
 inline void DynamicObjectPool<T>::FreeObject(IComponent *pObj) {
-  _objInUse.GetReaderCache()->emplace_back(dynamic_cast<T *>(pObj));
+  if (pObj->GetSN() == 0) {
+    LOG_ERROR("free obj sn == 0. type : " << typeid(T).name());
+    return;
+  }
+
+  _objInUse.RemoveObj(pObj->GetSN());
 }
 
 template <typename T> void DynamicObjectPool<T>::Show() {
-  auto count = _objInUse.GetReaderCache()->size() +
-               _objInUse.GetAddCache()->size() +
-               _objInUse.GetRemoveCache()->size();
-
   std::stringstream log;
-  log << " total:" << std::setw(5) << std::setfill(' ') << _free.size() + count
-      << "    free:" << std::setw(5) << std::setfill(' ') << _free.size()
-      << "    use:" << std::setw(5) << std::setfill(' ') << count << "    "
-      << typeid(T).name();
+  log << " total:" << std::setw(5) << std::setfill(' ')
+      << _free.size() + _objInUse.Count() << "    free:" << std::setw(5)
+      << std::setfill(' ') << _free.size() << "    use:" << std::setw(5)
+      << std::setfill(' ') << _objInUse.Count() << "    call:" << std::setw(5)
+      << std::setfill(' ') << _totalCall << "    " << typeid(T).name();
 
   LOG_DEBUG(log.str().c_str());
 }

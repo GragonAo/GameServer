@@ -1,0 +1,139 @@
+2024-08-25 18:20:56 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-25 18:20:58 -> [DEBUG] -  Initialize thread: LogicThread thread num: 1
+2024-08-25 18:20:59 -> [DEBUG] -  Initialize thread: MysqlThread thread num: 3
+2024-08-25 18:20:59 -> [DEBUG] -  Mysql udpate connect. 127.0.0.1:33060 starting...id: 67420864
+2024-08-25 18:21:04 -> [DEBUG] -  Mysql Update successully! addr: 127.0.0.1:33060
+2024-08-25 18:21:04 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-25 18:21:05 -> [INFO] -  epoll model. listen 127.0.0.1:5800
+2024-08-25 18:21:05 -> [DEBUG] -  MysqlConnector::Awake. id:222095104
+2024-08-25 18:21:05 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060starting... id :222095104
+2024-08-25 18:21:05 -> [DEBUG] -  MysqlConnector::Awake. id:230487808
+2024-08-25 18:21:05 -> [DEBUG] -  MysqlConnector::Awake. id:238880512
+2024-08-25 18:21:05 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060starting... id :230487808
+2024-08-25 18:21:05 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060starting... id :238880512
+2024-08-25 18:21:12 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr: 127.0.0.1:33060
+2024-08-25 18:21:12 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr: 127.0.0.1:33060
+2024-08-25 18:21:12 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-08-25 18:21:12 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr: 127.0.0.1:33060
+2024-08-25 18:21:12 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-08-25 18:21:12 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-08-25 18:25:12 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-25 18:25:15 -> [DEBUG] -  Initialize thread: LogicThread thread num: 1
+2024-08-25 18:25:15 -> [DEBUG] -  Initialize thread: MysqlThread thread num: 3
+2024-08-25 18:25:16 -> [DEBUG] -  Mysql udpate connect. 127.0.0.1:33060 starting...id: 67420864
+2024-08-25 18:25:20 -> [DEBUG] -  Mysql Update successully! addr: 127.0.0.1:33060
+2024-08-25 18:25:20 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-25 18:25:21 -> [DEBUG] -  MysqlConnector::Awake. id:238880512
+2024-08-25 18:25:21 -> [INFO] -  epoll model. listen 127.0.0.1:5800
+2024-08-25 18:25:21 -> [DEBUG] -  MysqlConnector::Awake. id:230487808
+2024-08-25 18:25:21 -> [DEBUG] -  MysqlConnector::Awake. id:222095104
+2024-08-25 18:25:21 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060starting... id :238880512
+2024-08-25 18:25:22 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060starting... id :230487808
+2024-08-25 18:25:22 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060starting... id :222095104
+2024-08-25 18:25:27 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr: 127.0.0.1:33060
+2024-08-25 18:25:27 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-08-25 18:25:28 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr: 127.0.0.1:33060
+2024-08-25 18:25:28 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-08-25 18:25:28 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr: 127.0.0.1:33060
+2024-08-25 18:25:28 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-08-25 18:26:12 -> [DEBUG] -  player list. account: test player list size: 1 socket:8
+2024-08-25 18:26:39 -> [DEBUG] -  player list. account: test3 player list size: 1 socket:8
+2024-08-25 18:26:39 -> [DEBUG] -  player list. account: test8 player list size: 1 socket:8
+2024-08-25 18:26:39 -> [DEBUG] -  player list. account: test2 player list size: 1 socket:8
+2024-08-25 18:26:39 -> [DEBUG] -  player list. account: test7 player list size: 1 socket:8
+2024-08-25 18:26:39 -> [DEBUG] -  player list. account: test13 player list size: 1 socket:8
+2024-08-25 18:26:41 -> [DEBUG] -  player list. account: test18 player list size: 1 socket:8
+2024-08-25 18:26:41 -> [DEBUG] -  player list. account: test28 player list size: 1 socket:8
+2024-08-25 18:26:41 -> [DEBUG] -  player list. account: test12 player list size: 1 socket:8
+2024-08-25 18:26:41 -> [DEBUG] -  player list. account: test23 player list size: 1 socket:8
+2024-08-25 18:26:41 -> [DEBUG] -  player list. account: test17 player list size: 1 socket:8
+2024-08-25 18:26:42 -> [DEBUG] -  player list. account: test1 player list size: 1 socket:8
+2024-08-25 18:26:42 -> [DEBUG] -  player list. account: test33 player list size: 1 socket:8
+2024-08-25 18:26:42 -> [DEBUG] -  player list. account: test38 player list size: 1 socket:8
+2024-08-25 18:26:42 -> [DEBUG] -  player list. account: test43 player list size: 1 socket:8
+2024-08-25 18:26:42 -> [DEBUG] -  player list. account: test6 player list size: 1 socket:8
+2024-08-25 18:26:42 -> [DEBUG] -  player list. account: test48 player list size: 1 socket:8
+2024-08-25 18:26:42 -> [DEBUG] -  player list. account: test11 player list size: 1 socket:8
+2024-08-25 18:26:42 -> [DEBUG] -  player list. account: test9 player list size: 1 socket:8
+2024-08-25 18:26:42 -> [DEBUG] -  player list. account: test16 player list size: 1 socket:8
+2024-08-25 18:26:43 -> [DEBUG] -  player list. account: test14 player list size: 1 socket:8
+2024-08-25 18:26:43 -> [DEBUG] -  player list. account: test4 player list size: 1 socket:8
+2024-08-25 18:26:44 -> [DEBUG] -  player list. account: test5 player list size: 1 socket:8
+2024-08-25 18:26:44 -> [DEBUG] -  player list. account: test58 player list size: 1 socket:8
+2024-08-25 18:26:44 -> [DEBUG] -  player list. account: test15 player list size: 1 socket:8
+2024-08-25 18:26:44 -> [DEBUG] -  player list. account: test10 player list size: 1 socket:8
+2024-08-25 18:26:44 -> [DEBUG] -  player list. account: test53 player list size: 1 socket:8
+2024-08-25 18:26:44 -> [DEBUG] -  player list. account: test31 player list size: 1 socket:8
+2024-08-25 18:26:44 -> [DEBUG] -  player list. account: test21 player list size: 1 socket:8
+2024-08-25 18:26:44 -> [DEBUG] -  player list. account: test63 player list size: 1 socket:8
+2024-08-25 18:26:45 -> [DEBUG] -  player list. account: test36 player list size: 1 socket:8
+2024-08-25 18:26:45 -> [DEBUG] -  player list. account: test46 player list size: 1 socket:8
+2024-08-25 18:26:45 -> [DEBUG] -  player list. account: test41 player list size: 1 socket:8
+2024-08-25 18:26:45 -> [DEBUG] -  player list. account: test51 player list size: 1 socket:8
+2024-08-25 18:26:47 -> [DEBUG] -  player list. account: test19 player list size: 1 socket:8
+2024-08-25 18:26:47 -> [DEBUG] -  player list. account: test24 player list size: 1 socket:8
+2024-08-25 18:26:47 -> [DEBUG] -  player list. account: test26 player list size: 1 socket:8
+2024-08-25 18:26:47 -> [DEBUG] -  player list. account: test29 player list size: 1 socket:8
+2024-08-25 18:26:47 -> [DEBUG] -  player list. account: test20 player list size: 1 socket:8
+2024-08-25 18:26:47 -> [DEBUG] -  player list. account: test25 player list size: 1 socket:8
+2024-08-25 18:26:47 -> [DEBUG] -  player list. account: test35 player list size: 1 socket:8
+2024-08-25 18:26:47 -> [DEBUG] -  player list. account: test30 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test32 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test22 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test42 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test52 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test47 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test57 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test40 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test45 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test62 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test50 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test81 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test54 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test68 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test96 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test59 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test69 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test83 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test64 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test98 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test93 player list size: 1 socket:8
+2024-08-25 18:26:48 -> [DEBUG] -  player list. account: test88 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test27 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test39 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test34 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test37 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test44 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test56 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test61 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test72 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test66 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test49 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test76 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test77 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test86 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test87 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test67 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test71 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test82 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test92 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test91 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test97 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test55 player list size: 1 socket:8
+2024-08-25 18:26:50 -> [DEBUG] -  player list. account: test99 player list size: 1 socket:8
+2024-08-25 18:26:51 -> [DEBUG] -  player list. account: test60 player list size: 1 socket:8
+2024-08-25 18:26:51 -> [DEBUG] -  player list. account: test100 player list size: 1 socket:8
+2024-08-25 18:26:51 -> [DEBUG] -  player list. account: test73 player list size: 1 socket:8
+2024-08-25 18:26:51 -> [DEBUG] -  player list. account: test78 player list size: 1 socket:8
+2024-08-25 18:26:51 -> [DEBUG] -  player list. account: test70 player list size: 1 socket:8
+2024-08-25 18:26:51 -> [DEBUG] -  player list. account: test65 player list size: 1 socket:8
+2024-08-25 18:26:51 -> [DEBUG] -  player list. account: test74 player list size: 1 socket:8
+2024-08-25 18:26:52 -> [DEBUG] -  player list. account: test79 player list size: 1 socket:8
+2024-08-25 18:26:52 -> [DEBUG] -  player list. account: test84 player list size: 1 socket:8
+2024-08-25 18:26:52 -> [DEBUG] -  player list. account: test80 player list size: 1 socket:8
+2024-08-25 18:26:52 -> [DEBUG] -  player list. account: test75 player list size: 1 socket:8
+2024-08-25 18:26:52 -> [DEBUG] -  player list. account: test90 player list size: 1 socket:8
+2024-08-25 18:26:52 -> [DEBUG] -  player list. account: test85 player list size: 1 socket:8
+2024-08-25 18:26:52 -> [DEBUG] -  player list. account: test89 player list size: 1 socket:8
+2024-08-25 18:26:52 -> [DEBUG] -  player list. account: test95 player list size: 1 socket:8
+2024-08-25 18:26:52 -> [DEBUG] -  player list. account: test94 player list size: 1 socket:8

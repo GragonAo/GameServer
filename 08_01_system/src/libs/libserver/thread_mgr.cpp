@@ -90,6 +90,7 @@ void ThreadMgr::UpdateCreatePacket() {
       // 单线程
       GetMessageSystem()->AddPacketToList(packet);
     }
+    packet->OpenRef();
   }
   pList->clear();
 }
@@ -103,11 +104,12 @@ void ThreadMgr::UpdateDispatchPacket() {
 
   auto pList = _packets.GetReaderCache();
   for (auto iter = pList->begin(); iter != pList->end(); ++iter) {
-    auto pPakcet = (*iter);
-    GetMessageSystem()->AddPacketToList(pPakcet);
+    auto pPacket = (*iter);
+    GetMessageSystem()->AddPacketToList(pPacket);
     for (auto iter = _threads.begin(); iter != _threads.end(); ++iter) {
-      iter->second->HandleMessage(pPakcet);
+      iter->second->HandleMessage(pPacket);
     }
+    pPacket->OpenRef();
   }
   pList->clear();
 }
@@ -121,6 +123,13 @@ bool ThreadMgr::IsStopAll() {
   return true;
 }
 
+void ThreadMgr::DestroyThread(){
+    for (auto iter = _threads.begin(); iter != _threads.end(); ++iter)
+    {
+        iter->second->DestroyThread();
+    }
+}
+
 bool ThreadMgr::IsDisposeAll() {
   for (auto iter = _threads.begin(); iter != _threads.end(); ++iter) {
     if (!iter->second->IsDisposeAll()) {
@@ -131,11 +140,13 @@ bool ThreadMgr::IsDisposeAll() {
 }
 
 void ThreadMgr::Dispose() {
+
   SystemManager::Dispose();
 
   for (auto iter = _threads.begin(); iter != _threads.end(); ++iter) {
-    auto pCollector = iter->second;
-    delete pCollector;
+    auto pObj = iter->second;
+    pObj->Dispose();
+    delete pObj;
   }
   _threads.clear();
 }

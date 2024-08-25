@@ -1,6 +1,6 @@
 allinone:
   thread_logic: 1
-  thread_mysql: 2
+  thread_mysql: 1
   ip: 127.0.0.1
   port: 2233
 

@@ -9,6 +9,7 @@ public:
     ComponentFactory<Targs...>::GetInstance()->Regist(typeid(T).name(),
                                                       CreateComponent);
   }
+  
   static T *CreateComponent(SystemManager* pSysMgr,Targs... args) {
     auto pCollector = pSysMgr->GetPoolCollector();
     auto pPool = (DynamicObjectPool<T>*) pCollector->GetPool<T>();

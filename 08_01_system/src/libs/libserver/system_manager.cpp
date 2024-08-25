@@ -31,7 +31,7 @@ void SystemManager::InitComponent(ThreadType threadType) {
 
 void SystemManager::Update() {
   _pPoolCollector->Update();
-  
+
   _pEntitySystem->Update();
   _pMessageSystem->Update(_pEntitySystem);
 
@@ -58,6 +58,11 @@ void SystemManager::Dispose() {
   _pEntitySystem->Dispose();
   delete _pEntitySystem;
   _pEntitySystem = nullptr;
+
+  _pPoolCollector->Update();
+  _pPoolCollector->Dispose();
+  delete _pPoolCollector;
+  _pPoolCollector = nullptr;
 }
 
 MessageSystem *SystemManager::GetMessageSystem() const {

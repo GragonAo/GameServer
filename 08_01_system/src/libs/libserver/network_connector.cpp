@@ -103,7 +103,9 @@ void NetworkConnector::Update() {
       return;
     std::cout << "re connect. socket:" << _masterSocket << std::endl;
   }
+
   Select();
+  
   if (!IsConnected()) {
     if (FD_ISSET(_masterSocket, &exceptfds)) {
       Clean();

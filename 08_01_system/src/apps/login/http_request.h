@@ -67,10 +67,12 @@ protected:
   CURLM *_pMultiHandle{nullptr};        // 多个CURL句柄管理
   CURLMRS _curlRs;                      // CURL多处理结果状态
 
+  struct curl_slist * _headers{nullptr};
+
   std::string _url, _params;            // 请求的URL和参数
   std::string _responseBuffer;          // 响应缓冲区
 
-  HttpResquestState State{HRS_Send};    // 请求状态，默认为发送请求
+  HttpResquestState _state{ HttpResquestState::HRS_Send };    // 请求状态，默认为发送请求
   std::string _account;                 // 账号信息
 };
 

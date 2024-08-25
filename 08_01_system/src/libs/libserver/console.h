@@ -36,7 +36,7 @@ public:
   void Register(std::string cmd);
 
 protected:
-  std::map<std::string, std::shared_ptr<ConsoleCmd>> _handles;
+  std::map<std::string,ConsoleCmd*> _handles;
 
   std::mutex _lock;
   std::thread _thread;
@@ -46,7 +46,7 @@ protected:
 };
 
 template <class T> void Console::Register(std::string cmd) {
-  std::shared_ptr<T> pObj = std::make_shared<T>();
+  T* pObj = new T();
   pObj->RegisterHandler();
  this->_handles[cmd] = pObj;
 }

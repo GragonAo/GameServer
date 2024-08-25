@@ -22,6 +22,6 @@ private:
 
 private:
   std::mutex _packet_lock;
-  CacheSwap<Packet> _cachePacket;
+  CacheSwap<Packet> _cachePackets;
   SystemManager *_systemMgr{nullptr};
 };

@@ -9,31 +9,34 @@ void MessageSystem::Dispose() {}
 
 void MessageSystem::AddPacketToList(Packet *pPacket) {
   std::lock_guard<std::mutex> guard(_packet_lock);
-  _cachePacket.GetWriterCache()->emplace_back(pPacket);
+  _cachePackets.GetWriterCache()->emplace_back(pPacket);
+  pPacket->AddRef();
 }
 
 void MessageSystem::Update(EntitySystem *pEntities) {
   _packet_lock.lock();
-  if (_cachePacket.CanSwap())
-    _cachePacket.Swap();
+  if (_cachePackets.CanSwap())
+    _cachePackets.Swap();
   _packet_lock.unlock();
 
-  if (_cachePacket.GetReaderCache()->size() == 0)
+  if (_cachePackets.GetReaderCache()->size() == 0)
     return;
 
   auto pCollections = pEntities->GetComponentCollections<MessageComponent>();
   if (pCollections == nullptr) {
-    _cachePacket.GetReaderCache()->clear();
+    _cachePackets.GetReaderCache()->clear();
     return;
   }
   pCollections->Swap();
 
   auto lists = pCollections->GetAll();
-  auto packetLists = _cachePacket.GetReaderCache();
+  auto packetLists = _cachePackets.GetReaderCache();
   for (auto iter = packetLists->begin(); iter != packetLists->end(); ++iter) {
-    Process((*iter), lists);
+    auto pPacket = (*iter);
+    Process(pPacket, lists);
+    pPacket->RemoveRef();
   }
-  packetLists->clear();
+ _cachePackets.GetReaderCache()->clear();
 }
 
 void MessageSystem::Process(Packet *pPacket,

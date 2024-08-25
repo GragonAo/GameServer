@@ -16,10 +16,8 @@ public:
 };
 
 template <typename... TArgs> class IAwakeSystem : virtual public ISystem {
-protected:
-  IAwakeSystem() = default;
-
 public:
+  IAwakeSystem() = default;
   virtual ~IAwakeSystem() = default;
   virtual void Awake(TArgs... args) = 0;
   static bool IsSingle() {return true;}

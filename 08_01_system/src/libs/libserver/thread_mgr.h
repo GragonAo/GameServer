@@ -29,6 +29,7 @@ public:
   void UpdateDispatchPacket();
 
   bool IsStopAll();
+  void DestroyThread();
   bool IsDisposeAll();
   // 释放资源
   void Dispose() override;

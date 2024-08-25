@@ -14,6 +14,7 @@ size_t WriteFunction(void *buffer, size_t size, size_t nmemb, void *lpVoid) {
   std::string *str = static_cast<std::string *>(lpVoid);
   if (nullptr == str || nullptr == buffer)
     return -1; // 如果指针为空，返回错误
+
   char *pData = static_cast<char *>(buffer);
   str->append(pData, size * nmemb); // 将数据追加到字符串
   return size * nmemb;              // 返回写入的数据大小
@@ -21,7 +22,7 @@ size_t WriteFunction(void *buffer, size_t size, size_t nmemb, void *lpVoid) {
 
 void HttpRequest::BackToPool() {
   _responseBuffer = "";
-  State = HttpResquestState::HRS_Send;
+  _state = HttpResquestState::HRS_Send;
 
   if (_pMultiHandle != nullptr && _pCurl != nullptr)
     curl_multi_remove_handle(_pMultiHandle, _pCurl);
@@ -38,23 +39,24 @@ void HttpRequest::BackToPool() {
 
 // 更新函数，根据当前状态处理不同逻辑
 void HttpRequest::Update() {
-  switch (State) {
+  switch (_state) {
   case HRS_Send:
     if (ProcessSend()) // 如果处理发送成功，更新状态为处理请求
-      State = HRS_Process;
+      _state = HRS_Process;
     break;
   case HRS_Process:
     if (Process()) // 如果处理请求成功，更新状态为请求结束
-      State = HRS_Over;
+      _state = HRS_Over;
     break;
   case HRS_Over:
+    _state = HRS_NoActive; // 更新状态为无活动
     ProcessOver();        // 处理请求结束
-    State = HRS_NoActive; // 更新状态为无活动
-    _active = false;      // 设置活动状态为false
+
+    GetSystemManager()->GetEntitySystem()->RemoveComponent(this);
     break;
   case HRS_Timeout:
     ProcessTimeout(); // 处理请求超时
-    State = HRS_Over;
+    _state = HRS_Over;
     break;
 
   default:
@@ -82,9 +84,8 @@ bool HttpRequest::ProcessSend() {
   curl_easy_setopt(_pCurl, CURLOPT_HEADER, 0);
 
   // 设置Content-Type头为application/json
-  struct curl_slist *headers = nullptr;
-  headers = curl_slist_append(headers, "Content-Type: application/json");
-  curl_easy_setopt(_pCurl, CURLOPT_HTTPHEADER, headers);
+  _headers = curl_slist_append(_headers, "Content-Type: application/json");
+  curl_easy_setopt(_pCurl, CURLOPT_HTTPHEADER, _headers);
 
   // 将CURL句柄添加到多句柄管理器中
   curl_multi_add_handle(_pMultiHandle, _pCurl);
@@ -95,8 +96,10 @@ bool HttpRequest::ProcessSend() {
     curl_easy_setopt(_pCurl, CURLOPT_POSTFIELDS, _params.c_str());
   }
 
-  State = HttpResquestState::HRS_Process; // 更新状态为处理请求
+  _state = HttpResquestState::HRS_Process; // 更新状态为处理请求
   // std::cout << "向Java服务器发送登录请求" << std::endl;
+  // 请求处理完成后释放headers
+  // curl_slist_free_all(headers);
   return true;
 }
 
@@ -117,9 +120,11 @@ bool HttpRequest::ProcessOver() {
                            _pCurl);  // 从多句柄管理器中移除CURL句柄
   curl_easy_cleanup(_pCurl);         // 清理CURL句柄
   curl_multi_cleanup(_pMultiHandle); // 清理多句柄管理器
+  curl_slist_free_all(_headers);
 
   _pCurl = nullptr;
   _pMultiHandle = nullptr;
+  _headers = nullptr;
   return true;
 }
 
@@ -138,7 +143,7 @@ bool HttpRequest::Process() {
   if (curlMcode != CURLMcode::CURLM_OK) {
     _curlRs = CRS_CURLMError; // 处理错误
     std::cout << _curlRs << std::endl;
-    State = HRS_Timeout; // 更新状态为超时
+    _state = HRS_Timeout; // 更新状态为超时
     return false;
   }
 
@@ -149,7 +154,7 @@ bool HttpRequest::Process() {
   CURLMRS rs = curl_multi_select(_pMultiHandle); // 执行选择操作
   if (rs != CRS_OK && rs != CRS_CURLM_CALL_MULTI_PERFORM) {
     _curlRs = rs;
-    State = HRS_Timeout; // 更新状态为超时
+    _state = HRS_Timeout; // 更新状态为超时
     return false;
   }
 

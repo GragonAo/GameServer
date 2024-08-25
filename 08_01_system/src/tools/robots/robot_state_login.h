@@ -21,3 +21,9 @@ class RobotStateLoginLogined : public RobotState {
 public:
   DynamicStateCreate(RobotStateLoginLogined, RobotState_Login_Logined);
 };
+
+class RobotStateLoginSelectPlayer : public RobotState
+{
+public:
+    DynamicStateCreate(RobotStateLoginSelectPlayer, RobotState_Login_SelectPlayer);
+};
