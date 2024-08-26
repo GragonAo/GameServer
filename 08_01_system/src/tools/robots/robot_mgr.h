@@ -8,10 +8,8 @@
 class RobotMgr : public NetworkConnector, IAwakeFromPoolSystem<> {
 public:
   void Awake() override;
-  void Update() override;
-
   void ShowInfo();
-  
+
   static bool IsSingle() { return true; }
 
 private:
@@ -21,5 +19,4 @@ private:
 private:
   bool _isChange{false};
   std::map<std::string, RobotStateType> _robots;
-  timeutil::Time _nextShowInfoTime{0};
 };

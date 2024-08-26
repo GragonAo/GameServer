@@ -2,6 +2,7 @@
 #include "console_thread_component.h"
 #include "create_component.h"
 #include "entity_system.h"
+#include "timer_component.h"
 #include "object_pool_collector.h"
 #include "update_system.h"
 #include <random>
@@ -25,6 +26,7 @@ SystemManager::SystemManager() {
 }
 
 void SystemManager::InitComponent(ThreadType threadType) {
+  _pEntitySystem->AddComponent<TimerComponent>();
   _pEntitySystem->AddComponent<CreateComponentC>();
   _pEntitySystem->AddComponent<ConsoleThreadComponent>(threadType);
 }

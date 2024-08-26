@@ -1,15 +1,14 @@
 #include "robot_mgr.h"
 #include "global_robots.h"
 #include "libserver/common.h"
+#include "libserver/component_help.h"
 #include "libserver/entity_system.h"
-#include "libserver/global.h"
 #include "libserver/message_component.h"
 #include "libserver/message_system_help.h"
 #include "libserver/packet.h"
 #include "libserver/protobuf/proto_id.pb.h"
 #include "libserver/update_component.h"
 #include "libserver/yaml.h"
-#include "libserver/component_help.h"
 #include "robot_state_type.h"
 #include <algorithm>
 #include <sstream>
@@ -28,14 +27,8 @@ void RobotMgr::Awake() {
   const auto pLoginConfig =
       dynamic_cast<LoginConfig *>(pYaml->GetConfig(APP_LOGIN));
   this->Connect(pLoginConfig->Ip, pLoginConfig->Port);
-}
 
-void RobotMgr::Update() {
-  NetworkConnector::Update();
-  if (_nextShowInfoTime > Global::GetInstance()->TimeTick)
-    return;
-  _nextShowInfoTime = timeutil::AddSeconds(Global::GetInstance()->TimeTick, 2);
-  ShowInfo();
+  AddTimer(0, 2, false, 0, BindFunP0(this, &RobotMgr::ShowInfo));
 }
 
 void RobotMgr::ShowInfo() {
@@ -69,11 +62,11 @@ void RobotMgr::HandleRobotState(Packet *pPacket) {
       pPacket->ParseToProto<Proto::RobotSyncState>();
   if (_robots.size() == 0 && protoState.states_size() > 0) {
     std::cout << "test begin" << std::endl;
-    _nextShowInfoTime = 0;
-    Packet *pPacketBegin =
-        MessageSystemHelp::CreatePacket(Proto::MsgId::MI_RobotTestBegin, GetSocket());
+    Packet *pPacketBegin = MessageSystemHelp::CreatePacket(
+        Proto::MsgId::MI_RobotTestBegin, GetSocket());
     SendPacket(pPacketBegin);
   }
+
   RobotStateType iType = RobotState_Space_EnterWorld;
   for (int index = 0; index < protoState.states_size(); index++) {
     auto proto = protoState.states(index);
@@ -101,7 +94,8 @@ void RobotMgr::NofityServer(RobotStateType iType) {
   if (iter == _robots.end()) {
     std::cout << "test over " << GetRobotStatetypeShortName(iType) << std::endl;
     ;
-    Packet *pPacketEnd = MessageSystemHelp::CreatePacket(Proto::MsgId::MI_RobotTestEnd, GetSocket());
+    Packet *pPacketEnd = MessageSystemHelp::CreatePacket(
+        Proto::MsgId::MI_RobotTestEnd, GetSocket());
     Proto::RobotTestEnd protoEnd;
     protoEnd.set_state(iType);
     pPacketEnd->SerializeToBuffer(protoEnd);

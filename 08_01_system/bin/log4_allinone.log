@@ -756,3 +756,43 @@
 2024-08-25 10:19:19 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060starting... id :255555328
 2024-08-25 10:19:23 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr: 127.0.0.1:33060
 2024-08-25 10:19:24 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-08-26 10:41:33 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-26 10:41:33 -> [DEBUG] -  Initialize thread: LogicThread thread num: 1
+2024-08-26 10:41:33 -> [DEBUG] -  Initialize thread: MysqlThread thread num: 1
+2024-08-26 10:41:33 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-26 10:41:33 -> [DEBUG] -  MysqlConnector::Awake. id:140238080923392
+2024-08-26 10:41:33 -> [INFO] -  epoll model. listen 127.0.0.1:2233
+2024-08-26 10:41:33 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060starting... id :140238080923392
+2024-08-26 10:41:34 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr: 127.0.0.1:33060
+2024-08-26 10:41:34 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-08-26 10:55:23 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-26 10:55:23 -> [DEBUG] -  Initialize thread: LogicThread thread num: 1
+2024-08-26 10:55:23 -> [DEBUG] -  Initialize thread: MysqlThread thread num: 1
+2024-08-26 10:55:23 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-26 10:55:23 -> [DEBUG] -  MysqlConnector::Awake. id:140045295814400
+2024-08-26 10:55:23 -> [INFO] -  epoll model. listen 127.0.0.1:2233
+2024-08-26 10:55:23 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060starting... id :140045295814400
+2024-08-26 10:55:23 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr: 127.0.0.1:33060
+2024-08-26 10:55:23 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-08-26 10:55:29 -> [DEBUG] -  player list. account: test player list size: 1 socket:0
+2024-08-26 10:55:29 -> [DEBUG] -  HandlePlayerListToDBRs account: test, player size:1
+2024-08-26 10:55:57 -> [DEBUG] -  player list. account: test4 player list size: 1 socket:0
+2024-08-26 10:55:57 -> [DEBUG] -  HandlePlayerListToDBRs account: test4, player size:1
+2024-08-26 10:55:57 -> [DEBUG] -  player list. account: test9 player list size: 1 socket:0
+2024-08-26 10:55:58 -> [DEBUG] -  HandlePlayerListToDBRs account: test9, player size:1
+2024-08-26 10:55:58 -> [DEBUG] -  player list. account: test2 player list size: 1 socket:0
+2024-08-26 10:55:58 -> [DEBUG] -  HandlePlayerListToDBRs account: test2, player size:1
+2024-08-26 10:55:58 -> [DEBUG] -  player list. account: test3 player list size: 1 socket:0
+2024-08-26 10:55:58 -> [DEBUG] -  HandlePlayerListToDBRs account: test3, player size:1
+2024-08-26 10:55:58 -> [DEBUG] -  player list. account: test7 player list size: 1 socket:0
+2024-08-26 10:55:58 -> [DEBUG] -  HandlePlayerListToDBRs account: test7, player size:1
+2024-08-26 10:55:58 -> [DEBUG] -  player list. account: test8 player list size: 1 socket:0
+2024-08-26 10:55:58 -> [DEBUG] -  HandlePlayerListToDBRs account: test8, player size:1
+2024-08-26 10:55:58 -> [DEBUG] -  player list. account: test5 player list size: 1 socket:0
+2024-08-26 10:55:58 -> [DEBUG] -  HandlePlayerListToDBRs account: test5, player size:1
+2024-08-26 10:55:58 -> [DEBUG] -  player list. account: test1 player list size: 1 socket:0
+2024-08-26 10:55:58 -> [DEBUG] -  HandlePlayerListToDBRs account: test1, player size:1
+2024-08-26 10:55:58 -> [DEBUG] -  player list. account: test10 player list size: 1 socket:0
+2024-08-26 10:55:58 -> [DEBUG] -  HandlePlayerListToDBRs account: test10, player size:1
+2024-08-26 10:55:58 -> [DEBUG] -  player list. account: test6 player list size: 1 socket:0
+2024-08-26 10:55:58 -> [DEBUG] -  HandlePlayerListToDBRs account: test6, player size:1

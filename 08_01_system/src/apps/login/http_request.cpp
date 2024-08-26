@@ -50,7 +50,7 @@ void HttpRequest::Update() {
     break;
   case HRS_Over:
     _state = HRS_NoActive; // 更新状态为无活动
-    ProcessOver();        // 处理请求结束
+    ProcessOver();         // 处理请求结束
 
     GetSystemManager()->GetEntitySystem()->RemoveComponent(this);
     break;
@@ -111,7 +111,8 @@ void HttpRequest::ProcessTimeout() const {
   checkProto.set_return_code(
       Proto::AccountCheckReturnCode::ARC_TIMEOUT); // 设置超时返回码
 
-  MessageSystemHelp::DispatchPacket(Proto::MsgId::MI_AccountCheckToHttpRs,0,checkProto); // 分发数据包
+  MessageSystemHelp::DispatchPacket(Proto::MsgId::MI_AccountCheckToHttpRs, 0,
+                                    checkProto); // 分发数据包
 }
 
 // 处理请求结束
@@ -135,7 +136,8 @@ bool HttpRequest::Process() {
       _pMultiHandle, &running_handle_count); // 执行CURL多句柄操作
 
   // std::cout << "curlMcode: " << curlMcode
-  //           << " running_handle_count: " << running_handle_count << std::endl;
+  //           << " running_handle_count: " << running_handle_count <<
+  //           std::endl;
 
   if (CURLM_CALL_MULTI_PERFORM == curlMcode)
     return false; // 如果需要再次调用curl_multi_perform，返回false
