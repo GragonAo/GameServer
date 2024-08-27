@@ -1,0 +1,418 @@
+2024-08-27 06:11:59 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-27 06:11:59 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
+2024-08-27 06:11:59 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-27 06:11:59 -> [INFO] -  epoll model. listen 127.0.0.1:5500
+2024-08-27 06:12:20 -> [DEBUG] -  ------------------------------------
+2024-08-27 06:12:20 -> [DEBUG] -   total:   50    free:   50    use:    0    call:    4    6Packet
+2024-08-27 06:12:20 -> [DEBUG] -  -----------------------------------------------------
+2024-08-27 06:12:20 -> [DEBUG] -   thread id:140407775324032
+2024-08-27 06:12:20 -> [DEBUG] -   thread type:MainThread
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    16CreateComponentC
+2024-08-27 06:12:20 -> [DEBUG] -   total:   50    free:   48    use:    2    call:    2    15UpdateComponent
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14TimerComponent
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    7Console
+2024-08-27 06:12:20 -> [DEBUG] -   total:   50    free:   48    use:    2    call:    2    16MessageComponent
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    22ConsoleThreadComponent
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    4Yaml
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    4Log4
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14NetworkLocator
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    7ResPath
+2024-08-27 06:12:20 -> [DEBUG] -  -----------------------------------------------------
+2024-08-27 06:12:20 -> [DEBUG] -   thread id:140407696393984
+2024-08-27 06:12:20 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    16CreateComponentC
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    18LoginSyncComponent
+2024-08-27 06:12:20 -> [DEBUG] -   total:   50    free:   49    use:    1    call:    1    15UpdateComponent
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14TimerComponent
+2024-08-27 06:12:20 -> [DEBUG] -   total:   50    free:   47    use:    3    call:    3    16MessageComponent
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    22ConsoleThreadComponent
+2024-08-27 06:12:20 -> [DEBUG] -  -----------------------------------------------------
+2024-08-27 06:12:20 -> [DEBUG] -   thread id:140407679608576
+2024-08-27 06:12:20 -> [DEBUG] -   thread type:ListenThread
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    16CreateComponentC
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    13NetworkListen
+2024-08-27 06:12:20 -> [DEBUG] -   total:   50    free:   48    use:    2    call:    2    15UpdateComponent
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14TimerComponent
+2024-08-27 06:12:20 -> [DEBUG] -   total:   50    free:   47    use:    3    call:    3    16MessageComponent
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    22ConsoleThreadComponent
+2024-08-27 06:12:20 -> [DEBUG] -  -----------------------------------------------------
+2024-08-27 06:12:20 -> [DEBUG] -   thread id:140407688001280
+2024-08-27 06:12:20 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    16CreateComponentC
+2024-08-27 06:12:20 -> [DEBUG] -   total:   50    free:   49    use:    1    call:    1    15UpdateComponent
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14TimerComponent
+2024-08-27 06:12:20 -> [DEBUG] -   total:   50    free:   47    use:    3    call:    3    16MessageComponent
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    22ConsoleThreadComponent
+2024-08-27 06:12:20 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    19ConsoleAppComponent
+2024-08-27 06:12:32 -> [ERROR] -  [0;31minput error. can't find cmd:info[0m
+2024-08-27 06:25:38 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-27 06:25:38 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
+2024-08-27 06:25:38 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-27 06:25:38 -> [INFO] -  epoll model. listen 127.0.0.1:5500
+2024-08-27 06:51:05 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-27 06:51:05 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
+2024-08-27 06:51:05 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-27 06:51:05 -> [INFO] -  epoll model. listen 127.0.0.1:5500
+2024-08-27 08:26:48 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-27 08:26:48 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
+2024-08-27 08:26:48 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-27 08:26:49 -> [INFO] -  epoll model. listen 127.0.0.1:5500
+2024-08-27 08:27:50 -> [DEBUG] -  ------------------------------------
+2024-08-27 08:27:50 -> [DEBUG] -   total:   50    free:   50    use:    0    call:   10    6Packet
+2024-08-27 08:27:50 -> [DEBUG] -  -----------------------------------------------------
+2024-08-27 08:27:50 -> [DEBUG] -   thread id:139888457066368
+2024-08-27 08:27:50 -> [DEBUG] -   thread type:MainThread
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    16CreateComponentC
+2024-08-27 08:27:50 -> [DEBUG] -   total:   50    free:   48    use:    2    call:    2    15UpdateComponent
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14TimerComponent
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    7Console
+2024-08-27 08:27:50 -> [DEBUG] -   total:   50    free:   48    use:    2    call:    2    16MessageComponent
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    22ConsoleThreadComponent
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    4Yaml
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    4Log4
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14NetworkLocator
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    7ResPath
+2024-08-27 08:27:50 -> [DEBUG] -  -----------------------------------------------------
+2024-08-27 08:27:50 -> [DEBUG] -   thread id:139888292787968
+2024-08-27 08:27:50 -> [DEBUG] -   thread type:ListenThread
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    16CreateComponentC
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    13NetworkListen
+2024-08-27 08:27:50 -> [DEBUG] -   total:   50    free:   48    use:    2    call:    2    15UpdateComponent
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14TimerComponent
+2024-08-27 08:27:50 -> [DEBUG] -   total:   50    free:   47    use:    3    call:    3    16MessageComponent
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    22ConsoleThreadComponent
+2024-08-27 08:27:50 -> [DEBUG] -   total:   50    free:   49    use:    1    call:    1    10ConnectObj
+2024-08-27 08:27:50 -> [DEBUG] -  -----------------------------------------------------
+2024-08-27 08:27:50 -> [DEBUG] -   thread id:139888369743616
+2024-08-27 08:27:50 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    16CreateComponentC
+2024-08-27 08:27:50 -> [DEBUG] -   total:   50    free:   49    use:    1    call:    1    15UpdateComponent
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14TimerComponent
+2024-08-27 08:27:50 -> [DEBUG] -   total:   50    free:   47    use:    3    call:    3    16MessageComponent
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    22ConsoleThreadComponent
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    19ConsoleAppComponent
+2024-08-27 08:27:50 -> [DEBUG] -  -----------------------------------------------------
+2024-08-27 08:27:50 -> [DEBUG] -   thread id:139888378136320
+2024-08-27 08:27:50 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    16CreateComponentC
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    18LoginSyncComponent
+2024-08-27 08:27:50 -> [DEBUG] -   total:   50    free:   49    use:    1    call:    1    15UpdateComponent
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14TimerComponent
+2024-08-27 08:27:50 -> [DEBUG] -   total:   50    free:   47    use:    3    call:    3    16MessageComponent
+2024-08-27 08:27:50 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    22ConsoleThreadComponent
+2024-08-27 08:33:41 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-27 08:33:41 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
+2024-08-27 08:33:41 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-27 08:33:41 -> [INFO] -  epoll model. listen 127.0.0.1:5500
+2024-08-27 10:08:21 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-27 10:08:21 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
+2024-08-27 10:08:21 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-27 10:08:21 -> [INFO] -  epoll model. listen 127.0.0.1:5500
+2024-08-27 10:08:27 -> [ERROR] -  [0;31minput error. cmd:appp -info[0m
+2024-08-27 10:10:20 -> [DEBUG] -  ------------------------------------
+2024-08-27 10:10:20 -> [DEBUG] -   thread id:140260949383040
+2024-08-27 10:10:20 -> [DEBUG] -   thread type:MainThread
+2024-08-27 10:10:20 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 10:10:20 -> [DEBUG] -  	7Console count:1
+2024-08-27 10:10:20 -> [DEBUG] -  	4Yaml count:1
+2024-08-27 10:10:20 -> [DEBUG] -  	4Log4 count:1
+2024-08-27 10:10:20 -> [DEBUG] -  	14NetworkLocator count:1
+2024-08-27 10:10:20 -> [DEBUG] -  	7ResPath count:1
+2024-08-27 10:10:20 -> [DEBUG] -   total count:6
+2024-08-27 10:10:20 -> [DEBUG] -  ------------------------------------
+2024-08-27 10:10:20 -> [DEBUG] -   thread id:140260870452992
+2024-08-27 10:10:20 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 10:10:20 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 10:10:20 -> [DEBUG] -  	13SyncComponent count:1
+2024-08-27 10:10:20 -> [DEBUG] -   total count:2
+2024-08-27 10:10:20 -> [DEBUG] -  ------------------------------------
+2024-08-27 10:10:20 -> [DEBUG] -   thread id:140260853667584
+2024-08-27 10:10:20 -> [DEBUG] -   thread type:ListenThread
+2024-08-27 10:10:20 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 10:10:20 -> [DEBUG] -  	13NetworkListen count:1
+2024-08-27 10:10:20 -> [DEBUG] -   total count:2
+2024-08-27 10:10:20 -> [DEBUG] -  ------------------------------------
+2024-08-27 10:10:20 -> [DEBUG] -   thread id:140260862060288
+2024-08-27 10:10:20 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 10:10:20 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 10:10:20 -> [DEBUG] -  	19ConsoleAppComponent count:1
+2024-08-27 10:10:20 -> [DEBUG] -   total count:2
+2024-08-27 10:12:08 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-27 10:12:08 -> [DEBUG] -  Initialize thread: LogicThread thread num: 1
+2024-08-27 10:12:08 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-27 10:12:08 -> [INFO] -  epoll model. listen 127.0.0.1:5500
+2024-08-27 10:12:12 -> [DEBUG] -  ------------------------------------
+2024-08-27 10:12:46 -> [DEBUG] -  ------------------------------------
+2024-08-27 10:12:46 -> [DEBUG] -  appId:  101 type: login online: 0
+2024-08-27 10:13:06 -> [DEBUG] -  ------------------------------------
+2024-08-27 10:13:06 -> [DEBUG] -  appId:  101 type: login online: 0
+2024-08-27 10:13:06 -> [DEBUG] -  appId:  102 type: login online: 0
+2024-08-27 10:13:21 -> [DEBUG] -  ------------------------------------
+2024-08-27 10:13:21 -> [DEBUG] -  appId:  101 type: login online: 1
+2024-08-27 10:13:21 -> [DEBUG] -  appId:  102 type: login online: 0
+2024-08-27 10:13:41 -> [ERROR] -  [0;31minput error. can't find cmd:info[0m
+2024-08-27 10:13:44 -> [DEBUG] -  ------------------------------------
+2024-08-27 10:13:44 -> [DEBUG] -  appId:  101 type: login online: 2
+2024-08-27 10:13:44 -> [DEBUG] -  appId:  102 type: login online: 0
+2024-08-27 10:15:06 -> [DEBUG] -  ------------------------------------
+2024-08-27 10:15:06 -> [DEBUG] -  appId:  101 type: login online: 11
+2024-08-27 10:15:06 -> [DEBUG] -  appId:  102 type: login online: 0
+2024-08-27 11:31:54 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-27 11:31:54 -> [DEBUG] -  Initialize thread: LogicThread thread num: 1
+2024-08-27 11:31:54 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-27 11:31:54 -> [ERROR] -  [0;31m::bind failed. err:98[0m
+2024-08-27 11:38:01 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-27 11:38:01 -> [DEBUG] -  Initialize thread: LogicThread thread num: 1
+2024-08-27 11:38:01 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-27 11:38:01 -> [INFO] -  epoll model. listen 127.0.0.1:5500
+2024-08-27 11:38:12 -> [DEBUG] -  ------------------------------------
+2024-08-27 11:38:12 -> [DEBUG] -   thread id:139866407655296
+2024-08-27 11:38:12 -> [DEBUG] -   thread type:MainThread
+2024-08-27 11:38:12 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 11:38:12 -> [DEBUG] -  	7Console count:1
+2024-08-27 11:38:12 -> [DEBUG] -  	4Yaml count:1
+2024-08-27 11:38:12 -> [DEBUG] -  	4Log4 count:1
+2024-08-27 11:38:12 -> [DEBUG] -  	14NetworkLocator count:1
+2024-08-27 11:38:12 -> [DEBUG] -  	7ResPath count:1
+2024-08-27 11:38:12 -> [DEBUG] -   total count:6
+2024-08-27 11:38:12 -> [DEBUG] -  ------------------------------------
+2024-08-27 11:38:12 -> [DEBUG] -   thread id:139866328725248
+2024-08-27 11:38:12 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 11:38:12 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 11:38:12 -> [DEBUG] -  	13SyncComponent count:1
+2024-08-27 11:38:12 -> [DEBUG] -  	19ConsoleAppComponent count:1
+2024-08-27 11:38:12 -> [DEBUG] -   total count:3
+2024-08-27 11:38:12 -> [DEBUG] -  ------------------------------------
+2024-08-27 11:38:12 -> [DEBUG] -   thread id:139866320332544
+2024-08-27 11:38:12 -> [DEBUG] -   thread type:ListenThread
+2024-08-27 11:38:12 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 11:38:12 -> [DEBUG] -  	13NetworkListen count:1
+2024-08-27 11:38:12 -> [DEBUG] -   total count:2
+2024-08-27 11:38:38 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-27 11:38:38 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
+2024-08-27 11:38:38 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-27 11:38:38 -> [INFO] -  epoll model. listen 127.0.0.1:5500
+2024-08-27 11:38:44 -> [DEBUG] -  ------------------------------------
+2024-08-27 11:38:44 -> [DEBUG] -   thread id:140239863805824
+2024-08-27 11:38:44 -> [DEBUG] -   thread type:MainThread
+2024-08-27 11:38:44 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 11:38:44 -> [DEBUG] -  	7Console count:1
+2024-08-27 11:38:44 -> [DEBUG] -  	4Yaml count:1
+2024-08-27 11:38:44 -> [DEBUG] -  	4Log4 count:1
+2024-08-27 11:38:44 -> [DEBUG] -  	14NetworkLocator count:1
+2024-08-27 11:38:44 -> [DEBUG] -  	7ResPath count:1
+2024-08-27 11:38:44 -> [DEBUG] -   total count:6
+2024-08-27 11:38:44 -> [DEBUG] -  ------------------------------------
+2024-08-27 11:38:44 -> [DEBUG] -   thread id:140239784875776
+2024-08-27 11:38:44 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 11:38:44 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 11:38:44 -> [DEBUG] -  	13SyncComponent count:1
+2024-08-27 11:38:44 -> [DEBUG] -   total count:2
+2024-08-27 11:38:44 -> [DEBUG] -  ------------------------------------
+2024-08-27 11:38:44 -> [DEBUG] -   thread id:140239768090368
+2024-08-27 11:38:44 -> [DEBUG] -   thread type:ListenThread
+2024-08-27 11:38:44 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 11:38:44 -> [DEBUG] -  	13NetworkListen count:1
+2024-08-27 11:38:44 -> [DEBUG] -   total count:2
+2024-08-27 11:38:44 -> [DEBUG] -  ------------------------------------
+2024-08-27 11:38:44 -> [DEBUG] -   thread id:140239776483072
+2024-08-27 11:38:44 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 11:38:44 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 11:38:44 -> [DEBUG] -  	19ConsoleAppComponent count:1
+2024-08-27 11:38:44 -> [DEBUG] -   total count:2
+2024-08-27 16:03:04 -> [DEBUG] -  ------------------------------------
+2024-08-27 16:03:04 -> [DEBUG] -   total:   50    free:   50    use:    0    call:    4    6Packet
+2024-08-27 16:03:04 -> [DEBUG] -  -----------------------------------------------------
+2024-08-27 16:03:04 -> [DEBUG] -   thread id:140239863805824
+2024-08-27 16:03:04 -> [DEBUG] -   thread type:MainThread
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    16CreateComponentC
+2024-08-27 16:03:04 -> [DEBUG] -   total:   50    free:   48    use:    2    call:    2    15UpdateComponent
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14TimerComponent
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    7Console
+2024-08-27 16:03:04 -> [DEBUG] -   total:   50    free:   48    use:    2    call:    2    16MessageComponent
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    22ConsoleThreadComponent
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    4Yaml
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    4Log4
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14NetworkLocator
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    7ResPath
+2024-08-27 16:03:04 -> [DEBUG] -  -----------------------------------------------------
+2024-08-27 16:03:04 -> [DEBUG] -   thread id:140239776483072
+2024-08-27 16:03:04 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    16CreateComponentC
+2024-08-27 16:03:04 -> [DEBUG] -   total:   50    free:   49    use:    1    call:    1    15UpdateComponent
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14TimerComponent
+2024-08-27 16:03:04 -> [DEBUG] -   total:   50    free:   47    use:    3    call:    3    16MessageComponent
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    22ConsoleThreadComponent
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    19ConsoleAppComponent
+2024-08-27 16:03:04 -> [DEBUG] -  -----------------------------------------------------
+2024-08-27 16:03:04 -> [DEBUG] -   thread id:140239784875776
+2024-08-27 16:03:04 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    16CreateComponentC
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    18LoginSyncComponent
+2024-08-27 16:03:04 -> [DEBUG] -   total:   50    free:   49    use:    1    call:    1    15UpdateComponent
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14TimerComponent
+2024-08-27 16:03:04 -> [DEBUG] -   total:   50    free:   47    use:    3    call:    3    16MessageComponent
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    22ConsoleThreadComponent
+2024-08-27 16:03:04 -> [DEBUG] -  -----------------------------------------------------
+2024-08-27 16:03:04 -> [DEBUG] -   thread id:140239768090368
+2024-08-27 16:03:04 -> [DEBUG] -   thread type:ListenThread
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    16CreateComponentC
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    13NetworkListen
+2024-08-27 16:03:04 -> [DEBUG] -   total:   50    free:   48    use:    2    call:    2    15UpdateComponent
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14TimerComponent
+2024-08-27 16:03:04 -> [DEBUG] -   total:   50    free:   47    use:    3    call:    3    16MessageComponent
+2024-08-27 16:03:04 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    22ConsoleThreadComponent
+2024-08-27 16:06:06 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-27 16:06:06 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
+2024-08-27 16:06:06 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-27 16:33:50 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-27 16:33:50 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
+2024-08-27 16:33:50 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-27 16:39:47 -> [INFO] -  epoll model. listen 127.0.0.1:5500
+2024-08-27 16:39:54 -> [DEBUG] -  ------------------------------------
+2024-08-27 16:39:54 -> [DEBUG] -   thread id:140737353979776
+2024-08-27 16:39:54 -> [DEBUG] -   thread type:MainThread
+2024-08-27 16:39:54 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 16:39:54 -> [DEBUG] -  	7Console count:1
+2024-08-27 16:39:54 -> [DEBUG] -  	4Yaml count:1
+2024-08-27 16:39:54 -> [DEBUG] -  	4Log4 count:1
+2024-08-27 16:39:54 -> [DEBUG] -  	14NetworkLocator count:1
+2024-08-27 16:39:54 -> [DEBUG] -  	7ResPath count:1
+2024-08-27 16:39:54 -> [DEBUG] -   total count:6
+2024-08-27 16:39:54 -> [DEBUG] -  ------------------------------------
+2024-08-27 16:39:54 -> [DEBUG] -   thread id:140737258272512
+2024-08-27 16:39:54 -> [DEBUG] -   thread type:ListenThread
+2024-08-27 16:39:54 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 16:39:54 -> [DEBUG] -  	13NetworkListen count:1
+2024-08-27 16:39:54 -> [DEBUG] -   total count:2
+2024-08-27 16:39:54 -> [DEBUG] -  ------------------------------------
+2024-08-27 16:39:54 -> [DEBUG] -   thread id:140737275057920
+2024-08-27 16:39:54 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 16:39:54 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 16:39:54 -> [DEBUG] -  	13SyncComponent count:1
+2024-08-27 16:39:54 -> [DEBUG] -  	19ConsoleAppComponent count:1
+2024-08-27 16:39:54 -> [DEBUG] -   total count:3
+2024-08-27 16:39:54 -> [DEBUG] -  ------------------------------------
+2024-08-27 16:39:54 -> [DEBUG] -   thread id:140737266665216
+2024-08-27 16:39:54 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 16:39:54 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 16:39:54 -> [DEBUG] -  	19ConsoleAppComponent count:1
+2024-08-27 16:39:54 -> [DEBUG] -   total count:2
+2024-08-27 16:40:23 -> [DEBUG] -  ------------------------------------
+2024-08-27 16:40:23 -> [DEBUG] -   total:   50    free:   50    use:    0    call:    4    6Packet
+2024-08-27 16:40:23 -> [DEBUG] -  -----------------------------------------------------
+2024-08-27 16:40:23 -> [DEBUG] -   thread id:140737353979776
+2024-08-27 16:40:23 -> [DEBUG] -   thread type:MainThread
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    16CreateComponentC
+2024-08-27 16:40:23 -> [DEBUG] -   total:   50    free:   48    use:    2    call:    2    15UpdateComponent
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14TimerComponent
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    7Console
+2024-08-27 16:40:23 -> [DEBUG] -   total:   50    free:   48    use:    2    call:    2    16MessageComponent
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    22ConsoleThreadComponent
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    4Yaml
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    4Log4
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14NetworkLocator
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    7ResPath
+2024-08-27 16:40:23 -> [DEBUG] -  -----------------------------------------------------
+2024-08-27 16:40:23 -> [DEBUG] -   thread id:140737275057920
+2024-08-27 16:40:23 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    16CreateComponentC
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    18LoginSyncComponent
+2024-08-27 16:40:23 -> [DEBUG] -   total:   50    free:   49    use:    1    call:    1    15UpdateComponent
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14TimerComponent
+2024-08-27 16:40:23 -> [DEBUG] -   total:   50    free:   46    use:    4    call:    4    16MessageComponent
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    22ConsoleThreadComponent
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    19ConsoleAppComponent
+2024-08-27 16:40:23 -> [DEBUG] -  -----------------------------------------------------
+2024-08-27 16:40:23 -> [DEBUG] -   thread id:140737258272512
+2024-08-27 16:40:23 -> [DEBUG] -   thread type:ListenThread
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    16CreateComponentC
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    13NetworkListen
+2024-08-27 16:40:23 -> [DEBUG] -   total:   50    free:   48    use:    2    call:    2    15UpdateComponent
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14TimerComponent
+2024-08-27 16:40:23 -> [DEBUG] -   total:   50    free:   47    use:    3    call:    3    16MessageComponent
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    22ConsoleThreadComponent
+2024-08-27 16:40:23 -> [DEBUG] -  -----------------------------------------------------
+2024-08-27 16:40:23 -> [DEBUG] -   thread id:140737266665216
+2024-08-27 16:40:23 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    16CreateComponentC
+2024-08-27 16:40:23 -> [DEBUG] -   total:   50    free:   49    use:    1    call:    1    15UpdateComponent
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    14TimerComponent
+2024-08-27 16:40:23 -> [DEBUG] -   total:   50    free:   47    use:    3    call:    3    16MessageComponent
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    22ConsoleThreadComponent
+2024-08-27 16:40:23 -> [DEBUG] -   total:    1    free:    0    use:    1    call:    1    19ConsoleAppComponent
+2024-08-27 18:06:55 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-27 18:06:55 -> [DEBUG] -  Initialize thread: LogicThread thread num: 3
+2024-08-27 18:06:55 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-27 18:06:55 -> [INFO] -  epoll model. listen 127.0.0.1:5500
+2024-08-27 18:07:06 -> [DEBUG] -  ------------------------------------
+2024-08-27 18:07:06 -> [DEBUG] -   thread id:140649534678912
+2024-08-27 18:07:06 -> [DEBUG] -   thread type:MainThread
+2024-08-27 18:07:06 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 18:07:06 -> [DEBUG] -  	7Console count:1
+2024-08-27 18:07:06 -> [DEBUG] -  	4Yaml count:1
+2024-08-27 18:07:06 -> [DEBUG] -  	4Log4 count:1
+2024-08-27 18:07:06 -> [DEBUG] -  	14NetworkLocator count:1
+2024-08-27 18:07:06 -> [DEBUG] -  	7ResPath count:1
+2024-08-27 18:07:06 -> [DEBUG] -   total count:6
+2024-08-27 18:07:06 -> [DEBUG] -  ------------------------------------
+2024-08-27 18:07:06 -> [DEBUG] -   thread id:140649455748864
+2024-08-27 18:07:06 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 18:07:06 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 18:07:06 -> [DEBUG] -  	13SyncComponent count:1
+2024-08-27 18:07:06 -> [DEBUG] -  	19ConsoleAppComponent count:1
+2024-08-27 18:07:06 -> [DEBUG] -   total count:3
+2024-08-27 18:07:06 -> [DEBUG] -  ------------------------------------
+2024-08-27 18:07:06 -> [DEBUG] -   thread id:140649357629184
+2024-08-27 18:07:06 -> [DEBUG] -   thread type:ListenThread
+2024-08-27 18:07:06 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 18:07:06 -> [DEBUG] -  	13NetworkListen count:1
+2024-08-27 18:07:06 -> [DEBUG] -   total count:2
+2024-08-27 18:07:06 -> [DEBUG] -  ------------------------------------
+2024-08-27 18:07:06 -> [DEBUG] -   thread id:140649374414592
+2024-08-27 18:07:06 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 18:07:06 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 18:07:06 -> [DEBUG] -  	19ConsoleAppComponent count:1
+2024-08-27 18:07:06 -> [DEBUG] -   total count:2
+2024-08-27 18:07:06 -> [DEBUG] -  ------------------------------------
+2024-08-27 18:07:06 -> [DEBUG] -   thread id:140649366021888
+2024-08-27 18:07:06 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 18:07:06 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 18:07:06 -> [DEBUG] -  	19ConsoleAppComponent count:1
+2024-08-27 18:07:06 -> [DEBUG] -   total count:2
+2024-08-27 18:07:30 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-08-27 18:07:30 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
+2024-08-27 18:07:30 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-08-27 18:07:30 -> [INFO] -  epoll model. listen 127.0.0.1:5500
+2024-08-27 18:07:38 -> [DEBUG] -  ------------------------------------
+2024-08-27 18:07:38 -> [DEBUG] -   thread id:140049518020480
+2024-08-27 18:07:38 -> [DEBUG] -   thread type:MainThread
+2024-08-27 18:07:38 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 18:07:38 -> [DEBUG] -  	7Console count:1
+2024-08-27 18:07:38 -> [DEBUG] -  	4Yaml count:1
+2024-08-27 18:07:38 -> [DEBUG] -  	4Log4 count:1
+2024-08-27 18:07:38 -> [DEBUG] -  	14NetworkLocator count:1
+2024-08-27 18:07:38 -> [DEBUG] -  	7ResPath count:1
+2024-08-27 18:07:38 -> [DEBUG] -   total count:6
+2024-08-27 18:07:38 -> [DEBUG] -  ------------------------------------
+2024-08-27 18:07:38 -> [DEBUG] -   thread id:140049430697728
+2024-08-27 18:07:38 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 18:07:38 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 18:07:38 -> [DEBUG] -  	19ConsoleAppComponent count:1
+2024-08-27 18:07:38 -> [DEBUG] -   total count:2
+2024-08-27 18:07:38 -> [DEBUG] -  ------------------------------------
+2024-08-27 18:07:38 -> [DEBUG] -   thread id:140049439090432
+2024-08-27 18:07:38 -> [DEBUG] -   thread type:LogicThread
+2024-08-27 18:07:38 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 18:07:38 -> [DEBUG] -  	13SyncComponent count:1
+2024-08-27 18:07:38 -> [DEBUG] -  	19ConsoleAppComponent count:1
+2024-08-27 18:07:38 -> [DEBUG] -   total count:3
+2024-08-27 18:07:38 -> [DEBUG] -  ------------------------------------
+2024-08-27 18:07:38 -> [DEBUG] -   thread id:140049219843840
+2024-08-27 18:07:38 -> [DEBUG] -   thread type:ListenThread
+2024-08-27 18:07:38 -> [DEBUG] -  	14TimerComponent count:1
+2024-08-27 18:07:38 -> [DEBUG] -  	13NetworkListen count:1
+2024-08-27 18:07:38 -> [DEBUG] -   total count:2
+2024-08-27 18:09:18 -> [DEBUG] -  ------------------------------------
+2024-08-27 18:09:18 -> [DEBUG] -  appId:  101 type: login online: 0
+2024-08-27 18:09:18 -> [DEBUG] -  appId:  102 type: login online: 0
