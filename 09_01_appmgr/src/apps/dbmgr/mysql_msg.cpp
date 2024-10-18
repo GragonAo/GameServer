@@ -40,11 +40,11 @@ void MysqlConnector::HandleQueryPlayerList(Packet *pPacket) {
   // 解析收到的消息
   auto protoQuery = pPacket->ParseToProto<Proto::QueryPlayerList>();
   // 调用查询玩家列表的函数
-  QueryPlayerList(protoQuery.account(), pPacket->GetSocket());
+  QueryPlayerList(protoQuery.account(), pPacket);
 }
 
 // 查询玩家列表的具体实现
-void MysqlConnector::QueryPlayerList(std::string account, SOCKET socket) {
+void MysqlConnector::QueryPlayerList(std::string account,NetworkIdentify* pIdentify) {
   my_ulonglong affected_rows;
   // 构建SQL查询语句
   std::string sql = strutil::format(
@@ -80,10 +80,10 @@ void MysqlConnector::QueryPlayerList(std::string account, SOCKET socket) {
   }
   LOG_DEBUG("player list. account: " << account.c_str() << " player list size: "
                                      << protoRs.player_size()
-                                     << " socket:" << socket);
+                                     << " socket:" << pIdentify->GetSocketKey().Socket);
 
   // 即使没有找到结果，也需要返回响应包
-  MessageSystemHelp::SendPacket(Proto::MsgId::L2DB_QueryPlayerListRs, socket,
+  MessageSystemHelp::SendPacket(Proto::MsgId::L2DB_QueryPlayerListRs,pIdentify,
                                 protoRs);
 }
 
@@ -125,7 +125,7 @@ void MysqlConnector::HandlQueryPlayer(Packet *pPacket) {
 
   // 发送查询结果的响应包
   MessageSystemHelp::SendPacket(Proto::MsgId::G2DB_QueryPlayerRs,
-                                pPacket->GetSocket(), protoRs);
+                                pPacket, protoRs);
 }
 
 // 处理创建玩家的函数
@@ -159,10 +159,10 @@ void MysqlConnector::HandleCreatePlayer(Packet *pPacket) {
 
   // 根据执行结果，返回创建成功后的玩家列表或错误响应
   if (protoRs.return_code() == Proto::CreatePlayerReturnCode::CPR_Create_OK) {
-    QueryPlayerList(protoCreate.account(), pPacket->GetSocket());
+    QueryPlayerList(protoCreate.account(), pPacket);
   } else {
     MessageSystemHelp::SendPacket(Proto::MsgId::L2DB_CreatePlayerRs,
-                                  pPacket->GetSocket(), protoRs);
+                                  pPacket, protoRs);
   }
 }
 

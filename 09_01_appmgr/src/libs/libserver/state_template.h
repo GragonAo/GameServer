@@ -13,7 +13,7 @@
 // 模板类 StateTemplate，定义了状态的基础接口
 template <typename enumType, class T> class StateTemplate {
 public:
-  StateTemplate() {}
+  StateTemplate() {_pParentObj = nullptr;}
   void SetParentObj(T *pObj) { _pParentObj = pObj; } // 设置父对象
   virtual ~StateTemplate() {}
   virtual enumType GetState() = 0; // 获取当前状态类型
@@ -22,7 +22,7 @@ public:
   virtual void LeaveState() = 0; // 离开状态
 
 protected:
-  T *_pParentObj; // 父对象指针
+  T *_pParentObj{nullptr}; // 父对象指针
 };
 
 // 状态管理器模板类，管理状态的切换和更新
@@ -63,6 +63,9 @@ public:
 
 protected:
   virtual void RegisterState() = 0; // 纯虚函数，注册所有状态
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
 
 public:
   typedef StateClass *(*CreateIstancePt)(); // 函数指针类型，用于创建状态对象

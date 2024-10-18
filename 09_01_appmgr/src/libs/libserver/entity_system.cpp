@@ -1,8 +1,7 @@
 #include "entity_system.h"
 #include "common.h"
 #include "component.h"
-#include "console.h"
-#include "log4.h"
+#include "component_collections.h"
 #include "log4_help.h"
 #include "message_system.h"
 #include "system_manager.h"
@@ -27,9 +26,12 @@ void EntitySystem::RemoveComponent(IComponent *pObj) {
                                                     << " . not found class.");
     return; // 记录警告日志，说明未找到对应的组件类，函数返回
   }
-
   // 从找到的系统中移除该组件
   iterObj->second->Remove(entitySn);
+
+#if LOG_SYSOBJ_OPEN
+    LOG_SYSOBJ("*[sys] remove obj. obj sn:" << pObj->GetSN() << " type:" << pObj->GetTypeName() << " thead id:" << std::this_thread::get_id());
+#endif
 }
 
 // 更新系统的方法：对所有组件系统进行更新操作

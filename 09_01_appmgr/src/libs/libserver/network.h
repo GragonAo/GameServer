@@ -3,10 +3,12 @@
 #include "cache_swap.h"
 #include "common.h" // 包含项目中的常用定义或声明
 #include "entity.h"
+#include "connect_obj.h"
+#include "network_help.h"
 #include "message_system.h"
-#include "network_interface.h"
 #include "socket_object.h" // 包含 ISocketObject 接口的声明
 #include <map>             // 使用 STL 的 map 容器
+
 
 #include <errno.h>  // 错误号相关的定义
 #include <fcntl.h>  // 文件控制定义
@@ -48,18 +50,19 @@
 
 #ifndef RemoveConnectObj
 #define RemoveConnectObj(iter)                                                 \
-    iter->second->ComponentBackToPool();                                       \
-    iter = _connects.erase(iter);
+  iter->second->ComponentBackToPool();                                         \
+  iter = _connects.erase(iter);
 #endif
 
 #ifdef EPOLL
 #undef RemoveConnectObj
 #define RemoveConnectObj(iter)                                                 \
-    iter->second->ComponentBackToPool();                                       \
-    DeleteEvent(_epfd, iter->first);                                           \
-    iter = _connects.erase(iter);
+  iter->second->ComponentBackToPool();                                         \
+  DeleteEvent(_epfd, iter->first);                                             \
+  iter = _connects.erase(iter);
 #endif
 
+#define SetsockOptType void *
 
 // 前置声明类
 class ConnectObj;
@@ -69,26 +72,20 @@ class Packet;
 class Network : public Entity<Network>, public INetwork {
 public:
   void BackToPool() override;
-
-  // 获取套接字
-  SOCKET GetSocket() override { return _masterSocket; }
-
   // 发送数据包
   void SendPacket(Packet *&pPacket) override;
-
-  bool IsBroadcast() { return _isBroadcast; }
+  NetworkType GetNetworkType() const { return _networkType; }
 
 protected:
   // 设置套接字选项
-  static void SetSocketOpt(SOCKET socket);
-
+  void SetSocketOpt(SOCKET socket);
   // 创建套接字
-  static SOCKET CreateSocket();
-
+  SOCKET CreateSocket();
+  bool CheckSocket(SOCKET socket);
   // 创建连接对象
-  void CreateConnectObj(SOCKET socket);
+  bool CreateConnectObj(SOCKET socket, ObjectKey key, ConnectStateType iState);
 
-  void Clean();
+  void HandleDisconnect(Packet *pPacket);
 
 #ifdef EPOLL
   // 初始化 epoll
@@ -105,6 +102,8 @@ protected:
 
   // 从 epoll 中删除事件
   void DeleteEvent(int epollfd, int fd);
+
+  virtual void OnEpoll(SOCKET fd, int index) {};
 #else
   // 使用 select 处理
   void Select();
@@ -112,20 +111,20 @@ protected:
   void OnNetworkUpdate();
 
 protected:
-  SOCKET _masterSocket{INVALID_SOCKET};     // 主套接字
   std::map<SOCKET, ConnectObj *> _connects; // 存储连接对象的映射
 
 #ifdef EPOLL
 #define MAX_CLIENT 5120                  // 最大客户端数量
 #define MAX_EVENT 5120                   // 最大事件数量
   struct epoll_event _events[MAX_EVENT]; // epoll 事件数组
-  int _epfd;                             // epoll 文件描述符
-  int _mainSocketEventIndex{-1};         // 主套接字事件索引
+  int _epfd{-1};                             // epoll 文件描述符
 #else
+  SOCKET _fdMax{INVALID_SOCKET};
   fd_set readfds, writefds, exceptfds; // 文件描述符集合
 #endif
 
   std::mutex _sendMsgMutex;       // 发送消息的互斥锁
   CacheSwap<Packet> _sendMsgList; // 发送消息列表
-  bool _isBroadcast{true};
+
+  NetworkType _networkType{NetworkType::TcpListen};
 };

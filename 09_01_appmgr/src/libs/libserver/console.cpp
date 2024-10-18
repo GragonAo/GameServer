@@ -81,7 +81,6 @@ void Console::BackToPool() {
     _thread.detach();
   else
     _thread.join();
-  std::cout << "Console BackToPool _thread close"<<std::endl;
 }
 
 // 更新控制台，处理输入命令

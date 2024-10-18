@@ -3,6 +3,8 @@
 #include "base_buffer.h"
 #include "common.h"
 #include "entity.h"
+#include "socket_object.h"
+#include <cstring>
 
 #pragma pack(push)
 #pragma pack(4)
@@ -11,25 +13,19 @@ struct PacketHead {
   unsigned short MsgId;
 };
 
-struct PacketInnerHead :public PacketHead
-{
-    unsigned int ThreadType;
-    unsigned short ChooseType;
-};
-
 #pragma pack(pop)
 
 #define DEAULT_PACKET_BUFFER_SIZE 1024 * 10
 
 class Packet : public Entity<Packet>,
                public Buffer,
-               public IAwakeFromPoolSystem<Proto::MsgId, SOCKET> {
+               public NetworkIdentify,
+               public IAwakeFromPoolSystem<Proto::MsgId, NetworkIdentify*> {
 public:
   Packet();
-
   ~Packet();
 
-  void Awake(const Proto::MsgId msgId, SOCKET socket) override;
+  void Awake(const Proto::MsgId msgId, NetworkIdentify* pIdentify) override;
 
   template <class ProtoClass> ProtoClass ParseToProto() {
     ProtoClass proto;
@@ -38,12 +34,20 @@ public:
   }
 
   template <class ProtoClass> void SerializeToBuffer(ProtoClass &protoClass) {
-    auto total = protoClass.ByteSizeLong();
+    auto total = (unsigned int)protoClass.ByteSizeLong();
     while (GetEmptySize() < total) {
       ReAllocBuffer();
     }
     protoClass.SerializePartialToArray(GetBuffer(), total);
     FillData(total);
+  }
+
+  void SerializeToBuffer(const char* s,unsigned int len){
+    while(GetEmptySize() < len){
+      ReAllocBuffer();
+    }
+    ::memcpy(_buffer+_endIndex, s, len);
+    FillData(len);
   }
 
   void BackToPool() override;
@@ -53,8 +57,6 @@ public:
   int GetMsgId() const;
   void FillData(unsigned int size);
   void ReAllocBuffer();
-  SOCKET GetSocket() const;
-  void SetSocket(SOCKET socket);
 
   // ref
   void AddRef();
@@ -64,7 +66,6 @@ public:
 
 private:
   Proto::MsgId _msgId;
-  SOCKET _socket;
   
   std::atomic<int> _ref{0};
   bool _isRefOpen{false};

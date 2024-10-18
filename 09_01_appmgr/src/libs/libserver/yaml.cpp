@@ -28,7 +28,7 @@ void Yaml::Awake() {
   LoadConfig(APP_TYPE::APP_DB_MGR, config);
   LoadConfig(APP_TYPE::APP_APPMGR, config);
 
-  std::cout << "Yaml awake is Ok " << std::endl;
+  LOG_DEBUG("Yaml awake is Ok.");
 }
 
 void Yaml::BackToPool() {
@@ -94,6 +94,9 @@ void Yaml::LoadConfig(APP_TYPE appType, YAML::Node &config) {
   if (pCommon != nullptr) {
     pCommon->Ip = node["ip"].as<std::string>();
     pCommon->Port = node["port"].as<int>();
+
+    if (node["http_port"])
+      pCommon->HttpPort = node["http_port"].as<int>();
   }
 
   const auto pAppConfig = dynamic_cast<AppConfig *>(pYamlConfig);
@@ -102,10 +105,21 @@ void Yaml::LoadConfig(APP_TYPE appType, YAML::Node &config) {
       pAppConfig->LogicThreadNum = node["thread_logic"].as<int>();
     else
       pAppConfig->LogicThreadNum = 0;
+
     if (node["thread_mysql"]) {
       pAppConfig->MysqlThreadNum = node["thread_mysql"].as<int>();
     } else
       pAppConfig->MysqlThreadNum = 0;
+    
+    if (node["thread_listen"])
+      pAppConfig->ListenThreadNum = node["thread_listen"].as<int>();
+    else
+      pAppConfig->ListenThreadNum = 0;
+    
+    if (node["thread_connector"])
+      pAppConfig->ConnectThreadNum = node["thread_connector"].as<int>();
+    else
+      pAppConfig->ConnectThreadNum = 0;
   }
 
   _configs.insert(std::make_pair(appType, pYamlConfig));
@@ -122,16 +136,22 @@ DBConfig Yaml::LoadDbConfig(YAML::Node node) const {
                      ::tolower);
     } else if (key == "ip")
       one.Ip = iter->second.as<std::string>();
+    
     else if (key == "port")
       one.Port = iter->second.as<int>();
+    
     else if (key == "user")
       one.User = iter->second.as<std::string>();
+    
     else if (key == "password")
       one.Password = iter->second.as<std::string>();
+    
     else if (key == "character_set")
       one.CharacterSet = iter->second.as<std::string>();
+    
     else if (key == "collation")
       one.Collation = iter->second.as<std::string>();
+    
     else if (key == "database_name")
       one.DatabaseName = iter->second.as<std::string>();
 

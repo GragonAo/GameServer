@@ -9,6 +9,7 @@ class IEntity;
 class SystemManager;
 class IDynamicObjectPool;
 
+//计时器回调
 using TimerHandleFunction = std::function<void(void)>;
 
 class IComponent : virtual public SnObject {

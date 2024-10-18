@@ -1,9 +1,14 @@
+#include "network.h"
+#include "log4_help.h"
+#include "network_help.h"
+#include "network_type.h"
 #include "packet.h"
 #include "network_buffer.h"
 #include "connect_obj.h"
 #include "message_system_help.h"
 #include <cstdlib>
 #include <cstring>
+#include "mongoose/mongoose.h"
 
 NetworkBuffer::NetworkBuffer(const unsigned size, ConnectObj* pConnectObj)
 {
@@ -17,8 +22,7 @@ NetworkBuffer::NetworkBuffer(const unsigned size, ConnectObj* pConnectObj)
 
 NetworkBuffer::~NetworkBuffer()
 {
-    if (_buffer != nullptr)
-        delete[] _buffer;
+    delete[] _buffer;
 }
 
 void NetworkBuffer::BackToPool()
@@ -116,7 +120,15 @@ int RecvNetworkBuffer::GetBuffer(char*& pBuffer) const
     return GetWriteSize();
 }
 
-Packet* RecvNetworkBuffer::GetPacket()
+Packet* RecvNetworkBuffer::GetPacket(){
+    auto pNetwork = _pConnectObj->GetParent<Network>();
+    if(!NetworkHelp::IsTcp(pNetwork->GetNetworkType())){
+        return GetHttpPacket();
+    }
+    return GetTcpPacket();
+}
+
+Packet* RecvNetworkBuffer::GetTcpPacket()
 {
 
     if (_dataSize < sizeof(TotalSizeType))
@@ -151,8 +163,7 @@ Packet* RecvNetworkBuffer::GetPacket()
         return nullptr;
     }
 
-    const auto socket = _pConnectObj->GetSocket();
-    Packet* pPacket = MessageSystemHelp::CreatePacket((Proto::MsgId)head.MsgId, socket);
+    Packet* pPacket = MessageSystemHelp::CreatePacket((Proto::MsgId)head.MsgId, _pConnectObj);
     const auto dataLength = totalSize - sizeof(PacketHead) - sizeof(TotalSizeType);
     while (pPacket->GetTotalSize() < dataLength)
     {
@@ -163,6 +174,49 @@ Packet* RecvNetworkBuffer::GetPacket()
     pPacket->FillData(dataLength);
     RemoveData(dataLength);
 
+    return pPacket;
+}
+
+Packet* RecvNetworkBuffer::GetHttpPacket(){
+    if(_endIndex < _beginIndex){
+        _pConnectObj->Close();
+        LOG_ERROR("http recv invalid.");
+        return nullptr;
+    }
+    
+    const unsigned int recvBufLength = _endIndex-_beginIndex;
+    const auto pNetwork = _pConnectObj->GetParent<Network>();
+    const auto iType = pNetwork->GetNetworkType();
+    const bool isConnector = iType == NetworkType::HttpConnector;
+
+    http_message hm;
+    const unsigned int headerLen = mg_parse_http(_buffer+_beginIndex, _endIndex, &hm, !isConnector);
+    if(headerLen <= 0)
+        return nullptr;
+
+    unsigned int bodyLen = 0;
+    const auto mgBody = mg_get_http_header(&hm, "Content-Length");
+    if(mgBody != nullptr){
+        bodyLen = atoi(mgBody->p);
+        if(bodyLen > 0 && (recvBufLength < (bodyLen + headerLen)))
+            return nullptr;
+    }
+    
+    bool isChunked = false;
+    const auto mgTransferEncoding = mg_get_http_header(&hm, "Transfer-Encoding");
+    if(mgTransferEncoding != nullptr && mg_vcasecmp(mgTransferEncoding, "chunked") == 0){
+        isChunked = true;
+
+        if(recvBufLength == headerLen)
+            return nullptr;
+        bodyLen = mg_http_get_request_len(_buffer+_beginIndex+headerLen, recvBufLength - headerLen);
+        if(bodyLen <= 0)
+            return nullptr;
+        bodyLen = _endIndex - _beginIndex - headerLen;
+    }
+
+    Packet* pPacket = MessageSystemHelp::ParseHttp(_pConnectObj,_buffer + _beginIndex + headerLen, bodyLen, isChunked, &hm);
+    RemoveData(bodyLen + headerLen);
     return pPacket;
 }
 

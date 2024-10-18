@@ -2,7 +2,6 @@
 #include "component_help.h"
 #include "connect_obj.h"
 #include "global.h"
-#include "network_interface.h"
 #include "log4_help.h"
 #include "message_component.h"
 #include "network.h"
@@ -11,6 +10,7 @@
 #include "update_component.h"
 
 void NetworkListen::Awake(std::string ip, int port, NetworkType iType) {
+  _networkType = iType;
 
   auto pNetworkLocator = ThreadMgr::GetInstance()
                              ->GetEntitySystem()
@@ -23,6 +23,9 @@ void NetworkListen::Awake(std::string ip, int port, NetworkType iType) {
   pMsgCallBack->RegisterFunction(
       Proto::MsgId::MI_NetworkRequestDisconnect,
       BindFunP1(this, &NetworkListen::HandleDisconnect));
+  pMsgCallBack->RegisterFunction(
+      Proto::MsgId::MI_NetworkListenKey,
+      BindFunP1(this, &NetworkListen::HandleListenKey));
 
   // update
   auto pUpdateComponent = AddComponent<UpdateComponent>();
@@ -31,6 +34,10 @@ void NetworkListen::Awake(std::string ip, int port, NetworkType iType) {
   _masterSocket = CreateSocket();
   if (_masterSocket == INVALID_SOCKET)
     return;
+
+  int isOn = 1;
+  setsockopt(_masterSocket, SOL_SOCKET, SO_REUSEADDR, (SetsockOptType)&isOn,
+             sizeof(isOn));
 
   sockaddr_in addr;
   memset(&addr, 0, sizeof(sockaddr_in));
@@ -43,22 +50,44 @@ void NetworkListen::Awake(std::string ip, int port, NetworkType iType) {
     LOG_ERROR("::bind failed. err:" << _sock_err());
     return;
   }
-  if (::listen(_masterSocket, SOMAXCONN) < 0) {
+  const int maxConn = 1024; // SOMAXCONN
+  if (::listen(_masterSocket, maxConn) < 0) {
     LOG_ERROR("::listen failed." << _sock_err());
   }
 #ifdef EPOLL
-  LOG_INFO("epoll model. listen " << ip.c_str() << ":" << port);
+  LOG_INFO("epoll model. listen " << ip.c_str() << ":" << port
+                                  << " SOMAXCONN:" << maxConn);
   InitEpoll();
+  AddEvent(_epfd, _masterSocket, EPOLLIN | EPOLLET | EPOLLOUT | EPOLLRDHUP);
 #else
-  LOG_INFO("select model. listen " << ip.c_str() << ":" << port);
+  LOG_INFO("select model. listen " << ip.c_str() << ":" << port
+                                   << " SOMAXCONN:" << maxConn);
 #endif
   return;
+}
+
+void NetworkListen::BackToPool() {
+#ifdef EPOLL
+  _mainSocketEventIndex = -1;
+#endif
+  _sock_close(_masterSocket);
+  _masterSocket = INVALID_SOCKET;
+
+  Network::BackToPool();
 }
 
 void NetworkListen::Awake(int appType, int appId) {
   auto pGlobal = Global::GetInstance();
   auto pYaml = ComponentHelp::GetYaml();
-  auto pCommonConfig = pYaml->GetIPEndPoint(pGlobal->GetCurAppType(),pGlobal->GetCurAppId());
+  auto pCommonConfig =
+      pYaml->GetIPEndPoint(pGlobal->GetCurAppType(), pGlobal->GetCurAppId());
+  if (pCommonConfig == nullptr) {
+    LOG_ERROR("failed to get config of listen. appType:"
+              << GetAppName(pGlobal->GetCurAppType())
+              << " appId:" << pGlobal->GetCurAppId());
+    return;
+  }
+  
   Awake(pCommonConfig->Ip, pCommonConfig->Port, NetworkType::TcpListen);
 }
 
@@ -66,36 +95,22 @@ void NetworkListen::Awake(std::string ip, int port) {
   Awake(ip, port, NetworkType::HttpListen);
 }
 
-#ifdef EPOLL
-void NetworkListen::Update() {
-  Epoll();
-  if (_mainSocketEventIndex >= 0) {
-    Accept();
-  }
-  Network::OnNetworkUpdate();
-}
-#else
-void NetworkListen::Update() {
-  Select();
-  if (FD_ISSET(_masterSocket, &readfds)) {
-    Accept();
-  }
-  Network::OnNetworkUpdate();
-}
-#endif
-
 int NetworkListen::Accept() {
   struct sockaddr socketClient;
   socklen_t socketLength = sizeof(socketClient);
+
   int rs = 0;
   while (true) {
     const SOCKET socket = ::accept(_masterSocket, &socketClient, &socketLength);
     if (socket == INVALID_SOCKET)
       return rs;
-    // std::cout << "accept socket:"<<socket << std::endl;
-    SetSocketOpt(socket);
-    CreateConnectObj(socket);
+    std::cout << "accept socket:"<<socket << std::endl;
+    if (!CreateConnectObj(socket, ObjectKey(), ConnectStateType::Connected)) {
+      _sock_close(socket);
+      continue;
+    }
 
+    SetSocketOpt(socket);
     ++rs;
   }
 }
@@ -104,16 +119,65 @@ const char *NetworkListen::GetTypeName() {
   return typeid(NetworkListen).name();
 }
 
-void NetworkListen::HandleDisconnect(Packet *pPacket) {
-  auto socket = pPacket->GetSocket();
-  auto iter = _connects.find(socket);
+uint64 NetworkListen::GetTypeHashCode() {
+  return typeid(NetworkListen).hash_code();
+}
+
+void NetworkListen::CmdShow() {
+  LOG_DEBUG("\tsocket size:" << _connects.size());
+}
+
+#ifndef EPOLL
+
+void NetworkListen::Update() {
+  FD_ZERO(&readfds);
+  FD_ZERO(&writefds);
+  FD_ZERO(&exceptfds);
+
+  FD_SET(_masterSocket, &readfds);
+  FD_SET(_masterSocket, &writefds);
+  FD_SET(_masterSocket, &exceptfds);
+
+  _fdMax = _masterSocket;
+
+  Select();
+
+  if (FD_ISSET(_masterSocket, &readfds)) {
+    Accept();
+  }
+
+  Network::OnNetworkUpdate();
+}
+#else
+void NetworkListen::OnEpoll(SOCKET fd, int index) {
+  if (fd == _masterSocket) {
+    _mainSocketEventIndex = index;
+  }
+}
+
+void NetworkListen::Update() {
+  _mainSocketEventIndex = -1;
+
+  Epoll();
+
+  if (_mainSocketEventIndex >= 0) {
+    Accept();
+  }
+
+  Network::OnNetworkUpdate();
+}
+#endif
+
+void NetworkListen::HandleListenKey(Packet *pPacket) {
+  const auto socketKey = pPacket->GetSocketKey();
+  if (socketKey.NetType != _networkType)
+    return;
+  auto iter = _connects.find(socketKey.Socket);
   if (iter == _connects.end()) {
-    std::cout << "dis connect failed. socket not find. socket:" << socket
+    std::cout << "failed to modify conenct key. socket not find." << pPacket
               << std::endl;
     return;
   }
-  
-  RemoveConnectObj(iter);
-  std::cout << "logical layer requires shutdown. socket:" << socket
-            << std::endl;
+  auto pObj = iter->second;
+  pObj->ModifyConnectKey(pPacket->GetObjectKey());
 }

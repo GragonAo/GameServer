@@ -4,12 +4,14 @@
 #include "libserver/thread_mgr.h"
 #include "robot.h"
 #include <string>
+
 void RobotConsoleLogin::RegisterHandler() {
   OnRegisterHandler("-a", BindFunP1(this, &RobotConsoleLogin::HandleLogin));
   OnRegisterHandler("-ex", BindFunP1(this, &RobotConsoleLogin::HandleLoginEx));
   OnRegisterHandler("-clean",
                     BindFunP1(this, &RobotConsoleLogin::HandleLoginClean));
 }
+
 void RobotConsoleLogin::HandleHelp() {
   std::cout << "\t-a account.\t\tlogin by account" << std::endl;
   std::cout
@@ -17,6 +19,7 @@ void RobotConsoleLogin::HandleHelp() {
       << std::endl;
   std::cout << "\t-clean.\t\tclean all logined account." << std::endl;
 }
+
 void RobotConsoleLogin::HandleLogin(std::vector<std::string> &params) {
   if (!CheckParamCnt(params, 1))
     return;
@@ -41,6 +44,7 @@ void RobotConsoleLogin::HandleLoginEx(std::vector<std::string> &params) const {
   }
   GlobalRobots::GetInstance()->SetRobotsCount(count);
 }
+
 void RobotConsoleLogin::HandleLoginClean(std::vector<std::string> &params) {
   std::cout << "close all." << std::endl;
   _threads.clear();

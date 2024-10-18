@@ -23,7 +23,6 @@ int main(int argc, char *argv[]) {
   InitializeComponentDBMgr(pThreadMgr);
 
   auto pGlobal = Global::GetInstance();
-  pThreadMgr->CreateThread(ListenThread, 1);
   pThreadMgr->CreateComponent<NetworkListen>(ListenThread, false,
                                              (int)pGlobal->GetCurAppType(),
                                              pGlobal->GetCurAppId());

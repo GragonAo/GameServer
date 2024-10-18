@@ -7,13 +7,14 @@ project(${MyProjectName})
 aux_source_directory(. SRCS)
 aux_source_directory(../../libs/libserver SRCS)
 aux_source_directory(../../libs/libserver/protobuf SRCS)
+aux_source_directory(../../libs/libserver/mongoose SRCS)
 
 include_directories(../../libs)
 include_directories(/usr/local/include)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../../../../bin")
 
-set(CMAKE_CXX_FLAGS "-O0 -Wall -std=c++14 -pthread -lprotobuf -lyaml-cpp -llog4cplus -DEPOLL -Wno-unknown-pragmas -g")
+set(CMAKE_CXX_FLAGS "-O0 -Wall -std=c++14 -pthread -lprotobuf -ljsoncpp -lyaml-cpp -llog4cplus -DEPOLL -Wno-unknown-pragmas -g")
 
 link_directories(${CMAKE_BINARY_DIR}/../../../libs)
 

@@ -16,6 +16,8 @@
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 extern PROTOBUF_INTERNAL_EXPORT_msg_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CreateComponentParam_msg_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_msg_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_NetworkObjectKey_msg_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_msg_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_NetworkObjectKeyValue_msg_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_db_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Player_db_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_msg_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PlayerLittle_msg_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_msg_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RobotState_msg_2eproto;
@@ -32,6 +34,26 @@ class AppInfoSyncDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AppInfoSync> _instance;
 } _AppInfoSync_default_instance_;
+class NetworkDisconnectDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<NetworkDisconnect> _instance;
+} _NetworkDisconnect_default_instance_;
+class NetworkObjectKeyValueDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<NetworkObjectKeyValue> _instance;
+} _NetworkObjectKeyValue_default_instance_;
+class NetworkObjectKeyDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<NetworkObjectKey> _instance;
+} _NetworkObjectKey_default_instance_;
+class NetworkConnectDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<NetworkConnect> _instance;
+} _NetworkConnect_default_instance_;
+class HttpDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Http> _instance;
+} _Http_default_instance_;
 class CreateComponentParamDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CreateComponentParam> _instance;
@@ -52,10 +74,6 @@ class AccountCheckRsDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AccountCheckRs> _instance;
 } _AccountCheckRs_default_instance_;
-class AccountCheckToHttpRsDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AccountCheckToHttpRs> _instance;
-} _AccountCheckToHttpRs_default_instance_;
 class RobotStateDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RobotState> _instance;
@@ -144,20 +162,6 @@ static void InitDefaultsscc_info_AccountCheckRs_msg_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AccountCheckRs_msg_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_AccountCheckRs_msg_2eproto}, {}};
-
-static void InitDefaultsscc_info_AccountCheckToHttpRs_msg_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::Proto::_AccountCheckToHttpRs_default_instance_;
-    new (ptr) ::Proto::AccountCheckToHttpRs();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::Proto::AccountCheckToHttpRs::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AccountCheckToHttpRs_msg_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_AccountCheckToHttpRs_msg_2eproto}, {}};
 
 static void InitDefaultsscc_info_AppInfoSync_msg_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -286,6 +290,78 @@ static void InitDefaultsscc_info_CreatePlayerToDBRs_msg_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CreatePlayerToDBRs_msg_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_CreatePlayerToDBRs_msg_2eproto}, {}};
+
+static void InitDefaultsscc_info_Http_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_Http_default_instance_;
+    new (ptr) ::Proto::Http();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::Http::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Http_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_Http_msg_2eproto}, {}};
+
+static void InitDefaultsscc_info_NetworkConnect_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_NetworkConnect_default_instance_;
+    new (ptr) ::Proto::NetworkConnect();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::NetworkConnect::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_NetworkConnect_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_NetworkConnect_msg_2eproto}, {
+      &scc_info_NetworkObjectKey_msg_2eproto.base,}};
+
+static void InitDefaultsscc_info_NetworkDisconnect_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_NetworkDisconnect_default_instance_;
+    new (ptr) ::Proto::NetworkDisconnect();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::NetworkDisconnect::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_NetworkDisconnect_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_NetworkDisconnect_msg_2eproto}, {}};
+
+static void InitDefaultsscc_info_NetworkObjectKey_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_NetworkObjectKey_default_instance_;
+    new (ptr) ::Proto::NetworkObjectKey();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::NetworkObjectKey::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_NetworkObjectKey_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_NetworkObjectKey_msg_2eproto}, {
+      &scc_info_NetworkObjectKeyValue_msg_2eproto.base,}};
+
+static void InitDefaultsscc_info_NetworkObjectKeyValue_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_NetworkObjectKeyValue_default_instance_;
+    new (ptr) ::Proto::NetworkObjectKeyValue();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::NetworkObjectKeyValue::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_NetworkObjectKeyValue_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_NetworkObjectKeyValue_msg_2eproto}, {}};
 
 static void InitDefaultsscc_info_PlayerList_msg_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -459,8 +535,8 @@ static void InitDefaultsscc_info_SelectPlayerRs_msg_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SelectPlayerRs_msg_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_SelectPlayerRs_msg_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_msg_2eproto[24];
-static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_msg_2eproto[6];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_msg_2eproto[28];
+static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_msg_2eproto[8];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_msg_2eproto = nullptr;
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_msg_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
@@ -484,6 +560,43 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_msg_2eproto::offsets[] PROTOBU
   PROTOBUF_FIELD_OFFSET(::Proto::AppInfoSync, app_id_),
   PROTOBUF_FIELD_OFFSET(::Proto::AppInfoSync, app_type_),
   PROTOBUF_FIELD_OFFSET(::Proto::AppInfoSync, online_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::NetworkDisconnect, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::NetworkDisconnect, network_type_),
+  PROTOBUF_FIELD_OFFSET(::Proto::NetworkDisconnect, socket_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::NetworkObjectKeyValue, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::NetworkObjectKeyValue, key_int64_),
+  PROTOBUF_FIELD_OFFSET(::Proto::NetworkObjectKeyValue, key_str_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::NetworkObjectKey, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::NetworkObjectKey, key_type_),
+  PROTOBUF_FIELD_OFFSET(::Proto::NetworkObjectKey, key_value_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::NetworkConnect, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::NetworkConnect, network_type_),
+  PROTOBUF_FIELD_OFFSET(::Proto::NetworkConnect, key_),
+  PROTOBUF_FIELD_OFFSET(::Proto::NetworkConnect, ip_),
+  PROTOBUF_FIELD_OFFSET(::Proto::NetworkConnect, port_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::Http, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::Http, body_),
+  PROTOBUF_FIELD_OFFSET(::Proto::Http, status_code_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Proto::CreateComponentParam, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -520,13 +633,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_msg_2eproto::offsets[] PROTOBU
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::Proto::AccountCheckRs, return_code_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Proto::AccountCheckToHttpRs, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::Proto::AccountCheckToHttpRs, return_code_),
-  PROTOBUF_FIELD_OFFSET(::Proto::AccountCheckToHttpRs, account_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Proto::RobotState, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -632,39 +738,47 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 0, -1, sizeof(::Proto::CmdThread)},
   { 6, -1, sizeof(::Proto::CmdApp)},
   { 12, -1, sizeof(::Proto::AppInfoSync)},
-  { 20, -1, sizeof(::Proto::CreateComponentParam)},
-  { 28, -1, sizeof(::Proto::CreateComponent)},
-  { 37, -1, sizeof(::Proto::RemoveComponent)},
-  { 43, -1, sizeof(::Proto::AccountCheck)},
-  { 50, -1, sizeof(::Proto::AccountCheckRs)},
-  { 56, -1, sizeof(::Proto::AccountCheckToHttpRs)},
-  { 63, -1, sizeof(::Proto::RobotState)},
-  { 70, -1, sizeof(::Proto::RobotSyncState)},
-  { 76, -1, sizeof(::Proto::RobotTestEnd)},
-  { 82, -1, sizeof(::Proto::PlayerLittle)},
-  { 91, -1, sizeof(::Proto::PlayerList)},
-  { 98, -1, sizeof(::Proto::QueryPlayerList)},
-  { 104, -1, sizeof(::Proto::QueryPlayer)},
-  { 110, -1, sizeof(::Proto::QueryPlayerRs)},
-  { 117, -1, sizeof(::Proto::CreatePlayer)},
-  { 124, -1, sizeof(::Proto::CreatePlayerRs)},
-  { 130, -1, sizeof(::Proto::CreatePlayerToDB)},
-  { 137, -1, sizeof(::Proto::CreatePlayerToDBRs)},
-  { 144, -1, sizeof(::Proto::SelectPlayer)},
-  { 150, -1, sizeof(::Proto::SelectPlayerRs)},
-  { 156, -1, sizeof(::Proto::SavePlayer)},
+  { 20, -1, sizeof(::Proto::NetworkDisconnect)},
+  { 27, -1, sizeof(::Proto::NetworkObjectKeyValue)},
+  { 34, -1, sizeof(::Proto::NetworkObjectKey)},
+  { 41, -1, sizeof(::Proto::NetworkConnect)},
+  { 50, -1, sizeof(::Proto::Http)},
+  { 57, -1, sizeof(::Proto::CreateComponentParam)},
+  { 65, -1, sizeof(::Proto::CreateComponent)},
+  { 74, -1, sizeof(::Proto::RemoveComponent)},
+  { 80, -1, sizeof(::Proto::AccountCheck)},
+  { 87, -1, sizeof(::Proto::AccountCheckRs)},
+  { 93, -1, sizeof(::Proto::RobotState)},
+  { 100, -1, sizeof(::Proto::RobotSyncState)},
+  { 106, -1, sizeof(::Proto::RobotTestEnd)},
+  { 112, -1, sizeof(::Proto::PlayerLittle)},
+  { 121, -1, sizeof(::Proto::PlayerList)},
+  { 128, -1, sizeof(::Proto::QueryPlayerList)},
+  { 134, -1, sizeof(::Proto::QueryPlayer)},
+  { 140, -1, sizeof(::Proto::QueryPlayerRs)},
+  { 147, -1, sizeof(::Proto::CreatePlayer)},
+  { 154, -1, sizeof(::Proto::CreatePlayerRs)},
+  { 160, -1, sizeof(::Proto::CreatePlayerToDB)},
+  { 167, -1, sizeof(::Proto::CreatePlayerToDBRs)},
+  { 174, -1, sizeof(::Proto::SelectPlayer)},
+  { 180, -1, sizeof(::Proto::SelectPlayerRs)},
+  { 186, -1, sizeof(::Proto::SavePlayer)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_CmdThread_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_CmdApp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_AppInfoSync_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_NetworkDisconnect_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_NetworkObjectKeyValue_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_NetworkObjectKey_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_NetworkConnect_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_Http_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_CreateComponentParam_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_CreateComponent_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_RemoveComponent_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_AccountCheck_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_AccountCheckRs_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_AccountCheckToHttpRs_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_RobotState_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_RobotSyncState_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_RobotTestEnd_default_instance_),
@@ -683,64 +797,75 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 };
 
 const char descriptor_table_protodef_msg_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\tmsg.proto\022\005Proto\032\010db.proto\"X\n\tCmdThrea"
+  "\n\tmsg.proto\022\005Proto\032\010db.proto\"e\n\tCmdThrea"
   "d\022*\n\010cmd_type\030\001 \001(\0162\030.Proto.CmdThread.Cm"
-  "dType\"\037\n\007CmdType\022\n\n\006Entity\020\000\022\010\n\004Pool\020\001\"F"
-  "\n\006CmdApp\022\'\n\010cmd_type\030\001 \001(\0162\025.Proto.CmdAp"
-  "p.CmdType\"\023\n\007CmdType\022\010\n\004Info\020\000\"\?\n\013AppInf"
-  "oSync\022\016\n\006app_id\030\001 \001(\005\022\020\n\010app_type\030\002 \001(\005\022"
-  "\016\n\006online\030\003 \001(\005\"\226\001\n\024CreateComponentParam"
-  "\0223\n\004type\030\001 \001(\0162%.Proto.CreateComponentPa"
-  "ram.ParamType\022\021\n\tint_param\030\002 \001(\005\022\024\n\014stri"
-  "ng_param\030\003 \001(\t\" \n\tParamType\022\007\n\003Int\020\000\022\n\n\006"
-  "String\020\001\"\201\001\n\017CreateComponent\022\023\n\013thread_t"
-  "ype\030\001 \001(\005\022\022\n\nclass_name\030\002 \001(\t\022\030\n\020is_to_a"
-  "ll_thread\030\003 \001(\010\022+\n\006params\030\004 \003(\0132\033.Proto."
-  "CreateComponentParam\"\035\n\017RemoveComponent\022"
-  "\n\n\002sn\030\001 \001(\004\"1\n\014AccountCheck\022\017\n\007account\030\001"
-  " \001(\t\022\020\n\010password\030\002 \001(\t\"D\n\016AccountCheckRs"
-  "\0222\n\013return_code\030\001 \001(\0162\035.Proto.AccountChe"
-  "ckReturnCode\"[\n\024AccountCheckToHttpRs\0222\n\013"
+  "dType\",\n\007CmdType\022\n\n\006Entity\020\000\022\010\n\004Pool\020\001\022\013"
+  "\n\007Connect\020\002\"F\n\006CmdApp\022\'\n\010cmd_type\030\001 \001(\0162"
+  "\025.Proto.CmdApp.CmdType\"\023\n\007CmdType\022\010\n\004Inf"
+  "o\020\000\"\?\n\013AppInfoSync\022\016\n\006app_id\030\001 \001(\005\022\020\n\010ap"
+  "p_type\030\002 \001(\005\022\016\n\006online\030\003 \001(\005\"9\n\021NetworkD"
+  "isconnect\022\024\n\014network_type\030\001 \001(\005\022\016\n\006socke"
+  "t\030\002 \001(\005\";\n\025NetworkObjectKeyValue\022\021\n\tkey_"
+  "int64\030\001 \001(\003\022\017\n\007key_str\030\002 \001(\t\"r\n\020NetworkO"
+  "bjectKey\022-\n\010key_type\030\001 \001(\0162\033.Proto.Netwo"
+  "rkObjectKeyType\022/\n\tkey_value\030\002 \001(\0132\034.Pro"
+  "to.NetworkObjectKeyValue\"f\n\016NetworkConne"
+  "ct\022\024\n\014network_type\030\001 \001(\005\022$\n\003key\030\002 \001(\0132\027."
+  "Proto.NetworkObjectKey\022\n\n\002ip\030\003 \001(\t\022\014\n\004po"
+  "rt\030\004 \001(\005\")\n\004Http\022\014\n\004body\030\001 \001(\t\022\023\n\013status"
+  "_code\030\002 \001(\005\"\226\001\n\024CreateComponentParam\0223\n\004"
+  "type\030\001 \001(\0162%.Proto.CreateComponentParam."
+  "ParamType\022\021\n\tint_param\030\002 \001(\005\022\024\n\014string_p"
+  "aram\030\003 \001(\t\" \n\tParamType\022\007\n\003Int\020\000\022\n\n\006Stri"
+  "ng\020\001\"\201\001\n\017CreateComponent\022\023\n\013thread_type\030"
+  "\001 \001(\005\022\022\n\nclass_name\030\002 \001(\t\022\030\n\020is_to_all_t"
+  "hread\030\003 \001(\010\022+\n\006params\030\004 \003(\0132\033.Proto.Crea"
+  "teComponentParam\"\035\n\017RemoveComponent\022\n\n\002s"
+  "n\030\001 \001(\004\"1\n\014AccountCheck\022\017\n\007account\030\001 \001(\t"
+  "\022\020\n\010password\030\002 \001(\t\"D\n\016AccountCheckRs\0222\n\013"
   "return_code\030\001 \001(\0162\035.Proto.AccountCheckRe"
-  "turnCode\022\017\n\007account\030\002 \001(\t\",\n\nRobotState\022"
-  "\017\n\007account\030\001 \001(\t\022\r\n\005state\030\002 \001(\005\"3\n\016Robot"
-  "SyncState\022!\n\006states\030\001 \003(\0132\021.Proto.RobotS"
-  "tate\"\035\n\014RobotTestEnd\022\r\n\005state\030\001 \001(\005\"V\n\014P"
-  "layerLittle\022\n\n\002sn\030\001 \001(\004\022\014\n\004name\030\002 \001(\t\022\035\n"
-  "\006gender\030\003 \001(\0162\r.Proto.Gender\022\r\n\005level\030\004 "
-  "\001(\005\"B\n\nPlayerList\022\017\n\007account\030\001 \001(\t\022#\n\006pl"
-  "ayer\030\002 \003(\0132\023.Proto.PlayerLittle\"\"\n\017Query"
-  "PlayerList\022\017\n\007account\030\001 \001(\t\" \n\013QueryPlay"
-  "er\022\021\n\tplayer_sn\030\001 \001(\004\"\?\n\rQueryPlayerRs\022\017"
-  "\n\007account\030\001 \001(\t\022\035\n\006Player\030\002 \001(\0132\r.Proto."
-  "Player\";\n\014CreatePlayer\022\014\n\004name\030\001 \001(\t\022\035\n\006"
-  "gender\030\002 \001(\0162\r.Proto.Gender\"D\n\016CreatePla"
-  "yerRs\0222\n\013return_code\030\002 \001(\0162\035.Proto.Creat"
-  "ePlayerReturnCode\"B\n\020CreatePlayerToDB\022\017\n"
-  "\007account\030\001 \001(\t\022\035\n\006player\030\002 \001(\0132\r.Proto.P"
-  "layer\"Y\n\022CreatePlayerToDBRs\022\017\n\007account\030\001"
-  " \001(\t\0222\n\013return_code\030\002 \001(\0162\035.Proto.Create"
-  "PlayerReturnCode\"!\n\014SelectPlayer\022\021\n\tplay"
-  "er_sn\030\001 \001(\004\"\215\001\n\016SelectPlayerRs\022A\n\013return"
-  "_code\030\001 \001(\0162,.Proto.SelectPlayerRs.Selec"
-  "tPlayerReturnCode\"8\n\026SelectPlayerReturnC"
-  "ode\022\013\n\007SPRC_OK\020\000\022\021\n\rSPRC_NotFound\020\001\">\n\nS"
-  "avePlayer\022\021\n\tplayer_sn\030\001 \001(\004\022\035\n\006player\030\002"
-  " \001(\0132\r.Proto.Player*\232\001\n\026AccountCheckRetu"
-  "rnCode\022\n\n\006ARC_OK\020\000\022\017\n\013ARC_UNKONWN\020\001\022\031\n\025A"
-  "RC_NOT_FOUND_ACCOUNT\020\002\022\026\n\022ARC_PASSWORD_W"
-  "RONG\020\003\022\017\n\013ARC_LOGGING\020\004\022\017\n\013ARC_TIMEOUT\020\005"
-  "\022\016\n\nARC_ONLINE\020\006*L\n\026CreatePlayerReturnCo"
-  "de\022\021\n\rCPR_Create_OK\020\000\022\017\n\013CPR_Unkonwn\020\001\022\016"
-  "\n\nCPR_Rename\020\002b\006proto3"
+  "turnCode\",\n\nRobotState\022\017\n\007account\030\001 \001(\t\022"
+  "\r\n\005state\030\002 \001(\005\"3\n\016RobotSyncState\022!\n\006stat"
+  "es\030\001 \003(\0132\021.Proto.RobotState\"\035\n\014RobotTest"
+  "End\022\r\n\005state\030\001 \001(\005\"V\n\014PlayerLittle\022\n\n\002sn"
+  "\030\001 \001(\004\022\014\n\004name\030\002 \001(\t\022\035\n\006gender\030\003 \001(\0162\r.P"
+  "roto.Gender\022\r\n\005level\030\004 \001(\005\"B\n\nPlayerList"
+  "\022\017\n\007account\030\001 \001(\t\022#\n\006player\030\002 \003(\0132\023.Prot"
+  "o.PlayerLittle\"\"\n\017QueryPlayerList\022\017\n\007acc"
+  "ount\030\001 \001(\t\" \n\013QueryPlayer\022\021\n\tplayer_sn\030\001"
+  " \001(\004\"\?\n\rQueryPlayerRs\022\017\n\007account\030\001 \001(\t\022\035"
+  "\n\006Player\030\002 \001(\0132\r.Proto.Player\";\n\014CreateP"
+  "layer\022\014\n\004name\030\001 \001(\t\022\035\n\006gender\030\002 \001(\0162\r.Pr"
+  "oto.Gender\"D\n\016CreatePlayerRs\0222\n\013return_c"
+  "ode\030\002 \001(\0162\035.Proto.CreatePlayerReturnCode"
+  "\"B\n\020CreatePlayerToDB\022\017\n\007account\030\001 \001(\t\022\035\n"
+  "\006player\030\002 \001(\0132\r.Proto.Player\"Y\n\022CreatePl"
+  "ayerToDBRs\022\017\n\007account\030\001 \001(\t\0222\n\013return_co"
+  "de\030\002 \001(\0162\035.Proto.CreatePlayerReturnCode\""
+  "!\n\014SelectPlayer\022\021\n\tplayer_sn\030\001 \001(\004\"\215\001\n\016S"
+  "electPlayerRs\022A\n\013return_code\030\001 \001(\0162,.Pro"
+  "to.SelectPlayerRs.SelectPlayerReturnCode"
+  "\"8\n\026SelectPlayerReturnCode\022\013\n\007SPRC_OK\020\000\022"
+  "\021\n\rSPRC_NotFound\020\001\">\n\nSavePlayer\022\021\n\tplay"
+  "er_sn\030\001 \001(\004\022\035\n\006player\030\002 \001(\0132\r.Proto.Play"
+  "er*]\n\024NetworkObjectKeyType\022\025\n\021ObjectKeyT"
+  "ypeNone\020\000\022\030\n\024ObjectKeyTypeAccount\020\001\022\024\n\020O"
+  "bjectKeyTypeApp\020\002*\232\001\n\026AccountCheckReturn"
+  "Code\022\n\n\006ARC_OK\020\000\022\017\n\013ARC_UNKONWN\020\001\022\031\n\025ARC"
+  "_NOT_FOUND_ACCOUNT\020\002\022\026\n\022ARC_PASSWORD_WRO"
+  "NG\020\003\022\017\n\013ARC_LOGGING\020\004\022\017\n\013ARC_TIMEOUT\020\005\022\016"
+  "\n\nARC_ONLINE\020\006*G\n\023LoginHttpreturnCode\022\013\n"
+  "\007LHRC_OK\020\000\022\020\n\014LHRC_TIMEOUT\020\001\022\021\n\rLHRC_NOT"
+  "FOUND\020\002*L\n\026CreatePlayerReturnCode\022\021\n\rCPR"
+  "_Create_OK\020\000\022\017\n\013CPR_Unkonwn\020\001\022\016\n\nCPR_Ren"
+  "ame\020\002b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_msg_2eproto_deps[1] = {
   &::descriptor_table_db_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_msg_2eproto_sccs[24] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_msg_2eproto_sccs[28] = {
   &scc_info_AccountCheck_msg_2eproto.base,
   &scc_info_AccountCheckRs_msg_2eproto.base,
-  &scc_info_AccountCheckToHttpRs_msg_2eproto.base,
   &scc_info_AppInfoSync_msg_2eproto.base,
   &scc_info_CmdApp_msg_2eproto.base,
   &scc_info_CmdThread_msg_2eproto.base,
@@ -750,6 +875,11 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_msg
   &scc_info_CreatePlayerRs_msg_2eproto.base,
   &scc_info_CreatePlayerToDB_msg_2eproto.base,
   &scc_info_CreatePlayerToDBRs_msg_2eproto.base,
+  &scc_info_Http_msg_2eproto.base,
+  &scc_info_NetworkConnect_msg_2eproto.base,
+  &scc_info_NetworkDisconnect_msg_2eproto.base,
+  &scc_info_NetworkObjectKey_msg_2eproto.base,
+  &scc_info_NetworkObjectKeyValue_msg_2eproto.base,
   &scc_info_PlayerList_msg_2eproto.base,
   &scc_info_PlayerLittle_msg_2eproto.base,
   &scc_info_QueryPlayer_msg_2eproto.base,
@@ -766,10 +896,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_msg
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_msg_2eproto_once;
 static bool descriptor_table_msg_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_msg_2eproto = {
-  &descriptor_table_msg_2eproto_initialized, descriptor_table_protodef_msg_2eproto, "msg.proto", 1982,
-  &descriptor_table_msg_2eproto_once, descriptor_table_msg_2eproto_sccs, descriptor_table_msg_2eproto_deps, 24, 1,
+  &descriptor_table_msg_2eproto_initialized, descriptor_table_protodef_msg_2eproto, "msg.proto", 2453,
+  &descriptor_table_msg_2eproto_once, descriptor_table_msg_2eproto_sccs, descriptor_table_msg_2eproto_deps, 28, 1,
   schemas, file_default_instances, TableStruct_msg_2eproto::offsets,
-  file_level_metadata_msg_2eproto, 24, file_level_enum_descriptors_msg_2eproto, file_level_service_descriptors_msg_2eproto,
+  file_level_metadata_msg_2eproto, 28, file_level_enum_descriptors_msg_2eproto, file_level_service_descriptors_msg_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -783,6 +913,7 @@ bool CmdThread_CmdType_IsValid(int value) {
   switch (value) {
     case 0:
     case 1:
+    case 2:
       return true;
     default:
       return false;
@@ -792,6 +923,7 @@ bool CmdThread_CmdType_IsValid(int value) {
 #if (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
 constexpr CmdThread_CmdType CmdThread::Entity;
 constexpr CmdThread_CmdType CmdThread::Pool;
+constexpr CmdThread_CmdType CmdThread::Connect;
 constexpr CmdThread_CmdType CmdThread::CmdType_MIN;
 constexpr CmdThread_CmdType CmdThread::CmdType_MAX;
 constexpr int CmdThread::CmdType_ARRAYSIZE;
@@ -857,9 +989,24 @@ constexpr SelectPlayerRs_SelectPlayerReturnCode SelectPlayerRs::SelectPlayerRetu
 constexpr SelectPlayerRs_SelectPlayerReturnCode SelectPlayerRs::SelectPlayerReturnCode_MAX;
 constexpr int SelectPlayerRs::SelectPlayerReturnCode_ARRAYSIZE;
 #endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* AccountCheckReturnCode_descriptor() {
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* NetworkObjectKeyType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_msg_2eproto);
   return file_level_enum_descriptors_msg_2eproto[4];
+}
+bool NetworkObjectKeyType_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* AccountCheckReturnCode_descriptor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_msg_2eproto);
+  return file_level_enum_descriptors_msg_2eproto[5];
 }
 bool AccountCheckReturnCode_IsValid(int value) {
   switch (value) {
@@ -876,9 +1023,24 @@ bool AccountCheckReturnCode_IsValid(int value) {
   }
 }
 
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* LoginHttpreturnCode_descriptor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_msg_2eproto);
+  return file_level_enum_descriptors_msg_2eproto[6];
+}
+bool LoginHttpreturnCode_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CreatePlayerReturnCode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_msg_2eproto);
-  return file_level_enum_descriptors_msg_2eproto[5];
+  return file_level_enum_descriptors_msg_2eproto[7];
 }
 bool CreatePlayerReturnCode_IsValid(int value) {
   switch (value) {
@@ -1729,6 +1891,1661 @@ void AppInfoSync::InternalSwap(AppInfoSync* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AppInfoSync::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void NetworkDisconnect::InitAsDefaultInstance() {
+}
+class NetworkDisconnect::_Internal {
+ public:
+};
+
+NetworkDisconnect::NetworkDisconnect()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.NetworkDisconnect)
+}
+NetworkDisconnect::NetworkDisconnect(const NetworkDisconnect& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&network_type_, &from.network_type_,
+    static_cast<size_t>(reinterpret_cast<char*>(&socket_) -
+    reinterpret_cast<char*>(&network_type_)) + sizeof(socket_));
+  // @@protoc_insertion_point(copy_constructor:Proto.NetworkDisconnect)
+}
+
+void NetworkDisconnect::SharedCtor() {
+  ::memset(&network_type_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&socket_) -
+      reinterpret_cast<char*>(&network_type_)) + sizeof(socket_));
+}
+
+NetworkDisconnect::~NetworkDisconnect() {
+  // @@protoc_insertion_point(destructor:Proto.NetworkDisconnect)
+  SharedDtor();
+}
+
+void NetworkDisconnect::SharedDtor() {
+}
+
+void NetworkDisconnect::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const NetworkDisconnect& NetworkDisconnect::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_NetworkDisconnect_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void NetworkDisconnect::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.NetworkDisconnect)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&network_type_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&socket_) -
+      reinterpret_cast<char*>(&network_type_)) + sizeof(socket_));
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NetworkDisconnect::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 network_type = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          network_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 socket = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          socket_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool NetworkDisconnect::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.NetworkDisconnect)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 network_type = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &network_type_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 socket = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &socket_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.NetworkDisconnect)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.NetworkDisconnect)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void NetworkDisconnect::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.NetworkDisconnect)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 network_type = 1;
+  if (this->network_type() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->network_type(), output);
+  }
+
+  // int32 socket = 2;
+  if (this->socket() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(2, this->socket(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.NetworkDisconnect)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* NetworkDisconnect::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.NetworkDisconnect)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 network_type = 1;
+  if (this->network_type() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->network_type(), target);
+  }
+
+  // int32 socket = 2;
+  if (this->socket() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->socket(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.NetworkDisconnect)
+  return target;
+}
+
+size_t NetworkDisconnect::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.NetworkDisconnect)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 network_type = 1;
+  if (this->network_type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->network_type());
+  }
+
+  // int32 socket = 2;
+  if (this->socket() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->socket());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void NetworkDisconnect::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.NetworkDisconnect)
+  GOOGLE_DCHECK_NE(&from, this);
+  const NetworkDisconnect* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<NetworkDisconnect>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.NetworkDisconnect)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.NetworkDisconnect)
+    MergeFrom(*source);
+  }
+}
+
+void NetworkDisconnect::MergeFrom(const NetworkDisconnect& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.NetworkDisconnect)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.network_type() != 0) {
+    set_network_type(from.network_type());
+  }
+  if (from.socket() != 0) {
+    set_socket(from.socket());
+  }
+}
+
+void NetworkDisconnect::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.NetworkDisconnect)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void NetworkDisconnect::CopyFrom(const NetworkDisconnect& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.NetworkDisconnect)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool NetworkDisconnect::IsInitialized() const {
+  return true;
+}
+
+void NetworkDisconnect::InternalSwap(NetworkDisconnect* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(network_type_, other->network_type_);
+  swap(socket_, other->socket_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata NetworkDisconnect::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void NetworkObjectKeyValue::InitAsDefaultInstance() {
+}
+class NetworkObjectKeyValue::_Internal {
+ public:
+};
+
+NetworkObjectKeyValue::NetworkObjectKeyValue()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.NetworkObjectKeyValue)
+}
+NetworkObjectKeyValue::NetworkObjectKeyValue(const NetworkObjectKeyValue& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  key_str_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.key_str().empty()) {
+    key_str_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.key_str_);
+  }
+  key_int64_ = from.key_int64_;
+  // @@protoc_insertion_point(copy_constructor:Proto.NetworkObjectKeyValue)
+}
+
+void NetworkObjectKeyValue::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_NetworkObjectKeyValue_msg_2eproto.base);
+  key_str_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  key_int64_ = PROTOBUF_LONGLONG(0);
+}
+
+NetworkObjectKeyValue::~NetworkObjectKeyValue() {
+  // @@protoc_insertion_point(destructor:Proto.NetworkObjectKeyValue)
+  SharedDtor();
+}
+
+void NetworkObjectKeyValue::SharedDtor() {
+  key_str_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void NetworkObjectKeyValue::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const NetworkObjectKeyValue& NetworkObjectKeyValue::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_NetworkObjectKeyValue_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void NetworkObjectKeyValue::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.NetworkObjectKeyValue)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  key_str_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  key_int64_ = PROTOBUF_LONGLONG(0);
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NetworkObjectKeyValue::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int64 key_int64 = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          key_int64_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string key_str = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_key_str(), ptr, ctx, "Proto.NetworkObjectKeyValue.key_str");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool NetworkObjectKeyValue::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.NetworkObjectKeyValue)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int64 key_int64 = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &key_int64_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string key_str = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_key_str()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->key_str().data(), static_cast<int>(this->key_str().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "Proto.NetworkObjectKeyValue.key_str"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.NetworkObjectKeyValue)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.NetworkObjectKeyValue)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void NetworkObjectKeyValue::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.NetworkObjectKeyValue)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 key_int64 = 1;
+  if (this->key_int64() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->key_int64(), output);
+  }
+
+  // string key_str = 2;
+  if (this->key_str().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->key_str().data(), static_cast<int>(this->key_str().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.NetworkObjectKeyValue.key_str");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->key_str(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.NetworkObjectKeyValue)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* NetworkObjectKeyValue::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.NetworkObjectKeyValue)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 key_int64 = 1;
+  if (this->key_int64() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->key_int64(), target);
+  }
+
+  // string key_str = 2;
+  if (this->key_str().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->key_str().data(), static_cast<int>(this->key_str().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.NetworkObjectKeyValue.key_str");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->key_str(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.NetworkObjectKeyValue)
+  return target;
+}
+
+size_t NetworkObjectKeyValue::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.NetworkObjectKeyValue)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string key_str = 2;
+  if (this->key_str().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->key_str());
+  }
+
+  // int64 key_int64 = 1;
+  if (this->key_int64() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->key_int64());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void NetworkObjectKeyValue::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.NetworkObjectKeyValue)
+  GOOGLE_DCHECK_NE(&from, this);
+  const NetworkObjectKeyValue* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<NetworkObjectKeyValue>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.NetworkObjectKeyValue)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.NetworkObjectKeyValue)
+    MergeFrom(*source);
+  }
+}
+
+void NetworkObjectKeyValue::MergeFrom(const NetworkObjectKeyValue& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.NetworkObjectKeyValue)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.key_str().size() > 0) {
+
+    key_str_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.key_str_);
+  }
+  if (from.key_int64() != 0) {
+    set_key_int64(from.key_int64());
+  }
+}
+
+void NetworkObjectKeyValue::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.NetworkObjectKeyValue)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void NetworkObjectKeyValue::CopyFrom(const NetworkObjectKeyValue& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.NetworkObjectKeyValue)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool NetworkObjectKeyValue::IsInitialized() const {
+  return true;
+}
+
+void NetworkObjectKeyValue::InternalSwap(NetworkObjectKeyValue* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  key_str_.Swap(&other->key_str_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(key_int64_, other->key_int64_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata NetworkObjectKeyValue::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void NetworkObjectKey::InitAsDefaultInstance() {
+  ::Proto::_NetworkObjectKey_default_instance_._instance.get_mutable()->key_value_ = const_cast< ::Proto::NetworkObjectKeyValue*>(
+      ::Proto::NetworkObjectKeyValue::internal_default_instance());
+}
+class NetworkObjectKey::_Internal {
+ public:
+  static const ::Proto::NetworkObjectKeyValue& key_value(const NetworkObjectKey* msg);
+};
+
+const ::Proto::NetworkObjectKeyValue&
+NetworkObjectKey::_Internal::key_value(const NetworkObjectKey* msg) {
+  return *msg->key_value_;
+}
+NetworkObjectKey::NetworkObjectKey()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.NetworkObjectKey)
+}
+NetworkObjectKey::NetworkObjectKey(const NetworkObjectKey& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_key_value()) {
+    key_value_ = new ::Proto::NetworkObjectKeyValue(*from.key_value_);
+  } else {
+    key_value_ = nullptr;
+  }
+  key_type_ = from.key_type_;
+  // @@protoc_insertion_point(copy_constructor:Proto.NetworkObjectKey)
+}
+
+void NetworkObjectKey::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_NetworkObjectKey_msg_2eproto.base);
+  ::memset(&key_value_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&key_type_) -
+      reinterpret_cast<char*>(&key_value_)) + sizeof(key_type_));
+}
+
+NetworkObjectKey::~NetworkObjectKey() {
+  // @@protoc_insertion_point(destructor:Proto.NetworkObjectKey)
+  SharedDtor();
+}
+
+void NetworkObjectKey::SharedDtor() {
+  if (this != internal_default_instance()) delete key_value_;
+}
+
+void NetworkObjectKey::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const NetworkObjectKey& NetworkObjectKey::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_NetworkObjectKey_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void NetworkObjectKey::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.NetworkObjectKey)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaNoVirtual() == nullptr && key_value_ != nullptr) {
+    delete key_value_;
+  }
+  key_value_ = nullptr;
+  key_type_ = 0;
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NetworkObjectKey::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // .Proto.NetworkObjectKeyType key_type = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+          set_key_type(static_cast<::Proto::NetworkObjectKeyType>(val));
+        } else goto handle_unusual;
+        continue;
+      // .Proto.NetworkObjectKeyValue key_value = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ctx->ParseMessage(mutable_key_value(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool NetworkObjectKey::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.NetworkObjectKey)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .Proto.NetworkObjectKeyType key_type = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
+          int value = 0;
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_key_type(static_cast< ::Proto::NetworkObjectKeyType >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .Proto.NetworkObjectKeyValue key_value = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_key_value()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.NetworkObjectKey)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.NetworkObjectKey)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void NetworkObjectKey::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.NetworkObjectKey)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .Proto.NetworkObjectKeyType key_type = 1;
+  if (this->key_type() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
+      1, this->key_type(), output);
+  }
+
+  // .Proto.NetworkObjectKeyValue key_value = 2;
+  if (this->has_key_value()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, _Internal::key_value(this), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.NetworkObjectKey)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* NetworkObjectKey::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.NetworkObjectKey)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .Proto.NetworkObjectKeyType key_type = 1;
+  if (this->key_type() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+      1, this->key_type(), target);
+  }
+
+  // .Proto.NetworkObjectKeyValue key_value = 2;
+  if (this->has_key_value()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, _Internal::key_value(this), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.NetworkObjectKey)
+  return target;
+}
+
+size_t NetworkObjectKey::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.NetworkObjectKey)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .Proto.NetworkObjectKeyValue key_value = 2;
+  if (this->has_key_value()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *key_value_);
+  }
+
+  // .Proto.NetworkObjectKeyType key_type = 1;
+  if (this->key_type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->key_type());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void NetworkObjectKey::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.NetworkObjectKey)
+  GOOGLE_DCHECK_NE(&from, this);
+  const NetworkObjectKey* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<NetworkObjectKey>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.NetworkObjectKey)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.NetworkObjectKey)
+    MergeFrom(*source);
+  }
+}
+
+void NetworkObjectKey::MergeFrom(const NetworkObjectKey& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.NetworkObjectKey)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.has_key_value()) {
+    mutable_key_value()->::Proto::NetworkObjectKeyValue::MergeFrom(from.key_value());
+  }
+  if (from.key_type() != 0) {
+    set_key_type(from.key_type());
+  }
+}
+
+void NetworkObjectKey::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.NetworkObjectKey)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void NetworkObjectKey::CopyFrom(const NetworkObjectKey& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.NetworkObjectKey)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool NetworkObjectKey::IsInitialized() const {
+  return true;
+}
+
+void NetworkObjectKey::InternalSwap(NetworkObjectKey* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(key_value_, other->key_value_);
+  swap(key_type_, other->key_type_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata NetworkObjectKey::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void NetworkConnect::InitAsDefaultInstance() {
+  ::Proto::_NetworkConnect_default_instance_._instance.get_mutable()->key_ = const_cast< ::Proto::NetworkObjectKey*>(
+      ::Proto::NetworkObjectKey::internal_default_instance());
+}
+class NetworkConnect::_Internal {
+ public:
+  static const ::Proto::NetworkObjectKey& key(const NetworkConnect* msg);
+};
+
+const ::Proto::NetworkObjectKey&
+NetworkConnect::_Internal::key(const NetworkConnect* msg) {
+  return *msg->key_;
+}
+NetworkConnect::NetworkConnect()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.NetworkConnect)
+}
+NetworkConnect::NetworkConnect(const NetworkConnect& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ip_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.ip().empty()) {
+    ip_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.ip_);
+  }
+  if (from.has_key()) {
+    key_ = new ::Proto::NetworkObjectKey(*from.key_);
+  } else {
+    key_ = nullptr;
+  }
+  ::memcpy(&network_type_, &from.network_type_,
+    static_cast<size_t>(reinterpret_cast<char*>(&port_) -
+    reinterpret_cast<char*>(&network_type_)) + sizeof(port_));
+  // @@protoc_insertion_point(copy_constructor:Proto.NetworkConnect)
+}
+
+void NetworkConnect::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_NetworkConnect_msg_2eproto.base);
+  ip_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::memset(&key_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&port_) -
+      reinterpret_cast<char*>(&key_)) + sizeof(port_));
+}
+
+NetworkConnect::~NetworkConnect() {
+  // @@protoc_insertion_point(destructor:Proto.NetworkConnect)
+  SharedDtor();
+}
+
+void NetworkConnect::SharedDtor() {
+  ip_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete key_;
+}
+
+void NetworkConnect::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const NetworkConnect& NetworkConnect::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_NetworkConnect_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void NetworkConnect::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.NetworkConnect)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ip_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (GetArenaNoVirtual() == nullptr && key_ != nullptr) {
+    delete key_;
+  }
+  key_ = nullptr;
+  ::memset(&network_type_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&port_) -
+      reinterpret_cast<char*>(&network_type_)) + sizeof(port_));
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NetworkConnect::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 network_type = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          network_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .Proto.NetworkObjectKey key = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ctx->ParseMessage(mutable_key(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string ip = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_ip(), ptr, ctx, "Proto.NetworkConnect.ip");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 port = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          port_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool NetworkConnect::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.NetworkConnect)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 network_type = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &network_type_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .Proto.NetworkObjectKey key = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_key()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string ip = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_ip()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->ip().data(), static_cast<int>(this->ip().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "Proto.NetworkConnect.ip"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 port = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &port_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.NetworkConnect)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.NetworkConnect)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void NetworkConnect::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.NetworkConnect)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 network_type = 1;
+  if (this->network_type() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->network_type(), output);
+  }
+
+  // .Proto.NetworkObjectKey key = 2;
+  if (this->has_key()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, _Internal::key(this), output);
+  }
+
+  // string ip = 3;
+  if (this->ip().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->ip().data(), static_cast<int>(this->ip().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.NetworkConnect.ip");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->ip(), output);
+  }
+
+  // int32 port = 4;
+  if (this->port() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(4, this->port(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.NetworkConnect)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* NetworkConnect::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.NetworkConnect)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 network_type = 1;
+  if (this->network_type() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->network_type(), target);
+  }
+
+  // .Proto.NetworkObjectKey key = 2;
+  if (this->has_key()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, _Internal::key(this), target);
+  }
+
+  // string ip = 3;
+  if (this->ip().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->ip().data(), static_cast<int>(this->ip().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.NetworkConnect.ip");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->ip(), target);
+  }
+
+  // int32 port = 4;
+  if (this->port() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->port(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.NetworkConnect)
+  return target;
+}
+
+size_t NetworkConnect::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.NetworkConnect)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string ip = 3;
+  if (this->ip().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->ip());
+  }
+
+  // .Proto.NetworkObjectKey key = 2;
+  if (this->has_key()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *key_);
+  }
+
+  // int32 network_type = 1;
+  if (this->network_type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->network_type());
+  }
+
+  // int32 port = 4;
+  if (this->port() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->port());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void NetworkConnect::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.NetworkConnect)
+  GOOGLE_DCHECK_NE(&from, this);
+  const NetworkConnect* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<NetworkConnect>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.NetworkConnect)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.NetworkConnect)
+    MergeFrom(*source);
+  }
+}
+
+void NetworkConnect::MergeFrom(const NetworkConnect& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.NetworkConnect)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.ip().size() > 0) {
+
+    ip_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.ip_);
+  }
+  if (from.has_key()) {
+    mutable_key()->::Proto::NetworkObjectKey::MergeFrom(from.key());
+  }
+  if (from.network_type() != 0) {
+    set_network_type(from.network_type());
+  }
+  if (from.port() != 0) {
+    set_port(from.port());
+  }
+}
+
+void NetworkConnect::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.NetworkConnect)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void NetworkConnect::CopyFrom(const NetworkConnect& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.NetworkConnect)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool NetworkConnect::IsInitialized() const {
+  return true;
+}
+
+void NetworkConnect::InternalSwap(NetworkConnect* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  ip_.Swap(&other->ip_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(key_, other->key_);
+  swap(network_type_, other->network_type_);
+  swap(port_, other->port_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata NetworkConnect::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void Http::InitAsDefaultInstance() {
+}
+class Http::_Internal {
+ public:
+};
+
+Http::Http()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.Http)
+}
+Http::Http(const Http& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  body_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.body().empty()) {
+    body_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.body_);
+  }
+  status_code_ = from.status_code_;
+  // @@protoc_insertion_point(copy_constructor:Proto.Http)
+}
+
+void Http::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Http_msg_2eproto.base);
+  body_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  status_code_ = 0;
+}
+
+Http::~Http() {
+  // @@protoc_insertion_point(destructor:Proto.Http)
+  SharedDtor();
+}
+
+void Http::SharedDtor() {
+  body_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void Http::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const Http& Http::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Http_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void Http::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.Http)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  body_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  status_code_ = 0;
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* Http::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string body = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_body(), ptr, ctx, "Proto.Http.body");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 status_code = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          status_code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool Http::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.Http)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string body = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_body()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->body().data(), static_cast<int>(this->body().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "Proto.Http.body"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 status_code = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &status_code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.Http)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.Http)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void Http::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.Http)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string body = 1;
+  if (this->body().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->body().data(), static_cast<int>(this->body().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.Http.body");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->body(), output);
+  }
+
+  // int32 status_code = 2;
+  if (this->status_code() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(2, this->status_code(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.Http)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* Http::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.Http)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string body = 1;
+  if (this->body().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->body().data(), static_cast<int>(this->body().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.Http.body");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->body(), target);
+  }
+
+  // int32 status_code = 2;
+  if (this->status_code() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->status_code(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.Http)
+  return target;
+}
+
+size_t Http::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.Http)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string body = 1;
+  if (this->body().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->body());
+  }
+
+  // int32 status_code = 2;
+  if (this->status_code() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->status_code());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void Http::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.Http)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Http* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Http>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.Http)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.Http)
+    MergeFrom(*source);
+  }
+}
+
+void Http::MergeFrom(const Http& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.Http)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.body().size() > 0) {
+
+    body_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.body_);
+  }
+  if (from.status_code() != 0) {
+    set_status_code(from.status_code());
+  }
+}
+
+void Http::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.Http)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Http::CopyFrom(const Http& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.Http)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool Http::IsInitialized() const {
+  return true;
+}
+
+void Http::InternalSwap(Http* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  body_.Swap(&other->body_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(status_code_, other->status_code_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata Http::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -3338,322 +5155,6 @@ void AccountCheckRs::InternalSwap(AccountCheckRs* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AccountCheckRs::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
-void AccountCheckToHttpRs::InitAsDefaultInstance() {
-}
-class AccountCheckToHttpRs::_Internal {
- public:
-};
-
-AccountCheckToHttpRs::AccountCheckToHttpRs()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:Proto.AccountCheckToHttpRs)
-}
-AccountCheckToHttpRs::AccountCheckToHttpRs(const AccountCheckToHttpRs& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from.account().empty()) {
-    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
-  }
-  return_code_ = from.return_code_;
-  // @@protoc_insertion_point(copy_constructor:Proto.AccountCheckToHttpRs)
-}
-
-void AccountCheckToHttpRs::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AccountCheckToHttpRs_msg_2eproto.base);
-  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  return_code_ = 0;
-}
-
-AccountCheckToHttpRs::~AccountCheckToHttpRs() {
-  // @@protoc_insertion_point(destructor:Proto.AccountCheckToHttpRs)
-  SharedDtor();
-}
-
-void AccountCheckToHttpRs::SharedDtor() {
-  account_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-
-void AccountCheckToHttpRs::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const AccountCheckToHttpRs& AccountCheckToHttpRs::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AccountCheckToHttpRs_msg_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void AccountCheckToHttpRs::Clear() {
-// @@protoc_insertion_point(message_clear_start:Proto.AccountCheckToHttpRs)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  return_code_ = 0;
-  _internal_metadata_.Clear();
-}
-
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-const char* AccountCheckToHttpRs::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // .Proto.AccountCheckReturnCode return_code = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-          CHK_(ptr);
-          set_return_code(static_cast<::Proto::AccountCheckReturnCode>(val));
-        } else goto handle_unusual;
-        continue;
-      // string account = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_account(), ptr, ctx, "Proto.AccountCheckToHttpRs.account");
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool AccountCheckToHttpRs::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:Proto.AccountCheckToHttpRs)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .Proto.AccountCheckReturnCode return_code = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_return_code(static_cast< ::Proto::AccountCheckReturnCode >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string account = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_account()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->account().data(), static_cast<int>(this->account().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "Proto.AccountCheckToHttpRs.account"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:Proto.AccountCheckToHttpRs)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:Proto.AccountCheckToHttpRs)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void AccountCheckToHttpRs::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Proto.AccountCheckToHttpRs)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .Proto.AccountCheckReturnCode return_code = 1;
-  if (this->return_code() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      1, this->return_code(), output);
-  }
-
-  // string account = 2;
-  if (this->account().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->account().data(), static_cast<int>(this->account().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "Proto.AccountCheckToHttpRs.account");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->account(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:Proto.AccountCheckToHttpRs)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* AccountCheckToHttpRs::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Proto.AccountCheckToHttpRs)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .Proto.AccountCheckReturnCode return_code = 1;
-  if (this->return_code() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      1, this->return_code(), target);
-  }
-
-  // string account = 2;
-  if (this->account().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->account().data(), static_cast<int>(this->account().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "Proto.AccountCheckToHttpRs.account");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->account(), target);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:Proto.AccountCheckToHttpRs)
-  return target;
-}
-
-size_t AccountCheckToHttpRs::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Proto.AccountCheckToHttpRs)
-  size_t total_size = 0;
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // string account = 2;
-  if (this->account().size() > 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->account());
-  }
-
-  // .Proto.AccountCheckReturnCode return_code = 1;
-  if (this->return_code() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->return_code());
-  }
-
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void AccountCheckToHttpRs::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:Proto.AccountCheckToHttpRs)
-  GOOGLE_DCHECK_NE(&from, this);
-  const AccountCheckToHttpRs* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AccountCheckToHttpRs>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.AccountCheckToHttpRs)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.AccountCheckToHttpRs)
-    MergeFrom(*source);
-  }
-}
-
-void AccountCheckToHttpRs::MergeFrom(const AccountCheckToHttpRs& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Proto.AccountCheckToHttpRs)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.account().size() > 0) {
-
-    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
-  }
-  if (from.return_code() != 0) {
-    set_return_code(from.return_code());
-  }
-}
-
-void AccountCheckToHttpRs::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:Proto.AccountCheckToHttpRs)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void AccountCheckToHttpRs::CopyFrom(const AccountCheckToHttpRs& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Proto.AccountCheckToHttpRs)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool AccountCheckToHttpRs::IsInitialized() const {
-  return true;
-}
-
-void AccountCheckToHttpRs::InternalSwap(AccountCheckToHttpRs* other) {
-  using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  account_.Swap(&other->account_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(return_code_, other->return_code_);
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata AccountCheckToHttpRs::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -8111,6 +9612,21 @@ template<> PROTOBUF_NOINLINE ::Proto::CmdApp* Arena::CreateMaybeMessage< ::Proto
 template<> PROTOBUF_NOINLINE ::Proto::AppInfoSync* Arena::CreateMaybeMessage< ::Proto::AppInfoSync >(Arena* arena) {
   return Arena::CreateInternal< ::Proto::AppInfoSync >(arena);
 }
+template<> PROTOBUF_NOINLINE ::Proto::NetworkDisconnect* Arena::CreateMaybeMessage< ::Proto::NetworkDisconnect >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::NetworkDisconnect >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Proto::NetworkObjectKeyValue* Arena::CreateMaybeMessage< ::Proto::NetworkObjectKeyValue >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::NetworkObjectKeyValue >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Proto::NetworkObjectKey* Arena::CreateMaybeMessage< ::Proto::NetworkObjectKey >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::NetworkObjectKey >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Proto::NetworkConnect* Arena::CreateMaybeMessage< ::Proto::NetworkConnect >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::NetworkConnect >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Proto::Http* Arena::CreateMaybeMessage< ::Proto::Http >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::Http >(arena);
+}
 template<> PROTOBUF_NOINLINE ::Proto::CreateComponentParam* Arena::CreateMaybeMessage< ::Proto::CreateComponentParam >(Arena* arena) {
   return Arena::CreateInternal< ::Proto::CreateComponentParam >(arena);
 }
@@ -8125,9 +9641,6 @@ template<> PROTOBUF_NOINLINE ::Proto::AccountCheck* Arena::CreateMaybeMessage< :
 }
 template<> PROTOBUF_NOINLINE ::Proto::AccountCheckRs* Arena::CreateMaybeMessage< ::Proto::AccountCheckRs >(Arena* arena) {
   return Arena::CreateInternal< ::Proto::AccountCheckRs >(arena);
-}
-template<> PROTOBUF_NOINLINE ::Proto::AccountCheckToHttpRs* Arena::CreateMaybeMessage< ::Proto::AccountCheckToHttpRs >(Arena* arena) {
-  return Arena::CreateInternal< ::Proto::AccountCheckToHttpRs >(arena);
 }
 template<> PROTOBUF_NOINLINE ::Proto::RobotState* Arena::CreateMaybeMessage< ::Proto::RobotState >(Arena* arena) {
   return Arena::CreateInternal< ::Proto::RobotState >(arena);

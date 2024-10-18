@@ -3,6 +3,9 @@
 #include <mutex>
 #include "disposable.h"
 
+
+//双缓存解决读写冲突
+
 template<class T>
 class CacheSwap
 {

@@ -1,0 +1,401 @@
+2024-10-17 16:46:12 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 16:46:12 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 16:46:12 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 16:46:12 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 16:46:52 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 16:46:52 -> [DEBUG] -  http code:405
+2024-10-17 16:46:52 -> [DEBUG] -  <html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Thu Oct 17 08:46:52 GMT 2024</div><div>There was an unexpected error (type=Method Not Allowed, status=405).</div></body></html>
+2024-10-17 16:47:35 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 16:47:35 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 16:47:35 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 16:47:35 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 16:47:44 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 16:47:44 -> [DEBUG] -  http code:200
+2024-10-17 16:47:44 -> [DEBUG] -  hello
+2024-10-17 16:48:27 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 16:48:27 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 16:48:27 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 16:48:27 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 16:48:37 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 16:48:37 -> [DEBUG] -  http code:405
+2024-10-17 16:48:37 -> [DEBUG] -  <html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Thu Oct 17 08:48:37 GMT 2024</div><div>There was an unexpected error (type=Method Not Allowed, status=405).</div></body></html>
+2024-10-17 16:49:22 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 16:49:22 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 16:49:22 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 16:49:22 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 16:49:33 -> [ERROR] -  [0;31m输入错误，未找到命令: check[0m
+2024-10-17 16:49:40 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 16:49:41 -> [DEBUG] -  http code:405
+2024-10-17 16:49:41 -> [DEBUG] -  <html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Thu Oct 17 08:49:40 GMT 2024</div><div>There was an unexpected error (type=Method Not Allowed, status=405).</div></body></html>
+2024-10-17 16:50:41 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-17 17:09:39 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 17:09:39 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 17:09:39 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 17:09:39 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 17:09:48 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 17:09:48 -> [DEBUG] -  http code:405
+2024-10-17 17:09:48 -> [DEBUG] -  <html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Thu Oct 17 09:09:48 GMT 2024</div><div>There was an unexpected error (type=Method Not Allowed, status=405).</div></body></html>
+2024-10-17 17:10:48 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-17 17:27:08 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 17:27:08 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 17:27:08 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 17:27:08 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 17:27:17 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 17:27:17 -> [DEBUG] -  http code:405
+2024-10-17 17:27:17 -> [DEBUG] -  <html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Thu Oct 17 09:27:17 GMT 2024</div><div>There was an unexpected error (type=Method Not Allowed, status=405).</div></body></html>
+2024-10-17 17:28:17 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-17 21:18:20 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 21:18:20 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 21:18:20 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 21:18:20 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 21:18:28 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 21:18:29 -> [DEBUG] -  http code:400
+2024-10-17 21:18:29 -> [DEBUG] -  <!doctype html><html lang="en"><head><title>HTTP Status 400 – Bad Request</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 400 – Bad Request</h1></body></html>
+2024-10-17 21:18:29 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-17 22:18:15 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 22:18:16 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 22:18:16 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 22:18:16 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 22:18:24 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 22:18:24 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-17 22:21:05 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 22:21:05 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 22:21:05 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 22:21:05 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 22:21:32 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 22:21:32 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-17 22:32:09 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 22:32:09 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 22:32:09 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-17 22:32:09 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-17 23:11:14 -> [ERROR] -  [0;31m输入错误，未找到命令: clear[0m
+2024-10-17 23:11:20 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 23:11:20 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 23:11:20 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 23:11:20 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 23:11:28 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 23:11:28 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-17 23:26:49 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 23:26:49 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 23:26:49 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 23:26:49 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 23:27:01 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 23:27:01 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-17 23:30:05 -> [WARN] -  [0;32mnot found. account:test[0m
+2024-10-17 23:30:42 -> [ERROR] -  [0;31m输入错误，未找到命令: -clear[0m
+2024-10-17 23:30:44 -> [ERROR] -  [0;31m输入错误，未找到命令: clear[0m
+2024-10-17 23:38:43 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 23:38:43 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 23:38:43 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 23:38:43 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 23:38:51 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 23:38:51 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-17 23:39:06 -> [ERROR] -  [0;31m输入错误，未找到命令: -exit[0m
+2024-10-17 23:39:19 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 23:39:19 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 23:39:19 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 23:39:19 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 23:39:25 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 23:39:25 -> [DEBUG] -  http code:200
+2024-10-17 23:39:25 -> [DEBUG] -  hello
+2024-10-17 23:39:25 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-17 23:45:15 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 23:45:15 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 23:45:15 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 23:45:15 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 23:45:32 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 23:45:32 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 23:45:32 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 23:45:32 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 23:45:41 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 23:45:41 -> [DEBUG] -  http code:415
+2024-10-17 23:45:41 -> [DEBUG] -  <html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Thu Oct 17 15:45:41 GMT 2024</div><div>There was an unexpected error (type=Unsupported Media Type, status=415).</div></body></html>
+2024-10-17 23:45:41 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-17 23:50:38 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 23:50:38 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 23:50:38 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 23:50:38 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 23:50:46 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 23:50:47 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-17 23:53:18 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 23:53:18 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 23:53:18 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-17 23:53:18 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 23:53:28 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-17 23:53:28 -> [DEBUG] -  http code:400
+2024-10-17 23:53:28 -> [DEBUG] -  <html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Thu Oct 17 23:53:28 CST 2024</div><div>There was an unexpected error (type=Bad Request, status=400).</div></body></html>
+2024-10-17 23:53:28 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:03:39 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:03:39 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:03:39 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:03:39 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:03:46 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:03:47 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:07:54 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:07:54 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:07:54 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:07:54 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:08:06 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:08:07 -> [DEBUG] -  http code:200
+2024-10-18 00:08:07 -> [DEBUG] -  {"code":1,"msg":null,"data":null}
+2024-10-18 00:08:07 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:09:44 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:09:44 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:09:44 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:09:44 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:09:53 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:09:55 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:10:46 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:10:46 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:10:46 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:10:46 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:10:53 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:10:53 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:11:56 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:11:56 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:11:56 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:11:56 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:12:03 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:12:03 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:12:16 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:12:16 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:12:16 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:12:16 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:12:22 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:12:22 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:17:24 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:17:24 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:17:24 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:17:24 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:17:34 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:17:34 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:17:34 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:17:34 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:17:42 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:17:42 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:18:14 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:18:15 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:18:15 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:18:15 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:18:21 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:18:22 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:18:40 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:18:40 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:18:41 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:18:41 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:19:34 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:19:34 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:19:34 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:19:35 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:19:35 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:19:35 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:19:39 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:19:39 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:19:39 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:19:39 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:19:40 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:19:40 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:19:40 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:19:40 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:24:55 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:24:55 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:24:55 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:24:55 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:24:58 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:24:59 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:28:53 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:28:53 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:28:53 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:28:53 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:29:00 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:29:00 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:37:14 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:37:14 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:37:14 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:37:14 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:37:21 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:37:21 -> [DEBUG] -  http code:200
+2024-10-18 00:37:21 -> [DEBUG] -  hello
+2024-10-18 00:37:52 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:37:52 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:37:52 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:37:52 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:38:02 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:38:03 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:38:23 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:38:23 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:38:23 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:38:23 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:38:43 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:38:44 -> [DEBUG] -  http code:200
+2024-10-18 00:38:44 -> [DEBUG] -  {"code":1,"msg":null,"data":null}
+2024-10-18 00:38:44 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 00:39:11 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:39:11 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:39:11 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:39:11 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:39:17 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 00:39:17 -> [DEBUG] -  http code:200
+2024-10-18 00:39:17 -> [DEBUG] -  hello
+2024-10-18 00:42:14 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:42:14 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:42:14 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:42:14 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:43:07 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:43:07 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:43:07 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:43:07 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:44:18 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:44:18 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:44:18 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:44:18 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:49:14 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:49:14 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:49:14 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 00:49:14 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 01:10:58 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 01:10:58 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 01:10:58 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 01:10:58 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 01:11:05 -> [DEBUG] -  HandleGameToken. token: ip: port:0
+2024-10-18 01:11:05 -> [DEBUG] -  HandleLoginGame. not found game process.
+2024-10-18 01:15:14 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 01:15:14 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 01:15:14 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 01:15:14 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 01:17:20 -> [ERROR] -  [0;31mAdd same component. type:19RobotComponentLogin[0m
+2024-10-18 01:17:21 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:21 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:21 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:21 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:21 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:21 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:22 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:22 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:22 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:55 networkType:TcpConnector connect type:Account value:test[0m
+2024-10-18 01:17:23 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:23 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:23 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:23 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:23 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:23 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:24 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:24 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:24 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:24 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:24 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:24 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:24 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:24 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:24 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:24 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:24 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:24 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:25 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:25 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:26 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:26 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:27 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:27 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:27 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:27 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:27 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:27 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:27 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:27 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:27 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:27 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:27 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:27 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:28 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:28 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:28 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:28 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:29 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:29 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:30 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:17:30 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:18:14 -> [ERROR] -  [0;31m输入错误，未找到命令: -clear[0m
+2024-10-18 01:18:21 -> [ERROR] -  [0;31m输入错误，未找到命令: -clare[0m
+2024-10-18 01:18:28 -> [ERROR] -  [0;31m输入错误，未找到命令: -clean.[0m
+2024-10-18 01:18:40 -> [ERROR] -  [0;31mAdd same component. type:19RobotComponentLogin[0m
+2024-10-18 01:18:40 -> [ERROR] -  [0;31mAdd same component. type:19RobotComponentLogin[0m
+2024-10-18 01:18:40 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:18:40 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:18:40 -> [DEBUG] -  account check result account:test code:4
+2024-10-18 01:19:44 -> [ERROR] -  [0;31m输入错误，未找到命令: -exit[0m
+2024-10-18 01:19:51 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 01:19:51 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 01:19:51 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 01:19:51 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 01:19:57 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:33:10 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 08:33:10 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 08:33:10 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 08:33:10 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 08:33:20 -> [ERROR] -  [0;31m输入错误，未找到命令: -check[0m
+2024-10-18 08:33:32 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 08:33:55 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 08:33:55 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 08:33:55 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 08:33:55 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 08:34:03 -> [DEBUG] -  connected. socket:6 networkType:HttpConnector connect type:Account value:test
+2024-10-18 08:34:06 -> [DEBUG] -  http code:200
+2024-10-18 08:34:06 -> [DEBUG] -  {"code":2,"msg":"用户名或密码错误","data":null}
+2024-10-18 08:34:06 -> [ERROR] -  [0;31mtest http login. recv network disconnect.[0m
+2024-10-18 08:34:42 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 08:34:42 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 08:34:42 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 08:34:42 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 08:36:12 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 08:36:12 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 08:36:12 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 08:36:12 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 08:36:16 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:11 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:11 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:12 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601

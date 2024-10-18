@@ -21,6 +21,8 @@
 typedef uint64_t uint64;
 typedef uint32_t uint32;
 
+
+//定义回调函数
 #define BindFunP4(_self,_f) std:: bind(_f,_self,std::placeholders::_1,std::placeholders::_2,std::placeholders::_3,std::placeholders::_4)
 #define BindFunP3(_self,_f) std:: bind(_f,_self,std::placeholders::_1,std::placeholders::_2,std::placeholders::_3)
 #define BindFunP2(_self,_f) std:: bind(_f,_self,std::placeholders::_1,std::placeholders::_2)

@@ -49,7 +49,7 @@ struct TableStruct_msg_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxillaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[24]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[28]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -63,9 +63,6 @@ extern AccountCheckDefaultTypeInternal _AccountCheck_default_instance_;
 class AccountCheckRs;
 class AccountCheckRsDefaultTypeInternal;
 extern AccountCheckRsDefaultTypeInternal _AccountCheckRs_default_instance_;
-class AccountCheckToHttpRs;
-class AccountCheckToHttpRsDefaultTypeInternal;
-extern AccountCheckToHttpRsDefaultTypeInternal _AccountCheckToHttpRs_default_instance_;
 class AppInfoSync;
 class AppInfoSyncDefaultTypeInternal;
 extern AppInfoSyncDefaultTypeInternal _AppInfoSync_default_instance_;
@@ -93,6 +90,21 @@ extern CreatePlayerToDBDefaultTypeInternal _CreatePlayerToDB_default_instance_;
 class CreatePlayerToDBRs;
 class CreatePlayerToDBRsDefaultTypeInternal;
 extern CreatePlayerToDBRsDefaultTypeInternal _CreatePlayerToDBRs_default_instance_;
+class Http;
+class HttpDefaultTypeInternal;
+extern HttpDefaultTypeInternal _Http_default_instance_;
+class NetworkConnect;
+class NetworkConnectDefaultTypeInternal;
+extern NetworkConnectDefaultTypeInternal _NetworkConnect_default_instance_;
+class NetworkDisconnect;
+class NetworkDisconnectDefaultTypeInternal;
+extern NetworkDisconnectDefaultTypeInternal _NetworkDisconnect_default_instance_;
+class NetworkObjectKey;
+class NetworkObjectKeyDefaultTypeInternal;
+extern NetworkObjectKeyDefaultTypeInternal _NetworkObjectKey_default_instance_;
+class NetworkObjectKeyValue;
+class NetworkObjectKeyValueDefaultTypeInternal;
+extern NetworkObjectKeyValueDefaultTypeInternal _NetworkObjectKeyValue_default_instance_;
 class PlayerList;
 class PlayerListDefaultTypeInternal;
 extern PlayerListDefaultTypeInternal _PlayerList_default_instance_;
@@ -133,7 +145,6 @@ extern SelectPlayerRsDefaultTypeInternal _SelectPlayerRs_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
 template<> ::Proto::AccountCheck* Arena::CreateMaybeMessage<::Proto::AccountCheck>(Arena*);
 template<> ::Proto::AccountCheckRs* Arena::CreateMaybeMessage<::Proto::AccountCheckRs>(Arena*);
-template<> ::Proto::AccountCheckToHttpRs* Arena::CreateMaybeMessage<::Proto::AccountCheckToHttpRs>(Arena*);
 template<> ::Proto::AppInfoSync* Arena::CreateMaybeMessage<::Proto::AppInfoSync>(Arena*);
 template<> ::Proto::CmdApp* Arena::CreateMaybeMessage<::Proto::CmdApp>(Arena*);
 template<> ::Proto::CmdThread* Arena::CreateMaybeMessage<::Proto::CmdThread>(Arena*);
@@ -143,6 +154,11 @@ template<> ::Proto::CreatePlayer* Arena::CreateMaybeMessage<::Proto::CreatePlaye
 template<> ::Proto::CreatePlayerRs* Arena::CreateMaybeMessage<::Proto::CreatePlayerRs>(Arena*);
 template<> ::Proto::CreatePlayerToDB* Arena::CreateMaybeMessage<::Proto::CreatePlayerToDB>(Arena*);
 template<> ::Proto::CreatePlayerToDBRs* Arena::CreateMaybeMessage<::Proto::CreatePlayerToDBRs>(Arena*);
+template<> ::Proto::Http* Arena::CreateMaybeMessage<::Proto::Http>(Arena*);
+template<> ::Proto::NetworkConnect* Arena::CreateMaybeMessage<::Proto::NetworkConnect>(Arena*);
+template<> ::Proto::NetworkDisconnect* Arena::CreateMaybeMessage<::Proto::NetworkDisconnect>(Arena*);
+template<> ::Proto::NetworkObjectKey* Arena::CreateMaybeMessage<::Proto::NetworkObjectKey>(Arena*);
+template<> ::Proto::NetworkObjectKeyValue* Arena::CreateMaybeMessage<::Proto::NetworkObjectKeyValue>(Arena*);
 template<> ::Proto::PlayerList* Arena::CreateMaybeMessage<::Proto::PlayerList>(Arena*);
 template<> ::Proto::PlayerLittle* Arena::CreateMaybeMessage<::Proto::PlayerLittle>(Arena*);
 template<> ::Proto::QueryPlayer* Arena::CreateMaybeMessage<::Proto::QueryPlayer>(Arena*);
@@ -161,12 +177,13 @@ namespace Proto {
 enum CmdThread_CmdType : int {
   CmdThread_CmdType_Entity = 0,
   CmdThread_CmdType_Pool = 1,
+  CmdThread_CmdType_Connect = 2,
   CmdThread_CmdType_CmdThread_CmdType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   CmdThread_CmdType_CmdThread_CmdType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool CmdThread_CmdType_IsValid(int value);
 constexpr CmdThread_CmdType CmdThread_CmdType_CmdType_MIN = CmdThread_CmdType_Entity;
-constexpr CmdThread_CmdType CmdThread_CmdType_CmdType_MAX = CmdThread_CmdType_Pool;
+constexpr CmdThread_CmdType CmdThread_CmdType_CmdType_MAX = CmdThread_CmdType_Connect;
 constexpr int CmdThread_CmdType_CmdType_ARRAYSIZE = CmdThread_CmdType_CmdType_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CmdThread_CmdType_descriptor();
@@ -257,6 +274,32 @@ inline bool SelectPlayerRs_SelectPlayerReturnCode_Parse(
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<SelectPlayerRs_SelectPlayerReturnCode>(
     SelectPlayerRs_SelectPlayerReturnCode_descriptor(), name, value);
 }
+enum NetworkObjectKeyType : int {
+  ObjectKeyTypeNone = 0,
+  ObjectKeyTypeAccount = 1,
+  ObjectKeyTypeApp = 2,
+  NetworkObjectKeyType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  NetworkObjectKeyType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+};
+bool NetworkObjectKeyType_IsValid(int value);
+constexpr NetworkObjectKeyType NetworkObjectKeyType_MIN = ObjectKeyTypeNone;
+constexpr NetworkObjectKeyType NetworkObjectKeyType_MAX = ObjectKeyTypeApp;
+constexpr int NetworkObjectKeyType_ARRAYSIZE = NetworkObjectKeyType_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* NetworkObjectKeyType_descriptor();
+template<typename T>
+inline const std::string& NetworkObjectKeyType_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, NetworkObjectKeyType>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function NetworkObjectKeyType_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    NetworkObjectKeyType_descriptor(), enum_t_value);
+}
+inline bool NetworkObjectKeyType_Parse(
+    const std::string& name, NetworkObjectKeyType* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<NetworkObjectKeyType>(
+    NetworkObjectKeyType_descriptor(), name, value);
+}
 enum AccountCheckReturnCode : int {
   ARC_OK = 0,
   ARC_UNKONWN = 1,
@@ -286,6 +329,32 @@ inline bool AccountCheckReturnCode_Parse(
     const std::string& name, AccountCheckReturnCode* value) {
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<AccountCheckReturnCode>(
     AccountCheckReturnCode_descriptor(), name, value);
+}
+enum LoginHttpreturnCode : int {
+  LHRC_OK = 0,
+  LHRC_TIMEOUT = 1,
+  LHRC_NOTFOUND = 2,
+  LoginHttpreturnCode_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  LoginHttpreturnCode_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+};
+bool LoginHttpreturnCode_IsValid(int value);
+constexpr LoginHttpreturnCode LoginHttpreturnCode_MIN = LHRC_OK;
+constexpr LoginHttpreturnCode LoginHttpreturnCode_MAX = LHRC_NOTFOUND;
+constexpr int LoginHttpreturnCode_ARRAYSIZE = LoginHttpreturnCode_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* LoginHttpreturnCode_descriptor();
+template<typename T>
+inline const std::string& LoginHttpreturnCode_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, LoginHttpreturnCode>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function LoginHttpreturnCode_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    LoginHttpreturnCode_descriptor(), enum_t_value);
+}
+inline bool LoginHttpreturnCode_Parse(
+    const std::string& name, LoginHttpreturnCode* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<LoginHttpreturnCode>(
+    LoginHttpreturnCode_descriptor(), name, value);
 }
 enum CreatePlayerReturnCode : int {
   CPR_Create_OK = 0,
@@ -430,6 +499,8 @@ class CmdThread :
     CmdThread_CmdType_Entity;
   static constexpr CmdType Pool =
     CmdThread_CmdType_Pool;
+  static constexpr CmdType Connect =
+    CmdThread_CmdType_Connect;
   static inline bool CmdType_IsValid(int value) {
     return CmdThread_CmdType_IsValid(value);
   }
@@ -780,6 +851,734 @@ class AppInfoSync :
 };
 // -------------------------------------------------------------------
 
+class NetworkDisconnect :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.NetworkDisconnect) */ {
+ public:
+  NetworkDisconnect();
+  virtual ~NetworkDisconnect();
+
+  NetworkDisconnect(const NetworkDisconnect& from);
+  NetworkDisconnect(NetworkDisconnect&& from) noexcept
+    : NetworkDisconnect() {
+    *this = ::std::move(from);
+  }
+
+  inline NetworkDisconnect& operator=(const NetworkDisconnect& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline NetworkDisconnect& operator=(NetworkDisconnect&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const NetworkDisconnect& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const NetworkDisconnect* internal_default_instance() {
+    return reinterpret_cast<const NetworkDisconnect*>(
+               &_NetworkDisconnect_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    3;
+
+  friend void swap(NetworkDisconnect& a, NetworkDisconnect& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(NetworkDisconnect* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline NetworkDisconnect* New() const final {
+    return CreateMaybeMessage<NetworkDisconnect>(nullptr);
+  }
+
+  NetworkDisconnect* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<NetworkDisconnect>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const NetworkDisconnect& from);
+  void MergeFrom(const NetworkDisconnect& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(NetworkDisconnect* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.NetworkDisconnect";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kNetworkTypeFieldNumber = 1,
+    kSocketFieldNumber = 2,
+  };
+  // int32 network_type = 1;
+  void clear_network_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 network_type() const;
+  void set_network_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+
+  // int32 socket = 2;
+  void clear_socket();
+  ::PROTOBUF_NAMESPACE_ID::int32 socket() const;
+  void set_socket(::PROTOBUF_NAMESPACE_ID::int32 value);
+
+  // @@protoc_insertion_point(class_scope:Proto.NetworkDisconnect)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::int32 network_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 socket_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
+class NetworkObjectKeyValue :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.NetworkObjectKeyValue) */ {
+ public:
+  NetworkObjectKeyValue();
+  virtual ~NetworkObjectKeyValue();
+
+  NetworkObjectKeyValue(const NetworkObjectKeyValue& from);
+  NetworkObjectKeyValue(NetworkObjectKeyValue&& from) noexcept
+    : NetworkObjectKeyValue() {
+    *this = ::std::move(from);
+  }
+
+  inline NetworkObjectKeyValue& operator=(const NetworkObjectKeyValue& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline NetworkObjectKeyValue& operator=(NetworkObjectKeyValue&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const NetworkObjectKeyValue& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const NetworkObjectKeyValue* internal_default_instance() {
+    return reinterpret_cast<const NetworkObjectKeyValue*>(
+               &_NetworkObjectKeyValue_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    4;
+
+  friend void swap(NetworkObjectKeyValue& a, NetworkObjectKeyValue& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(NetworkObjectKeyValue* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline NetworkObjectKeyValue* New() const final {
+    return CreateMaybeMessage<NetworkObjectKeyValue>(nullptr);
+  }
+
+  NetworkObjectKeyValue* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<NetworkObjectKeyValue>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const NetworkObjectKeyValue& from);
+  void MergeFrom(const NetworkObjectKeyValue& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(NetworkObjectKeyValue* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.NetworkObjectKeyValue";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kKeyStrFieldNumber = 2,
+    kKeyInt64FieldNumber = 1,
+  };
+  // string key_str = 2;
+  void clear_key_str();
+  const std::string& key_str() const;
+  void set_key_str(const std::string& value);
+  void set_key_str(std::string&& value);
+  void set_key_str(const char* value);
+  void set_key_str(const char* value, size_t size);
+  std::string* mutable_key_str();
+  std::string* release_key_str();
+  void set_allocated_key_str(std::string* key_str);
+
+  // int64 key_int64 = 1;
+  void clear_key_int64();
+  ::PROTOBUF_NAMESPACE_ID::int64 key_int64() const;
+  void set_key_int64(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // @@protoc_insertion_point(class_scope:Proto.NetworkObjectKeyValue)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr key_str_;
+  ::PROTOBUF_NAMESPACE_ID::int64 key_int64_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
+class NetworkObjectKey :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.NetworkObjectKey) */ {
+ public:
+  NetworkObjectKey();
+  virtual ~NetworkObjectKey();
+
+  NetworkObjectKey(const NetworkObjectKey& from);
+  NetworkObjectKey(NetworkObjectKey&& from) noexcept
+    : NetworkObjectKey() {
+    *this = ::std::move(from);
+  }
+
+  inline NetworkObjectKey& operator=(const NetworkObjectKey& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline NetworkObjectKey& operator=(NetworkObjectKey&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const NetworkObjectKey& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const NetworkObjectKey* internal_default_instance() {
+    return reinterpret_cast<const NetworkObjectKey*>(
+               &_NetworkObjectKey_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    5;
+
+  friend void swap(NetworkObjectKey& a, NetworkObjectKey& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(NetworkObjectKey* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline NetworkObjectKey* New() const final {
+    return CreateMaybeMessage<NetworkObjectKey>(nullptr);
+  }
+
+  NetworkObjectKey* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<NetworkObjectKey>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const NetworkObjectKey& from);
+  void MergeFrom(const NetworkObjectKey& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(NetworkObjectKey* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.NetworkObjectKey";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kKeyValueFieldNumber = 2,
+    kKeyTypeFieldNumber = 1,
+  };
+  // .Proto.NetworkObjectKeyValue key_value = 2;
+  bool has_key_value() const;
+  void clear_key_value();
+  const ::Proto::NetworkObjectKeyValue& key_value() const;
+  ::Proto::NetworkObjectKeyValue* release_key_value();
+  ::Proto::NetworkObjectKeyValue* mutable_key_value();
+  void set_allocated_key_value(::Proto::NetworkObjectKeyValue* key_value);
+
+  // .Proto.NetworkObjectKeyType key_type = 1;
+  void clear_key_type();
+  ::Proto::NetworkObjectKeyType key_type() const;
+  void set_key_type(::Proto::NetworkObjectKeyType value);
+
+  // @@protoc_insertion_point(class_scope:Proto.NetworkObjectKey)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::Proto::NetworkObjectKeyValue* key_value_;
+  int key_type_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
+class NetworkConnect :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.NetworkConnect) */ {
+ public:
+  NetworkConnect();
+  virtual ~NetworkConnect();
+
+  NetworkConnect(const NetworkConnect& from);
+  NetworkConnect(NetworkConnect&& from) noexcept
+    : NetworkConnect() {
+    *this = ::std::move(from);
+  }
+
+  inline NetworkConnect& operator=(const NetworkConnect& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline NetworkConnect& operator=(NetworkConnect&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const NetworkConnect& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const NetworkConnect* internal_default_instance() {
+    return reinterpret_cast<const NetworkConnect*>(
+               &_NetworkConnect_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    6;
+
+  friend void swap(NetworkConnect& a, NetworkConnect& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(NetworkConnect* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline NetworkConnect* New() const final {
+    return CreateMaybeMessage<NetworkConnect>(nullptr);
+  }
+
+  NetworkConnect* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<NetworkConnect>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const NetworkConnect& from);
+  void MergeFrom(const NetworkConnect& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(NetworkConnect* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.NetworkConnect";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kIpFieldNumber = 3,
+    kKeyFieldNumber = 2,
+    kNetworkTypeFieldNumber = 1,
+    kPortFieldNumber = 4,
+  };
+  // string ip = 3;
+  void clear_ip();
+  const std::string& ip() const;
+  void set_ip(const std::string& value);
+  void set_ip(std::string&& value);
+  void set_ip(const char* value);
+  void set_ip(const char* value, size_t size);
+  std::string* mutable_ip();
+  std::string* release_ip();
+  void set_allocated_ip(std::string* ip);
+
+  // .Proto.NetworkObjectKey key = 2;
+  bool has_key() const;
+  void clear_key();
+  const ::Proto::NetworkObjectKey& key() const;
+  ::Proto::NetworkObjectKey* release_key();
+  ::Proto::NetworkObjectKey* mutable_key();
+  void set_allocated_key(::Proto::NetworkObjectKey* key);
+
+  // int32 network_type = 1;
+  void clear_network_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 network_type() const;
+  void set_network_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+
+  // int32 port = 4;
+  void clear_port();
+  ::PROTOBUF_NAMESPACE_ID::int32 port() const;
+  void set_port(::PROTOBUF_NAMESPACE_ID::int32 value);
+
+  // @@protoc_insertion_point(class_scope:Proto.NetworkConnect)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr ip_;
+  ::Proto::NetworkObjectKey* key_;
+  ::PROTOBUF_NAMESPACE_ID::int32 network_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 port_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
+class Http :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.Http) */ {
+ public:
+  Http();
+  virtual ~Http();
+
+  Http(const Http& from);
+  Http(Http&& from) noexcept
+    : Http() {
+    *this = ::std::move(from);
+  }
+
+  inline Http& operator=(const Http& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline Http& operator=(Http&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const Http& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const Http* internal_default_instance() {
+    return reinterpret_cast<const Http*>(
+               &_Http_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    7;
+
+  friend void swap(Http& a, Http& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(Http* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline Http* New() const final {
+    return CreateMaybeMessage<Http>(nullptr);
+  }
+
+  Http* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<Http>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const Http& from);
+  void MergeFrom(const Http& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(Http* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.Http";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kBodyFieldNumber = 1,
+    kStatusCodeFieldNumber = 2,
+  };
+  // string body = 1;
+  void clear_body();
+  const std::string& body() const;
+  void set_body(const std::string& value);
+  void set_body(std::string&& value);
+  void set_body(const char* value);
+  void set_body(const char* value, size_t size);
+  std::string* mutable_body();
+  std::string* release_body();
+  void set_allocated_body(std::string* body);
+
+  // int32 status_code = 2;
+  void clear_status_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 status_code() const;
+  void set_status_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+
+  // @@protoc_insertion_point(class_scope:Proto.Http)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr body_;
+  ::PROTOBUF_NAMESPACE_ID::int32 status_code_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
 class CreateComponentParam :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.CreateComponentParam) */ {
  public:
@@ -822,7 +1621,7 @@ class CreateComponentParam :
                &_CreateComponentParam_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    8;
 
   friend void swap(CreateComponentParam& a, CreateComponentParam& b) {
     a.Swap(&b);
@@ -1003,7 +1802,7 @@ class CreateComponent :
                &_CreateComponent_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    9;
 
   friend void swap(CreateComponent& a, CreateComponent& b) {
     a.Swap(&b);
@@ -1167,7 +1966,7 @@ class RemoveComponent :
                &_RemoveComponent_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    10;
 
   friend void swap(RemoveComponent& a, RemoveComponent& b) {
     a.Swap(&b);
@@ -1298,7 +2097,7 @@ class AccountCheck :
                &_AccountCheck_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    11;
 
   friend void swap(AccountCheck& a, AccountCheck& b) {
     a.Swap(&b);
@@ -1448,7 +2247,7 @@ class AccountCheckRs :
                &_AccountCheckRs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    12;
 
   friend void swap(AccountCheckRs& a, AccountCheckRs& b) {
     a.Swap(&b);
@@ -1537,150 +2336,6 @@ class AccountCheckRs :
 };
 // -------------------------------------------------------------------
 
-class AccountCheckToHttpRs :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.AccountCheckToHttpRs) */ {
- public:
-  AccountCheckToHttpRs();
-  virtual ~AccountCheckToHttpRs();
-
-  AccountCheckToHttpRs(const AccountCheckToHttpRs& from);
-  AccountCheckToHttpRs(AccountCheckToHttpRs&& from) noexcept
-    : AccountCheckToHttpRs() {
-    *this = ::std::move(from);
-  }
-
-  inline AccountCheckToHttpRs& operator=(const AccountCheckToHttpRs& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline AccountCheckToHttpRs& operator=(AccountCheckToHttpRs&& from) noexcept {
-    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const AccountCheckToHttpRs& default_instance();
-
-  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const AccountCheckToHttpRs* internal_default_instance() {
-    return reinterpret_cast<const AccountCheckToHttpRs*>(
-               &_AccountCheckToHttpRs_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    8;
-
-  friend void swap(AccountCheckToHttpRs& a, AccountCheckToHttpRs& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(AccountCheckToHttpRs* other) {
-    if (other == this) return;
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline AccountCheckToHttpRs* New() const final {
-    return CreateMaybeMessage<AccountCheckToHttpRs>(nullptr);
-  }
-
-  AccountCheckToHttpRs* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<AccountCheckToHttpRs>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const AccountCheckToHttpRs& from);
-  void MergeFrom(const AccountCheckToHttpRs& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  #else
-  bool MergePartialFromCodedStream(
-      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
-  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  void SerializeWithCachedSizes(
-      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(AccountCheckToHttpRs* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "Proto.AccountCheckToHttpRs";
-  }
-  private:
-  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
-    return nullptr;
-  }
-  inline void* MaybeArenaPtr() const {
-    return nullptr;
-  }
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
-    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kAccountFieldNumber = 2,
-    kReturnCodeFieldNumber = 1,
-  };
-  // string account = 2;
-  void clear_account();
-  const std::string& account() const;
-  void set_account(const std::string& value);
-  void set_account(std::string&& value);
-  void set_account(const char* value);
-  void set_account(const char* value, size_t size);
-  std::string* mutable_account();
-  std::string* release_account();
-  void set_allocated_account(std::string* account);
-
-  // .Proto.AccountCheckReturnCode return_code = 1;
-  void clear_return_code();
-  ::Proto::AccountCheckReturnCode return_code() const;
-  void set_return_code(::Proto::AccountCheckReturnCode value);
-
-  // @@protoc_insertion_point(class_scope:Proto.AccountCheckToHttpRs)
- private:
-  class _Internal;
-
-  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr account_;
-  int return_code_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_msg_2eproto;
-};
-// -------------------------------------------------------------------
-
 class RobotState :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.RobotState) */ {
  public:
@@ -1723,7 +2378,7 @@ class RobotState :
                &_RobotState_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    13;
 
   friend void swap(RobotState& a, RobotState& b) {
     a.Swap(&b);
@@ -1867,7 +2522,7 @@ class RobotSyncState :
                &_RobotSyncState_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    14;
 
   friend void swap(RobotSyncState& a, RobotSyncState& b) {
     a.Swap(&b);
@@ -2004,7 +2659,7 @@ class RobotTestEnd :
                &_RobotTestEnd_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    15;
 
   friend void swap(RobotTestEnd& a, RobotTestEnd& b) {
     a.Swap(&b);
@@ -2135,7 +2790,7 @@ class PlayerLittle :
                &_PlayerLittle_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    16;
 
   friend void swap(PlayerLittle& a, PlayerLittle& b) {
     a.Swap(&b);
@@ -2293,7 +2948,7 @@ class PlayerList :
                &_PlayerList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    17;
 
   friend void swap(PlayerList& a, PlayerList& b) {
     a.Swap(&b);
@@ -2443,7 +3098,7 @@ class QueryPlayerList :
                &_QueryPlayerList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    18;
 
   friend void swap(QueryPlayerList& a, QueryPlayerList& b) {
     a.Swap(&b);
@@ -2580,7 +3235,7 @@ class QueryPlayer :
                &_QueryPlayer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    19;
 
   friend void swap(QueryPlayer& a, QueryPlayer& b) {
     a.Swap(&b);
@@ -2711,7 +3366,7 @@ class QueryPlayerRs :
                &_QueryPlayerRs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    20;
 
   friend void swap(QueryPlayerRs& a, QueryPlayerRs& b) {
     a.Swap(&b);
@@ -2858,7 +3513,7 @@ class CreatePlayer :
                &_CreatePlayer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    21;
 
   friend void swap(CreatePlayer& a, CreatePlayer& b) {
     a.Swap(&b);
@@ -3002,7 +3657,7 @@ class CreatePlayerRs :
                &_CreatePlayerRs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    22;
 
   friend void swap(CreatePlayerRs& a, CreatePlayerRs& b) {
     a.Swap(&b);
@@ -3133,7 +3788,7 @@ class CreatePlayerToDB :
                &_CreatePlayerToDB_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    23;
 
   friend void swap(CreatePlayerToDB& a, CreatePlayerToDB& b) {
     a.Swap(&b);
@@ -3280,7 +3935,7 @@ class CreatePlayerToDBRs :
                &_CreatePlayerToDBRs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    24;
 
   friend void swap(CreatePlayerToDBRs& a, CreatePlayerToDBRs& b) {
     a.Swap(&b);
@@ -3424,7 +4079,7 @@ class SelectPlayer :
                &_SelectPlayer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    21;
+    25;
 
   friend void swap(SelectPlayer& a, SelectPlayer& b) {
     a.Swap(&b);
@@ -3555,7 +4210,7 @@ class SelectPlayerRs :
                &_SelectPlayerRs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    22;
+    26;
 
   friend void swap(SelectPlayerRs& a, SelectPlayerRs& b) {
     a.Swap(&b);
@@ -3716,7 +4371,7 @@ class SavePlayer :
                &_SavePlayer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    23;
+    27;
 
   friend void swap(SavePlayer& a, SavePlayer& b) {
     a.Swap(&b);
@@ -3900,6 +4555,379 @@ inline void AppInfoSync::set_online(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   online_ = value;
   // @@protoc_insertion_point(field_set:Proto.AppInfoSync.online)
+}
+
+// -------------------------------------------------------------------
+
+// NetworkDisconnect
+
+// int32 network_type = 1;
+inline void NetworkDisconnect::clear_network_type() {
+  network_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 NetworkDisconnect::network_type() const {
+  // @@protoc_insertion_point(field_get:Proto.NetworkDisconnect.network_type)
+  return network_type_;
+}
+inline void NetworkDisconnect::set_network_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  network_type_ = value;
+  // @@protoc_insertion_point(field_set:Proto.NetworkDisconnect.network_type)
+}
+
+// int32 socket = 2;
+inline void NetworkDisconnect::clear_socket() {
+  socket_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 NetworkDisconnect::socket() const {
+  // @@protoc_insertion_point(field_get:Proto.NetworkDisconnect.socket)
+  return socket_;
+}
+inline void NetworkDisconnect::set_socket(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  socket_ = value;
+  // @@protoc_insertion_point(field_set:Proto.NetworkDisconnect.socket)
+}
+
+// -------------------------------------------------------------------
+
+// NetworkObjectKeyValue
+
+// int64 key_int64 = 1;
+inline void NetworkObjectKeyValue::clear_key_int64() {
+  key_int64_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 NetworkObjectKeyValue::key_int64() const {
+  // @@protoc_insertion_point(field_get:Proto.NetworkObjectKeyValue.key_int64)
+  return key_int64_;
+}
+inline void NetworkObjectKeyValue::set_key_int64(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  key_int64_ = value;
+  // @@protoc_insertion_point(field_set:Proto.NetworkObjectKeyValue.key_int64)
+}
+
+// string key_str = 2;
+inline void NetworkObjectKeyValue::clear_key_str() {
+  key_str_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& NetworkObjectKeyValue::key_str() const {
+  // @@protoc_insertion_point(field_get:Proto.NetworkObjectKeyValue.key_str)
+  return key_str_.GetNoArena();
+}
+inline void NetworkObjectKeyValue::set_key_str(const std::string& value) {
+  
+  key_str_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:Proto.NetworkObjectKeyValue.key_str)
+}
+inline void NetworkObjectKeyValue::set_key_str(std::string&& value) {
+  
+  key_str_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:Proto.NetworkObjectKeyValue.key_str)
+}
+inline void NetworkObjectKeyValue::set_key_str(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  key_str_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:Proto.NetworkObjectKeyValue.key_str)
+}
+inline void NetworkObjectKeyValue::set_key_str(const char* value, size_t size) {
+  
+  key_str_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:Proto.NetworkObjectKeyValue.key_str)
+}
+inline std::string* NetworkObjectKeyValue::mutable_key_str() {
+  
+  // @@protoc_insertion_point(field_mutable:Proto.NetworkObjectKeyValue.key_str)
+  return key_str_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* NetworkObjectKeyValue::release_key_str() {
+  // @@protoc_insertion_point(field_release:Proto.NetworkObjectKeyValue.key_str)
+  
+  return key_str_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void NetworkObjectKeyValue::set_allocated_key_str(std::string* key_str) {
+  if (key_str != nullptr) {
+    
+  } else {
+    
+  }
+  key_str_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), key_str);
+  // @@protoc_insertion_point(field_set_allocated:Proto.NetworkObjectKeyValue.key_str)
+}
+
+// -------------------------------------------------------------------
+
+// NetworkObjectKey
+
+// .Proto.NetworkObjectKeyType key_type = 1;
+inline void NetworkObjectKey::clear_key_type() {
+  key_type_ = 0;
+}
+inline ::Proto::NetworkObjectKeyType NetworkObjectKey::key_type() const {
+  // @@protoc_insertion_point(field_get:Proto.NetworkObjectKey.key_type)
+  return static_cast< ::Proto::NetworkObjectKeyType >(key_type_);
+}
+inline void NetworkObjectKey::set_key_type(::Proto::NetworkObjectKeyType value) {
+  
+  key_type_ = value;
+  // @@protoc_insertion_point(field_set:Proto.NetworkObjectKey.key_type)
+}
+
+// .Proto.NetworkObjectKeyValue key_value = 2;
+inline bool NetworkObjectKey::has_key_value() const {
+  return this != internal_default_instance() && key_value_ != nullptr;
+}
+inline void NetworkObjectKey::clear_key_value() {
+  if (GetArenaNoVirtual() == nullptr && key_value_ != nullptr) {
+    delete key_value_;
+  }
+  key_value_ = nullptr;
+}
+inline const ::Proto::NetworkObjectKeyValue& NetworkObjectKey::key_value() const {
+  const ::Proto::NetworkObjectKeyValue* p = key_value_;
+  // @@protoc_insertion_point(field_get:Proto.NetworkObjectKey.key_value)
+  return p != nullptr ? *p : *reinterpret_cast<const ::Proto::NetworkObjectKeyValue*>(
+      &::Proto::_NetworkObjectKeyValue_default_instance_);
+}
+inline ::Proto::NetworkObjectKeyValue* NetworkObjectKey::release_key_value() {
+  // @@protoc_insertion_point(field_release:Proto.NetworkObjectKey.key_value)
+  
+  ::Proto::NetworkObjectKeyValue* temp = key_value_;
+  key_value_ = nullptr;
+  return temp;
+}
+inline ::Proto::NetworkObjectKeyValue* NetworkObjectKey::mutable_key_value() {
+  
+  if (key_value_ == nullptr) {
+    auto* p = CreateMaybeMessage<::Proto::NetworkObjectKeyValue>(GetArenaNoVirtual());
+    key_value_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:Proto.NetworkObjectKey.key_value)
+  return key_value_;
+}
+inline void NetworkObjectKey::set_allocated_key_value(::Proto::NetworkObjectKeyValue* key_value) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == nullptr) {
+    delete key_value_;
+  }
+  if (key_value) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
+    if (message_arena != submessage_arena) {
+      key_value = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, key_value, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  key_value_ = key_value;
+  // @@protoc_insertion_point(field_set_allocated:Proto.NetworkObjectKey.key_value)
+}
+
+// -------------------------------------------------------------------
+
+// NetworkConnect
+
+// int32 network_type = 1;
+inline void NetworkConnect::clear_network_type() {
+  network_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 NetworkConnect::network_type() const {
+  // @@protoc_insertion_point(field_get:Proto.NetworkConnect.network_type)
+  return network_type_;
+}
+inline void NetworkConnect::set_network_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  network_type_ = value;
+  // @@protoc_insertion_point(field_set:Proto.NetworkConnect.network_type)
+}
+
+// .Proto.NetworkObjectKey key = 2;
+inline bool NetworkConnect::has_key() const {
+  return this != internal_default_instance() && key_ != nullptr;
+}
+inline void NetworkConnect::clear_key() {
+  if (GetArenaNoVirtual() == nullptr && key_ != nullptr) {
+    delete key_;
+  }
+  key_ = nullptr;
+}
+inline const ::Proto::NetworkObjectKey& NetworkConnect::key() const {
+  const ::Proto::NetworkObjectKey* p = key_;
+  // @@protoc_insertion_point(field_get:Proto.NetworkConnect.key)
+  return p != nullptr ? *p : *reinterpret_cast<const ::Proto::NetworkObjectKey*>(
+      &::Proto::_NetworkObjectKey_default_instance_);
+}
+inline ::Proto::NetworkObjectKey* NetworkConnect::release_key() {
+  // @@protoc_insertion_point(field_release:Proto.NetworkConnect.key)
+  
+  ::Proto::NetworkObjectKey* temp = key_;
+  key_ = nullptr;
+  return temp;
+}
+inline ::Proto::NetworkObjectKey* NetworkConnect::mutable_key() {
+  
+  if (key_ == nullptr) {
+    auto* p = CreateMaybeMessage<::Proto::NetworkObjectKey>(GetArenaNoVirtual());
+    key_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:Proto.NetworkConnect.key)
+  return key_;
+}
+inline void NetworkConnect::set_allocated_key(::Proto::NetworkObjectKey* key) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == nullptr) {
+    delete key_;
+  }
+  if (key) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
+    if (message_arena != submessage_arena) {
+      key = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, key, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  key_ = key;
+  // @@protoc_insertion_point(field_set_allocated:Proto.NetworkConnect.key)
+}
+
+// string ip = 3;
+inline void NetworkConnect::clear_ip() {
+  ip_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& NetworkConnect::ip() const {
+  // @@protoc_insertion_point(field_get:Proto.NetworkConnect.ip)
+  return ip_.GetNoArena();
+}
+inline void NetworkConnect::set_ip(const std::string& value) {
+  
+  ip_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:Proto.NetworkConnect.ip)
+}
+inline void NetworkConnect::set_ip(std::string&& value) {
+  
+  ip_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:Proto.NetworkConnect.ip)
+}
+inline void NetworkConnect::set_ip(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  ip_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:Proto.NetworkConnect.ip)
+}
+inline void NetworkConnect::set_ip(const char* value, size_t size) {
+  
+  ip_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:Proto.NetworkConnect.ip)
+}
+inline std::string* NetworkConnect::mutable_ip() {
+  
+  // @@protoc_insertion_point(field_mutable:Proto.NetworkConnect.ip)
+  return ip_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* NetworkConnect::release_ip() {
+  // @@protoc_insertion_point(field_release:Proto.NetworkConnect.ip)
+  
+  return ip_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void NetworkConnect::set_allocated_ip(std::string* ip) {
+  if (ip != nullptr) {
+    
+  } else {
+    
+  }
+  ip_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ip);
+  // @@protoc_insertion_point(field_set_allocated:Proto.NetworkConnect.ip)
+}
+
+// int32 port = 4;
+inline void NetworkConnect::clear_port() {
+  port_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 NetworkConnect::port() const {
+  // @@protoc_insertion_point(field_get:Proto.NetworkConnect.port)
+  return port_;
+}
+inline void NetworkConnect::set_port(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  port_ = value;
+  // @@protoc_insertion_point(field_set:Proto.NetworkConnect.port)
+}
+
+// -------------------------------------------------------------------
+
+// Http
+
+// string body = 1;
+inline void Http::clear_body() {
+  body_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& Http::body() const {
+  // @@protoc_insertion_point(field_get:Proto.Http.body)
+  return body_.GetNoArena();
+}
+inline void Http::set_body(const std::string& value) {
+  
+  body_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:Proto.Http.body)
+}
+inline void Http::set_body(std::string&& value) {
+  
+  body_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:Proto.Http.body)
+}
+inline void Http::set_body(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  body_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:Proto.Http.body)
+}
+inline void Http::set_body(const char* value, size_t size) {
+  
+  body_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:Proto.Http.body)
+}
+inline std::string* Http::mutable_body() {
+  
+  // @@protoc_insertion_point(field_mutable:Proto.Http.body)
+  return body_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* Http::release_body() {
+  // @@protoc_insertion_point(field_release:Proto.Http.body)
+  
+  return body_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void Http::set_allocated_body(std::string* body) {
+  if (body != nullptr) {
+    
+  } else {
+    
+  }
+  body_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), body);
+  // @@protoc_insertion_point(field_set_allocated:Proto.Http.body)
+}
+
+// int32 status_code = 2;
+inline void Http::clear_status_code() {
+  status_code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 Http::status_code() const {
+  // @@protoc_insertion_point(field_get:Proto.Http.status_code)
+  return status_code_;
+}
+inline void Http::set_status_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  status_code_ = value;
+  // @@protoc_insertion_point(field_set:Proto.Http.status_code)
 }
 
 // -------------------------------------------------------------------
@@ -4238,75 +5266,6 @@ inline void AccountCheckRs::set_return_code(::Proto::AccountCheckReturnCode valu
   
   return_code_ = value;
   // @@protoc_insertion_point(field_set:Proto.AccountCheckRs.return_code)
-}
-
-// -------------------------------------------------------------------
-
-// AccountCheckToHttpRs
-
-// .Proto.AccountCheckReturnCode return_code = 1;
-inline void AccountCheckToHttpRs::clear_return_code() {
-  return_code_ = 0;
-}
-inline ::Proto::AccountCheckReturnCode AccountCheckToHttpRs::return_code() const {
-  // @@protoc_insertion_point(field_get:Proto.AccountCheckToHttpRs.return_code)
-  return static_cast< ::Proto::AccountCheckReturnCode >(return_code_);
-}
-inline void AccountCheckToHttpRs::set_return_code(::Proto::AccountCheckReturnCode value) {
-  
-  return_code_ = value;
-  // @@protoc_insertion_point(field_set:Proto.AccountCheckToHttpRs.return_code)
-}
-
-// string account = 2;
-inline void AccountCheckToHttpRs::clear_account() {
-  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline const std::string& AccountCheckToHttpRs::account() const {
-  // @@protoc_insertion_point(field_get:Proto.AccountCheckToHttpRs.account)
-  return account_.GetNoArena();
-}
-inline void AccountCheckToHttpRs::set_account(const std::string& value) {
-  
-  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:Proto.AccountCheckToHttpRs.account)
-}
-inline void AccountCheckToHttpRs::set_account(std::string&& value) {
-  
-  account_.SetNoArena(
-    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:Proto.AccountCheckToHttpRs.account)
-}
-inline void AccountCheckToHttpRs::set_account(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:Proto.AccountCheckToHttpRs.account)
-}
-inline void AccountCheckToHttpRs::set_account(const char* value, size_t size) {
-  
-  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:Proto.AccountCheckToHttpRs.account)
-}
-inline std::string* AccountCheckToHttpRs::mutable_account() {
-  
-  // @@protoc_insertion_point(field_mutable:Proto.AccountCheckToHttpRs.account)
-  return account_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline std::string* AccountCheckToHttpRs::release_account() {
-  // @@protoc_insertion_point(field_release:Proto.AccountCheckToHttpRs.account)
-  
-  return account_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline void AccountCheckToHttpRs::set_allocated_account(std::string* account) {
-  if (account != nullptr) {
-    
-  } else {
-    
-  }
-  account_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), account);
-  // @@protoc_insertion_point(field_set_allocated:Proto.AccountCheckToHttpRs.account)
 }
 
 // -------------------------------------------------------------------
@@ -5189,6 +6148,14 @@ inline void SavePlayer::set_allocated_player(::Proto::Player* player) {
 
 // -------------------------------------------------------------------
 
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 
 // @@protoc_insertion_point(namespace_scope)
 
@@ -5216,10 +6183,20 @@ template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::Proto::SelectPlayerRs_SelectPlayerReturnCode>() {
   return ::Proto::SelectPlayerRs_SelectPlayerReturnCode_descriptor();
 }
+template <> struct is_proto_enum< ::Proto::NetworkObjectKeyType> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::Proto::NetworkObjectKeyType>() {
+  return ::Proto::NetworkObjectKeyType_descriptor();
+}
 template <> struct is_proto_enum< ::Proto::AccountCheckReturnCode> : ::std::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::Proto::AccountCheckReturnCode>() {
   return ::Proto::AccountCheckReturnCode_descriptor();
+}
+template <> struct is_proto_enum< ::Proto::LoginHttpreturnCode> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::Proto::LoginHttpreturnCode>() {
+  return ::Proto::LoginHttpreturnCode_descriptor();
 }
 template <> struct is_proto_enum< ::Proto::CreatePlayerReturnCode> : ::std::true_type {};
 template <>

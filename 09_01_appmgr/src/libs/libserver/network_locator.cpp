@@ -1,28 +1,94 @@
 #include "network_locator.h"
+#include "app_type.h"
 #include "common.h"
-#include "network_interface.h"
-#include <algorithm>
+#include "component_help.h"
+#include "network_help.h"
+#include "log4_help.h"
+#include "message_system_help.h"
+#include "network_type.h"
+#include "protobuf/msg.pb.h"
+#include "socket_object.h"
 #include <mutex>
-#include <tuple>
+#include <utility>
 
-void NetworkLocator::BackToPool() {
+void NetworkLocator::Awake() {
+  std::lock_guard<std::mutex> guard(_lock);
+  _netIdentify.clear();
   _connectors.clear();
   _listens.clear();
 }
 
-void NetworkLocator::AddConnectorLocator(INetwork *pNetwork, APP_TYPE appType,
-                                         int appId) {
+void NetworkLocator::BackToPool() {
   std::lock_guard<std::mutex> guard(_lock);
-  auto iter = _connectors.find(appType);
-  if (iter == _connectors.end()) {
-    _connectors[appType] = std::map<int, INetwork *>();
-  }
-
-  _connectors[appType][appId] = pNetwork;
+  _netIdentify.clear();
+  _connectors.clear();
+  _listens.clear();
 }
 
-void NetworkLocator::AddListenLocator(INetwork *pNetwork,
-                                      NetworkType networkType) {
+void NetworkLocator::AddConnectorLocator(INetwork *pNetwork,
+                                         NetworkType networkType) {
+  std::lock_guard<std::mutex> guard(_lock);
+  _connectors[networkType] = pNetwork;
+}
+
+void NetworkLocator::AddNetworkIdentify(uint64 appKey, SocketKey socket,
+                                        ObjectKey objKey) {
+  std::lock_guard<std::mutex> guard(_lock);
+  const auto iter = _netIdentify.find(appKey);
+  if (iter != _netIdentify.end()) {
+    LOG_WARN("connector locator recv multiple socket.");
+    _netIdentify.erase(appKey);
+  }
+  NetworkIdentify networkIdentify(socket, std::move(objKey));
+  _netIdentify.insert(std::make_pair(appKey, networkIdentify));
+  LOG_DEBUG("connected appType: " << GetTypeFromAppKey(appKey)
+                                  << " appId: " << GetIdFromAppKey(appKey)
+                                  << &networkIdentify);
+}
+
+void NetworkLocator::RemoveNetworkIdentify(uint64 appKey) {
+  std::lock_guard<std::mutex> guard(_lock);
+
+  auto appType = GetTypeFromAppKey(appKey);
+  auto appId = GetIdFromAppKey(appKey);
+  LOG_DEBUG("dis connect. appType: " << GetAppName(appType)
+                                     << "appId: " << &(_netIdentify[appKey]));
+  _netIdentify.erase(appKey);
+
+  Proto::NetworkConnect protoConn;
+  protoConn.set_network_type((int)NetworkType::TcpConnector);
+
+  ObjectKey key{ObjectKeyType::App, {appKey, ""}};
+  key.SerializeToProto(protoConn.mutable_key());
+
+  const auto pYaml = ComponentHelp::GetYaml();
+  const auto pCommonConfig = pYaml->GetIPEndPoint(appType, appId);
+  protoConn.set_ip(pCommonConfig->Ip.c_str());
+  protoConn.set_port(pCommonConfig->Port);
+
+  MessageSystemHelp::DispatchPacket(Proto::MsgId::MI_NetworkConnect, protoConn,
+                                    nullptr);
+}
+
+INetwork *NetworkLocator::GetConnector(NetworkType networkType) {
+  std::lock_guard<std::mutex> guard(_lock);
+  auto iter = _connectors.find(networkType);
+  if (iter == _connectors.end())
+    return nullptr;
+  return iter->second;
+}
+
+NetworkIdentify NetworkLocator::GetNetworkIdentify(const APP_TYPE appType,
+                                                    const int appId) {
+  std::lock_guard<std::mutex> guard(_lock);
+  const auto appKey = GetAppKey(appType, appId);
+  const auto iter = _netIdentify.find(appKey);
+  if (iter == _netIdentify.end())
+    return NetworkIdentify();
+  return iter->second;
+}
+
+void NetworkLocator::AddListenLocator(INetwork* pNetwork,NetworkType networkType){
   std::lock_guard<std::mutex> guard(_lock);
   _listens[networkType] = pNetwork;
 }
@@ -33,118 +99,4 @@ INetwork *NetworkLocator::GetListen(NetworkType networkType) {
   if (iter == _listens.end())
     return nullptr;
   return iter->second;
-}
-
-INetwork *NetworkLocator::GetNetworkConnector(const SOCKET socket) {
-  std::lock_guard<std::mutex> guard(_lock);
-
-  auto iter = _connectors.begin();
-  while (iter != _connectors.end()) {
-    auto &mapObj = iter->second;
-    auto iterSub =
-        std::find_if(mapObj.begin(), mapObj.end(), [&socket](auto pair) {
-          if (pair.second->GetSocket() == socket)
-            return true;
-          return false;
-        });
-    if (iterSub != mapObj.end())
-      return iterSub->second;
-    ++iter;
-  }
-  return nullptr;
-}
-
-INetwork *NetworkLocator::GetNetworkConnector(const APP_TYPE appType,
-                                              const int appId) {
-  std::lock_guard<std::mutex> guard(_lock);
-  auto iter = _connectors.find(appType);
-  if (iter == _connectors.end())
-    return nullptr;
-  auto &mapObj = iter->second;
-  auto iterSub = mapObj.find(appId);
-  if (iterSub == mapObj.end())
-    return nullptr;
-  return iterSub->second;
-}
-
-std::tuple<APP_TYPE, int>
-NetworkLocator::GetNetworkConnectorInfo(const SOCKET socket) {
-  std::lock_guard<std::mutex> guard(_lock);
-  auto iter = _connectors.begin();
-  while (iter != _connectors.end()) {
-    auto &mapObj = iter->second;
-    auto iterSub =
-        std::find_if(mapObj.begin(), mapObj.end(), [&socket](auto &pair) {
-          if (pair.second->GetSocket() == socket)
-            return true;
-          return false;
-        });
-    if (iterSub != mapObj.end()) {
-      return std::tuple<APP_TYPE, int>(iter->first, iterSub->first);
-    }
-    ++iter;
-  }
-  return std::tuple<APP_TYPE, int>(APP_None, 0);
-}
-
-struct RetrieveSecond {
-  template <typename T>
-  typename T::second_type operator()(T keyValuePair) const {
-    return keyValuePair.second;
-  }
-};
-
-std::list<INetwork *> NetworkLocator::GetNetworks(const APP_TYPE appType) {
-  std::lock_guard<std::mutex> guard(_lock);
-  std::list<INetwork *> rs;
-  auto iter = _connectors.find(appType);
-  if (iter != _connectors.end()) {
-    auto &mapObj = iter->second;
-    std::transform(mapObj.begin(), mapObj.end(), std::back_inserter(rs),
-                   RetrieveSecond());
-  }
-  return rs;
-}
-
-int NetworkLocator::GetNetworkAppId(const SOCKET socket) {
-  std::lock_guard<std::mutex> guard(_lock);
-  auto iter = _connectors.begin();
-
-  while (iter != _connectors.end()) {
-    auto &mapObj = iter->second;
-    auto iterSub =
-        std::find_if(mapObj.begin(), mapObj.end(), [&socket](auto pair) {
-          if (pair.second->GetSocket() == socket)
-            return true;
-          return false;
-        });
-
-    if (iterSub != mapObj.end()) {
-      return iterSub->first;
-    }
-
-    ++iter;
-  }
-  return 0;
-}
-
-APP_TYPE NetworkLocator::GetNetworkAppType(const int socket) {
-  std::lock_guard<std::mutex> guard(_lock);
-
-  auto iter = _connectors.begin();
-  while (iter != _connectors.end()) {
-    auto &mapObj = iter->second;
-    auto iterSub =
-        std::find_if(mapObj.begin(), mapObj.end(), [&socket](auto pair) {
-          if (pair.second->GetSocket() == socket)
-            return true;
-
-          return false;
-        });
-    if (iterSub != mapObj.end()) {
-      return iter->first;
-    }
-    ++iter;
-  }
-  return APP_None;
 }

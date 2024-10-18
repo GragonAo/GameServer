@@ -6,6 +6,7 @@
 
 class Packet;
 
+//线程收集器
 class ThreadCollector : public IDisposable {
 public:
   ThreadCollector(ThreadType threadType, int initNum);

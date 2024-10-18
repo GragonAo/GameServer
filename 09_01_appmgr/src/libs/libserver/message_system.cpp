@@ -1,5 +1,7 @@
 #include "message_system.h"
 #include "entity_system.h"
+#include "trace_component.h"
+#include "component_help.h"
 #include "message_component.h"
 #include <mutex>
 
@@ -36,7 +38,7 @@ void MessageSystem::Update(EntitySystem *pEntities) {
     Process(pPacket, lists);
     pPacket->RemoveRef();
   }
- _cachePackets.GetReaderCache()->clear();
+  _cachePackets.GetReaderCache()->clear();
 }
 
 void MessageSystem::Process(Packet *pPacket,
@@ -45,6 +47,25 @@ void MessageSystem::Process(Packet *pPacket,
     MessageComponent *pMsgComponent =
         static_cast<MessageComponent *>(iter->second);
     if (pMsgComponent->IsFollowMsgId(pPacket)) {
+
+#ifdef LOG_TRACE_COMPONENT_OPEN
+      const google::protobuf::EnumDescriptor *descriptor =
+          Proto::MsgId_descriptor();
+      const auto name =
+          descriptor->FindValueByNumber(pPacket->GetMsgId())->name();
+
+      auto pParent = pMsgComponent->GetParent();
+      const auto traceMsg = std::string("process. ")
+                                .append(" sn:")
+                                .append(std::to_string(pPacket->GetSN()))
+                                .append(" msgId:")
+                                .append(name)
+                                .append(" process by:")
+                                .append(pParent->GetTypeName());
+      ComponentHelp::GetTraceComponent()->Trace(
+          TraceType::Packet, pPacket->GetSocketKey().Socket, traceMsg);
+#endif
+
       pMsgComponent->ProcessPacket(pPacket);
     }
   }

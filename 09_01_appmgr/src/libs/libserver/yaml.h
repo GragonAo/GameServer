@@ -14,11 +14,14 @@ struct YamlConfig {
 struct AppConfig : public YamlConfig {
   int LogicThreadNum{0};
   int MysqlThreadNum{0};
+  int ListenThreadNum{1};
+  int ConnectThreadNum{1};
 };
 
 struct CommonConfig : public AppConfig {
   std::string Ip{"127.0.0.1"};
   int Port{2233};
+  int HttpPort{ 5051 };
 };
 
 struct AppListForOneConfig : public CommonConfig {

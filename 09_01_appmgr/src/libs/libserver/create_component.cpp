@@ -19,6 +19,7 @@ template <size_t ICount> struct DynamicCall {
          std::tuple<TArgs...> t1,
          google::protobuf::RepeatedPtrField<::Proto::CreateComponentParam>
              &params) {
+
     if (params.size() == 0) {
       return ComponentFactoryEx(pEntitySystem, classname, t1,
                                 std::make_index_sequence<sizeof...(TArgs)>());
@@ -89,12 +90,9 @@ void CreateComponentC::HandleCreateComponent(Packet *pPacket) const {
     std::cout << " !!!! CreateComponent failed. className:" << className.c_str()
               << std::endl;
   }
-
-  // std::cout << "CreateComponent. name:" << className << std::endl;
 }
 
 void CreateComponentC::HandleRemoveComponent(Packet *pPacket) {
   Proto::RemoveComponent proto =
       pPacket->ParseToProto<Proto::RemoveComponent>();
-  // GetEntitySystem( )->RemoveFromSystem( proto.sn( ) );
 }

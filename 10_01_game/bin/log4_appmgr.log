@@ -1,0 +1,212 @@
+2024-10-15 16:59:49 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-15 16:59:49 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-15 16:59:49 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-15 16:59:49 -> [DEBUG] -  Initialize thread:ListenThread thread num:2
+2024-10-15 16:59:49 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-15 16:59:49 -> [INFO] -  epoll model. listen 127.0.0.1:5500 SOMAXCONN:1024
+2024-10-15 16:59:49 -> [INFO] -  epoll model. listen 127.0.0.1:7071 SOMAXCONN:1024
+2024-10-15 16:59:51 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-15 16:59:53 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-15 16:59:55 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-15 16:59:57 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-15 16:59:59 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-15 17:00:01 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-15 17:00:03 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-15 17:00:05 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-15 17:00:07 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-15 17:00:09 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-15 17:00:11 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-15 17:00:13 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-15 17:00:14 -> [DEBUG] -  Connected to appType:login appId:101  socket:8 networkType:TcpListen connect type:App value:34359738469
+2024-10-15 17:31:12 -> [DEBUG] -  ------------------------------------
+2024-10-15 17:31:12 -> [DEBUG] -  appId: 101 type:login online:0
+2024-10-15 17:44:05 -> [DEBUG] -  ------------------------------------
+2024-10-15 17:44:05 -> [DEBUG] -   网络类型:TcpListen
+2024-10-15 17:44:05 -> [DEBUG] -  	socket size:1
+2024-10-15 17:44:05 -> [DEBUG] -  ------------------------------------
+2024-10-15 17:44:05 -> [DEBUG] -   网络类型:HttpListen
+2024-10-15 17:44:05 -> [DEBUG] -  	socket size:0
+2024-10-15 17:48:51 -> [DEBUG] -  ------------------------------------
+2024-10-15 17:48:51 -> [DEBUG] -   网络类型:TcpListen
+2024-10-15 17:48:51 -> [DEBUG] -  	socket size:1
+2024-10-15 17:48:51 -> [DEBUG] -  ------------------------------------
+2024-10-15 17:48:51 -> [DEBUG] -   网络类型:HttpListen
+2024-10-15 17:48:51 -> [DEBUG] -  	socket size:0
+2024-10-15 17:49:54 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-15 17:49:56 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-15 17:49:56 -> [WARN] -  [0;32mconnector locator received multiple sockets for the same app.[0m
+2024-10-15 17:49:56 -> [DEBUG] -  Connected to appType:login appId:101  socket:8 networkType:TcpListen connect type:App value:34359738469
+2024-10-17 16:45:16 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 16:45:16 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 16:45:16 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-17 16:45:16 -> [DEBUG] -  Initialize thread:ListenThread thread num:2
+2024-10-17 16:45:16 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 16:45:16 -> [INFO] -  epoll model. listen 127.0.0.1:5500 SOMAXCONN:1024
+2024-10-17 16:45:16 -> [INFO] -  epoll model. listen 127.0.0.1:7071 SOMAXCONN:1024
+2024-10-17 16:45:18 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 16:45:20 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 16:45:22 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 16:45:24 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 16:45:26 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 16:45:28 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 16:45:30 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 16:45:32 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 16:45:34 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 16:45:34 -> [DEBUG] -  Connected to appType:login appId:101  socket:8 networkType:TcpListen connect type:App value:34359738469
+2024-10-17 22:18:45 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-17 22:18:47 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-17 22:18:49 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-17 22:18:51 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-17 22:18:53 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-17 22:18:55 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-17 22:20:45 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 22:20:45 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 22:20:45 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-17 22:20:45 -> [DEBUG] -  Initialize thread:ListenThread thread num:2
+2024-10-17 22:20:45 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 22:20:45 -> [INFO] -  epoll model. listen 127.0.0.1:5500 SOMAXCONN:1024
+2024-10-17 22:20:45 -> [INFO] -  epoll model. listen 127.0.0.1:7071 SOMAXCONN:1024
+2024-10-17 22:20:47 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 22:20:49 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 22:20:51 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 22:20:53 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 22:20:55 -> [DEBUG] -  Connected to appType:login appId:101  socket:8 networkType:TcpListen connect type:App value:34359738469
+2024-10-17 23:37:17 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-17 23:37:19 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-17 23:38:30 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-17 23:38:30 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-17 23:38:30 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-17 23:38:30 -> [DEBUG] -  Initialize thread:ListenThread thread num:2
+2024-10-17 23:38:30 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-17 23:38:30 -> [INFO] -  epoll model. listen 127.0.0.1:5500 SOMAXCONN:1024
+2024-10-17 23:38:30 -> [INFO] -  epoll model. listen 127.0.0.1:7071 SOMAXCONN:1024
+2024-10-17 23:38:32 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 23:38:34 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 23:38:36 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 23:38:38 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-17 23:38:39 -> [DEBUG] -  Connected to appType:login appId:101  socket:8 networkType:TcpListen connect type:App value:34359738469
+2024-10-18 00:43:48 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 00:43:50 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 00:43:52 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 00:43:59 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:43:59 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:43:59 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-18 00:43:59 -> [DEBUG] -  Initialize thread:ListenThread thread num:2
+2024-10-18 00:43:59 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:43:59 -> [INFO] -  epoll model. listen 127.0.0.1:5500 SOMAXCONN:1024
+2024-10-18 00:43:59 -> [INFO] -  epoll model. listen 127.0.0.1:7071 SOMAXCONN:1024
+2024-10-18 00:44:01 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 00:44:03 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 00:44:05 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 00:44:07 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 00:44:08 -> [DEBUG] -  Connected to appType:login appId:101  socket:8 networkType:TcpListen connect type:App value:34359738469
+2024-10-18 00:48:48 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 00:48:48 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 00:48:48 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-18 00:48:48 -> [DEBUG] -  Initialize thread:ListenThread thread num:2
+2024-10-18 00:48:48 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 00:48:48 -> [INFO] -  epoll model. listen 127.0.0.1:5500 SOMAXCONN:1024
+2024-10-18 00:48:48 -> [INFO] -  epoll model. listen 127.0.0.1:7071 SOMAXCONN:1024
+2024-10-18 00:48:50 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 00:48:52 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 00:48:54 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 00:48:56 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 00:48:58 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 00:49:00 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 00:49:02 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 00:49:04 -> [DEBUG] -  Connected to appType:login appId:101  socket:8 networkType:TcpListen connect type:App value:34359738469
+2024-10-18 01:03:53 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:03:55 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:03:57 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:03:59 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:04:01 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:04:03 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:04:05 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:04:07 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:04:09 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:04:11 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:04:13 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:04:15 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:04:17 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:04:19 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:04:21 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:04:23 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:04:25 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:10:37 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 01:10:37 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 01:10:37 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-18 01:10:37 -> [DEBUG] -  Initialize thread:ListenThread thread num:2
+2024-10-18 01:10:37 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 01:10:37 -> [INFO] -  epoll model. listen 127.0.0.1:5500 SOMAXCONN:1024
+2024-10-18 01:10:37 -> [INFO] -  epoll model. listen 127.0.0.1:7071 SOMAXCONN:1024
+2024-10-18 01:10:39 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 01:10:41 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 01:10:43 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 01:10:45 -> [DEBUG] -  Connected to appType:login appId:101  socket:8 networkType:TcpListen connect type:App value:34359738469
+2024-10-18 01:11:51 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:11:53 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:11:55 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:11:57 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:11:59 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:12:01 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:12:03 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:12:05 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 01:12:22 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 01:12:22 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 01:12:22 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-18 01:12:22 -> [DEBUG] -  Initialize thread:ListenThread thread num:2
+2024-10-18 01:12:22 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 01:12:22 -> [INFO] -  epoll model. listen 127.0.0.1:7071 SOMAXCONN:1024
+2024-10-18 01:12:22 -> [INFO] -  epoll model. listen 127.0.0.1:5500 SOMAXCONN:1024
+2024-10-18 01:12:24 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 01:12:26 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 01:12:28 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 01:12:30 -> [DEBUG] -  Connected to appType:login appId:101  socket:8 networkType:TcpListen connect type:App value:34359738469
+2024-10-18 01:13:08 -> [DEBUG] -  Connected to appType:game appId:0  socket:9 networkType:TcpListen connect type:App value:68719476736
+2024-10-18 01:13:10 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType:game id:0[0m
+2024-10-18 01:13:20 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType:game id:0[0m
+2024-10-18 01:13:30 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType:game id:0[0m
+2024-10-18 01:13:43 -> [WARN] -  [0;32mconnector locator received multiple sockets for the same app.[0m
+2024-10-18 01:13:43 -> [DEBUG] -  Connected to appType:game appId:0  socket:9 networkType:TcpListen connect type:App value:68719476736
+2024-10-18 01:13:45 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType:game id:0[0m
+2024-10-18 01:13:55 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType:game id:0[0m
+2024-10-18 01:14:05 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType:game id:0[0m
+2024-10-18 01:14:15 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType:game id:0[0m
+2024-10-18 01:14:25 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType:game id:0[0m
+2024-10-18 01:14:46 -> [DEBUG] -  Connected to appType:game appId:201  socket:9 networkType:TcpListen connect type:App value:68719476937
+2024-10-18 01:39:27 -> [DEBUG] -  ------------------------------------
+2024-10-18 01:39:27 -> [DEBUG] -  appId: 101 type:login online:0
+2024-10-18 01:39:27 -> [DEBUG] -  appId: 201 type:game online:1
+2024-10-18 08:32:17 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 08:32:17 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 08:32:17 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-18 08:32:17 -> [DEBUG] -  Initialize thread:ListenThread thread num:2
+2024-10-18 08:32:17 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 08:32:17 -> [INFO] -  epoll model. listen 127.0.0.1:7071 SOMAXCONN:1024
+2024-10-18 08:32:17 -> [INFO] -  epoll model. listen 127.0.0.1:5500 SOMAXCONN:1024
+2024-10-18 08:32:19 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 08:32:21 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 08:32:23 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 08:32:25 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 08:32:27 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 08:32:29 -> [WARN] -  [0;32mfailed to send packet. msgId:104 to appType:login[0m
+2024-10-18 08:32:29 -> [DEBUG] -  Connected to appType:login appId:0  socket:8 networkType:TcpListen connect type:App value:34359738368
+2024-10-18 08:32:31 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType:login id:0[0m
+2024-10-18 08:32:37 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738368[0m
+2024-10-18 08:32:39 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738368[0m
+2024-10-18 08:32:41 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738368[0m
+2024-10-18 08:32:43 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738368[0m
+2024-10-18 08:32:45 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738368[0m
+2024-10-18 08:32:45 -> [DEBUG] -  Connected to appType:login appId:101  socket:8 networkType:TcpListen connect type:App value:34359738469
+2024-10-18 08:33:00 -> [DEBUG] -  Connected to appType:game appId:201  socket:9 networkType:TcpListen connect type:App value:68719476937
+2024-10-18 08:34:23 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738368[0m
+2024-10-18 08:34:23 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 08:34:25 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738368[0m
+2024-10-18 08:34:25 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m
+2024-10-18 08:34:27 -> [WARN] -  [0;32mconnector locator received multiple sockets for the same app.[0m
+2024-10-18 08:34:27 -> [DEBUG] -  Connected to appType:login appId:101  socket:8 networkType:TcpListen connect type:App value:34359738469
+2024-10-18 08:38:15 -> [DEBUG] -  ------------------------------------
+2024-10-18 08:38:15 -> [DEBUG] -  appId: 101 type:login online:53
+2024-10-18 08:38:15 -> [DEBUG] -  appId: 201 type:game online:48
+2024-10-18 08:59:56 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738368[0m
+2024-10-18 08:59:56 -> [ERROR] -  [0;31mfailed to send packet. can't find socket. socket:8 networkType:TcpListen connect type:App value:34359738469[0m

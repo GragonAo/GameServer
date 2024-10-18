@@ -17,21 +17,22 @@ void AppInfo::Parse(Proto::AppInfoSync proto) {
 }
 
 void SyncComponent::AppInfoSyncHandle(Packet *pPacket) {
+  std::cout << "收到了更新的消息"<<std::endl;
   auto proto = pPacket->ParseToProto<Proto::AppInfoSync>();
   const auto iter = _apps.find(proto.app_id());
   if (iter == _apps.end()) {
     AppInfo syncAppInfo;
     syncAppInfo.Parse(proto);
-    syncAppInfo.Socket = pPacket->GetSocket();
+    syncAppInfo.Socket = pPacket->GetSocketKey().Socket;
     _apps[syncAppInfo.AppId] = syncAppInfo;
   } else {
     const int appId = proto.app_id();
     _apps[appId].Online = proto.online();
-    _apps[appId].Socket = pPacket->GetSocket();
+    _apps[appId].Socket = pPacket->GetSocketKey().Socket;
   }
 }
 
-bool SyncComponent::GetOnApp(APP_TYPE appType, AppInfo &info) {
+bool SyncComponent::GetOneApp(APP_TYPE appType, AppInfo &info) {
   if (_apps.size() == 0) {
     LOG_ERROR("GetApp failed. no more. appType: " << GetAppName(appType));
     return false;
@@ -46,28 +47,24 @@ bool SyncComponent::GetOnApp(APP_TYPE appType, AppInfo &info) {
     return false;
   }
 
-  auto min = iter->second.Online;
-  int appId = iter->first;
+    auto min = iter->second.Online;
+    int appId = iter->first;
+    for (;iter != _apps.end();++iter)
+    {
+        if (min == 0)
+            break;
 
-  while (iter != _apps.end()) {
-    if (min == 0)
-      break;
-    if ((iter->second.AppType & appType) == 0) {
-      ++iter;
-      continue;
+        if ((iter->second.AppType & appType) == 0)
+            continue;
+
+        if (iter->second.Online < min)
+        {
+            min = iter->second.Online;
+            appId = iter->first;
+        }
     }
 
-    if (iter->second.Online < min) {
-      min = iter->second.Online;
-      appId = iter->first;
-    }
-    ++iter;
-  }
-
-  auto syncInfo = _apps[appId];
-  syncInfo.Online += 1;
-  _apps[appId] = syncInfo;
-
+  _apps[appId].Online += 1;
   info = _apps[appId];
   return true;
 }

@@ -46,11 +46,16 @@ private:
 template <class T> inline void EntitySystem::AddComponent(T *pComponent) {
   const auto typeHashCode = pComponent->GetTypeHashCode();
 
+#if LOG_SYSOBJ_OPEN
+    LOG_SYSOBJ("*[sys] add obj. obj sn:" << pComponent->GetSN() << " type:" << pComponent->GetTypeName() << " thead id:" << std::this_thread::get_id());
+#endif
+
   auto iter = _objSystems.find(typeHashCode);
   if (iter == _objSystems.end()) {
     _objSystems[typeHashCode] =
         new ComponentCollections(pComponent->GetTypeName());
   }
+  
   auto pEntities = _objSystems[typeHashCode];
   pEntities->Add(dynamic_cast<IComponent *>(pComponent));
   pComponent->SetSystemManager(_systemManager);

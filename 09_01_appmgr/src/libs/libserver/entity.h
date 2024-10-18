@@ -27,6 +27,12 @@ protected:
 
 template <class T, typename... TArgs>
 inline T *IEntity::AddComponent(TArgs... args) {
+  const auto typeHashCode = typeid(T).hash_code();
+  if(_components.find(typeHashCode) != _components.end()){
+    LOG_ERROR("Add same component. type: " << typeid(T).name());
+    return nullptr;
+  }
+  
     auto pComponent = GetSystemManager()->GetEntitySystem()->AddComponent<T>(std::forward<TArgs>(args)...);
     pComponent->SetParent(this);
     _components.insert(std::make_pair(pComponent->GetSN(), pComponent));

@@ -1,0 +1,95 @@
+2024-10-18 01:13:08 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 01:13:08 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 01:13:08 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-18 01:13:08 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-18 01:13:08 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-18 01:13:08 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType:game id:0[0m
+2024-10-18 01:13:08 -> [ERROR] -  [0;31mfailed to get config of listen. appType:game appId:0[0m
+2024-10-18 01:13:08 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:5 networkType:TcpConnector connect type:App value:25769803776
+2024-10-18 01:13:08 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:6 networkType:TcpConnector connect type:App value:4294967296
+2024-10-18 01:13:34 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-18 01:13:34 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-18 01:13:43 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 01:13:43 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 01:13:43 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-18 01:13:43 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-18 01:13:43 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-18 01:13:43 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType:game id:0[0m
+2024-10-18 01:13:43 -> [ERROR] -  [0;31mfailed to get config of listen. appType:game appId:0[0m
+2024-10-18 01:13:43 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:5 networkType:TcpConnector connect type:App value:25769803776
+2024-10-18 01:13:43 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:6 networkType:TcpConnector connect type:App value:4294967296
+2024-10-18 01:14:33 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-18 01:14:33 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-18 01:14:46 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 01:14:46 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 01:14:46 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-18 01:14:46 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-18 01:14:46 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-18 01:14:46 -> [INFO] -  epoll model. listen 127.0.0.1:5601 SOMAXCONN:1024
+2024-10-18 01:14:46 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:5 networkType:TcpConnector connect type:App value:25769803776
+2024-10-18 01:14:46 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:7 networkType:TcpConnector connect type:App value:4294967296
+2024-10-18 01:19:57 -> [DEBUG] -  enter game. account:test
+2024-10-18 08:30:59 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-18 08:31:07 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-18 08:31:10 -> [ERROR] -  [0;31mcan't find network. appType:appmgr appId:0[0m
+2024-10-18 08:31:20 -> [ERROR] -  [0;31mcan't find network. appType:appmgr appId:0[0m
+2024-10-18 08:31:30 -> [ERROR] -  [0;31mcan't find network. appType:appmgr appId:0[0m
+2024-10-18 08:31:40 -> [ERROR] -  [0;31mcan't find network. appType:appmgr appId:0[0m
+2024-10-18 08:33:00 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 08:33:00 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 08:33:00 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-18 08:33:00 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-18 08:33:00 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-18 08:33:00 -> [INFO] -  epoll model. listen 127.0.0.1:5601 SOMAXCONN:1024
+2024-10-18 08:33:00 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:5 networkType:TcpConnector connect type:App value:25769803776
+2024-10-18 08:33:00 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:8 networkType:TcpConnector connect type:App value:4294967296
+2024-10-18 08:36:16 -> [DEBUG] -  enter game. account:test
+2024-10-18 08:37:11 -> [DEBUG] -  enter game. account:test6
+2024-10-18 08:37:11 -> [DEBUG] -  enter game. account:test15
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test21
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test20
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test14
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test23
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test30
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test40
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test25
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test36
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test31
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test66
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test35
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test33
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test28
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test41
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test43
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test24
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test46
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test60
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test52
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test27
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test48
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test51
+2024-10-18 08:37:12 -> [DEBUG] -  enter game. account:test89
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test68
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test87
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test97
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test34
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test85
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test70
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test99
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test98
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test91
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test57
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test96
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test37
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test79
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test76
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test75
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test61
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test47
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test92
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test93
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test72
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test88
+2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test73
+2024-10-18 08:59:52 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-18 08:59:52 -> [DEBUG] -  Removed appType:dbmgr appId:0

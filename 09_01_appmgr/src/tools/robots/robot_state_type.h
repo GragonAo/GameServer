@@ -1,47 +1,55 @@
 #pragma once
 
 enum RobotStateType {
-  RobotState_HttpRequest = 0,
+  None = -1,
 
-  RobotState_Login_Connecting,
-  RobotState_Login_Connected,
-  RobotState_Login_Logined,
-  RobotState_Login_SelectPlayer,
+  Http_Connecting = 0,
+  Http_Connected,
 
-  RobotState_Game_Connecting,
-  RobotState_Game_Connected,
-  RobotState_Game_Logined,
+  Login_Connecting,
+  Login_Connected,
+  Login_Logined,
 
-  RobotState_Space_EnterWorld,
+  Login_SelectPlayer,
 
-  RobotState_End,
+  Game_Connecting,
+  Game_Connected,
+  Game_Logined,
+
+  Space_EnterWorld,
+
+  End,
 };
 
 const char RobotStateTypeName[][255] = {
-    "[    ] HttpRequest :", "[Login] Connecting :",   "[Login] Connected :",
-    "[Login] Logined :",    "[Login] SelectPlayer :", "[Game ] Connecting :",
-    "[Game ] Connected :",  "[Game ] Logined :",      "[Space ] EnterWorld :",
+    "[Http ] Connecting :",  "[Http ] Connected :", "[Login] Connecting :",
+    "[Login] Connected :",   "[Login] Logined :",   "[Login] SelectPlayer:",
+    "[Game ] Connecting :",  "[Game ] Connected :", "[Game ] Logined :",
+    "[Space ] EnterWorld :",
 };
 
 const char RobotStateTypeShortName[][255] = {
-    "HttpRequest",
+    "Http-Connecting",  "Http-Connected", "Login-Connecting",
+    "Login-Connected",  "Login-Logined",  "Login-SelectPlayer",
 
-    "Login-Connecting",   "Login-Connected", "Login-Logined",
-    "Login-SelectPlayer",
-
-    "Game-Connecting",    "Game-Connected",  "Game-Logined",
+    "Game-Connecting",  "Game-Connected", "Game-Logined",
 
     "Space-EnterWorld",
 };
 
-inline const char *GetRobotStatetypeShortName(RobotStateType stateType) {
-  if (stateType < 0 || stateType >= RobotState_End)
+inline const char *GetRobotStateTypeShortName(RobotStateType stateType) {
+  if (stateType <= RobotStateType::None || stateType >= RobotStateType::End) {
     return "unknown";
-  return RobotStateTypeShortName[stateType];
+  }
+  return RobotStateTypeName[(int)stateType];
 }
 
-inline const char *GetrobotStateTypeName(RobotStateType stateType) {
-  if (stateType < 0 || stateType >= RobotState_End)
-    return "unknown";
-  return RobotStateTypeName[stateType];
+inline const char* GetRobotStateTypeName(RobotStateType stateType)
+{
+    if (stateType <= RobotStateType::None || stateType >= RobotStateType::End)
+    {
+        return "unknown";
+    }
+
+    return RobotStateTypeName[(int)stateType];
 }

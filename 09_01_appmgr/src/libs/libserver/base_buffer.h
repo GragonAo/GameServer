@@ -10,6 +10,7 @@ class Buffer{
 public:
   virtual unsigned int GetEmptySize();
   void ReAllocBuffer(unsigned int dataLength);
+  
   unsigned int GetEndIndex() const { return _endIndex; }
   unsigned int GetBeginIndex() const { return _beginIndex; }
   unsigned int GetTotalSize() const { return _bufferSize; }

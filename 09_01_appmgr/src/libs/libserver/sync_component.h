@@ -19,7 +19,7 @@ struct AppInfo {
 class SyncComponent : public Entity<SyncComponent> {
 public:
   void AppInfoSyncHandle(Packet *pPacket);
-  bool GetOnApp(APP_TYPE appType, AppInfo &info);
+  bool GetOneApp(APP_TYPE appType, AppInfo &info);
   void CmdShow();
 
 protected:

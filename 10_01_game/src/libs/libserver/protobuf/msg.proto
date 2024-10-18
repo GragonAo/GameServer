@@ -1,0 +1,308 @@
+syntax = "proto3";
+import "db.proto"; // 导入外部定义的proto文件
+package Proto; // 定义协议包名
+
+///////////////////////////////////////////////////////////////
+// CmdThread 是一个用于定义线程指令的消息类型
+message CmdThread {
+    // CmdType 是一个枚举类型，用于定义不同的命令类型
+    enum CmdType {
+        Entity = 0; // 实体命令
+        Pool = 1; // 连接池命令
+        Connect = 2; // 连接命令
+    }
+
+    CmdType cmd_type = 1; // cmd_type 表示指令的类型
+}
+
+///////////////////////////////////////////////////////////////
+// CmdApp 是一个用于定义应用程序指令的消息类型
+message CmdApp {
+    // CmdType 是一个枚举类型，用于定义不同的应用程序命令类型
+    enum CmdType {
+        Info = 0; // 信息命令
+    }
+
+    CmdType cmd_type = 1; // cmd_type 表示指令的类型
+}
+
+///////////////////////////////////////////////////////////////
+// AppRegister 是一个用于注册应用程序的信息
+message AppRegister {
+	int32 type = 1; // 应用程序类型
+	int32 id = 2; // 应用程序ID
+}
+
+///////////////////////////////////////////////////////////////
+// AppInfoSync 用于同步应用程序的信息
+message AppInfoSync {
+	int32 app_id = 1; // 应用程序ID
+	int32 app_type = 2; // 应用程序类型
+	int32 online = 3; // 在线状态，0表示离线，1表示在线
+}
+
+///////////////////////////////////////////////////////////////
+// AppInfoListSync 是一个包含多个 AppInfoSync 的列表
+message AppInfoListSync {
+    repeated AppInfoSync apps = 1; // apps 是一个包含多个 AppInfoSync 的列表
+}
+
+///////////////////////////////////////////////////////////////
+// NetworkDisconnect 表示网络断开连接的消息
+message NetworkDisconnect {
+    int32 network_type = 1; // 网络类型
+    int32 socket = 2; // 连接的socket ID
+}
+
+///////////////////////////////////////////////////////////////
+// NetworkObjectKeyType 枚举类型，用于定义网络对象的键类型
+enum NetworkObjectKeyType {
+	ObjectKeyTypeNone = 0; // 无类型
+	ObjectKeyTypeAccount = 1; // 账户类型
+	ObjectKeyTypeApp = 2; // 应用类型
+}
+
+///////////////////////////////////////////////////////////////
+// NetworkObjectKeyValue 是一个包含键值的消息，键值可以是字符串或整型
+message NetworkObjectKeyValue {
+	int64 key_int64 = 1; // 整数型键
+	string key_str = 2; // 字符串型键
+}
+
+///////////////////////////////////////////////////////////////
+// NetworkObjectKey 是一个网络对象的键
+message NetworkObjectKey {
+	NetworkObjectKeyType key_type = 1; // 键的类型
+	NetworkObjectKeyValue key_value = 2; // 键的值
+}
+
+///////////////////////////////////////////////////////////////
+// NetworkConnect 表示一个网络连接
+message NetworkConnect {
+    int32 network_type = 1; // 网络类型
+    NetworkObjectKey key = 2; // 网络对象的键
+    string ip = 3; // 连接的IP地址
+    int32 port = 4; // 连接的端口号
+}
+
+///////////////////////////////////////////////////////////////
+// Http 用于HTTP请求的返回
+message Http {
+	string body = 1; // HTTP请求的响应体
+	int32 status_code = 2; // HTTP状态码
+}
+
+///////////////////////////////////////////////////////////////
+// CreateComponentParam 表示创建组件时传递的参数
+message CreateComponentParam {
+	// ParamType 是参数类型的枚举
+	enum ParamType {
+		Int = 0; // 整型参数
+		String = 1; // 字符串参数
+	}
+
+	ParamType type = 1; // 参数的类型
+	int32 int_param = 2; // 整型参数值
+	string string_param = 3; // 字符串参数值
+}
+
+///////////////////////////////////////////////////////////////
+// CreateComponent 用于创建组件
+message CreateComponent {
+    int32 thread_type = 1; // 线程类型
+	string class_name = 2; // 组件类名
+	bool is_to_all_thread = 3; // 是否发送到所有线程
+	repeated CreateComponentParam params = 4; // 创建组件时的参数列表
+}
+
+///////////////////////////////////////////////////////////////
+// RemoveComponent 用于移除组件
+message RemoveComponent {
+	uint64 sn = 1; // 组件的唯一标识符
+}
+
+///////////////////////////////////////////////////////////////
+// AccountCheck 表示账户检查的请求消息
+message AccountCheck {
+	string account = 1; // 账户名
+	string password = 2; // 密码
+}
+
+///////////////////////////////////////////////////////////////
+// AccountCheckReturnCode 枚举类型，定义账户检查的返回结果
+enum AccountCheckReturnCode {
+	ARC_OK = 0; // 检查通过
+	ARC_UNKONWN = 1; // 未知错误
+	ARC_NOT_FOUND_ACCOUNT = 2; // 未找到账户
+	ARC_PASSWORD_WRONG = 3; // 密码错误
+	ARC_LOGGING = 4; // 正在登录中
+	ARC_TIMEOUT = 5; // 超时
+	ARC_ONLINE = 6; // 账户已经在线
+}
+
+///////////////////////////////////////////////////////////////
+// AccountCheckRs 表示账户检查的返回消息
+message AccountCheckRs {
+	AccountCheckReturnCode return_code = 1; // 返回结果的代码
+}
+
+///////////////////////////////////////////////////////////////
+// LoginHttpReturnCode 枚举类型，定义登录请求的返回结果
+enum LoginHttpReturnCode {
+    LHRC_OK = 0; // 登录成功
+    LHRC_TIMEOUT = 1; // 请求超时
+    LHRC_NOTFOUND = 2; // 未找到登录服务
+}
+
+///////////////////////////////////////////////////////////////
+// RobotState 表示机器人的状态
+message RobotState {
+	string account = 1; // 机器人的账户
+	int32 state = 2; // 机器人的状态
+}
+
+///////////////////////////////////////////////////////////////
+// RobotSyncState 表示同步机器人的状态
+message RobotSyncState {
+	repeated RobotState states = 1; // 机器人状态的列表
+}
+
+///////////////////////////////////////////////////////////////
+// PlayerLittle 表示玩家的简要信息
+message PlayerLittle {
+	uint64 sn = 1; // 玩家唯一标识符
+	string name = 2; // 玩家名字
+	Gender gender = 3; // 性别
+	int32 level = 4; // 等级
+}
+
+///////////////////////////////////////////////////////////////
+// PlayerList 表示玩家列表
+message PlayerList {
+	string account = 1; // 玩家账户
+	repeated PlayerLittle player = 2; // 玩家信息列表
+}
+
+///////////////////////////////////////////////////////////////
+// QueryPlayerList 表示查询玩家列表的请求
+message QueryPlayerList {
+	string account = 1; // 玩家账户
+}
+
+///////////////////////////////////////////////////////////////
+// QueryPlayer 表示查询某个玩家的请求
+message QueryPlayer {
+	uint64 player_sn = 1; // 玩家唯一标识符
+}
+
+///////////////////////////////////////////////////////////////
+// QueryPlayerRs 表示查询某个玩家的响应
+message QueryPlayerRs {
+	string account = 1; // 玩家账户
+	Player player = 2; // 玩家详细信息
+}
+
+///////////////////////////////////////////////////////////////
+// CreatePlayer 表示创建玩家的请求
+message CreatePlayer {
+	string name = 1; // 玩家名字
+	Gender gender = 2; // 性别
+}
+
+///////////////////////////////////////////////////////////////
+// CreatePlayerReturnCode 枚举类型，定义创建玩家的返回结果
+enum CreatePlayerReturnCode {
+	CPR_Create_OK = 0; // 创建成功
+	CPR_Unkonwn = 1; // 未知错误
+	CPR_Rename = 2; // 需要重命名
+}
+
+///////////////////////////////////////////////////////////////
+// CreatePlayerRs 表示创建玩家的响应
+message CreatePlayerRs {
+	CreatePlayerReturnCode return_code = 2; // 返回结果的代码
+}
+
+///////////////////////////////////////////////////////////////
+// CreatePlayerToDB 表示向数据库发送创建玩家的请求
+message CreatePlayerToDB {
+	string account = 2; // 玩家账户
+	Player player = 3; // 玩家详细信息
+}
+
+///////////////////////////////////////////////////////////////
+// CreatePlayerToDBRs 表示数据库返回的创建玩家结果
+message CreatePlayerToDBRs {
+	string account = 1; // 玩家账户
+	CreatePlayerReturnCode return_code = 2; // 返回结果的代码
+}
+
+///////////////////////////////////////////////////////////////
+// SelectPlayer 表示选择玩家的请求
+message SelectPlayer {
+	uint64 player_sn = 1; // 玩家唯一标识符
+}
+
+///////////////////////////////////////////////////////////////
+// SelectPlayerRs 表示选择玩家的响应
+message SelectPlayerRs {
+	// SelectPlayerReturnCode 枚举类型，定义选择玩家的返回结果
+	enum SelectPlayerReturnCode {
+		SPRC_OK = 0; // 选择成功
+		SPRC_NotFound = 1; // 未找到玩家
+	}
+
+	SelectPlayerReturnCode return_code = 1; // 返回结果的代码
+}
+
+///////////////////////////////////////////////////////////////
+// SavePlayer 表示保存玩家信息的请求
+message SavePlayer {
+	uint64 player_sn = 1; // 玩家唯一标识符
+	Player player = 2; // 玩家详细信息
+}
+
+///////////////////////////////////////////////////////////////
+// WorldProxySyncToGather 表示同步世界代理到集群
+message WorldProxySyncToGather {
+	uint64 world_sn = 1; // 世界唯一标识符
+	uint64 world_proxy_sn = 2; // 世界代理唯一标识符
+	int32 world_id = 3; // 世界ID
+	int32 online = 4; // 在线状态
+}
+
+///////////////////////////////////////////////////////////////
+// GameToken 表示游戏令牌相关的信息
+message GameToken {
+	// ReturnCode 枚举类型，定义游戏令牌的返回结果
+	enum ReturnCode{
+		GameToken_OK = 0; // 成功
+		GameToken_NO_GAME = 1; // 未找到游戏
+	}
+
+	ReturnCode return_code = 1; // 返回结果的代码
+	string token = 2; // 游戏令牌
+	string ip = 3; // 游戏服务器IP
+	int32 port = 4; // 游戏服务器端口
+}
+
+///////////////////////////////////////////////////////////////
+// LoginByToken 表示通过令牌登录的请求
+message LoginByToken {
+	string account = 1; // 玩家账户
+	string token = 2; // 游戏令牌
+}
+
+///////////////////////////////////////////////////////////////
+// LoginByTokenRs 表示通过令牌登录的响应
+message LoginByTokenRs {
+	// ReturnCode 枚举类型，定义登录的返回结果
+	enum ReturnCode {
+		LGRC_OK = 0; // 成功
+		LGRC_UNKONWN = 1; // 未知错误
+		LGRC_NOT_FOUND_ACCOUNT = 2; // 未找到账户
+		LGRC_TOKEN_WRONG = 3; // 令牌错误
+	}
+
+	ReturnCode return_code = 1; // 返回结果的代码
+}

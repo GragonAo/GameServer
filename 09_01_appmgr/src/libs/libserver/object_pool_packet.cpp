@@ -1,10 +1,40 @@
 #include "object_pool_packet.h"
 #include <google/protobuf/descriptor.h>
-
-Packet *DynamicPacketPool::MallocPacket(Proto::MsgId msgId, SOCKET socket) {
+#include "trace_component.h"
+#include "component_help.h"
+Packet *DynamicPacketPool::MallocPacket(Proto::MsgId msgId,
+                                        NetworkIdentify *pIdentify) {
   std::lock_guard<std::mutex> guard(_packet_lock);
-  return DynamicObjectPool<Packet>::MallocObject(nullptr, msgId, socket);
+  const auto pPacket =
+      DynamicObjectPool<Packet>::MallocObject(nullptr, msgId, pIdentify);
+#ifdef LOG_TRACE_COMPONENT_OPEN
+  if (pIdentify != nullptr) {
+    const google::protobuf::EnumDescriptor *descriptor =
+        Proto::MsgId_descriptor();
+    const auto name = descriptor->FindValueByNumber(msgId)->name();
+    std::stringstream os;
+    os << "malloc.  " << " sn:" << pPacket->GetSN() << " msgId:" << name.c_str()
+       << " " << dynamic_cast<NetworkIdentify *>(pPacket);
+    ComponentHelp::GetTraceComponent()->Trace(
+        TraceType::Packet, pIdentify->GetSocketKey().Socket, os.str());
+  }
+#endif
+  return pPacket;
 }
+
+#ifdef LOG_TRACE_COMPONENT_OPEN
+inline void TraceFree(Packet* pPacket)
+{
+    const google::protobuf::EnumDescriptor* descriptor = Proto::MsgId_descriptor();
+    const auto name = descriptor->FindValueByNumber(pPacket->GetMsgId())->name();
+    std::stringstream os;
+    os << "free.    "
+        << " sn:" << pPacket->GetSN()
+        << " msgId:" << name.c_str()
+        << " " << dynamic_cast<NetworkIdentify*>(pPacket);
+    ComponentHelp::GetTraceComponent()->Trace(TraceType::Packet, pPacket->GetSocketKey().Socket, os.str());
+}
+#endif
 
 void DynamicPacketPool::Update() {
   std::lock_guard<std::mutex> guard(_packet_lock);
@@ -14,13 +44,22 @@ void DynamicPacketPool::Update() {
   for (auto iter = lists->begin(); iter != lists->end(); ++iter) {
     auto pPacket = iter->second;
     if (pPacket->CanBack2Pool()) {
+
+#ifdef LOG_TRACE_COMPONENT_OPEN
+      TraceFree(pPacket);
+#endif
+
       DynamicObjectPool<Packet>::FreeObject(pPacket);
     }
   }
 }
 
+
 void DynamicPacketPool::FreeObject(IComponent *pObj) {
   std::lock_guard<std::mutex> guard(_packet_lock);
+#ifdef LOG_TRACE_COMPONENT_OPEN
+  TraceFree(dynamic_cast<Packet *>(pObj));
+#endif
   DynamicObjectPool<Packet>::FreeObject(pObj);
 }
 

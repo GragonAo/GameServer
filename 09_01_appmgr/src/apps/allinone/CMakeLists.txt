@@ -16,10 +16,9 @@ aux_source_directory(../dbmgr SRCS)
 list(REMOVE_ITEM SRCS "../dbmgr/main.cpp")
 
 aux_source_directory(../../libs/libserver SRCS)
-aux_source_directory(../../libs/libserver/protobuf SRCS)
-set(SRCS ${SRCS} ../../tools/robots/robot_test.cpp) 
+aux_source_directory(../../libs/libserver/protobuf SRCS) 
+aux_source_directory(../../libs/libserver/mongoose SRCS)
 
-include_directories(../../tools/)
 include_directories(../../libs)
 include_directories(../../apps)
 include_directories(/usr/local/include)

@@ -7,7 +7,8 @@
 #include "packet.h"
 #include "res_path.h"
 #include "yaml.h"
-
+#include "trace_component.h"
+#include "console_cmd_trace.h"
 #include "log4_help.h"
 #include "thread_collector_exclusive.h"
 
@@ -25,6 +26,14 @@ void ThreadMgr::InitializeThread() {
   }
   if (pAppConfig->MysqlThreadNum > 0) {
     CreateThread(MysqlThread, pAppConfig->MysqlThreadNum);
+  }
+
+  if (pAppConfig->LogicThreadNum > 0 || pAppConfig->MysqlThreadNum > 0) {
+    if (pAppConfig->ListenThreadNum > 0)
+      CreateThread(ListenThread, pAppConfig->ListenThreadNum);
+
+    if (pAppConfig->ConnectThreadNum > 0)
+      CreateThread(ConnectThread, pAppConfig->ConnectThreadNum);
   }
 }
 
@@ -58,6 +67,11 @@ void ThreadMgr::InitializeGloablComponent(APP_TYPE ppType, int appId) {
   auto pConsole = GetEntitySystem()->AddComponent<Console>();
   pConsole->Register<ConsoleCmdThread>("thread");
 
+#ifdef LOG_TRACE_COMPONENT_OPEN
+  GetEntitySystem()->AddComponent<TraceComponent>();
+  pConsole->Register<ConsoleCmdTrace>("trace");
+#endif
+
   InitComponent(ThreadType::MainThread);
 }
 
@@ -85,7 +99,8 @@ void ThreadMgr::UpdateCreatePacket() {
         continue;
       }
       auto pThreadCollector = _threads[threadType];
-      pThreadCollector->HandlerCreateMessage(packet,pCreateProto.is_to_all_thread());
+      pThreadCollector->HandlerCreateMessage(packet,
+                                             pCreateProto.is_to_all_thread());
     } else {
       // 单线程
       GetMessageSystem()->AddPacketToList(packet);
@@ -123,11 +138,10 @@ bool ThreadMgr::IsStopAll() {
   return true;
 }
 
-void ThreadMgr::DestroyThread(){
-    for (auto iter = _threads.begin(); iter != _threads.end(); ++iter)
-    {
-        iter->second->DestroyThread();
-    }
+void ThreadMgr::DestroyThread() {
+  for (auto iter = _threads.begin(); iter != _threads.end(); ++iter) {
+    iter->second->DestroyThread();
+  }
 }
 
 bool ThreadMgr::IsDisposeAll() {

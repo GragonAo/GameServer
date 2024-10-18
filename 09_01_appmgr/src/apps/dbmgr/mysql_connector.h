@@ -3,6 +3,7 @@
 #include "libserver/entity.h"
 #include "libserver/message_system.h"
 #include "libserver/protobuf/db.pb.h"
+#include "libserver/socket_object.h"
 #include "libserver/system.h"
 #include "mysql_base.h"
 #include <mysql/mysql.h>
@@ -71,7 +72,7 @@ private:
 #pragma endregion
 
   void HandleQueryPlayerList(Packet *pPacket);
-  void QueryPlayerList(std::string account, SOCKET socket);
+  void QueryPlayerList(std::string account,NetworkIdentify* pIdentify);
 
   void HandlQueryPlayer(Packet *pPacket);
   void HandleCreatePlayer(Packet *pPacket);

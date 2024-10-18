@@ -1,8 +1,4 @@
-2024-08-27 14:08:09 -> [ERROR] /root/workspace/GameServer/09_01_appmgr/src/libs/libserver/yaml.cpp:163 -  [0;31mcan't find appType yaml's config. appType: 8 id:0[0m
-2024-08-27 14:12:51 -> [ERROR] /root/workspace/GameServer/09_01_appmgr/src/libs/libserver/yaml.cpp:163 -  [0;31mcan't find appType yaml's config. appType: 8 id:0[0m
-2024-08-27 14:20:23 -> [ERROR] /root/workspace/GameServer/09_01_appmgr/src/libs/libserver/yaml.cpp:163 -  [0;31mcan't find appType yaml's config. appType: 8 id:0[0m
-2024-08-27 14:25:47 -> [ERROR] /root/workspace/GameServer/09_01_appmgr/src/libs/libserver/yaml.cpp:163 -  [0;31mcan't find appType yaml's config. appType: 8 id:0[0m
-2024-08-27 14:26:29 -> [ERROR] /root/workspace/GameServer/09_01_appmgr/src/libs/libserver/yaml.cpp:163 -  [0;31mcan't find appType yaml's config. appType: 8 id:0[0m
-2024-08-27 14:43:44 -> [ERROR] /root/workspace/GameServer/09_01_appmgr/src/libs/libserver/yaml.cpp:163 -  [0;31mcan't find appType yaml's config. appType: 8 id:0[0m
-2024-08-27 14:51:14 -> [ERROR] /root/workspace/GameServer/09_01_appmgr/src/libs/libserver/yaml.cpp:163 -  [0;31mcan't find appType yaml's config. appType: 8 id:101[0m
-2024-08-28 02:10:34 -> [ERROR] /root/workspace/GameServer/09_01_appmgr/src/libs/libserver/console.cpp:118 -  [0;31minput error. cmd:-exit[0m
+2024-10-08 15:27:37 -> [ERROR] /root/workspace/GameServer/09_01_appmgr/src/libs/libserver/yaml.cpp:183 -  [0;31mcan't find appType yaml's config. appType: 8 id:0[0m
+2024-10-08 15:27:37 -> [ERROR] /root/workspace/GameServer/09_01_appmgr/src/libs/libserver/network_listen.cpp:85 -  [0;31mfailed to get config of listen. appType:login appId:0[0m
+2024-10-08 15:28:12 -> [ERROR] /root/workspace/GameServer/09_01_appmgr/src/libs/libserver/message_system_help.cpp:53 -  [0;31mcan't find network. appType: appmgr appId:0[0m
+2024-10-08 15:28:22 -> [ERROR] /root/workspace/GameServer/09_01_appmgr/src/libs/libserver/message_system_help.cpp:53 -  [0;31mcan't find network. appType: appmgr appId:0[0m

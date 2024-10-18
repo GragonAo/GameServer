@@ -62,6 +62,10 @@ public:
   // 获取数据包
   Packet *GetPacket();
 
+protected:
+  Packet* GetTcpPacket();
+  Packet* GetHttpPacket();
+
 private:
   // 从缓冲区中复制数据
   void MemcpyFromBuffer(char *pVoid, unsigned int size);

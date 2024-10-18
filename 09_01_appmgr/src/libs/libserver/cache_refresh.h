@@ -10,6 +10,9 @@
 #include <queue>
 #include <utility>
 #include <vector>
+
+//缓存刷新，分帧处理
+
 template <class T> class CacheRefresh : public IDisposable {
 public:
   std::map<uint64, T *> *GetReaderCache();

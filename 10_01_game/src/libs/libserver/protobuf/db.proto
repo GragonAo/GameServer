@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package Proto;
+
+// 本文件中的所有结构体都是在DB中的映射
+
+// 三维向量，用于表示位置坐标
+message Vector3 {
+	float x = 1; // x坐标
+	float y = 2; // y坐标
+	float z = 3; // z坐标
+}
+
+// 性别枚举
+enum Gender {
+	none = 0;   // 未知性别
+	male = 1;   // 男性
+	female = 2; // 女性
+}
+
+// 玩家基础信息
+message PlayerBase {
+	Gender gender = 1; // 玩家性别
+	int32 level = 2;   // 玩家等级
+}
+
+// 记录玩家的上一次场景信息
+// 当玩家下线后再登录时，如果离开的是同一个场景，则直接回到该场景
+// 如果离开的是副本场景，则通过场景SN找到并重新进入副本
+message LastWorld {
+	int32 world_id = 1;  // 世界ID
+	int64 world_sn = 2;  // 世界的唯一序列号
+	Vector3 position = 3; // 玩家在世界中的位置
+}
+
+// 玩家其他信息
+message PlayerMisc {
+	LastWorld last_world = 1;   // 玩家上次所在的世界
+	LastWorld last_dungeon = 2; // 玩家上次所在的副本
+	int32 online_version = 3;   // 在线版本号，用于断线重连
+}
+
+// 玩家完整信息
+message Player {
+	uint64 sn = 1;         // 玩家唯一序列号
+	string name = 2;       // 玩家名称
+	PlayerBase base = 3;   // 玩家基础信息
+	PlayerMisc misc = 4;   // 玩家其他信息
+}

@@ -14,7 +14,7 @@
 #include "component_help.h"
 
 void Log4::Awake(APP_TYPE appType) {
-  _appType = static_cast<APP_TYPE>(appType);
+  _appType = appType;
 
   auto pResPath = ComponentHelp::GetResPath();
   const std::string filename = strutil::format(

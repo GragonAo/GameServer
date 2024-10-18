@@ -16,6 +16,7 @@ public:
 
   int YearDay;
   timeutil::Time TimeTick;
+  
   bool IsStop{false};
 
 private:

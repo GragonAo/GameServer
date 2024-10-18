@@ -34,7 +34,7 @@ template <class T>
 class MessageCallBackFunctionFilterObj : public MessageCallBackFunction {
 public:
   using HandleFunctionWithObj = std::function<void(T *, Packet *)>;
-  using HandleGetObject = std::function<T *(SOCKET)>;
+  using HandleGetObject = std::function<T *(NetworkIdentify*)>;
 
   void RegisterFunctionWithObj(int msgId, HandleFunctionWithObj function);
   bool IsFollowMsgId(Packet *packet) override;
@@ -59,7 +59,7 @@ bool MessageCallBackFunctionFilterObj<T>::IsFollowMsgId(Packet *packet) {
   if (_callbackHandleWithObj.find(packet->GetMsgId()) !=
       _callbackHandleWithObj.end()) {
     if (GetPacketObject != nullptr) {
-      T *pObj = GetPacketObject(packet->GetSocket());
+      T *pObj = GetPacketObject(packet);
       if (pObj != nullptr)
         return true;
     }
@@ -77,7 +77,7 @@ template <class T> void MessageCallBackFunctionFilterObj<T>::ProcessPacket(Packe
     auto iter = _callbackHandleWithObj.find(packet->GetMsgId());
     if (iter != _callbackHandleWithObj.end()) {
       if (GetPacketObject != nullptr) {
-        T *pObj = GetPacketObject(packet->GetSocket());
+        T *pObj = GetPacketObject(packet);
         if (pObj != nullptr) {
           iter->second(pObj, packet);
         }

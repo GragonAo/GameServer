@@ -1,36 +1,48 @@
 
 #include "appmgr/appmgr.h"
-#include "libserver/thread_mgr.h"
+#include "dbmgr/dbmgr.h"
+#include "libserver/component_help.h"
+#include "libserver/network_connector.h"
+#include "libserver/network_listen.h"
+#include "libserver/network_type.h"
 #include "libserver/server_app.h"
+#include "libserver/thread_mgr.h"
 #include "libserver/thread_type.h"
 #include "login/login.h"
-#include "dbmgr/dbmgr.h"
-#include "libserver/network_listen.h"
 
-int main(int argc, char* argv[])
-{
-    const APP_TYPE curAppType = APP_TYPE::APP_ALLINONE;
+int main(int argc, char *argv[]) {
+  const APP_TYPE curAppType = APP_TYPE::APP_ALLINONE;
 
-    ServerApp app(curAppType, argc, argv);
-    app.Initialize();
+  ServerApp app(curAppType, argc, argv);
+  app.Initialize();
 
-    auto pThreadMgr = ThreadMgr::GetInstance();
+  auto pThreadMgr = ThreadMgr::GetInstance();
 
-    // appmgr
-    InitializeComponentAppMgr(pThreadMgr);
-    
-    // dbmgr
-    InitializeComponentDBMgr(pThreadMgr);
+  // appmgr
+  InitializeComponentAppMgr(pThreadMgr);
 
-    // login
-    InitializeComponentLogin(pThreadMgr);
+  // dbmgr
+  InitializeComponentDBMgr(pThreadMgr);
 
-    auto pGlobal = Global::GetInstance();
-    pThreadMgr->CreateThread(ListenThread, 1);
-    pThreadMgr->CreateComponent<NetworkListen>(ListenThread, false, (int)pGlobal->GetCurAppType(), pGlobal->GetCurAppId());
+  // login
+  InitializeComponentLogin(pThreadMgr);
 
-    app.Run();
-    app.Dispose();
+  auto pGlobal = Global::GetInstance();
+  pThreadMgr->CreateComponent<NetworkListen>(ListenThread, false,
+                                             (int)pGlobal->GetCurAppType(),
+                                             pGlobal->GetCurAppId());
 
-    return 0;
+  const auto pYaml = ComponentHelp::GetYaml();
+  const auto pCommonConfig =
+      pYaml->GetIPEndPoint(pGlobal->GetCurAppType(), pGlobal->GetCurAppId());
+  pThreadMgr->CreateComponent<NetworkListen>(ListenThread, false,
+                                             pCommonConfig->Ip,pCommonConfig->HttpPort);
+
+  pThreadMgr->CreateComponent<NetworkConnector>(
+      ConnectThread, false, (int)NetworkType::HttpConnector, 0);
+
+  app.Run();
+  app.Dispose();
+
+  return 0;
 }

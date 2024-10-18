@@ -5,6 +5,8 @@
 #include "disposable.h"
 #include <list>
 
+//组件集合
+
 class ComponentCollections : public IDisposable {
 public:
   ComponentCollections(std::string componentName);
@@ -12,7 +14,6 @@ public:
 
   void Add(IComponent *pObj);
   void Remove(uint64 sn);
-
   IComponent* Get(uint64 sn = 0);
   std::map<uint64, IComponent *> &GetAll();
 

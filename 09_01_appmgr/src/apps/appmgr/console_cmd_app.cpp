@@ -12,5 +12,5 @@ void ConsoleCmdApp::HandleHelp() {
 void ConsoleCmdApp::HandleAppInfo(std::vector<std::string> &params) {
   Proto::CmdApp cmdProto;
   cmdProto.set_cmd_type(Proto::CmdApp_CmdType_Info);
-  MessageSystemHelp::DispatchPacket(Proto::MsgId::MI_CmdApp, 0, cmdProto);
+  MessageSystemHelp::DispatchPacket(Proto::MsgId::MI_CmdApp, cmdProto,nullptr);
 }

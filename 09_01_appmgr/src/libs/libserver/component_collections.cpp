@@ -16,6 +16,8 @@ ComponentCollections::~ComponentCollections()
 }
 
 void ComponentCollections::Add(IComponent *pObj) {
+
+  //不添加重复的组件
   if (_objs.find(pObj->GetSN()) != _objs.end() ||
       _addObjs.find(pObj->GetSN()) != _addObjs.end()) {
 
@@ -28,6 +30,7 @@ void ComponentCollections::Add(IComponent *pObj) {
   _addObjs[pObj->GetSN()] = pObj;
 }
 
+//根据组件sn标识获取组件
 IComponent *ComponentCollections::Get(const uint64 sn) {
   if (sn == 0) {
     if (!_objs.empty())
@@ -47,10 +50,13 @@ IComponent *ComponentCollections::Get(const uint64 sn) {
   return nullptr;
 }
 
+//移除组件
 void ComponentCollections::Remove(uint64 sn) { _removeObjs.push_back(sn); }
 
+//获取集合中的全部组件
 std::map<uint64, IComponent *> &ComponentCollections::GetAll() { return _objs; }
 
+//交换，目的是将添加和移除进行分帧处理
 void ComponentCollections::Swap() {
   if (!_addObjs.empty()) {
     for (auto pair : _addObjs) {
@@ -74,6 +80,7 @@ void ComponentCollections::Swap() {
   }
 }
 
+//销毁
 void ComponentCollections::Dispose() {
   for (const auto pair : _objs) {
     auto pComponent = pair.second;
@@ -92,6 +99,7 @@ void ComponentCollections::Dispose() {
   _removeObjs.clear();
 }
 
+//获取组件集合的名称
 std::string ComponentCollections::GetClassType() const {
   return _componentName;
 }

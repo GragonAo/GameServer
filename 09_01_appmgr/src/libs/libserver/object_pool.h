@@ -51,11 +51,13 @@ T *DynamicObjectPool<T>::MallocObject(SystemManager *pSys, Targs... args) {
   if (_free.empty()) {
     if (T::IsSingle()) {
       T *pObj = new T();
+      pObj->ResetSN(true);
       pObj->SetPool(this);
       _free.push(pObj);
     } else {
       for (int index = 0; index < 50; index++) {
         T *pObj = new T();
+        pObj->ResetSN(true);
         pObj->SetPool(this);
         _free.push(pObj);
       }
@@ -66,12 +68,20 @@ T *DynamicObjectPool<T>::MallocObject(SystemManager *pSys, Targs... args) {
 
   auto pObj = _free.front();
   _free.pop();
+  if (pObj->GetSN() != 0) {
+    LOG_ERROR("failed to create type:" << typeid(T).name()
+                                       << " sn != 0. sn:" << pObj->GetSN());
+  }
 
   pObj->ResetSN();
   pObj->SetPool(this);
   pObj->SetSystemManager(pSys);
   pObj->Awake(std::forward<Targs>(args)...);
-
+#if LOG_SYSOBJ_OPEN
+  LOG_SYSOBJ("*[pool] awake obj. obj sn:"
+             << pObj->GetSN() << " type:" << pObj->GetTypeName()
+             << " thead id:" << std::this_thread::get_id());
+#endif
   _objInUse.AddObj(pObj);
   return pObj;
 }
@@ -88,7 +98,11 @@ inline void DynamicObjectPool<T>::FreeObject(IComponent *pObj) {
     LOG_ERROR("free obj sn == 0. type : " << typeid(T).name());
     return;
   }
-
+#if LOG_SYSOBJ_OPEN
+  LOG_SYSOBJ("*[pool] free obj. obj sn:"
+             << pObj->GetSN() << " type:" << pObj->GetTypeName()
+             << " thead id:" << std::this_thread::get_id());
+#endif
   _objInUse.RemoveObj(pObj->GetSN());
 }
 

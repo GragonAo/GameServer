@@ -1,4 +1,5 @@
 #pragma once
+#include "common.h"
 #include "map"
 #include "singleton.h"
 
@@ -17,31 +18,47 @@ enum APP_TYPE {
 
   APP_APPMGR = APP_GAME_MGR | APP_SPACE_MGR,
 
-  APP_ALLINONE = APP_DB_MGR | APP_GAME_MGR | APP_SPACE_MGR  | APP_LOGIN | APP_GAME | APP_SPACE,
+  APP_ALLINONE = APP_DB_MGR | APP_GAME_MGR | APP_SPACE_MGR | APP_LOGIN |
+                 APP_GAME | APP_SPACE,
 };
 
-inline const char* GetAppName(const APP_TYPE appType)
-{
-    if (appType == APP_TYPE::APP_ALLINONE)
-        return "allinone";
+inline const uint64 GetAppKey(int appType, int appId) {
+  return ((uint64)appType << 32) + appId;
+}
 
-    if (appType == APP_TYPE::APP_ROBOT)
-        return "robot";
+inline const uint64 GetAppKey(APP_TYPE appType, int appId) {
+  return GetAppKey((int)appType, appId);
+}
 
-    if (appType == APP_TYPE::APP_SPACE)
-        return "space";
+inline const APP_TYPE GetTypeFromAppKey(uint64 appKey) {
+  return (APP_TYPE)(appKey >> 32);
+}
 
-    if (appType == APP_TYPE::APP_GAME)
-        return "game";
+inline const int GetIdFromAppKey(uint64 appKey) {
+  return (int)(appKey & 0x0000FFFF);
+}
 
-    if (appType == APP_TYPE::APP_LOGIN)
-        return "login";
+inline const char *GetAppName(const APP_TYPE appType) {
+  if (appType == APP_TYPE::APP_ALLINONE)
+    return "allinone";
 
-    if (appType == APP_TYPE::APP_DB_MGR)
-        return "dbmgr";
+  if (appType == APP_TYPE::APP_ROBOT)
+    return "robot";
 
-    if (appType == APP_TYPE::APP_APPMGR)
-        return "appmgr";
+  if (appType == APP_TYPE::APP_SPACE)
+    return "space";
 
-    return "unknown";
+  if (appType == APP_TYPE::APP_GAME)
+    return "game";
+
+  if (appType == APP_TYPE::APP_LOGIN)
+    return "login";
+
+  if (appType == APP_TYPE::APP_DB_MGR)
+    return "dbmgr";
+
+  if (appType == APP_TYPE::APP_APPMGR)
+    return "appmgr";
+
+  return "unknown";
 }

@@ -92,7 +92,7 @@ inline void ThreadMgr::CreateComponent(ThreadType iType,bool isToAllThead, TArgs
   AnalyseParam(proto, std::forward<TArgs>(args)...);
 
   auto pCreatePacket =
-      MessageSystemHelp::CreatePacket(Proto::MsgId::MI_CreateComponent, 0);
+      MessageSystemHelp::CreatePacket(Proto::MsgId::MI_CreateComponent, nullptr);
   pCreatePacket->SerializeToBuffer(proto);
   _createPackets.GetWriterCache()->emplace_back(pCreatePacket);
 }

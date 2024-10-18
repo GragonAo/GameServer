@@ -1,6 +1,0 @@
-2024-08-25 09:52:10 -> [ERROR] /root/workspace/GameServer/08_01_system/src/libs/libserver/network_listen.cpp:39 -  [0;31m::bind failed. err:98[0m
-2024-08-25 09:55:48 -> [ERROR] /root/workspace/GameServer/08_01_system/src/libs/libserver/network_listen.cpp:39 -  [0;31m::bind failed. err:98[0m
-2024-08-25 09:56:18 -> [ERROR] /root/workspace/GameServer/08_01_system/src/libs/libserver/network_listen.cpp:39 -  [0;31m::bind failed. err:98[0m
-2024-08-26 17:18:27 -> [ERROR] /root/workspace/GameServer/09_01_appmgr/src/libs/libserver/sync_component.cpp:76 -  [0;31m------------------------------------------------[0m
-2024-08-27 08:37:52 -> [ERROR] /root/workspace/GameServer/09_01_appmgr/src/libs/libserver/console.cpp:118 -  [0;31minput error. cmd:app-info[0m
-2024-08-27 08:37:59 -> [ERROR] /root/workspace/GameServer/09_01_appmgr/src/libs/libserver/console.cpp:118 -  [0;31minput error. cmd:app	-info[0m

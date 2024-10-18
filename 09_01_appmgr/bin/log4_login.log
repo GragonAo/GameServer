@@ -1,192 +1,31 @@
-2024-08-25 18:25:45 -> [DEBUG] -  Log4::Initialize is Ok.
-2024-08-25 18:25:48 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
-2024-08-25 18:25:49 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
-2024-08-25 18:25:49 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
-2024-08-25 18:25:50 -> [INFO] -  epoll model. listen 127.0.0.1:2233
-2024-08-25 18:26:13 -> [DEBUG] -  HandlePlayerListToDBRs account: test, player size:1
-2024-08-25 18:26:40 -> [DEBUG] -  HandlePlayerListToDBRs account: test3, player size:1
-2024-08-25 18:26:40 -> [DEBUG] -  HandlePlayerListToDBRs account: test8, player size:1
-2024-08-25 18:26:40 -> [DEBUG] -  HandlePlayerListToDBRs account: test2, player size:1
-2024-08-25 18:26:40 -> [DEBUG] -  HandlePlayerListToDBRs account: test7, player size:1
-2024-08-25 18:26:40 -> [DEBUG] -  HandlePlayerListToDBRs account: test13, player size:1
-2024-08-25 18:26:42 -> [DEBUG] -  HandlePlayerListToDBRs account: test18, player size:1
-2024-08-25 18:26:42 -> [DEBUG] -  HandlePlayerListToDBRs account: test28, player size:1
-2024-08-25 18:26:42 -> [DEBUG] -  HandlePlayerListToDBRs account: test12, player size:1
-2024-08-25 18:26:42 -> [DEBUG] -  HandlePlayerListToDBRs account: test23, player size:1
-2024-08-25 18:26:42 -> [DEBUG] -  HandlePlayerListToDBRs account: test17, player size:1
-2024-08-25 18:26:44 -> [DEBUG] -  HandlePlayerListToDBRs account: test1, player size:1
-2024-08-25 18:26:44 -> [DEBUG] -  HandlePlayerListToDBRs account: test38, player size:1
-2024-08-25 18:26:44 -> [DEBUG] -  HandlePlayerListToDBRs account: test33, player size:1
-2024-08-25 18:26:44 -> [DEBUG] -  HandlePlayerListToDBRs account: test43, player size:1
-2024-08-25 18:26:44 -> [DEBUG] -  HandlePlayerListToDBRs account: test6, player size:1
-2024-08-25 18:26:44 -> [DEBUG] -  HandlePlayerListToDBRs account: test48, player size:1
-2024-08-25 18:26:44 -> [DEBUG] -  HandlePlayerListToDBRs account: test11, player size:1
-2024-08-25 18:26:44 -> [DEBUG] -  HandlePlayerListToDBRs account: test16, player size:1
-2024-08-25 18:26:44 -> [DEBUG] -  HandlePlayerListToDBRs account: test9, player size:1
-2024-08-25 18:26:44 -> [DEBUG] -  HandlePlayerListToDBRs account: test14, player size:1
-2024-08-25 18:26:44 -> [DEBUG] -  HandlePlayerListToDBRs account: test4, player size:1
-2024-08-25 18:26:47 -> [DEBUG] -  HandlePlayerListToDBRs account: test5, player size:1
-2024-08-25 18:26:47 -> [DEBUG] -  HandlePlayerListToDBRs account: test58, player size:1
-2024-08-25 18:26:47 -> [DEBUG] -  HandlePlayerListToDBRs account: test15, player size:1
-2024-08-25 18:26:47 -> [DEBUG] -  HandlePlayerListToDBRs account: test10, player size:1
-2024-08-25 18:26:47 -> [DEBUG] -  HandlePlayerListToDBRs account: test53, player size:1
-2024-08-25 18:26:47 -> [DEBUG] -  HandlePlayerListToDBRs account: test21, player size:1
-2024-08-25 18:26:47 -> [DEBUG] -  HandlePlayerListToDBRs account: test31, player size:1
-2024-08-25 18:26:47 -> [DEBUG] -  HandlePlayerListToDBRs account: test63, player size:1
-2024-08-25 18:26:47 -> [DEBUG] -  HandlePlayerListToDBRs account: test36, player size:1
-2024-08-25 18:26:47 -> [DEBUG] -  HandlePlayerListToDBRs account: test46, player size:1
-2024-08-25 18:26:47 -> [DEBUG] -  HandlePlayerListToDBRs account: test41, player size:1
-2024-08-25 18:26:47 -> [DEBUG] -  HandlePlayerListToDBRs account: test51, player size:1
-2024-08-25 18:26:49 -> [DEBUG] -  HandlePlayerListToDBRs account: test19, player size:1
-2024-08-25 18:26:49 -> [DEBUG] -  HandlePlayerListToDBRs account: test24, player size:1
-2024-08-25 18:26:49 -> [DEBUG] -  HandlePlayerListToDBRs account: test26, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test29, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test20, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test25, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test35, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test30, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test32, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test22, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test42, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test52, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test47, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test57, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test40, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test45, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test62, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test50, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test81, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test54, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test68, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test96, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test59, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test69, player size:1
-2024-08-25 18:26:50 -> [DEBUG] -  HandlePlayerListToDBRs account: test83, player size:1
-2024-08-25 18:26:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test64, player size:1
-2024-08-25 18:26:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test98, player size:1
-2024-08-25 18:26:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test88, player size:1
-2024-08-25 18:26:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test93, player size:1
-2024-08-25 18:26:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test27, player size:1
-2024-08-25 18:26:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test39, player size:1
-2024-08-25 18:26:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test34, player size:1
-2024-08-25 18:26:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test37, player size:1
-2024-08-25 18:26:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test44, player size:1
-2024-08-25 18:26:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test56, player size:1
-2024-08-25 18:26:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test61, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test72, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test66, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test49, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test77, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test76, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test86, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test87, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test67, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test71, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test82, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test92, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test91, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test97, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test99, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test55, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test60, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test73, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test100, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test70, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test78, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test65, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test74, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test79, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test84, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test80, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test75, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test90, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test85, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test89, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test95, player size:1
-2024-08-25 18:26:52 -> [DEBUG] -  HandlePlayerListToDBRs account: test94, player size:1
-2024-08-27 14:08:09 -> [DEBUG] -  Log4::Initialize is Ok.
-2024-08-27 14:08:09 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
-2024-08-27 14:08:09 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
-2024-08-27 14:08:09 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
-2024-08-27 14:08:09 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType: 8 id:0[0m
-2024-08-27 14:12:51 -> [DEBUG] -  Log4::Initialize is Ok.
-2024-08-27 14:12:51 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
-2024-08-27 14:12:51 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
-2024-08-27 14:12:51 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
-2024-08-27 14:12:51 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType: 8 id:0[0m
-2024-08-27 14:20:23 -> [DEBUG] -  Log4::Initialize is Ok.
-2024-08-27 14:20:23 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
-2024-08-27 14:20:23 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
-2024-08-27 14:20:23 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
-2024-08-27 14:20:23 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType: 8 id:0[0m
-2024-08-27 14:25:47 -> [DEBUG] -  Log4::Initialize is Ok.
-2024-08-27 14:25:47 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
-2024-08-27 14:25:47 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
-2024-08-27 14:25:47 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
-2024-08-27 14:25:47 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType: 8 id:0[0m
-2024-08-27 14:26:29 -> [DEBUG] -  Log4::Initialize is Ok.
-2024-08-27 14:26:29 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
-2024-08-27 14:26:29 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
-2024-08-27 14:26:29 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
-2024-08-27 14:26:29 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType: 8 id:0[0m
-2024-08-27 14:31:28 -> [DEBUG] -  Log4::Initialize is Ok.
-2024-08-27 14:31:28 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
-2024-08-27 14:31:28 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
-2024-08-27 14:31:28 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
-2024-08-27 14:43:44 -> [DEBUG] -  Log4::Initialize is Ok.
-2024-08-27 14:43:44 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
-2024-08-27 14:43:44 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
-2024-08-27 14:43:44 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
-2024-08-27 14:43:44 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType: 8 id:0[0m
-2024-08-27 14:51:14 -> [DEBUG] -  Log4::Initialize is Ok.
-2024-08-27 14:51:14 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
-2024-08-27 14:51:14 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
-2024-08-27 14:51:14 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
-2024-08-27 14:51:14 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType: 8 id:101[0m
-2024-08-27 16:13:18 -> [DEBUG] -  Log4::Initialize is Ok.
-2024-08-27 16:13:19 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
-2024-08-27 16:13:19 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
-2024-08-27 16:13:19 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
-2024-08-27 16:26:54 -> [DEBUG] -  Log4::Initialize is Ok.
-2024-08-27 16:26:54 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
-2024-08-27 16:26:54 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
-2024-08-27 16:26:54 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
-2024-08-27 16:26:54 -> [INFO] -  epoll model. listen 127.0.0.1:2233
-2024-08-27 16:29:08 -> [DEBUG] -  HandlePlayerListToDBRs account: test, player size:1
-2024-08-27 16:33:48 -> [DEBUG] -  Log4::Initialize is Ok.
-2024-08-27 16:33:48 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
-2024-08-27 16:33:48 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
-2024-08-27 16:33:48 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
-2024-08-27 16:33:48 -> [INFO] -  epoll model. listen 127.0.0.1:2233
-2024-08-27 18:12:38 -> [DEBUG] -  Log4::Initialize is Ok.
-2024-08-27 18:12:38 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
-2024-08-27 18:12:38 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
-2024-08-27 18:12:38 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
-2024-08-27 18:12:38 -> [INFO] -  epoll model. listen 127.0.0.1:2233
-2024-08-27 18:13:02 -> [DEBUG] -  Log4::Initialize is Ok.
-2024-08-27 18:13:02 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
-2024-08-27 18:13:02 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
-2024-08-27 18:13:02 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
-2024-08-27 18:13:02 -> [INFO] -  epoll model. listen 127.0.0.1:2234
-2024-08-27 18:13:15 -> [DEBUG] -  HandlePlayerListToDBRs account: test, player size:1
-2024-08-27 18:13:38 -> [DEBUG] -  HandlePlayerListToDBRs account: test1, player size:1
-2024-08-27 18:14:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test5, player size:1
-2024-08-27 18:14:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test10, player size:1
-2024-08-27 18:14:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test4, player size:1
-2024-08-27 18:14:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test8, player size:1
-2024-08-27 18:14:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test7, player size:1
-2024-08-27 18:14:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test2, player size:1
-2024-08-27 18:14:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test6, player size:1
-2024-08-27 18:14:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test9, player size:1
-2024-08-27 18:14:51 -> [DEBUG] -  HandlePlayerListToDBRs account: test3, player size:1
-2024-08-28 02:08:41 -> [DEBUG] -  Log4::Initialize is Ok.
-2024-08-28 02:08:41 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
-2024-08-28 02:08:41 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
-2024-08-28 02:08:41 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
-2024-08-28 02:08:41 -> [INFO] -  epoll model. listen 127.0.0.1:2233
-2024-08-28 02:08:59 -> [DEBUG] -  Log4::Initialize is Ok.
-2024-08-28 02:08:59 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
-2024-08-28 02:08:59 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
-2024-08-28 02:08:59 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
-2024-08-28 02:08:59 -> [INFO] -  epoll model. listen 127.0.0.1:2234
-2024-08-28 02:10:34 -> [ERROR] -  [0;31minput error. cmd:-exit[0m
+2024-10-08 15:09:34 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-08 15:09:34 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-08 15:09:35 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
+2024-10-08 15:09:35 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-10-08 15:09:35 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
+2024-10-08 15:09:35 -> [INFO] -  epoll model. listen 127.0.0.1:2233 SOMAXCONN:1024
+2024-10-08 15:09:35 -> [DEBUG] -  connected appType: 6 appId: 0 socket:9 networkType: TcpConnector connect type: App25769803776
+2024-10-08 15:09:35 -> [DEBUG] -  connected appType: 1 appId: 0 socket:10 networkType: TcpConnector connect type: App4294967296
+2024-10-08 15:10:42 -> [DEBUG] -  dis connect. appType: appmgrappId:  socket:9 networkType: TcpConnector connect type: App25769803776
+2024-10-08 15:10:42 -> [DEBUG] -  dis connect. appType: dbmgrappId:  socket:10 networkType: TcpConnector connect type: App4294967296
+2024-10-08 15:27:37 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-08 15:27:37 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-08 15:27:37 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
+2024-10-08 15:27:37 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-10-08 15:27:37 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
+2024-10-08 15:27:37 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType: 8 id:0[0m
+2024-10-08 15:27:37 -> [ERROR] -  [0;31mfailed to get config of listen. appType:login appId:0[0m
+2024-10-08 15:27:37 -> [DEBUG] -  connected appType: 6 appId: 0 socket:7 networkType: TcpConnector connect type: App25769803776
+2024-10-08 15:27:37 -> [DEBUG] -  connected appType: 1 appId: 0 socket:8 networkType: TcpConnector connect type: App4294967296
+2024-10-08 15:27:51 -> [DEBUG] -  dis connect. appType: appmgrappId:  socket:7 networkType: TcpConnector connect type: App25769803776
+2024-10-08 15:27:51 -> [DEBUG] -  dis connect. appType: dbmgrappId:  socket:8 networkType: TcpConnector connect type: App4294967296
+2024-10-08 15:28:10 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-08 15:28:10 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-08 15:28:10 -> [DEBUG] -  Initialize thread: LogicThread thread num: 2
+2024-10-08 15:28:10 -> [DEBUG] -  Initialize thread: ListenThread thread num: 1
+2024-10-08 15:28:10 -> [DEBUG] -  Initialize thread: ConnectThread thread num: 1
+2024-10-08 15:28:10 -> [INFO] -  epoll model. listen 127.0.0.1:2233 SOMAXCONN:1024
+2024-10-08 15:28:10 -> [DEBUG] -  connected appType: 1 appId: 0 socket:9 networkType: TcpConnector connect type: App4294967296
+2024-10-08 15:28:12 -> [ERROR] -  [0;31mcan't find network. appType: appmgr appId:0[0m
+2024-10-08 15:28:22 -> [ERROR] -  [0;31mcan't find network. appType: appmgr appId:0[0m
+2024-10-08 15:28:25 -> [DEBUG] -  dis connect. appType: dbmgrappId:  socket:9 networkType: TcpConnector connect type: App4294967296
