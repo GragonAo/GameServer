@@ -5,6 +5,7 @@
 #include "global_robots.h"
 #include "robot_console_http.h"
 #include "libserver/network_connector.h"
+#include "robot_collection.h"
 
 int main(int argc, char* argv[])
 {
@@ -32,6 +33,9 @@ int main(int argc, char* argv[])
     // 创建 TCP 和 HTTP 的网络连接器组件，用于连接到相应服务器
     pThreadMgr->CreateComponent<NetworkConnector>(ConnectThread, false, (int)NetworkType::TcpConnector, 0);
     pThreadMgr->CreateComponent<NetworkConnector>(ConnectThread, false, (int)NetworkType::HttpConnector, 0);
+
+    pThreadMgr->CreateComponent<RobotCollection>(LogicThread, true);
+    pThreadMgr->GetEntitySystem()->AddComponent<RobotCollection>();
 
     // 运行服务器应用程序，进入主循环
     app.Run();

@@ -1,27 +1,24 @@
 #include "mysql_connector.h"
 #include "libserver/log4_help.h"
-#include "libserver/message_component.h"
 #include "libserver/message_system_help.h"
-
+#include "libserver/message_system.h"
 void MysqlConnector::InitMessageComponent()
 {
-    // 初始化消息回调组件
-    auto pMsgCallBack = new MessageCallBackFunction();
+    // 获取消息系统
+   auto pMsgSystem = GetSystemManager()->GetMessageSystem();
     
-    // 添加消息组件
-    AddComponent<MessageComponent>(pMsgCallBack);
 
     // 注册处理查询玩家列表消息的回调函数
-    pMsgCallBack->RegisterFunction(Proto::MsgId::L2DB_QueryPlayerList, BindFunP1(this, &MysqlConnector::HandleQueryPlayerList));
+    pMsgSystem->RegisterFunction(this,Proto::MsgId::L2DB_QueryPlayerList, BindFunP1(this, &MysqlConnector::HandleQueryPlayerList));
     
     // 注册处理创建玩家消息的回调函数
-    pMsgCallBack->RegisterFunction(Proto::MsgId::L2DB_CreatePlayer, BindFunP1(this, &MysqlConnector::HandleCreatePlayer));
+    pMsgSystem->RegisterFunction(this,Proto::MsgId::L2DB_CreatePlayer, BindFunP1(this, &MysqlConnector::HandleCreatePlayer));
 
     // 注册处理保存玩家消息的回调函数
-    pMsgCallBack->RegisterFunction(Proto::MsgId::G2DB_SavePlayer, BindFunP1(this, &MysqlConnector::HandleSavePlayer));
+    pMsgSystem->RegisterFunction(this,Proto::MsgId::G2DB_SavePlayer, BindFunP1(this, &MysqlConnector::HandleSavePlayer));
     
     // 注册处理查询玩家消息的回调函数
-    pMsgCallBack->RegisterFunction(Proto::MsgId::G2DB_QueryPlayer, BindFunP1(this, &MysqlConnector::HandleQueryPlayer));
+    // pMsgSystem->RegisterFunction(this,Proto::MsgId::G2DB_QueryPlayer, BindFunP1(this, &MysqlConnector::HandleQueryPlayer));
 }
 
 void MysqlConnector::HandleQueryPlayerList(Packet* pPacket)
@@ -122,7 +119,7 @@ void MysqlConnector::HandleQueryPlayer(Packet* pPacket)
     }
 
     // 发送查询玩家的结果回客户端
-    MessageSystemHelp::SendPacket(Proto::MsgId::G2DB_QueryPlayerRs, pPacket, protoRs);
+    // MessageSystemHelp::SendPacket(Proto::MsgId::G2DB_QueryPlayerRs, pPacket, protoRs);
 }
 
 void MysqlConnector::HandleCreatePlayer(Packet* pPacket)

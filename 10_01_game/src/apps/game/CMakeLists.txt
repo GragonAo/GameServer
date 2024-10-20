@@ -39,7 +39,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../../../bin")
 # -lprotobuf, -lyaml-cpp, -llog4cplus: 链接 protobuf、yaml-cpp、log4cplus 库
 # -DEPOLL: 定义 EPOLL 宏
 # -Wno-unknown-pragmas: 忽略未知的预处理指令警告
-set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -ljsoncpp -lyaml-cpp -llog4cplus -DEPOLL")
+set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -lyaml-cpp -llog4cplus -ljsoncpp -lhiredis -luuid -DEPOLL -Wno-unknown-pragmas")
 
 # 为 Debug 模式设置额外的编译选项
 set(CMAKE_CXX_FLAGS_DEBUG "-D_DEBUG -O0 -g -ggdb")  # 开启调试信息，不做优化

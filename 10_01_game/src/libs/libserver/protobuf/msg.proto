@@ -306,3 +306,71 @@ message LoginByTokenRs {
 
 	ReturnCode return_code = 1; // 返回结果的代码
 }
+
+// 请求将登录Token同步到Redis
+message LoginTokenToRedis {
+    string account = 1;        // 账号名
+    uint64 player_sn = 2;      // 玩家序列号 (唯一标识玩家)
+}
+
+// Redis返回生成的登录Token的响应
+message LoginTokenToRedisRs {
+    string account = 1;        // 账号名
+    string token = 2;          // 生成的Token
+}
+
+// 请求查询指定账号的在线状态
+message AccountQueryOnlineToRedis {
+    string account = 1;        // 账号名
+}
+
+// Redis返回账号在线状态的响应
+message AccountQueryOnlineToRedisRs {
+    enum ReturnCode {
+        SOTR_Offline = 0;     // 账号离线
+        SOTR_Online = 1;      // 账号在线
+    }
+
+    string account = 1;        // 账号名
+    ReturnCode return_code = 2; // 在线状态代码 (0 表示离线，1 表示在线)
+}
+
+// 将账号的在线状态同步到Redis，表示账号上线
+message AccountSyncOnlineToRedis {
+    string account = 1;        // 账号名
+}
+
+// 将账号的离线状态同步到Redis，表示账号下线
+message AccountDeleteOnlineToRedis {
+    string account = 1;        // 账号名
+}
+
+// 同步玩家的在线状态到Redis
+message PlayerSyncOnlineToRedis {
+    string account = 1;        // 账号名
+    int32 version = 2;         // 版本号 (用于版本控制)
+}
+
+// 同步玩家的离线状态到Redis
+message PlayerDeleteOnlineToRedis {
+    string account = 1;        // 账号名
+    int32 version = 2;         // 版本号 (用于版本控制)
+}
+
+// 请求为指定账号生成游戏Token
+message GameTokenToRedis {
+    string account = 1;        // 账号名
+}
+
+// 描述Token信息的结构体
+message TokenInfo {
+    string token = 1;          // Token值
+    uint64 player_sn = 2;      // 玩家序列号 (唯一标识玩家)
+}
+
+// Redis返回生成的游戏Token的响应
+message GameTokenToRedisRs {
+    string account = 1;        // 账号名
+    TokenInfo token_info = 2;  // 包含生成的Token信息
+}
+

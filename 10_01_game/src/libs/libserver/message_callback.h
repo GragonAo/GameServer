@@ -1,129 +1,121 @@
 #pragma once
-#include <mutex>
-#include <map>
-#include <list>
-#include <functional>
-
-#include "common.h"
 #include "packet.h"
 
-// 消息回调函数接口
-class IMessageCallBackFunction
+/**
+ * @brief 消息回调接口类，用于处理接收到的网络包。
+ * 
+ * 该类继承自 `Component<IMessageCallBack>`，表示它是一个组件，并且提供了纯虚函数 `ProcessPacket`，需要派生类实现具体的消息处理逻辑。
+ */
+class IMessageCallBack : public Component<IMessageCallBack>
 {
 public:
-    virtual ~IMessageCallBackFunction() = default;
+    virtual ~IMessageCallBack() = default;  // 虚析构函数，确保子类的正确析构
 
-    // 判断是否处理该消息ID
-    virtual bool IsFollowMsgId(Packet* packet) = 0;
-
-    // 处理收到的消息
+    /**
+     * @brief 处理网络包的纯虚函数。
+     * 
+     * 该函数由派生类实现，用于处理接收到的 `Packet` 数据包。
+     * @param packet 指向接收到的网络包指针。
+     */
     virtual void ProcessPacket(Packet* packet) = 0;
 };
 
-// 消息回调函数实现类
-class MessageCallBackFunction : public IMessageCallBackFunction
+// 定义了消息回调函数类型，参数为接收到的网络包指针
+using MsgCallbackFun = std::function<void(Packet*)>;
+
+/**
+ * @brief 消息回调类，继承自 `IMessageCallBack` 和 `IAwakeFromPoolSystem<MsgCallbackFun>`。
+ * 
+ * 该类通过 `Awake` 方法初始化，并重写 `ProcessPacket` 函数来处理消息。
+ */
+class MessageCallBack : public IMessageCallBack, public IAwakeFromPoolSystem<MsgCallbackFun>
 {
 public:
-    // 定义处理函数的类型
-    using HandleFunction = std::function<void(Packet*)>;
+    /**
+     * @brief 唤醒函数，用于从对象池中恢复时初始化回调函数。
+     * 
+     * @param fun 消息处理函数，参数为接收到的网络包指针。
+     */
+    void Awake(MsgCallbackFun fun) override;
 
-    // 注册处理函数
-    void RegisterFunction(int msgId, HandleFunction function);
+    /**
+     * @brief 将回调对象返回对象池时的清理操作。
+     * 
+     * 将 `_handleFunction` 设置为 `nullptr`，确保回调函数被正确清理。
+     */
+    void BackToPool() override;
 
-    // 判断是否处理该消息ID
-    bool IsFollowMsgId(Packet* packet) override;
-
-    // 处理收到的消息
-    void ProcessPacket(Packet* packet) override;
-
-    // 获取回调处理器
-    std::map<int, HandleFunction>& GetCallBackHandler() { return _callbackHandle; }
-
-protected:
-    // 存储消息ID与处理函数的映射
-    std::map<int, HandleFunction> _callbackHandle;
-};
-
-// 消息回调函数带对象过滤器实现类
-template<class T>
-class MessageCallBackFunctionFilterObj : public MessageCallBackFunction
-{
-public:
-    // 定义带对象的处理函数类型
-    using HandleFunctionWithObj = std::function<void(T*, Packet*)>;
-    using HandleGetObject = std::function<T*(NetworkIdentify*)>;
-
-    // 注册带对象的处理函数
-    void RegisterFunctionWithObj(int msgId, HandleFunctionWithObj function);
-
-    // 判断是否处理该消息ID
-    bool IsFollowMsgId(Packet* packet) override;
-
-    // 处理收到的消息
-    void ProcessPacket(Packet* packet) override;
-
-    // 获取对象的函数指针，默认为nullptr
-    HandleGetObject GetPacketObject{ nullptr };
+    /**
+     * @brief 处理网络包的具体实现。
+     * 
+     * 该方法通过 `_handleFunction` 处理接收到的网络包。
+     * @param pPacket 接收到的网络包指针。
+     */
+    virtual void ProcessPacket(Packet* pPacket) override;
 
 private:
-    // 存储带对象的消息ID与处理函数的映射
-    std::map<int, HandleFunctionWithObj> _callbackHandleWithObj;
+    MsgCallbackFun _handleFunction;  // 保存回调函数，用于处理接收到的网络包
 };
 
-// 注册带对象的处理函数
-template <class T>
-void MessageCallBackFunctionFilterObj<T>::RegisterFunctionWithObj(const int msgId, HandleFunctionWithObj function)
+/**
+ * @brief 泛型消息过滤回调类，继承自 `IMessageCallBack` 和 `IAwakeFromPoolSystem<>`。
+ * 
+ * 该类允许通过过滤函数 `GetFilterObj` 获取对象，并通过 `HandleFunction` 处理消息。
+ * 
+ * @tparam T 过滤对象的类型。
+ */
+template<class T>
+class MessageCallBackFilter : public IMessageCallBack, public IAwakeFromPoolSystem<>
 {
-    _callbackHandleWithObj[msgId] = function;
-}
+public:
+    /**
+     * @brief 唤醒函数（此处为空实现）。
+     */
+    void Awake() override {}
 
-// 判断是否处理该消息ID
-template <class T>
-bool MessageCallBackFunctionFilterObj<T>::IsFollowMsgId(Packet* packet)
-{
-    // 首先检查基类是否处理该消息ID
-    if (MessageCallBackFunction::IsFollowMsgId(packet))
-        return true;
-
-    // 检查是否有带对象的处理函数
-    if (_callbackHandleWithObj.find(packet->GetMsgId()) != _callbackHandleWithObj.end())
+    /**
+     * @brief 将回调对象返回对象池时的清理操作。
+     * 
+     * 将 `HandleFunction` 和 `GetFilterObj` 清空，确保回调函数被正确清理。
+     */
+    void BackToPool() override
     {
-        if (GetPacketObject != nullptr)
-        {
-            // 获取与消息对应的对象
-            T* pObj = GetPacketObject(packet);
-            if (pObj != nullptr)
-                return true;
-        }
+        HandleFunction = nullptr;
+        GetFilterObj = nullptr;
     }
 
-    return false;
-}
-
-// 处理收到的消息
-template <class T>
-void MessageCallBackFunctionFilterObj<T>::ProcessPacket(Packet* packet)
-{
-    // 查找对应的处理函数
-    const auto handleIter = _callbackHandle.find(packet->GetMsgId());
-    if (handleIter != _callbackHandle.end())
+    /**
+     * @brief 处理网络包的具体实现。
+     * 
+     * 通过 `GetFilterObj` 获取指定的过滤对象，并通过 `HandleFunction` 对其进行处理。如果找不到对象，直接返回。
+     * 
+     * @param pPacket 接收到的网络包指针。
+     */
+    virtual void ProcessPacket(Packet* pPacket) override
     {
-        handleIter->second(packet); // 调用处理函数
-        return;
+        auto pObj = GetFilterObj(pPacket);  // 使用过滤函数获取对象
+        if (pObj == nullptr)
+            return;  // 如果找不到对象，则不处理
+
+#ifdef LOG_TRACE_COMPONENT_OPEN
+        // 使用 ProtoBuf 获取消息 ID 的描述信息
+        const google::protobuf::EnumDescriptor* descriptor = Proto::MsgId_descriptor();
+        const auto name = descriptor->FindValueByNumber(pPacket->GetMsgId())->name();
+
+        // 构建日志信息并记录
+        const auto traceMsg = std::string("process. ")
+            .append(" sn:").append(std::to_string(pPacket->GetSN()))
+            .append(" msgId:").append(name);
+        ComponentHelp::GetTraceComponent()->Trace(TraceType::Packet, pPacket->GetSocketKey().Socket, traceMsg);
+#endif
+
+        // 调用回调函数处理过滤后的对象
+        HandleFunction(pObj, pPacket);
     }
 
-    // 查找带对象的处理函数
-    auto iter = _callbackHandleWithObj.find(packet->GetMsgId());
-    if (iter != _callbackHandleWithObj.end())
-    {
-        if (GetPacketObject != nullptr)
-        {
-            // 获取与消息对应的对象
-            T* pObj = GetPacketObject(packet);
-            if (pObj != nullptr)
-            {
-                iter->second(pObj, packet); // 调用带对象的处理函数
-            }
-        }
-    }
-}
+    // 回调处理函数，用于处理过滤后的对象
+    std::function<void(T*, Packet*)> HandleFunction{ nullptr };
+
+    // 过滤函数，根据网络标识获取需要处理的对象
+    std::function<T * (NetworkIdentify*)> GetFilterObj{ nullptr };
+};

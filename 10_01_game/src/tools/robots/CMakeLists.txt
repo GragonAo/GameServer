@@ -32,7 +32,7 @@ include_directories(/usr/local/include)                         # 包含系统�
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../../../bin")
 
 # 设置编译选项
-set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -ljsoncpp -lyaml-cpp -llog4cplus -DEPOLL")  # 一般编译选项
+set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -lyaml-cpp -llog4cplus -ljsoncpp -lhiredis -luuid -DEPOLL -Wno-unknown-pragmas")  # 一般编译选项
 set(CMAKE_CXX_FLAGS_DEBUG "-D_DEBUG -O0 -g -ggdb")   # 调试模式下的编译选项
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG")           # 释放模式下的编译选项
 

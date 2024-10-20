@@ -45,11 +45,11 @@ inline T* IEntity::AddComponent(TArgs... args)
     const auto typeHashCode = typeid(T).hash_code(); // 获取组件类型的哈希值
 
     // 检查是否已经添加过该类型的组件
-    if (_components.find(typeHashCode) != _components.end())
-    {
-        LOG_ERROR("Add same component. type:" << typeid(T).name()); // 记录错误日志
-        return nullptr; // 返回 nullptr 表示添加失败
-    }
+    // if (_components.find(typeHashCode) != _components.end())
+    // {
+    //     LOG_ERROR("Add same component. type:" << typeid(T).name()); // 记录错误日志
+    //     return nullptr; // 返回 nullptr 表示添加失败
+    // }
 
     // 从系统管理器中添加组件
     T* pComponent = _pSystemManager->GetEntitySystem()->AddComponent<T>(std::forward<TArgs>(args)...);

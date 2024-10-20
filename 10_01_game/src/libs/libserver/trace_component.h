@@ -16,6 +16,7 @@ enum class TraceType
     Packet = 0,    // 数据包追踪
     Connector = 1, // 连接器追踪
     Player = 2,    // 玩家追踪
+    Time = 3,      //耗时追踪
 };
 
 // 追踪详情类，用于存储和展示追踪信息

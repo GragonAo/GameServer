@@ -49,7 +49,7 @@ struct TableStruct_msg_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxillaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[33]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[44]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -63,6 +63,18 @@ extern AccountCheckDefaultTypeInternal _AccountCheck_default_instance_;
 class AccountCheckRs;
 class AccountCheckRsDefaultTypeInternal;
 extern AccountCheckRsDefaultTypeInternal _AccountCheckRs_default_instance_;
+class AccountDeleteOnlineToRedis;
+class AccountDeleteOnlineToRedisDefaultTypeInternal;
+extern AccountDeleteOnlineToRedisDefaultTypeInternal _AccountDeleteOnlineToRedis_default_instance_;
+class AccountQueryOnlineToRedis;
+class AccountQueryOnlineToRedisDefaultTypeInternal;
+extern AccountQueryOnlineToRedisDefaultTypeInternal _AccountQueryOnlineToRedis_default_instance_;
+class AccountQueryOnlineToRedisRs;
+class AccountQueryOnlineToRedisRsDefaultTypeInternal;
+extern AccountQueryOnlineToRedisRsDefaultTypeInternal _AccountQueryOnlineToRedisRs_default_instance_;
+class AccountSyncOnlineToRedis;
+class AccountSyncOnlineToRedisDefaultTypeInternal;
+extern AccountSyncOnlineToRedisDefaultTypeInternal _AccountSyncOnlineToRedis_default_instance_;
 class AppInfoListSync;
 class AppInfoListSyncDefaultTypeInternal;
 extern AppInfoListSyncDefaultTypeInternal _AppInfoListSync_default_instance_;
@@ -99,6 +111,12 @@ extern CreatePlayerToDBRsDefaultTypeInternal _CreatePlayerToDBRs_default_instanc
 class GameToken;
 class GameTokenDefaultTypeInternal;
 extern GameTokenDefaultTypeInternal _GameToken_default_instance_;
+class GameTokenToRedis;
+class GameTokenToRedisDefaultTypeInternal;
+extern GameTokenToRedisDefaultTypeInternal _GameTokenToRedis_default_instance_;
+class GameTokenToRedisRs;
+class GameTokenToRedisRsDefaultTypeInternal;
+extern GameTokenToRedisRsDefaultTypeInternal _GameTokenToRedisRs_default_instance_;
 class Http;
 class HttpDefaultTypeInternal;
 extern HttpDefaultTypeInternal _Http_default_instance_;
@@ -108,6 +126,12 @@ extern LoginByTokenDefaultTypeInternal _LoginByToken_default_instance_;
 class LoginByTokenRs;
 class LoginByTokenRsDefaultTypeInternal;
 extern LoginByTokenRsDefaultTypeInternal _LoginByTokenRs_default_instance_;
+class LoginTokenToRedis;
+class LoginTokenToRedisDefaultTypeInternal;
+extern LoginTokenToRedisDefaultTypeInternal _LoginTokenToRedis_default_instance_;
+class LoginTokenToRedisRs;
+class LoginTokenToRedisRsDefaultTypeInternal;
+extern LoginTokenToRedisRsDefaultTypeInternal _LoginTokenToRedisRs_default_instance_;
 class NetworkConnect;
 class NetworkConnectDefaultTypeInternal;
 extern NetworkConnectDefaultTypeInternal _NetworkConnect_default_instance_;
@@ -120,12 +144,18 @@ extern NetworkObjectKeyDefaultTypeInternal _NetworkObjectKey_default_instance_;
 class NetworkObjectKeyValue;
 class NetworkObjectKeyValueDefaultTypeInternal;
 extern NetworkObjectKeyValueDefaultTypeInternal _NetworkObjectKeyValue_default_instance_;
+class PlayerDeleteOnlineToRedis;
+class PlayerDeleteOnlineToRedisDefaultTypeInternal;
+extern PlayerDeleteOnlineToRedisDefaultTypeInternal _PlayerDeleteOnlineToRedis_default_instance_;
 class PlayerList;
 class PlayerListDefaultTypeInternal;
 extern PlayerListDefaultTypeInternal _PlayerList_default_instance_;
 class PlayerLittle;
 class PlayerLittleDefaultTypeInternal;
 extern PlayerLittleDefaultTypeInternal _PlayerLittle_default_instance_;
+class PlayerSyncOnlineToRedis;
+class PlayerSyncOnlineToRedisDefaultTypeInternal;
+extern PlayerSyncOnlineToRedisDefaultTypeInternal _PlayerSyncOnlineToRedis_default_instance_;
 class QueryPlayer;
 class QueryPlayerDefaultTypeInternal;
 extern QueryPlayerDefaultTypeInternal _QueryPlayer_default_instance_;
@@ -153,6 +183,9 @@ extern SelectPlayerDefaultTypeInternal _SelectPlayer_default_instance_;
 class SelectPlayerRs;
 class SelectPlayerRsDefaultTypeInternal;
 extern SelectPlayerRsDefaultTypeInternal _SelectPlayerRs_default_instance_;
+class TokenInfo;
+class TokenInfoDefaultTypeInternal;
+extern TokenInfoDefaultTypeInternal _TokenInfo_default_instance_;
 class WorldProxySyncToGather;
 class WorldProxySyncToGatherDefaultTypeInternal;
 extern WorldProxySyncToGatherDefaultTypeInternal _WorldProxySyncToGather_default_instance_;
@@ -160,6 +193,10 @@ extern WorldProxySyncToGatherDefaultTypeInternal _WorldProxySyncToGather_default
 PROTOBUF_NAMESPACE_OPEN
 template<> ::Proto::AccountCheck* Arena::CreateMaybeMessage<::Proto::AccountCheck>(Arena*);
 template<> ::Proto::AccountCheckRs* Arena::CreateMaybeMessage<::Proto::AccountCheckRs>(Arena*);
+template<> ::Proto::AccountDeleteOnlineToRedis* Arena::CreateMaybeMessage<::Proto::AccountDeleteOnlineToRedis>(Arena*);
+template<> ::Proto::AccountQueryOnlineToRedis* Arena::CreateMaybeMessage<::Proto::AccountQueryOnlineToRedis>(Arena*);
+template<> ::Proto::AccountQueryOnlineToRedisRs* Arena::CreateMaybeMessage<::Proto::AccountQueryOnlineToRedisRs>(Arena*);
+template<> ::Proto::AccountSyncOnlineToRedis* Arena::CreateMaybeMessage<::Proto::AccountSyncOnlineToRedis>(Arena*);
 template<> ::Proto::AppInfoListSync* Arena::CreateMaybeMessage<::Proto::AppInfoListSync>(Arena*);
 template<> ::Proto::AppInfoSync* Arena::CreateMaybeMessage<::Proto::AppInfoSync>(Arena*);
 template<> ::Proto::AppRegister* Arena::CreateMaybeMessage<::Proto::AppRegister>(Arena*);
@@ -172,15 +209,21 @@ template<> ::Proto::CreatePlayerRs* Arena::CreateMaybeMessage<::Proto::CreatePla
 template<> ::Proto::CreatePlayerToDB* Arena::CreateMaybeMessage<::Proto::CreatePlayerToDB>(Arena*);
 template<> ::Proto::CreatePlayerToDBRs* Arena::CreateMaybeMessage<::Proto::CreatePlayerToDBRs>(Arena*);
 template<> ::Proto::GameToken* Arena::CreateMaybeMessage<::Proto::GameToken>(Arena*);
+template<> ::Proto::GameTokenToRedis* Arena::CreateMaybeMessage<::Proto::GameTokenToRedis>(Arena*);
+template<> ::Proto::GameTokenToRedisRs* Arena::CreateMaybeMessage<::Proto::GameTokenToRedisRs>(Arena*);
 template<> ::Proto::Http* Arena::CreateMaybeMessage<::Proto::Http>(Arena*);
 template<> ::Proto::LoginByToken* Arena::CreateMaybeMessage<::Proto::LoginByToken>(Arena*);
 template<> ::Proto::LoginByTokenRs* Arena::CreateMaybeMessage<::Proto::LoginByTokenRs>(Arena*);
+template<> ::Proto::LoginTokenToRedis* Arena::CreateMaybeMessage<::Proto::LoginTokenToRedis>(Arena*);
+template<> ::Proto::LoginTokenToRedisRs* Arena::CreateMaybeMessage<::Proto::LoginTokenToRedisRs>(Arena*);
 template<> ::Proto::NetworkConnect* Arena::CreateMaybeMessage<::Proto::NetworkConnect>(Arena*);
 template<> ::Proto::NetworkDisconnect* Arena::CreateMaybeMessage<::Proto::NetworkDisconnect>(Arena*);
 template<> ::Proto::NetworkObjectKey* Arena::CreateMaybeMessage<::Proto::NetworkObjectKey>(Arena*);
 template<> ::Proto::NetworkObjectKeyValue* Arena::CreateMaybeMessage<::Proto::NetworkObjectKeyValue>(Arena*);
+template<> ::Proto::PlayerDeleteOnlineToRedis* Arena::CreateMaybeMessage<::Proto::PlayerDeleteOnlineToRedis>(Arena*);
 template<> ::Proto::PlayerList* Arena::CreateMaybeMessage<::Proto::PlayerList>(Arena*);
 template<> ::Proto::PlayerLittle* Arena::CreateMaybeMessage<::Proto::PlayerLittle>(Arena*);
+template<> ::Proto::PlayerSyncOnlineToRedis* Arena::CreateMaybeMessage<::Proto::PlayerSyncOnlineToRedis>(Arena*);
 template<> ::Proto::QueryPlayer* Arena::CreateMaybeMessage<::Proto::QueryPlayer>(Arena*);
 template<> ::Proto::QueryPlayerList* Arena::CreateMaybeMessage<::Proto::QueryPlayerList>(Arena*);
 template<> ::Proto::QueryPlayerRs* Arena::CreateMaybeMessage<::Proto::QueryPlayerRs>(Arena*);
@@ -190,6 +233,7 @@ template<> ::Proto::RobotSyncState* Arena::CreateMaybeMessage<::Proto::RobotSync
 template<> ::Proto::SavePlayer* Arena::CreateMaybeMessage<::Proto::SavePlayer>(Arena*);
 template<> ::Proto::SelectPlayer* Arena::CreateMaybeMessage<::Proto::SelectPlayer>(Arena*);
 template<> ::Proto::SelectPlayerRs* Arena::CreateMaybeMessage<::Proto::SelectPlayerRs>(Arena*);
+template<> ::Proto::TokenInfo* Arena::CreateMaybeMessage<::Proto::TokenInfo>(Arena*);
 template<> ::Proto::WorldProxySyncToGather* Arena::CreateMaybeMessage<::Proto::WorldProxySyncToGather>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace Proto {
@@ -345,6 +389,31 @@ inline bool LoginByTokenRs_ReturnCode_Parse(
     const std::string& name, LoginByTokenRs_ReturnCode* value) {
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<LoginByTokenRs_ReturnCode>(
     LoginByTokenRs_ReturnCode_descriptor(), name, value);
+}
+enum AccountQueryOnlineToRedisRs_ReturnCode : int {
+  AccountQueryOnlineToRedisRs_ReturnCode_SOTR_Offline = 0,
+  AccountQueryOnlineToRedisRs_ReturnCode_SOTR_Online = 1,
+  AccountQueryOnlineToRedisRs_ReturnCode_AccountQueryOnlineToRedisRs_ReturnCode_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  AccountQueryOnlineToRedisRs_ReturnCode_AccountQueryOnlineToRedisRs_ReturnCode_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+};
+bool AccountQueryOnlineToRedisRs_ReturnCode_IsValid(int value);
+constexpr AccountQueryOnlineToRedisRs_ReturnCode AccountQueryOnlineToRedisRs_ReturnCode_ReturnCode_MIN = AccountQueryOnlineToRedisRs_ReturnCode_SOTR_Offline;
+constexpr AccountQueryOnlineToRedisRs_ReturnCode AccountQueryOnlineToRedisRs_ReturnCode_ReturnCode_MAX = AccountQueryOnlineToRedisRs_ReturnCode_SOTR_Online;
+constexpr int AccountQueryOnlineToRedisRs_ReturnCode_ReturnCode_ARRAYSIZE = AccountQueryOnlineToRedisRs_ReturnCode_ReturnCode_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* AccountQueryOnlineToRedisRs_ReturnCode_descriptor();
+template<typename T>
+inline const std::string& AccountQueryOnlineToRedisRs_ReturnCode_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, AccountQueryOnlineToRedisRs_ReturnCode>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function AccountQueryOnlineToRedisRs_ReturnCode_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    AccountQueryOnlineToRedisRs_ReturnCode_descriptor(), enum_t_value);
+}
+inline bool AccountQueryOnlineToRedisRs_ReturnCode_Parse(
+    const std::string& name, AccountQueryOnlineToRedisRs_ReturnCode* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<AccountQueryOnlineToRedisRs_ReturnCode>(
+    AccountQueryOnlineToRedisRs_ReturnCode_descriptor(), name, value);
 }
 enum NetworkObjectKeyType : int {
   ObjectKeyTypeNone = 0,
@@ -5345,6 +5414,1601 @@ class LoginByTokenRs :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_msg_2eproto;
 };
+// -------------------------------------------------------------------
+
+class LoginTokenToRedis :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.LoginTokenToRedis) */ {
+ public:
+  LoginTokenToRedis();
+  virtual ~LoginTokenToRedis();
+
+  LoginTokenToRedis(const LoginTokenToRedis& from);
+  LoginTokenToRedis(LoginTokenToRedis&& from) noexcept
+    : LoginTokenToRedis() {
+    *this = ::std::move(from);
+  }
+
+  inline LoginTokenToRedis& operator=(const LoginTokenToRedis& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline LoginTokenToRedis& operator=(LoginTokenToRedis&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const LoginTokenToRedis& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const LoginTokenToRedis* internal_default_instance() {
+    return reinterpret_cast<const LoginTokenToRedis*>(
+               &_LoginTokenToRedis_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    33;
+
+  friend void swap(LoginTokenToRedis& a, LoginTokenToRedis& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(LoginTokenToRedis* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline LoginTokenToRedis* New() const final {
+    return CreateMaybeMessage<LoginTokenToRedis>(nullptr);
+  }
+
+  LoginTokenToRedis* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<LoginTokenToRedis>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const LoginTokenToRedis& from);
+  void MergeFrom(const LoginTokenToRedis& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(LoginTokenToRedis* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.LoginTokenToRedis";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAccountFieldNumber = 1,
+    kPlayerSnFieldNumber = 2,
+  };
+  // string account = 1;
+  void clear_account();
+  const std::string& account() const;
+  void set_account(const std::string& value);
+  void set_account(std::string&& value);
+  void set_account(const char* value);
+  void set_account(const char* value, size_t size);
+  std::string* mutable_account();
+  std::string* release_account();
+  void set_allocated_account(std::string* account);
+
+  // uint64 player_sn = 2;
+  void clear_player_sn();
+  ::PROTOBUF_NAMESPACE_ID::uint64 player_sn() const;
+  void set_player_sn(::PROTOBUF_NAMESPACE_ID::uint64 value);
+
+  // @@protoc_insertion_point(class_scope:Proto.LoginTokenToRedis)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr account_;
+  ::PROTOBUF_NAMESPACE_ID::uint64 player_sn_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
+class LoginTokenToRedisRs :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.LoginTokenToRedisRs) */ {
+ public:
+  LoginTokenToRedisRs();
+  virtual ~LoginTokenToRedisRs();
+
+  LoginTokenToRedisRs(const LoginTokenToRedisRs& from);
+  LoginTokenToRedisRs(LoginTokenToRedisRs&& from) noexcept
+    : LoginTokenToRedisRs() {
+    *this = ::std::move(from);
+  }
+
+  inline LoginTokenToRedisRs& operator=(const LoginTokenToRedisRs& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline LoginTokenToRedisRs& operator=(LoginTokenToRedisRs&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const LoginTokenToRedisRs& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const LoginTokenToRedisRs* internal_default_instance() {
+    return reinterpret_cast<const LoginTokenToRedisRs*>(
+               &_LoginTokenToRedisRs_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    34;
+
+  friend void swap(LoginTokenToRedisRs& a, LoginTokenToRedisRs& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(LoginTokenToRedisRs* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline LoginTokenToRedisRs* New() const final {
+    return CreateMaybeMessage<LoginTokenToRedisRs>(nullptr);
+  }
+
+  LoginTokenToRedisRs* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<LoginTokenToRedisRs>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const LoginTokenToRedisRs& from);
+  void MergeFrom(const LoginTokenToRedisRs& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(LoginTokenToRedisRs* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.LoginTokenToRedisRs";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAccountFieldNumber = 1,
+    kTokenFieldNumber = 2,
+  };
+  // string account = 1;
+  void clear_account();
+  const std::string& account() const;
+  void set_account(const std::string& value);
+  void set_account(std::string&& value);
+  void set_account(const char* value);
+  void set_account(const char* value, size_t size);
+  std::string* mutable_account();
+  std::string* release_account();
+  void set_allocated_account(std::string* account);
+
+  // string token = 2;
+  void clear_token();
+  const std::string& token() const;
+  void set_token(const std::string& value);
+  void set_token(std::string&& value);
+  void set_token(const char* value);
+  void set_token(const char* value, size_t size);
+  std::string* mutable_token();
+  std::string* release_token();
+  void set_allocated_token(std::string* token);
+
+  // @@protoc_insertion_point(class_scope:Proto.LoginTokenToRedisRs)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr account_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr token_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
+class AccountQueryOnlineToRedis :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.AccountQueryOnlineToRedis) */ {
+ public:
+  AccountQueryOnlineToRedis();
+  virtual ~AccountQueryOnlineToRedis();
+
+  AccountQueryOnlineToRedis(const AccountQueryOnlineToRedis& from);
+  AccountQueryOnlineToRedis(AccountQueryOnlineToRedis&& from) noexcept
+    : AccountQueryOnlineToRedis() {
+    *this = ::std::move(from);
+  }
+
+  inline AccountQueryOnlineToRedis& operator=(const AccountQueryOnlineToRedis& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline AccountQueryOnlineToRedis& operator=(AccountQueryOnlineToRedis&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const AccountQueryOnlineToRedis& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AccountQueryOnlineToRedis* internal_default_instance() {
+    return reinterpret_cast<const AccountQueryOnlineToRedis*>(
+               &_AccountQueryOnlineToRedis_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    35;
+
+  friend void swap(AccountQueryOnlineToRedis& a, AccountQueryOnlineToRedis& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(AccountQueryOnlineToRedis* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AccountQueryOnlineToRedis* New() const final {
+    return CreateMaybeMessage<AccountQueryOnlineToRedis>(nullptr);
+  }
+
+  AccountQueryOnlineToRedis* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<AccountQueryOnlineToRedis>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const AccountQueryOnlineToRedis& from);
+  void MergeFrom(const AccountQueryOnlineToRedis& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AccountQueryOnlineToRedis* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.AccountQueryOnlineToRedis";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAccountFieldNumber = 1,
+  };
+  // string account = 1;
+  void clear_account();
+  const std::string& account() const;
+  void set_account(const std::string& value);
+  void set_account(std::string&& value);
+  void set_account(const char* value);
+  void set_account(const char* value, size_t size);
+  std::string* mutable_account();
+  std::string* release_account();
+  void set_allocated_account(std::string* account);
+
+  // @@protoc_insertion_point(class_scope:Proto.AccountQueryOnlineToRedis)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr account_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
+class AccountQueryOnlineToRedisRs :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.AccountQueryOnlineToRedisRs) */ {
+ public:
+  AccountQueryOnlineToRedisRs();
+  virtual ~AccountQueryOnlineToRedisRs();
+
+  AccountQueryOnlineToRedisRs(const AccountQueryOnlineToRedisRs& from);
+  AccountQueryOnlineToRedisRs(AccountQueryOnlineToRedisRs&& from) noexcept
+    : AccountQueryOnlineToRedisRs() {
+    *this = ::std::move(from);
+  }
+
+  inline AccountQueryOnlineToRedisRs& operator=(const AccountQueryOnlineToRedisRs& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline AccountQueryOnlineToRedisRs& operator=(AccountQueryOnlineToRedisRs&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const AccountQueryOnlineToRedisRs& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AccountQueryOnlineToRedisRs* internal_default_instance() {
+    return reinterpret_cast<const AccountQueryOnlineToRedisRs*>(
+               &_AccountQueryOnlineToRedisRs_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    36;
+
+  friend void swap(AccountQueryOnlineToRedisRs& a, AccountQueryOnlineToRedisRs& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(AccountQueryOnlineToRedisRs* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AccountQueryOnlineToRedisRs* New() const final {
+    return CreateMaybeMessage<AccountQueryOnlineToRedisRs>(nullptr);
+  }
+
+  AccountQueryOnlineToRedisRs* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<AccountQueryOnlineToRedisRs>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const AccountQueryOnlineToRedisRs& from);
+  void MergeFrom(const AccountQueryOnlineToRedisRs& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AccountQueryOnlineToRedisRs* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.AccountQueryOnlineToRedisRs";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  typedef AccountQueryOnlineToRedisRs_ReturnCode ReturnCode;
+  static constexpr ReturnCode SOTR_Offline =
+    AccountQueryOnlineToRedisRs_ReturnCode_SOTR_Offline;
+  static constexpr ReturnCode SOTR_Online =
+    AccountQueryOnlineToRedisRs_ReturnCode_SOTR_Online;
+  static inline bool ReturnCode_IsValid(int value) {
+    return AccountQueryOnlineToRedisRs_ReturnCode_IsValid(value);
+  }
+  static constexpr ReturnCode ReturnCode_MIN =
+    AccountQueryOnlineToRedisRs_ReturnCode_ReturnCode_MIN;
+  static constexpr ReturnCode ReturnCode_MAX =
+    AccountQueryOnlineToRedisRs_ReturnCode_ReturnCode_MAX;
+  static constexpr int ReturnCode_ARRAYSIZE =
+    AccountQueryOnlineToRedisRs_ReturnCode_ReturnCode_ARRAYSIZE;
+  static inline const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor*
+  ReturnCode_descriptor() {
+    return AccountQueryOnlineToRedisRs_ReturnCode_descriptor();
+  }
+  template<typename T>
+  static inline const std::string& ReturnCode_Name(T enum_t_value) {
+    static_assert(::std::is_same<T, ReturnCode>::value ||
+      ::std::is_integral<T>::value,
+      "Incorrect type passed to function ReturnCode_Name.");
+    return AccountQueryOnlineToRedisRs_ReturnCode_Name(enum_t_value);
+  }
+  static inline bool ReturnCode_Parse(const std::string& name,
+      ReturnCode* value) {
+    return AccountQueryOnlineToRedisRs_ReturnCode_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAccountFieldNumber = 1,
+    kReturnCodeFieldNumber = 2,
+  };
+  // string account = 1;
+  void clear_account();
+  const std::string& account() const;
+  void set_account(const std::string& value);
+  void set_account(std::string&& value);
+  void set_account(const char* value);
+  void set_account(const char* value, size_t size);
+  std::string* mutable_account();
+  std::string* release_account();
+  void set_allocated_account(std::string* account);
+
+  // .Proto.AccountQueryOnlineToRedisRs.ReturnCode return_code = 2;
+  void clear_return_code();
+  ::Proto::AccountQueryOnlineToRedisRs_ReturnCode return_code() const;
+  void set_return_code(::Proto::AccountQueryOnlineToRedisRs_ReturnCode value);
+
+  // @@protoc_insertion_point(class_scope:Proto.AccountQueryOnlineToRedisRs)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr account_;
+  int return_code_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
+class AccountSyncOnlineToRedis :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.AccountSyncOnlineToRedis) */ {
+ public:
+  AccountSyncOnlineToRedis();
+  virtual ~AccountSyncOnlineToRedis();
+
+  AccountSyncOnlineToRedis(const AccountSyncOnlineToRedis& from);
+  AccountSyncOnlineToRedis(AccountSyncOnlineToRedis&& from) noexcept
+    : AccountSyncOnlineToRedis() {
+    *this = ::std::move(from);
+  }
+
+  inline AccountSyncOnlineToRedis& operator=(const AccountSyncOnlineToRedis& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline AccountSyncOnlineToRedis& operator=(AccountSyncOnlineToRedis&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const AccountSyncOnlineToRedis& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AccountSyncOnlineToRedis* internal_default_instance() {
+    return reinterpret_cast<const AccountSyncOnlineToRedis*>(
+               &_AccountSyncOnlineToRedis_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    37;
+
+  friend void swap(AccountSyncOnlineToRedis& a, AccountSyncOnlineToRedis& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(AccountSyncOnlineToRedis* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AccountSyncOnlineToRedis* New() const final {
+    return CreateMaybeMessage<AccountSyncOnlineToRedis>(nullptr);
+  }
+
+  AccountSyncOnlineToRedis* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<AccountSyncOnlineToRedis>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const AccountSyncOnlineToRedis& from);
+  void MergeFrom(const AccountSyncOnlineToRedis& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AccountSyncOnlineToRedis* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.AccountSyncOnlineToRedis";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAccountFieldNumber = 1,
+  };
+  // string account = 1;
+  void clear_account();
+  const std::string& account() const;
+  void set_account(const std::string& value);
+  void set_account(std::string&& value);
+  void set_account(const char* value);
+  void set_account(const char* value, size_t size);
+  std::string* mutable_account();
+  std::string* release_account();
+  void set_allocated_account(std::string* account);
+
+  // @@protoc_insertion_point(class_scope:Proto.AccountSyncOnlineToRedis)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr account_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
+class AccountDeleteOnlineToRedis :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.AccountDeleteOnlineToRedis) */ {
+ public:
+  AccountDeleteOnlineToRedis();
+  virtual ~AccountDeleteOnlineToRedis();
+
+  AccountDeleteOnlineToRedis(const AccountDeleteOnlineToRedis& from);
+  AccountDeleteOnlineToRedis(AccountDeleteOnlineToRedis&& from) noexcept
+    : AccountDeleteOnlineToRedis() {
+    *this = ::std::move(from);
+  }
+
+  inline AccountDeleteOnlineToRedis& operator=(const AccountDeleteOnlineToRedis& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline AccountDeleteOnlineToRedis& operator=(AccountDeleteOnlineToRedis&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const AccountDeleteOnlineToRedis& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AccountDeleteOnlineToRedis* internal_default_instance() {
+    return reinterpret_cast<const AccountDeleteOnlineToRedis*>(
+               &_AccountDeleteOnlineToRedis_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    38;
+
+  friend void swap(AccountDeleteOnlineToRedis& a, AccountDeleteOnlineToRedis& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(AccountDeleteOnlineToRedis* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AccountDeleteOnlineToRedis* New() const final {
+    return CreateMaybeMessage<AccountDeleteOnlineToRedis>(nullptr);
+  }
+
+  AccountDeleteOnlineToRedis* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<AccountDeleteOnlineToRedis>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const AccountDeleteOnlineToRedis& from);
+  void MergeFrom(const AccountDeleteOnlineToRedis& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AccountDeleteOnlineToRedis* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.AccountDeleteOnlineToRedis";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAccountFieldNumber = 1,
+  };
+  // string account = 1;
+  void clear_account();
+  const std::string& account() const;
+  void set_account(const std::string& value);
+  void set_account(std::string&& value);
+  void set_account(const char* value);
+  void set_account(const char* value, size_t size);
+  std::string* mutable_account();
+  std::string* release_account();
+  void set_allocated_account(std::string* account);
+
+  // @@protoc_insertion_point(class_scope:Proto.AccountDeleteOnlineToRedis)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr account_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
+class PlayerSyncOnlineToRedis :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.PlayerSyncOnlineToRedis) */ {
+ public:
+  PlayerSyncOnlineToRedis();
+  virtual ~PlayerSyncOnlineToRedis();
+
+  PlayerSyncOnlineToRedis(const PlayerSyncOnlineToRedis& from);
+  PlayerSyncOnlineToRedis(PlayerSyncOnlineToRedis&& from) noexcept
+    : PlayerSyncOnlineToRedis() {
+    *this = ::std::move(from);
+  }
+
+  inline PlayerSyncOnlineToRedis& operator=(const PlayerSyncOnlineToRedis& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline PlayerSyncOnlineToRedis& operator=(PlayerSyncOnlineToRedis&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const PlayerSyncOnlineToRedis& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const PlayerSyncOnlineToRedis* internal_default_instance() {
+    return reinterpret_cast<const PlayerSyncOnlineToRedis*>(
+               &_PlayerSyncOnlineToRedis_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    39;
+
+  friend void swap(PlayerSyncOnlineToRedis& a, PlayerSyncOnlineToRedis& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(PlayerSyncOnlineToRedis* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline PlayerSyncOnlineToRedis* New() const final {
+    return CreateMaybeMessage<PlayerSyncOnlineToRedis>(nullptr);
+  }
+
+  PlayerSyncOnlineToRedis* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<PlayerSyncOnlineToRedis>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const PlayerSyncOnlineToRedis& from);
+  void MergeFrom(const PlayerSyncOnlineToRedis& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(PlayerSyncOnlineToRedis* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.PlayerSyncOnlineToRedis";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAccountFieldNumber = 1,
+    kVersionFieldNumber = 2,
+  };
+  // string account = 1;
+  void clear_account();
+  const std::string& account() const;
+  void set_account(const std::string& value);
+  void set_account(std::string&& value);
+  void set_account(const char* value);
+  void set_account(const char* value, size_t size);
+  std::string* mutable_account();
+  std::string* release_account();
+  void set_allocated_account(std::string* account);
+
+  // int32 version = 2;
+  void clear_version();
+  ::PROTOBUF_NAMESPACE_ID::int32 version() const;
+  void set_version(::PROTOBUF_NAMESPACE_ID::int32 value);
+
+  // @@protoc_insertion_point(class_scope:Proto.PlayerSyncOnlineToRedis)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr account_;
+  ::PROTOBUF_NAMESPACE_ID::int32 version_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
+class PlayerDeleteOnlineToRedis :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.PlayerDeleteOnlineToRedis) */ {
+ public:
+  PlayerDeleteOnlineToRedis();
+  virtual ~PlayerDeleteOnlineToRedis();
+
+  PlayerDeleteOnlineToRedis(const PlayerDeleteOnlineToRedis& from);
+  PlayerDeleteOnlineToRedis(PlayerDeleteOnlineToRedis&& from) noexcept
+    : PlayerDeleteOnlineToRedis() {
+    *this = ::std::move(from);
+  }
+
+  inline PlayerDeleteOnlineToRedis& operator=(const PlayerDeleteOnlineToRedis& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline PlayerDeleteOnlineToRedis& operator=(PlayerDeleteOnlineToRedis&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const PlayerDeleteOnlineToRedis& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const PlayerDeleteOnlineToRedis* internal_default_instance() {
+    return reinterpret_cast<const PlayerDeleteOnlineToRedis*>(
+               &_PlayerDeleteOnlineToRedis_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    40;
+
+  friend void swap(PlayerDeleteOnlineToRedis& a, PlayerDeleteOnlineToRedis& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(PlayerDeleteOnlineToRedis* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline PlayerDeleteOnlineToRedis* New() const final {
+    return CreateMaybeMessage<PlayerDeleteOnlineToRedis>(nullptr);
+  }
+
+  PlayerDeleteOnlineToRedis* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<PlayerDeleteOnlineToRedis>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const PlayerDeleteOnlineToRedis& from);
+  void MergeFrom(const PlayerDeleteOnlineToRedis& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(PlayerDeleteOnlineToRedis* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.PlayerDeleteOnlineToRedis";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAccountFieldNumber = 1,
+    kVersionFieldNumber = 2,
+  };
+  // string account = 1;
+  void clear_account();
+  const std::string& account() const;
+  void set_account(const std::string& value);
+  void set_account(std::string&& value);
+  void set_account(const char* value);
+  void set_account(const char* value, size_t size);
+  std::string* mutable_account();
+  std::string* release_account();
+  void set_allocated_account(std::string* account);
+
+  // int32 version = 2;
+  void clear_version();
+  ::PROTOBUF_NAMESPACE_ID::int32 version() const;
+  void set_version(::PROTOBUF_NAMESPACE_ID::int32 value);
+
+  // @@protoc_insertion_point(class_scope:Proto.PlayerDeleteOnlineToRedis)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr account_;
+  ::PROTOBUF_NAMESPACE_ID::int32 version_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
+class GameTokenToRedis :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.GameTokenToRedis) */ {
+ public:
+  GameTokenToRedis();
+  virtual ~GameTokenToRedis();
+
+  GameTokenToRedis(const GameTokenToRedis& from);
+  GameTokenToRedis(GameTokenToRedis&& from) noexcept
+    : GameTokenToRedis() {
+    *this = ::std::move(from);
+  }
+
+  inline GameTokenToRedis& operator=(const GameTokenToRedis& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline GameTokenToRedis& operator=(GameTokenToRedis&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const GameTokenToRedis& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const GameTokenToRedis* internal_default_instance() {
+    return reinterpret_cast<const GameTokenToRedis*>(
+               &_GameTokenToRedis_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    41;
+
+  friend void swap(GameTokenToRedis& a, GameTokenToRedis& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(GameTokenToRedis* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline GameTokenToRedis* New() const final {
+    return CreateMaybeMessage<GameTokenToRedis>(nullptr);
+  }
+
+  GameTokenToRedis* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<GameTokenToRedis>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const GameTokenToRedis& from);
+  void MergeFrom(const GameTokenToRedis& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(GameTokenToRedis* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.GameTokenToRedis";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAccountFieldNumber = 1,
+  };
+  // string account = 1;
+  void clear_account();
+  const std::string& account() const;
+  void set_account(const std::string& value);
+  void set_account(std::string&& value);
+  void set_account(const char* value);
+  void set_account(const char* value, size_t size);
+  std::string* mutable_account();
+  std::string* release_account();
+  void set_allocated_account(std::string* account);
+
+  // @@protoc_insertion_point(class_scope:Proto.GameTokenToRedis)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr account_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
+class TokenInfo :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.TokenInfo) */ {
+ public:
+  TokenInfo();
+  virtual ~TokenInfo();
+
+  TokenInfo(const TokenInfo& from);
+  TokenInfo(TokenInfo&& from) noexcept
+    : TokenInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline TokenInfo& operator=(const TokenInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline TokenInfo& operator=(TokenInfo&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const TokenInfo& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const TokenInfo* internal_default_instance() {
+    return reinterpret_cast<const TokenInfo*>(
+               &_TokenInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    42;
+
+  friend void swap(TokenInfo& a, TokenInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(TokenInfo* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline TokenInfo* New() const final {
+    return CreateMaybeMessage<TokenInfo>(nullptr);
+  }
+
+  TokenInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<TokenInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const TokenInfo& from);
+  void MergeFrom(const TokenInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(TokenInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.TokenInfo";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kTokenFieldNumber = 1,
+    kPlayerSnFieldNumber = 2,
+  };
+  // string token = 1;
+  void clear_token();
+  const std::string& token() const;
+  void set_token(const std::string& value);
+  void set_token(std::string&& value);
+  void set_token(const char* value);
+  void set_token(const char* value, size_t size);
+  std::string* mutable_token();
+  std::string* release_token();
+  void set_allocated_token(std::string* token);
+
+  // uint64 player_sn = 2;
+  void clear_player_sn();
+  ::PROTOBUF_NAMESPACE_ID::uint64 player_sn() const;
+  void set_player_sn(::PROTOBUF_NAMESPACE_ID::uint64 value);
+
+  // @@protoc_insertion_point(class_scope:Proto.TokenInfo)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr token_;
+  ::PROTOBUF_NAMESPACE_ID::uint64 player_sn_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
+// -------------------------------------------------------------------
+
+class GameTokenToRedisRs :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Proto.GameTokenToRedisRs) */ {
+ public:
+  GameTokenToRedisRs();
+  virtual ~GameTokenToRedisRs();
+
+  GameTokenToRedisRs(const GameTokenToRedisRs& from);
+  GameTokenToRedisRs(GameTokenToRedisRs&& from) noexcept
+    : GameTokenToRedisRs() {
+    *this = ::std::move(from);
+  }
+
+  inline GameTokenToRedisRs& operator=(const GameTokenToRedisRs& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline GameTokenToRedisRs& operator=(GameTokenToRedisRs&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const GameTokenToRedisRs& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const GameTokenToRedisRs* internal_default_instance() {
+    return reinterpret_cast<const GameTokenToRedisRs*>(
+               &_GameTokenToRedisRs_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    43;
+
+  friend void swap(GameTokenToRedisRs& a, GameTokenToRedisRs& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(GameTokenToRedisRs* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline GameTokenToRedisRs* New() const final {
+    return CreateMaybeMessage<GameTokenToRedisRs>(nullptr);
+  }
+
+  GameTokenToRedisRs* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<GameTokenToRedisRs>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const GameTokenToRedisRs& from);
+  void MergeFrom(const GameTokenToRedisRs& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(GameTokenToRedisRs* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Proto.GameTokenToRedisRs";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_msg_2eproto);
+    return ::descriptor_table_msg_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAccountFieldNumber = 1,
+    kTokenInfoFieldNumber = 2,
+  };
+  // string account = 1;
+  void clear_account();
+  const std::string& account() const;
+  void set_account(const std::string& value);
+  void set_account(std::string&& value);
+  void set_account(const char* value);
+  void set_account(const char* value, size_t size);
+  std::string* mutable_account();
+  std::string* release_account();
+  void set_allocated_account(std::string* account);
+
+  // .Proto.TokenInfo token_info = 2;
+  bool has_token_info() const;
+  void clear_token_info();
+  const ::Proto::TokenInfo& token_info() const;
+  ::Proto::TokenInfo* release_token_info();
+  ::Proto::TokenInfo* mutable_token_info();
+  void set_allocated_token_info(::Proto::TokenInfo* token_info);
+
+  // @@protoc_insertion_point(class_scope:Proto.GameTokenToRedisRs)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr account_;
+  ::Proto::TokenInfo* token_info_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_msg_2eproto;
+};
 // ===================================================================
 
 
@@ -7342,9 +9006,808 @@ inline void LoginByTokenRs::set_return_code(::Proto::LoginByTokenRs_ReturnCode v
   // @@protoc_insertion_point(field_set:Proto.LoginByTokenRs.return_code)
 }
 
+// -------------------------------------------------------------------
+
+// LoginTokenToRedis
+
+// string account = 1;
+inline void LoginTokenToRedis::clear_account() {
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& LoginTokenToRedis::account() const {
+  // @@protoc_insertion_point(field_get:Proto.LoginTokenToRedis.account)
+  return account_.GetNoArena();
+}
+inline void LoginTokenToRedis::set_account(const std::string& value) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:Proto.LoginTokenToRedis.account)
+}
+inline void LoginTokenToRedis::set_account(std::string&& value) {
+  
+  account_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:Proto.LoginTokenToRedis.account)
+}
+inline void LoginTokenToRedis::set_account(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:Proto.LoginTokenToRedis.account)
+}
+inline void LoginTokenToRedis::set_account(const char* value, size_t size) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:Proto.LoginTokenToRedis.account)
+}
+inline std::string* LoginTokenToRedis::mutable_account() {
+  
+  // @@protoc_insertion_point(field_mutable:Proto.LoginTokenToRedis.account)
+  return account_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* LoginTokenToRedis::release_account() {
+  // @@protoc_insertion_point(field_release:Proto.LoginTokenToRedis.account)
+  
+  return account_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void LoginTokenToRedis::set_allocated_account(std::string* account) {
+  if (account != nullptr) {
+    
+  } else {
+    
+  }
+  account_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), account);
+  // @@protoc_insertion_point(field_set_allocated:Proto.LoginTokenToRedis.account)
+}
+
+// uint64 player_sn = 2;
+inline void LoginTokenToRedis::clear_player_sn() {
+  player_sn_ = PROTOBUF_ULONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint64 LoginTokenToRedis::player_sn() const {
+  // @@protoc_insertion_point(field_get:Proto.LoginTokenToRedis.player_sn)
+  return player_sn_;
+}
+inline void LoginTokenToRedis::set_player_sn(::PROTOBUF_NAMESPACE_ID::uint64 value) {
+  
+  player_sn_ = value;
+  // @@protoc_insertion_point(field_set:Proto.LoginTokenToRedis.player_sn)
+}
+
+// -------------------------------------------------------------------
+
+// LoginTokenToRedisRs
+
+// string account = 1;
+inline void LoginTokenToRedisRs::clear_account() {
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& LoginTokenToRedisRs::account() const {
+  // @@protoc_insertion_point(field_get:Proto.LoginTokenToRedisRs.account)
+  return account_.GetNoArena();
+}
+inline void LoginTokenToRedisRs::set_account(const std::string& value) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:Proto.LoginTokenToRedisRs.account)
+}
+inline void LoginTokenToRedisRs::set_account(std::string&& value) {
+  
+  account_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:Proto.LoginTokenToRedisRs.account)
+}
+inline void LoginTokenToRedisRs::set_account(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:Proto.LoginTokenToRedisRs.account)
+}
+inline void LoginTokenToRedisRs::set_account(const char* value, size_t size) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:Proto.LoginTokenToRedisRs.account)
+}
+inline std::string* LoginTokenToRedisRs::mutable_account() {
+  
+  // @@protoc_insertion_point(field_mutable:Proto.LoginTokenToRedisRs.account)
+  return account_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* LoginTokenToRedisRs::release_account() {
+  // @@protoc_insertion_point(field_release:Proto.LoginTokenToRedisRs.account)
+  
+  return account_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void LoginTokenToRedisRs::set_allocated_account(std::string* account) {
+  if (account != nullptr) {
+    
+  } else {
+    
+  }
+  account_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), account);
+  // @@protoc_insertion_point(field_set_allocated:Proto.LoginTokenToRedisRs.account)
+}
+
+// string token = 2;
+inline void LoginTokenToRedisRs::clear_token() {
+  token_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& LoginTokenToRedisRs::token() const {
+  // @@protoc_insertion_point(field_get:Proto.LoginTokenToRedisRs.token)
+  return token_.GetNoArena();
+}
+inline void LoginTokenToRedisRs::set_token(const std::string& value) {
+  
+  token_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:Proto.LoginTokenToRedisRs.token)
+}
+inline void LoginTokenToRedisRs::set_token(std::string&& value) {
+  
+  token_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:Proto.LoginTokenToRedisRs.token)
+}
+inline void LoginTokenToRedisRs::set_token(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  token_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:Proto.LoginTokenToRedisRs.token)
+}
+inline void LoginTokenToRedisRs::set_token(const char* value, size_t size) {
+  
+  token_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:Proto.LoginTokenToRedisRs.token)
+}
+inline std::string* LoginTokenToRedisRs::mutable_token() {
+  
+  // @@protoc_insertion_point(field_mutable:Proto.LoginTokenToRedisRs.token)
+  return token_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* LoginTokenToRedisRs::release_token() {
+  // @@protoc_insertion_point(field_release:Proto.LoginTokenToRedisRs.token)
+  
+  return token_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void LoginTokenToRedisRs::set_allocated_token(std::string* token) {
+  if (token != nullptr) {
+    
+  } else {
+    
+  }
+  token_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), token);
+  // @@protoc_insertion_point(field_set_allocated:Proto.LoginTokenToRedisRs.token)
+}
+
+// -------------------------------------------------------------------
+
+// AccountQueryOnlineToRedis
+
+// string account = 1;
+inline void AccountQueryOnlineToRedis::clear_account() {
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& AccountQueryOnlineToRedis::account() const {
+  // @@protoc_insertion_point(field_get:Proto.AccountQueryOnlineToRedis.account)
+  return account_.GetNoArena();
+}
+inline void AccountQueryOnlineToRedis::set_account(const std::string& value) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:Proto.AccountQueryOnlineToRedis.account)
+}
+inline void AccountQueryOnlineToRedis::set_account(std::string&& value) {
+  
+  account_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:Proto.AccountQueryOnlineToRedis.account)
+}
+inline void AccountQueryOnlineToRedis::set_account(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:Proto.AccountQueryOnlineToRedis.account)
+}
+inline void AccountQueryOnlineToRedis::set_account(const char* value, size_t size) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:Proto.AccountQueryOnlineToRedis.account)
+}
+inline std::string* AccountQueryOnlineToRedis::mutable_account() {
+  
+  // @@protoc_insertion_point(field_mutable:Proto.AccountQueryOnlineToRedis.account)
+  return account_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* AccountQueryOnlineToRedis::release_account() {
+  // @@protoc_insertion_point(field_release:Proto.AccountQueryOnlineToRedis.account)
+  
+  return account_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void AccountQueryOnlineToRedis::set_allocated_account(std::string* account) {
+  if (account != nullptr) {
+    
+  } else {
+    
+  }
+  account_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), account);
+  // @@protoc_insertion_point(field_set_allocated:Proto.AccountQueryOnlineToRedis.account)
+}
+
+// -------------------------------------------------------------------
+
+// AccountQueryOnlineToRedisRs
+
+// string account = 1;
+inline void AccountQueryOnlineToRedisRs::clear_account() {
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& AccountQueryOnlineToRedisRs::account() const {
+  // @@protoc_insertion_point(field_get:Proto.AccountQueryOnlineToRedisRs.account)
+  return account_.GetNoArena();
+}
+inline void AccountQueryOnlineToRedisRs::set_account(const std::string& value) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:Proto.AccountQueryOnlineToRedisRs.account)
+}
+inline void AccountQueryOnlineToRedisRs::set_account(std::string&& value) {
+  
+  account_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:Proto.AccountQueryOnlineToRedisRs.account)
+}
+inline void AccountQueryOnlineToRedisRs::set_account(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:Proto.AccountQueryOnlineToRedisRs.account)
+}
+inline void AccountQueryOnlineToRedisRs::set_account(const char* value, size_t size) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:Proto.AccountQueryOnlineToRedisRs.account)
+}
+inline std::string* AccountQueryOnlineToRedisRs::mutable_account() {
+  
+  // @@protoc_insertion_point(field_mutable:Proto.AccountQueryOnlineToRedisRs.account)
+  return account_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* AccountQueryOnlineToRedisRs::release_account() {
+  // @@protoc_insertion_point(field_release:Proto.AccountQueryOnlineToRedisRs.account)
+  
+  return account_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void AccountQueryOnlineToRedisRs::set_allocated_account(std::string* account) {
+  if (account != nullptr) {
+    
+  } else {
+    
+  }
+  account_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), account);
+  // @@protoc_insertion_point(field_set_allocated:Proto.AccountQueryOnlineToRedisRs.account)
+}
+
+// .Proto.AccountQueryOnlineToRedisRs.ReturnCode return_code = 2;
+inline void AccountQueryOnlineToRedisRs::clear_return_code() {
+  return_code_ = 0;
+}
+inline ::Proto::AccountQueryOnlineToRedisRs_ReturnCode AccountQueryOnlineToRedisRs::return_code() const {
+  // @@protoc_insertion_point(field_get:Proto.AccountQueryOnlineToRedisRs.return_code)
+  return static_cast< ::Proto::AccountQueryOnlineToRedisRs_ReturnCode >(return_code_);
+}
+inline void AccountQueryOnlineToRedisRs::set_return_code(::Proto::AccountQueryOnlineToRedisRs_ReturnCode value) {
+  
+  return_code_ = value;
+  // @@protoc_insertion_point(field_set:Proto.AccountQueryOnlineToRedisRs.return_code)
+}
+
+// -------------------------------------------------------------------
+
+// AccountSyncOnlineToRedis
+
+// string account = 1;
+inline void AccountSyncOnlineToRedis::clear_account() {
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& AccountSyncOnlineToRedis::account() const {
+  // @@protoc_insertion_point(field_get:Proto.AccountSyncOnlineToRedis.account)
+  return account_.GetNoArena();
+}
+inline void AccountSyncOnlineToRedis::set_account(const std::string& value) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:Proto.AccountSyncOnlineToRedis.account)
+}
+inline void AccountSyncOnlineToRedis::set_account(std::string&& value) {
+  
+  account_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:Proto.AccountSyncOnlineToRedis.account)
+}
+inline void AccountSyncOnlineToRedis::set_account(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:Proto.AccountSyncOnlineToRedis.account)
+}
+inline void AccountSyncOnlineToRedis::set_account(const char* value, size_t size) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:Proto.AccountSyncOnlineToRedis.account)
+}
+inline std::string* AccountSyncOnlineToRedis::mutable_account() {
+  
+  // @@protoc_insertion_point(field_mutable:Proto.AccountSyncOnlineToRedis.account)
+  return account_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* AccountSyncOnlineToRedis::release_account() {
+  // @@protoc_insertion_point(field_release:Proto.AccountSyncOnlineToRedis.account)
+  
+  return account_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void AccountSyncOnlineToRedis::set_allocated_account(std::string* account) {
+  if (account != nullptr) {
+    
+  } else {
+    
+  }
+  account_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), account);
+  // @@protoc_insertion_point(field_set_allocated:Proto.AccountSyncOnlineToRedis.account)
+}
+
+// -------------------------------------------------------------------
+
+// AccountDeleteOnlineToRedis
+
+// string account = 1;
+inline void AccountDeleteOnlineToRedis::clear_account() {
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& AccountDeleteOnlineToRedis::account() const {
+  // @@protoc_insertion_point(field_get:Proto.AccountDeleteOnlineToRedis.account)
+  return account_.GetNoArena();
+}
+inline void AccountDeleteOnlineToRedis::set_account(const std::string& value) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:Proto.AccountDeleteOnlineToRedis.account)
+}
+inline void AccountDeleteOnlineToRedis::set_account(std::string&& value) {
+  
+  account_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:Proto.AccountDeleteOnlineToRedis.account)
+}
+inline void AccountDeleteOnlineToRedis::set_account(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:Proto.AccountDeleteOnlineToRedis.account)
+}
+inline void AccountDeleteOnlineToRedis::set_account(const char* value, size_t size) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:Proto.AccountDeleteOnlineToRedis.account)
+}
+inline std::string* AccountDeleteOnlineToRedis::mutable_account() {
+  
+  // @@protoc_insertion_point(field_mutable:Proto.AccountDeleteOnlineToRedis.account)
+  return account_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* AccountDeleteOnlineToRedis::release_account() {
+  // @@protoc_insertion_point(field_release:Proto.AccountDeleteOnlineToRedis.account)
+  
+  return account_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void AccountDeleteOnlineToRedis::set_allocated_account(std::string* account) {
+  if (account != nullptr) {
+    
+  } else {
+    
+  }
+  account_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), account);
+  // @@protoc_insertion_point(field_set_allocated:Proto.AccountDeleteOnlineToRedis.account)
+}
+
+// -------------------------------------------------------------------
+
+// PlayerSyncOnlineToRedis
+
+// string account = 1;
+inline void PlayerSyncOnlineToRedis::clear_account() {
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& PlayerSyncOnlineToRedis::account() const {
+  // @@protoc_insertion_point(field_get:Proto.PlayerSyncOnlineToRedis.account)
+  return account_.GetNoArena();
+}
+inline void PlayerSyncOnlineToRedis::set_account(const std::string& value) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:Proto.PlayerSyncOnlineToRedis.account)
+}
+inline void PlayerSyncOnlineToRedis::set_account(std::string&& value) {
+  
+  account_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:Proto.PlayerSyncOnlineToRedis.account)
+}
+inline void PlayerSyncOnlineToRedis::set_account(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:Proto.PlayerSyncOnlineToRedis.account)
+}
+inline void PlayerSyncOnlineToRedis::set_account(const char* value, size_t size) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:Proto.PlayerSyncOnlineToRedis.account)
+}
+inline std::string* PlayerSyncOnlineToRedis::mutable_account() {
+  
+  // @@protoc_insertion_point(field_mutable:Proto.PlayerSyncOnlineToRedis.account)
+  return account_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* PlayerSyncOnlineToRedis::release_account() {
+  // @@protoc_insertion_point(field_release:Proto.PlayerSyncOnlineToRedis.account)
+  
+  return account_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void PlayerSyncOnlineToRedis::set_allocated_account(std::string* account) {
+  if (account != nullptr) {
+    
+  } else {
+    
+  }
+  account_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), account);
+  // @@protoc_insertion_point(field_set_allocated:Proto.PlayerSyncOnlineToRedis.account)
+}
+
+// int32 version = 2;
+inline void PlayerSyncOnlineToRedis::clear_version() {
+  version_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 PlayerSyncOnlineToRedis::version() const {
+  // @@protoc_insertion_point(field_get:Proto.PlayerSyncOnlineToRedis.version)
+  return version_;
+}
+inline void PlayerSyncOnlineToRedis::set_version(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  version_ = value;
+  // @@protoc_insertion_point(field_set:Proto.PlayerSyncOnlineToRedis.version)
+}
+
+// -------------------------------------------------------------------
+
+// PlayerDeleteOnlineToRedis
+
+// string account = 1;
+inline void PlayerDeleteOnlineToRedis::clear_account() {
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& PlayerDeleteOnlineToRedis::account() const {
+  // @@protoc_insertion_point(field_get:Proto.PlayerDeleteOnlineToRedis.account)
+  return account_.GetNoArena();
+}
+inline void PlayerDeleteOnlineToRedis::set_account(const std::string& value) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:Proto.PlayerDeleteOnlineToRedis.account)
+}
+inline void PlayerDeleteOnlineToRedis::set_account(std::string&& value) {
+  
+  account_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:Proto.PlayerDeleteOnlineToRedis.account)
+}
+inline void PlayerDeleteOnlineToRedis::set_account(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:Proto.PlayerDeleteOnlineToRedis.account)
+}
+inline void PlayerDeleteOnlineToRedis::set_account(const char* value, size_t size) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:Proto.PlayerDeleteOnlineToRedis.account)
+}
+inline std::string* PlayerDeleteOnlineToRedis::mutable_account() {
+  
+  // @@protoc_insertion_point(field_mutable:Proto.PlayerDeleteOnlineToRedis.account)
+  return account_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* PlayerDeleteOnlineToRedis::release_account() {
+  // @@protoc_insertion_point(field_release:Proto.PlayerDeleteOnlineToRedis.account)
+  
+  return account_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void PlayerDeleteOnlineToRedis::set_allocated_account(std::string* account) {
+  if (account != nullptr) {
+    
+  } else {
+    
+  }
+  account_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), account);
+  // @@protoc_insertion_point(field_set_allocated:Proto.PlayerDeleteOnlineToRedis.account)
+}
+
+// int32 version = 2;
+inline void PlayerDeleteOnlineToRedis::clear_version() {
+  version_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 PlayerDeleteOnlineToRedis::version() const {
+  // @@protoc_insertion_point(field_get:Proto.PlayerDeleteOnlineToRedis.version)
+  return version_;
+}
+inline void PlayerDeleteOnlineToRedis::set_version(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  version_ = value;
+  // @@protoc_insertion_point(field_set:Proto.PlayerDeleteOnlineToRedis.version)
+}
+
+// -------------------------------------------------------------------
+
+// GameTokenToRedis
+
+// string account = 1;
+inline void GameTokenToRedis::clear_account() {
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& GameTokenToRedis::account() const {
+  // @@protoc_insertion_point(field_get:Proto.GameTokenToRedis.account)
+  return account_.GetNoArena();
+}
+inline void GameTokenToRedis::set_account(const std::string& value) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:Proto.GameTokenToRedis.account)
+}
+inline void GameTokenToRedis::set_account(std::string&& value) {
+  
+  account_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:Proto.GameTokenToRedis.account)
+}
+inline void GameTokenToRedis::set_account(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:Proto.GameTokenToRedis.account)
+}
+inline void GameTokenToRedis::set_account(const char* value, size_t size) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:Proto.GameTokenToRedis.account)
+}
+inline std::string* GameTokenToRedis::mutable_account() {
+  
+  // @@protoc_insertion_point(field_mutable:Proto.GameTokenToRedis.account)
+  return account_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* GameTokenToRedis::release_account() {
+  // @@protoc_insertion_point(field_release:Proto.GameTokenToRedis.account)
+  
+  return account_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void GameTokenToRedis::set_allocated_account(std::string* account) {
+  if (account != nullptr) {
+    
+  } else {
+    
+  }
+  account_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), account);
+  // @@protoc_insertion_point(field_set_allocated:Proto.GameTokenToRedis.account)
+}
+
+// -------------------------------------------------------------------
+
+// TokenInfo
+
+// string token = 1;
+inline void TokenInfo::clear_token() {
+  token_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& TokenInfo::token() const {
+  // @@protoc_insertion_point(field_get:Proto.TokenInfo.token)
+  return token_.GetNoArena();
+}
+inline void TokenInfo::set_token(const std::string& value) {
+  
+  token_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:Proto.TokenInfo.token)
+}
+inline void TokenInfo::set_token(std::string&& value) {
+  
+  token_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:Proto.TokenInfo.token)
+}
+inline void TokenInfo::set_token(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  token_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:Proto.TokenInfo.token)
+}
+inline void TokenInfo::set_token(const char* value, size_t size) {
+  
+  token_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:Proto.TokenInfo.token)
+}
+inline std::string* TokenInfo::mutable_token() {
+  
+  // @@protoc_insertion_point(field_mutable:Proto.TokenInfo.token)
+  return token_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* TokenInfo::release_token() {
+  // @@protoc_insertion_point(field_release:Proto.TokenInfo.token)
+  
+  return token_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void TokenInfo::set_allocated_token(std::string* token) {
+  if (token != nullptr) {
+    
+  } else {
+    
+  }
+  token_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), token);
+  // @@protoc_insertion_point(field_set_allocated:Proto.TokenInfo.token)
+}
+
+// uint64 player_sn = 2;
+inline void TokenInfo::clear_player_sn() {
+  player_sn_ = PROTOBUF_ULONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint64 TokenInfo::player_sn() const {
+  // @@protoc_insertion_point(field_get:Proto.TokenInfo.player_sn)
+  return player_sn_;
+}
+inline void TokenInfo::set_player_sn(::PROTOBUF_NAMESPACE_ID::uint64 value) {
+  
+  player_sn_ = value;
+  // @@protoc_insertion_point(field_set:Proto.TokenInfo.player_sn)
+}
+
+// -------------------------------------------------------------------
+
+// GameTokenToRedisRs
+
+// string account = 1;
+inline void GameTokenToRedisRs::clear_account() {
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& GameTokenToRedisRs::account() const {
+  // @@protoc_insertion_point(field_get:Proto.GameTokenToRedisRs.account)
+  return account_.GetNoArena();
+}
+inline void GameTokenToRedisRs::set_account(const std::string& value) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:Proto.GameTokenToRedisRs.account)
+}
+inline void GameTokenToRedisRs::set_account(std::string&& value) {
+  
+  account_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:Proto.GameTokenToRedisRs.account)
+}
+inline void GameTokenToRedisRs::set_account(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:Proto.GameTokenToRedisRs.account)
+}
+inline void GameTokenToRedisRs::set_account(const char* value, size_t size) {
+  
+  account_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:Proto.GameTokenToRedisRs.account)
+}
+inline std::string* GameTokenToRedisRs::mutable_account() {
+  
+  // @@protoc_insertion_point(field_mutable:Proto.GameTokenToRedisRs.account)
+  return account_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* GameTokenToRedisRs::release_account() {
+  // @@protoc_insertion_point(field_release:Proto.GameTokenToRedisRs.account)
+  
+  return account_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void GameTokenToRedisRs::set_allocated_account(std::string* account) {
+  if (account != nullptr) {
+    
+  } else {
+    
+  }
+  account_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), account);
+  // @@protoc_insertion_point(field_set_allocated:Proto.GameTokenToRedisRs.account)
+}
+
+// .Proto.TokenInfo token_info = 2;
+inline bool GameTokenToRedisRs::has_token_info() const {
+  return this != internal_default_instance() && token_info_ != nullptr;
+}
+inline void GameTokenToRedisRs::clear_token_info() {
+  if (GetArenaNoVirtual() == nullptr && token_info_ != nullptr) {
+    delete token_info_;
+  }
+  token_info_ = nullptr;
+}
+inline const ::Proto::TokenInfo& GameTokenToRedisRs::token_info() const {
+  const ::Proto::TokenInfo* p = token_info_;
+  // @@protoc_insertion_point(field_get:Proto.GameTokenToRedisRs.token_info)
+  return p != nullptr ? *p : *reinterpret_cast<const ::Proto::TokenInfo*>(
+      &::Proto::_TokenInfo_default_instance_);
+}
+inline ::Proto::TokenInfo* GameTokenToRedisRs::release_token_info() {
+  // @@protoc_insertion_point(field_release:Proto.GameTokenToRedisRs.token_info)
+  
+  ::Proto::TokenInfo* temp = token_info_;
+  token_info_ = nullptr;
+  return temp;
+}
+inline ::Proto::TokenInfo* GameTokenToRedisRs::mutable_token_info() {
+  
+  if (token_info_ == nullptr) {
+    auto* p = CreateMaybeMessage<::Proto::TokenInfo>(GetArenaNoVirtual());
+    token_info_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:Proto.GameTokenToRedisRs.token_info)
+  return token_info_;
+}
+inline void GameTokenToRedisRs::set_allocated_token_info(::Proto::TokenInfo* token_info) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == nullptr) {
+    delete token_info_;
+  }
+  if (token_info) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
+    if (message_arena != submessage_arena) {
+      token_info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, token_info, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  token_info_ = token_info;
+  // @@protoc_insertion_point(field_set_allocated:Proto.GameTokenToRedisRs.token_info)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -7445,6 +9908,11 @@ template <> struct is_proto_enum< ::Proto::LoginByTokenRs_ReturnCode> : ::std::t
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::Proto::LoginByTokenRs_ReturnCode>() {
   return ::Proto::LoginByTokenRs_ReturnCode_descriptor();
+}
+template <> struct is_proto_enum< ::Proto::AccountQueryOnlineToRedisRs_ReturnCode> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::Proto::AccountQueryOnlineToRedisRs_ReturnCode>() {
+  return ::Proto::AccountQueryOnlineToRedisRs_ReturnCode_descriptor();
 }
 template <> struct is_proto_enum< ::Proto::NetworkObjectKeyType> : ::std::true_type {};
 template <>

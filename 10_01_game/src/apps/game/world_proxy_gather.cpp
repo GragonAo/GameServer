@@ -1,8 +1,8 @@
 #include "world_proxy_gather.h"
 
 #include "libserver/message_system_help.h"   // 提供消息系统帮助函数
+#include "libserver/message_system.h"
 #include "libserver/thread_mgr.h"            // 线程管理类
-#include "libserver/message_component.h"     // 消息组件，用于消息回调
 #include "libserver/global.h"                // 全局管理器，提供应用程序级别的信息
 
 #include <numeric>  // 用于标准库中的 accumulate 函数
@@ -14,14 +14,13 @@ void WorldProxyGather::Awake()
     AddTimer(0, 10, true, 2, BindFunP0(this, &WorldProxyGather::SyncGameInfo));
 
     // 注册消息回调
-    auto pMsgCallBack = new MessageCallBackFunction();
-    AddComponent<MessageComponent>(pMsgCallBack);
+    auto pMgrSystem = GetSystemManager()->GetMessageSystem();
 
     // 注册处理世界代理同步消息的回调
-    pMsgCallBack->RegisterFunction(Proto::MsgId::MI_WorldProxySyncToGather, BindFunP1(this, &WorldProxyGather::HandleWorldProxySyncToGather));
+    pMgrSystem->RegisterFunction(this,Proto::MsgId::MI_WorldProxySyncToGather, BindFunP1(this, &WorldProxyGather::HandleWorldProxySyncToGather));
 
     // 注册处理世界代理命令消息的回调
-    pMsgCallBack->RegisterFunction(Proto::MsgId::MI_CmdWorldProxy, BindFunP1(this, &WorldProxyGather::HandleCmdWorldProxy));
+    pMgrSystem->RegisterFunction(this,Proto::MsgId::MI_CmdWorldProxy, BindFunP1(this, &WorldProxyGather::HandleCmdWorldProxy));
 }
 
 // BackToPool 函数，在对象回收到对象池时调用，清理资源

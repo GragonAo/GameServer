@@ -1,4 +1,5 @@
 #pragma once
+#include "redis_game.h"
 #include "libserver/thread_mgr.h"
 #include "world_proxy_gather.h"
 #include "lobby.h"
@@ -12,6 +13,8 @@ inline void InitializeComponentGame(ThreadMgr* pThreadMgr)
 
     // 创建 WorldProxyGather 组件，负责代理和管理与世界相关的功能
     pThreadMgr->CreateComponent<WorldProxyGather>();
+
+    pThreadMgr->CreateComponent<RedisGame>();
 
     // 从线程管理器获取控制台组件（Console），并注册一个新的控制台命令 "wproxy"
     auto pConsole = pThreadMgr->GetEntitySystem()->GetComponent<Console>();

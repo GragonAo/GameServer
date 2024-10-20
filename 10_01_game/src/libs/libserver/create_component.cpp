@@ -3,9 +3,8 @@
 #include "component_factory.h"              // 包含组件工厂，用于创建组件
 #include "packet.h"                         // 包含 Packet 类的定义
 #include "entity.h"                         // 包含实体类的定义
-#include "message_component.h"              // 包含消息组件的定义
 #include "system_manager.h"                 // 包含系统管理器的定义
-
+#include "message_system.h"
 // 从参数元组中创建组件的辅助函数
 template <typename... TArgs, size_t... Index>
 IComponent* ComponentFactoryEx(EntitySystem* pEntitySystem, std::string className, const std::tuple<TArgs...>& args, std::index_sequence<Index...>)
@@ -69,12 +68,11 @@ struct DynamicCall<0>
 // Awake 方法用于初始化组件
 void CreateComponentC::Awake()
 {
-    auto pMsgCallBack = new MessageCallBackFunction(); // 创建消息回调函数对象
-    AddComponent<MessageComponent>(pMsgCallBack); // 添加消息组件
+    auto pMsgSystem = GetSystemManager()->GetMessageSystem();
 
     // 注册消息处理函数
-    pMsgCallBack->RegisterFunction(Proto::MsgId::MI_CreateComponent, BindFunP1(this, &CreateComponentC::HandleCreateComponent));
-    pMsgCallBack->RegisterFunction(Proto::MsgId::MI_RemoveComponent, BindFunP1(this, &CreateComponentC::HandleRemoveComponent));
+    pMsgSystem->RegisterFunction(this,Proto::MsgId::MI_CreateComponent, BindFunP1(this, &CreateComponentC::HandleCreateComponent));
+    pMsgSystem->RegisterFunction(this,Proto::MsgId::MI_RemoveComponent, BindFunP1(this, &CreateComponentC::HandleRemoveComponent));
 }
 
 // BackToPool 方法用于将对象返回对象池（可重用）

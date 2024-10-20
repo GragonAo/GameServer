@@ -1,6 +1,5 @@
 #include "console_thread_component.h"
 
-#include "message_component.h"
 #include "create_component.h"
 #include "update_component.h"
 #include "entity_system.h"
@@ -17,10 +16,9 @@ void ConsoleThreadComponent::Awake(ThreadType iType)
 {
     _threadType = iType; // 保存线程类型
 
-    auto pMsgCallBack = new MessageCallBackFunction(); // 创建新的消息回调函数
-    AddComponent<MessageComponent>(pMsgCallBack); // 添加消息组件
+    auto pMsgSystem = GetSystemManager()->GetMessageSystem(); // 创建新的消息回调函数
     // 注册命令线程处理函数
-    pMsgCallBack->RegisterFunction(Proto::MsgId::MI_CmdThread, BindFunP1(this, &ConsoleThreadComponent::HandleCmdThread));
+    pMsgSystem->RegisterFunction(this,Proto::MsgId::MI_CmdThread, BindFunP1(this, &ConsoleThreadComponent::HandleCmdThread));
 }
 
 void ConsoleThreadComponent::BackToPool()
@@ -76,7 +74,6 @@ void ConsoleThreadComponent::HandleCmdThreadEntities(Packet* pPacket)
 
     // 排除不需要显示的实体类型
     std::list<uint64> excludes;
-    excludes.push_back(typeid(MessageComponent).hash_code());
     excludes.push_back(typeid(CreateComponentC).hash_code());
     excludes.push_back(typeid(UpdateComponent).hash_code());
     excludes.push_back(typeid(ConsoleThreadComponent).hash_code());

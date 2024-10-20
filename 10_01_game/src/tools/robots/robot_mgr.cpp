@@ -3,8 +3,8 @@
 #include "libserver/global.h"
 #include "libserver/yaml.h"
 #include "libserver/entity_system.h"
-#include "libserver/message_component.h"
 #include "libserver/message_system_help.h"
+#include "libserver/message_system.h"
 #include "libserver/update_component.h"
 #include "libserver/component_help.h"
 
@@ -15,9 +15,9 @@
 void RobotMgr::Awake()
 {
     // 注册消息处理组件，监听 MI_RobotSyncState 消息
-    auto pMsgCallBack = new MessageCallBackFunction();
-    AddComponent<MessageComponent>(pMsgCallBack);
-    pMsgCallBack->RegisterFunction(Proto::MsgId::MI_RobotSyncState, BindFunP1(this, &RobotMgr::HandleRobotState));
+    auto pMsgSystem = GetSystemManager()->GetMessageSystem();
+    
+    pMsgSystem->RegisterFunction(this, Proto::MsgId::MI_RobotSyncState, BindFunP1(this, &RobotMgr::HandleRobotState));
 
     // 添加一个定时器，每隔两秒调用 ShowInfo 方法展示机器人状态信息
     AddTimer(0, 2, false, 0, BindFunP0(this, &RobotMgr::ShowInfo));

@@ -28,6 +28,9 @@ private:
     // 通过 Token 进行登录的处理函数，参数为接收到的 Packet 数据包指针
     void HandleLoginByToken(Packet* pPacket);
 
+    // 处理游戏token到Redis响应
+    void HandleGameTokenToRedisRs(Packet* pPacket);
+
 private:
     // 等待分配到世界的玩家集合。
     // 键为 int 类型（通常是表示世界的 ID 或者类似标识），值为一组 uint64 类型（玩家的唯一 ID）。

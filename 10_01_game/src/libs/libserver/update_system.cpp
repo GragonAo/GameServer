@@ -22,6 +22,6 @@ void UpdateSystem::Update(EntitySystem* pEntities)
     {
         const auto pComponent = one.second;
         const auto pUpdateComponent = static_cast<UpdateComponent*>(pComponent);
-        pUpdateComponent->UpdataFunction();
+        pUpdateComponent->Update();
     }
 }

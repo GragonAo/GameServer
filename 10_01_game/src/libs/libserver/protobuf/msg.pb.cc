@@ -22,6 +22,7 @@ extern PROTOBUF_INTERNAL_EXPORT_msg_2eproto ::PROTOBUF_NAMESPACE_ID::internal::S
 extern PROTOBUF_INTERNAL_EXPORT_db_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Player_db_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_msg_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PlayerLittle_msg_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_msg_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RobotState_msg_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_msg_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TokenInfo_msg_2eproto;
 namespace Proto {
 class CmdThreadDefaultTypeInternal {
  public:
@@ -155,6 +156,50 @@ class LoginByTokenRsDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LoginByTokenRs> _instance;
 } _LoginByTokenRs_default_instance_;
+class LoginTokenToRedisDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LoginTokenToRedis> _instance;
+} _LoginTokenToRedis_default_instance_;
+class LoginTokenToRedisRsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LoginTokenToRedisRs> _instance;
+} _LoginTokenToRedisRs_default_instance_;
+class AccountQueryOnlineToRedisDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AccountQueryOnlineToRedis> _instance;
+} _AccountQueryOnlineToRedis_default_instance_;
+class AccountQueryOnlineToRedisRsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AccountQueryOnlineToRedisRs> _instance;
+} _AccountQueryOnlineToRedisRs_default_instance_;
+class AccountSyncOnlineToRedisDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AccountSyncOnlineToRedis> _instance;
+} _AccountSyncOnlineToRedis_default_instance_;
+class AccountDeleteOnlineToRedisDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AccountDeleteOnlineToRedis> _instance;
+} _AccountDeleteOnlineToRedis_default_instance_;
+class PlayerSyncOnlineToRedisDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<PlayerSyncOnlineToRedis> _instance;
+} _PlayerSyncOnlineToRedis_default_instance_;
+class PlayerDeleteOnlineToRedisDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<PlayerDeleteOnlineToRedis> _instance;
+} _PlayerDeleteOnlineToRedis_default_instance_;
+class GameTokenToRedisDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameTokenToRedis> _instance;
+} _GameTokenToRedis_default_instance_;
+class TokenInfoDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TokenInfo> _instance;
+} _TokenInfo_default_instance_;
+class GameTokenToRedisRsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameTokenToRedisRs> _instance;
+} _GameTokenToRedisRs_default_instance_;
 }  // namespace Proto
 static void InitDefaultsscc_info_AccountCheck_msg_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -183,6 +228,62 @@ static void InitDefaultsscc_info_AccountCheckRs_msg_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AccountCheckRs_msg_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_AccountCheckRs_msg_2eproto}, {}};
+
+static void InitDefaultsscc_info_AccountDeleteOnlineToRedis_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_AccountDeleteOnlineToRedis_default_instance_;
+    new (ptr) ::Proto::AccountDeleteOnlineToRedis();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::AccountDeleteOnlineToRedis::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AccountDeleteOnlineToRedis_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_AccountDeleteOnlineToRedis_msg_2eproto}, {}};
+
+static void InitDefaultsscc_info_AccountQueryOnlineToRedis_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_AccountQueryOnlineToRedis_default_instance_;
+    new (ptr) ::Proto::AccountQueryOnlineToRedis();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::AccountQueryOnlineToRedis::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AccountQueryOnlineToRedis_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_AccountQueryOnlineToRedis_msg_2eproto}, {}};
+
+static void InitDefaultsscc_info_AccountQueryOnlineToRedisRs_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_AccountQueryOnlineToRedisRs_default_instance_;
+    new (ptr) ::Proto::AccountQueryOnlineToRedisRs();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::AccountQueryOnlineToRedisRs::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AccountQueryOnlineToRedisRs_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_AccountQueryOnlineToRedisRs_msg_2eproto}, {}};
+
+static void InitDefaultsscc_info_AccountSyncOnlineToRedis_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_AccountSyncOnlineToRedis_default_instance_;
+    new (ptr) ::Proto::AccountSyncOnlineToRedis();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::AccountSyncOnlineToRedis::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AccountSyncOnlineToRedis_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_AccountSyncOnlineToRedis_msg_2eproto}, {}};
 
 static void InitDefaultsscc_info_AppInfoListSync_msg_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -355,6 +456,35 @@ static void InitDefaultsscc_info_GameToken_msg_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameToken_msg_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_GameToken_msg_2eproto}, {}};
 
+static void InitDefaultsscc_info_GameTokenToRedis_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_GameTokenToRedis_default_instance_;
+    new (ptr) ::Proto::GameTokenToRedis();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::GameTokenToRedis::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameTokenToRedis_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_GameTokenToRedis_msg_2eproto}, {}};
+
+static void InitDefaultsscc_info_GameTokenToRedisRs_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_GameTokenToRedisRs_default_instance_;
+    new (ptr) ::Proto::GameTokenToRedisRs();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::GameTokenToRedisRs::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameTokenToRedisRs_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_GameTokenToRedisRs_msg_2eproto}, {
+      &scc_info_TokenInfo_msg_2eproto.base,}};
+
 static void InitDefaultsscc_info_Http_msg_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -396,6 +526,34 @@ static void InitDefaultsscc_info_LoginByTokenRs_msg_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LoginByTokenRs_msg_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_LoginByTokenRs_msg_2eproto}, {}};
+
+static void InitDefaultsscc_info_LoginTokenToRedis_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_LoginTokenToRedis_default_instance_;
+    new (ptr) ::Proto::LoginTokenToRedis();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::LoginTokenToRedis::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LoginTokenToRedis_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_LoginTokenToRedis_msg_2eproto}, {}};
+
+static void InitDefaultsscc_info_LoginTokenToRedisRs_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_LoginTokenToRedisRs_default_instance_;
+    new (ptr) ::Proto::LoginTokenToRedisRs();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::LoginTokenToRedisRs::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LoginTokenToRedisRs_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_LoginTokenToRedisRs_msg_2eproto}, {}};
 
 static void InitDefaultsscc_info_NetworkConnect_msg_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -455,6 +613,20 @@ static void InitDefaultsscc_info_NetworkObjectKeyValue_msg_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_NetworkObjectKeyValue_msg_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_NetworkObjectKeyValue_msg_2eproto}, {}};
 
+static void InitDefaultsscc_info_PlayerDeleteOnlineToRedis_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_PlayerDeleteOnlineToRedis_default_instance_;
+    new (ptr) ::Proto::PlayerDeleteOnlineToRedis();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::PlayerDeleteOnlineToRedis::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PlayerDeleteOnlineToRedis_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_PlayerDeleteOnlineToRedis_msg_2eproto}, {}};
+
 static void InitDefaultsscc_info_PlayerList_msg_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -483,6 +655,20 @@ static void InitDefaultsscc_info_PlayerLittle_msg_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PlayerLittle_msg_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_PlayerLittle_msg_2eproto}, {}};
+
+static void InitDefaultsscc_info_PlayerSyncOnlineToRedis_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_PlayerSyncOnlineToRedis_default_instance_;
+    new (ptr) ::Proto::PlayerSyncOnlineToRedis();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::PlayerSyncOnlineToRedis::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PlayerSyncOnlineToRedis_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_PlayerSyncOnlineToRedis_msg_2eproto}, {}};
 
 static void InitDefaultsscc_info_QueryPlayer_msg_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -613,6 +799,20 @@ static void InitDefaultsscc_info_SelectPlayerRs_msg_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SelectPlayerRs_msg_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_SelectPlayerRs_msg_2eproto}, {}};
 
+static void InitDefaultsscc_info_TokenInfo_msg_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_TokenInfo_default_instance_;
+    new (ptr) ::Proto::TokenInfo();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::TokenInfo::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TokenInfo_msg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_TokenInfo_msg_2eproto}, {}};
+
 static void InitDefaultsscc_info_WorldProxySyncToGather_msg_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -627,8 +827,8 @@ static void InitDefaultsscc_info_WorldProxySyncToGather_msg_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_WorldProxySyncToGather_msg_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_WorldProxySyncToGather_msg_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_msg_2eproto[33];
-static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_msg_2eproto[10];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_msg_2eproto[44];
+static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_msg_2eproto[11];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_msg_2eproto = nullptr;
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_msg_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
@@ -863,6 +1063,79 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_msg_2eproto::offsets[] PROTOBU
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::Proto::LoginByTokenRs, return_code_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::LoginTokenToRedis, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::LoginTokenToRedis, account_),
+  PROTOBUF_FIELD_OFFSET(::Proto::LoginTokenToRedis, player_sn_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::LoginTokenToRedisRs, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::LoginTokenToRedisRs, account_),
+  PROTOBUF_FIELD_OFFSET(::Proto::LoginTokenToRedisRs, token_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::AccountQueryOnlineToRedis, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::AccountQueryOnlineToRedis, account_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::AccountQueryOnlineToRedisRs, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::AccountQueryOnlineToRedisRs, account_),
+  PROTOBUF_FIELD_OFFSET(::Proto::AccountQueryOnlineToRedisRs, return_code_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::AccountSyncOnlineToRedis, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::AccountSyncOnlineToRedis, account_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::AccountDeleteOnlineToRedis, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::AccountDeleteOnlineToRedis, account_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::PlayerSyncOnlineToRedis, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::PlayerSyncOnlineToRedis, account_),
+  PROTOBUF_FIELD_OFFSET(::Proto::PlayerSyncOnlineToRedis, version_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::PlayerDeleteOnlineToRedis, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::PlayerDeleteOnlineToRedis, account_),
+  PROTOBUF_FIELD_OFFSET(::Proto::PlayerDeleteOnlineToRedis, version_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::GameTokenToRedis, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::GameTokenToRedis, account_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::TokenInfo, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::TokenInfo, token_),
+  PROTOBUF_FIELD_OFFSET(::Proto::TokenInfo, player_sn_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Proto::GameTokenToRedisRs, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Proto::GameTokenToRedisRs, account_),
+  PROTOBUF_FIELD_OFFSET(::Proto::GameTokenToRedisRs, token_info_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::Proto::CmdThread)},
@@ -898,6 +1171,17 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 209, -1, sizeof(::Proto::GameToken)},
   { 218, -1, sizeof(::Proto::LoginByToken)},
   { 225, -1, sizeof(::Proto::LoginByTokenRs)},
+  { 231, -1, sizeof(::Proto::LoginTokenToRedis)},
+  { 238, -1, sizeof(::Proto::LoginTokenToRedisRs)},
+  { 245, -1, sizeof(::Proto::AccountQueryOnlineToRedis)},
+  { 251, -1, sizeof(::Proto::AccountQueryOnlineToRedisRs)},
+  { 258, -1, sizeof(::Proto::AccountSyncOnlineToRedis)},
+  { 264, -1, sizeof(::Proto::AccountDeleteOnlineToRedis)},
+  { 270, -1, sizeof(::Proto::PlayerSyncOnlineToRedis)},
+  { 277, -1, sizeof(::Proto::PlayerDeleteOnlineToRedis)},
+  { 284, -1, sizeof(::Proto::GameTokenToRedis)},
+  { 290, -1, sizeof(::Proto::TokenInfo)},
+  { 297, -1, sizeof(::Proto::GameTokenToRedisRs)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -934,6 +1218,17 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_GameToken_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_LoginByToken_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_LoginByTokenRs_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_LoginTokenToRedis_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_LoginTokenToRedisRs_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_AccountQueryOnlineToRedis_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_AccountQueryOnlineToRedisRs_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_AccountSyncOnlineToRedis_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_AccountDeleteOnlineToRedis_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_PlayerSyncOnlineToRedis_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_PlayerDeleteOnlineToRedis_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_GameTokenToRedis_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_TokenInfo_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Proto::_GameTokenToRedisRs_default_instance_),
 };
 
 const char descriptor_table_protodef_msg_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -1001,24 +1296,46 @@ const char descriptor_table_protodef_msg_2eproto[] PROTOBUF_SECTION_VARIABLE(pro
   "turn_code\030\001 \001(\0162 .Proto.LoginByTokenRs.R"
   "eturnCode\"]\n\nReturnCode\022\013\n\007LGRC_OK\020\000\022\020\n\014"
   "LGRC_UNKONWN\020\001\022\032\n\026LGRC_NOT_FOUND_ACCOUNT"
-  "\020\002\022\024\n\020LGRC_TOKEN_WRONG\020\003*]\n\024NetworkObjec"
-  "tKeyType\022\025\n\021ObjectKeyTypeNone\020\000\022\030\n\024Objec"
-  "tKeyTypeAccount\020\001\022\024\n\020ObjectKeyTypeApp\020\002*"
-  "\232\001\n\026AccountCheckReturnCode\022\n\n\006ARC_OK\020\000\022\017"
-  "\n\013ARC_UNKONWN\020\001\022\031\n\025ARC_NOT_FOUND_ACCOUNT"
-  "\020\002\022\026\n\022ARC_PASSWORD_WRONG\020\003\022\017\n\013ARC_LOGGIN"
-  "G\020\004\022\017\n\013ARC_TIMEOUT\020\005\022\016\n\nARC_ONLINE\020\006*G\n\023"
-  "LoginHttpReturnCode\022\013\n\007LHRC_OK\020\000\022\020\n\014LHRC"
-  "_TIMEOUT\020\001\022\021\n\rLHRC_NOTFOUND\020\002*L\n\026CreateP"
-  "layerReturnCode\022\021\n\rCPR_Create_OK\020\000\022\017\n\013CP"
-  "R_Unkonwn\020\001\022\016\n\nCPR_Rename\020\002b\006proto3"
+  "\020\002\022\024\n\020LGRC_TOKEN_WRONG\020\003\"7\n\021LoginTokenTo"
+  "Redis\022\017\n\007account\030\001 \001(\t\022\021\n\tplayer_sn\030\002 \001("
+  "\004\"5\n\023LoginTokenToRedisRs\022\017\n\007account\030\001 \001("
+  "\t\022\r\n\005token\030\002 \001(\t\",\n\031AccountQueryOnlineTo"
+  "Redis\022\017\n\007account\030\001 \001(\t\"\243\001\n\033AccountQueryO"
+  "nlineToRedisRs\022\017\n\007account\030\001 \001(\t\022B\n\013retur"
+  "n_code\030\002 \001(\0162-.Proto.AccountQueryOnlineT"
+  "oRedisRs.ReturnCode\"/\n\nReturnCode\022\020\n\014SOT"
+  "R_Offline\020\000\022\017\n\013SOTR_Online\020\001\"+\n\030AccountS"
+  "yncOnlineToRedis\022\017\n\007account\030\001 \001(\t\"-\n\032Acc"
+  "ountDeleteOnlineToRedis\022\017\n\007account\030\001 \001(\t"
+  "\";\n\027PlayerSyncOnlineToRedis\022\017\n\007account\030\001"
+  " \001(\t\022\017\n\007version\030\002 \001(\005\"=\n\031PlayerDeleteOnl"
+  "ineToRedis\022\017\n\007account\030\001 \001(\t\022\017\n\007version\030\002"
+  " \001(\005\"#\n\020GameTokenToRedis\022\017\n\007account\030\001 \001("
+  "\t\"-\n\tTokenInfo\022\r\n\005token\030\001 \001(\t\022\021\n\tplayer_"
+  "sn\030\002 \001(\004\"K\n\022GameTokenToRedisRs\022\017\n\007accoun"
+  "t\030\001 \001(\t\022$\n\ntoken_info\030\002 \001(\0132\020.Proto.Toke"
+  "nInfo*]\n\024NetworkObjectKeyType\022\025\n\021ObjectK"
+  "eyTypeNone\020\000\022\030\n\024ObjectKeyTypeAccount\020\001\022\024"
+  "\n\020ObjectKeyTypeApp\020\002*\232\001\n\026AccountCheckRet"
+  "urnCode\022\n\n\006ARC_OK\020\000\022\017\n\013ARC_UNKONWN\020\001\022\031\n\025"
+  "ARC_NOT_FOUND_ACCOUNT\020\002\022\026\n\022ARC_PASSWORD_"
+  "WRONG\020\003\022\017\n\013ARC_LOGGING\020\004\022\017\n\013ARC_TIMEOUT\020"
+  "\005\022\016\n\nARC_ONLINE\020\006*G\n\023LoginHttpReturnCode"
+  "\022\013\n\007LHRC_OK\020\000\022\020\n\014LHRC_TIMEOUT\020\001\022\021\n\rLHRC_"
+  "NOTFOUND\020\002*L\n\026CreatePlayerReturnCode\022\021\n\r"
+  "CPR_Create_OK\020\000\022\017\n\013CPR_Unkonwn\020\001\022\016\n\nCPR_"
+  "Rename\020\002b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_msg_2eproto_deps[1] = {
   &::descriptor_table_db_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_msg_2eproto_sccs[33] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_msg_2eproto_sccs[44] = {
   &scc_info_AccountCheck_msg_2eproto.base,
   &scc_info_AccountCheckRs_msg_2eproto.base,
+  &scc_info_AccountDeleteOnlineToRedis_msg_2eproto.base,
+  &scc_info_AccountQueryOnlineToRedis_msg_2eproto.base,
+  &scc_info_AccountQueryOnlineToRedisRs_msg_2eproto.base,
+  &scc_info_AccountSyncOnlineToRedis_msg_2eproto.base,
   &scc_info_AppInfoListSync_msg_2eproto.base,
   &scc_info_AppInfoSync_msg_2eproto.base,
   &scc_info_AppRegister_msg_2eproto.base,
@@ -1031,15 +1348,21 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_msg
   &scc_info_CreatePlayerToDB_msg_2eproto.base,
   &scc_info_CreatePlayerToDBRs_msg_2eproto.base,
   &scc_info_GameToken_msg_2eproto.base,
+  &scc_info_GameTokenToRedis_msg_2eproto.base,
+  &scc_info_GameTokenToRedisRs_msg_2eproto.base,
   &scc_info_Http_msg_2eproto.base,
   &scc_info_LoginByToken_msg_2eproto.base,
   &scc_info_LoginByTokenRs_msg_2eproto.base,
+  &scc_info_LoginTokenToRedis_msg_2eproto.base,
+  &scc_info_LoginTokenToRedisRs_msg_2eproto.base,
   &scc_info_NetworkConnect_msg_2eproto.base,
   &scc_info_NetworkDisconnect_msg_2eproto.base,
   &scc_info_NetworkObjectKey_msg_2eproto.base,
   &scc_info_NetworkObjectKeyValue_msg_2eproto.base,
+  &scc_info_PlayerDeleteOnlineToRedis_msg_2eproto.base,
   &scc_info_PlayerList_msg_2eproto.base,
   &scc_info_PlayerLittle_msg_2eproto.base,
+  &scc_info_PlayerSyncOnlineToRedis_msg_2eproto.base,
   &scc_info_QueryPlayer_msg_2eproto.base,
   &scc_info_QueryPlayerList_msg_2eproto.base,
   &scc_info_QueryPlayerRs_msg_2eproto.base,
@@ -1049,15 +1372,16 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_msg
   &scc_info_SavePlayer_msg_2eproto.base,
   &scc_info_SelectPlayer_msg_2eproto.base,
   &scc_info_SelectPlayerRs_msg_2eproto.base,
+  &scc_info_TokenInfo_msg_2eproto.base,
   &scc_info_WorldProxySyncToGather_msg_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_msg_2eproto_once;
 static bool descriptor_table_msg_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_msg_2eproto = {
-  &descriptor_table_msg_2eproto_initialized, descriptor_table_protodef_msg_2eproto, "msg.proto", 2995,
-  &descriptor_table_msg_2eproto_once, descriptor_table_msg_2eproto_sccs, descriptor_table_msg_2eproto_deps, 33, 1,
+  &descriptor_table_msg_2eproto_initialized, descriptor_table_protodef_msg_2eproto, "msg.proto", 3696,
+  &descriptor_table_msg_2eproto_once, descriptor_table_msg_2eproto_sccs, descriptor_table_msg_2eproto_deps, 44, 1,
   schemas, file_default_instances, TableStruct_msg_2eproto::offsets,
-  file_level_metadata_msg_2eproto, 33, file_level_enum_descriptors_msg_2eproto, file_level_service_descriptors_msg_2eproto,
+  file_level_metadata_msg_2eproto, 44, file_level_enum_descriptors_msg_2eproto, file_level_service_descriptors_msg_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -1193,9 +1517,30 @@ constexpr LoginByTokenRs_ReturnCode LoginByTokenRs::ReturnCode_MIN;
 constexpr LoginByTokenRs_ReturnCode LoginByTokenRs::ReturnCode_MAX;
 constexpr int LoginByTokenRs::ReturnCode_ARRAYSIZE;
 #endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* NetworkObjectKeyType_descriptor() {
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* AccountQueryOnlineToRedisRs_ReturnCode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_msg_2eproto);
   return file_level_enum_descriptors_msg_2eproto[6];
+}
+bool AccountQueryOnlineToRedisRs_ReturnCode_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
+constexpr AccountQueryOnlineToRedisRs_ReturnCode AccountQueryOnlineToRedisRs::SOTR_Offline;
+constexpr AccountQueryOnlineToRedisRs_ReturnCode AccountQueryOnlineToRedisRs::SOTR_Online;
+constexpr AccountQueryOnlineToRedisRs_ReturnCode AccountQueryOnlineToRedisRs::ReturnCode_MIN;
+constexpr AccountQueryOnlineToRedisRs_ReturnCode AccountQueryOnlineToRedisRs::ReturnCode_MAX;
+constexpr int AccountQueryOnlineToRedisRs::ReturnCode_ARRAYSIZE;
+#endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* NetworkObjectKeyType_descriptor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_msg_2eproto);
+  return file_level_enum_descriptors_msg_2eproto[7];
 }
 bool NetworkObjectKeyType_IsValid(int value) {
   switch (value) {
@@ -1210,7 +1555,7 @@ bool NetworkObjectKeyType_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* AccountCheckReturnCode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_msg_2eproto);
-  return file_level_enum_descriptors_msg_2eproto[7];
+  return file_level_enum_descriptors_msg_2eproto[8];
 }
 bool AccountCheckReturnCode_IsValid(int value) {
   switch (value) {
@@ -1229,7 +1574,7 @@ bool AccountCheckReturnCode_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* LoginHttpReturnCode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_msg_2eproto);
-  return file_level_enum_descriptors_msg_2eproto[8];
+  return file_level_enum_descriptors_msg_2eproto[9];
 }
 bool LoginHttpReturnCode_IsValid(int value) {
   switch (value) {
@@ -1244,7 +1589,7 @@ bool LoginHttpReturnCode_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CreatePlayerReturnCode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_msg_2eproto);
-  return file_level_enum_descriptors_msg_2eproto[9];
+  return file_level_enum_descriptors_msg_2eproto[10];
 }
 bool CreatePlayerReturnCode_IsValid(int value) {
   switch (value) {
@@ -11500,6 +11845,3311 @@ void LoginByTokenRs::InternalSwap(LoginByTokenRs* other) {
 }
 
 
+// ===================================================================
+
+void LoginTokenToRedis::InitAsDefaultInstance() {
+}
+class LoginTokenToRedis::_Internal {
+ public:
+};
+
+LoginTokenToRedis::LoginTokenToRedis()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.LoginTokenToRedis)
+}
+LoginTokenToRedis::LoginTokenToRedis(const LoginTokenToRedis& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.account().empty()) {
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+  player_sn_ = from.player_sn_;
+  // @@protoc_insertion_point(copy_constructor:Proto.LoginTokenToRedis)
+}
+
+void LoginTokenToRedis::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_LoginTokenToRedis_msg_2eproto.base);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  player_sn_ = PROTOBUF_ULONGLONG(0);
+}
+
+LoginTokenToRedis::~LoginTokenToRedis() {
+  // @@protoc_insertion_point(destructor:Proto.LoginTokenToRedis)
+  SharedDtor();
+}
+
+void LoginTokenToRedis::SharedDtor() {
+  account_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void LoginTokenToRedis::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const LoginTokenToRedis& LoginTokenToRedis::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_LoginTokenToRedis_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void LoginTokenToRedis::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.LoginTokenToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  player_sn_ = PROTOBUF_ULONGLONG(0);
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* LoginTokenToRedis::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string account = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_account(), ptr, ctx, "Proto.LoginTokenToRedis.account");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // uint64 player_sn = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          player_sn_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool LoginTokenToRedis::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.LoginTokenToRedis)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string account = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_account()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->account().data(), static_cast<int>(this->account().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "Proto.LoginTokenToRedis.account"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 player_sn = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &player_sn_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.LoginTokenToRedis)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.LoginTokenToRedis)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void LoginTokenToRedis::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.LoginTokenToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.LoginTokenToRedis.account");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->account(), output);
+  }
+
+  // uint64 player_sn = 2;
+  if (this->player_sn() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(2, this->player_sn(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.LoginTokenToRedis)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* LoginTokenToRedis::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.LoginTokenToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.LoginTokenToRedis.account");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->account(), target);
+  }
+
+  // uint64 player_sn = 2;
+  if (this->player_sn() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(2, this->player_sn(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.LoginTokenToRedis)
+  return target;
+}
+
+size_t LoginTokenToRedis::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.LoginTokenToRedis)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->account());
+  }
+
+  // uint64 player_sn = 2;
+  if (this->player_sn() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->player_sn());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void LoginTokenToRedis::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.LoginTokenToRedis)
+  GOOGLE_DCHECK_NE(&from, this);
+  const LoginTokenToRedis* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LoginTokenToRedis>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.LoginTokenToRedis)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.LoginTokenToRedis)
+    MergeFrom(*source);
+  }
+}
+
+void LoginTokenToRedis::MergeFrom(const LoginTokenToRedis& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.LoginTokenToRedis)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.account().size() > 0) {
+
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+  if (from.player_sn() != 0) {
+    set_player_sn(from.player_sn());
+  }
+}
+
+void LoginTokenToRedis::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.LoginTokenToRedis)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void LoginTokenToRedis::CopyFrom(const LoginTokenToRedis& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.LoginTokenToRedis)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool LoginTokenToRedis::IsInitialized() const {
+  return true;
+}
+
+void LoginTokenToRedis::InternalSwap(LoginTokenToRedis* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  account_.Swap(&other->account_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(player_sn_, other->player_sn_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata LoginTokenToRedis::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void LoginTokenToRedisRs::InitAsDefaultInstance() {
+}
+class LoginTokenToRedisRs::_Internal {
+ public:
+};
+
+LoginTokenToRedisRs::LoginTokenToRedisRs()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.LoginTokenToRedisRs)
+}
+LoginTokenToRedisRs::LoginTokenToRedisRs(const LoginTokenToRedisRs& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.account().empty()) {
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+  token_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.token().empty()) {
+    token_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.token_);
+  }
+  // @@protoc_insertion_point(copy_constructor:Proto.LoginTokenToRedisRs)
+}
+
+void LoginTokenToRedisRs::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_LoginTokenToRedisRs_msg_2eproto.base);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  token_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+LoginTokenToRedisRs::~LoginTokenToRedisRs() {
+  // @@protoc_insertion_point(destructor:Proto.LoginTokenToRedisRs)
+  SharedDtor();
+}
+
+void LoginTokenToRedisRs::SharedDtor() {
+  account_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  token_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void LoginTokenToRedisRs::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const LoginTokenToRedisRs& LoginTokenToRedisRs::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_LoginTokenToRedisRs_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void LoginTokenToRedisRs::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.LoginTokenToRedisRs)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  token_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* LoginTokenToRedisRs::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string account = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_account(), ptr, ctx, "Proto.LoginTokenToRedisRs.account");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string token = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_token(), ptr, ctx, "Proto.LoginTokenToRedisRs.token");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool LoginTokenToRedisRs::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.LoginTokenToRedisRs)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string account = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_account()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->account().data(), static_cast<int>(this->account().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "Proto.LoginTokenToRedisRs.account"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string token = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_token()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->token().data(), static_cast<int>(this->token().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "Proto.LoginTokenToRedisRs.token"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.LoginTokenToRedisRs)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.LoginTokenToRedisRs)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void LoginTokenToRedisRs::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.LoginTokenToRedisRs)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.LoginTokenToRedisRs.account");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->account(), output);
+  }
+
+  // string token = 2;
+  if (this->token().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->token().data(), static_cast<int>(this->token().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.LoginTokenToRedisRs.token");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->token(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.LoginTokenToRedisRs)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* LoginTokenToRedisRs::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.LoginTokenToRedisRs)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.LoginTokenToRedisRs.account");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->account(), target);
+  }
+
+  // string token = 2;
+  if (this->token().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->token().data(), static_cast<int>(this->token().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.LoginTokenToRedisRs.token");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->token(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.LoginTokenToRedisRs)
+  return target;
+}
+
+size_t LoginTokenToRedisRs::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.LoginTokenToRedisRs)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->account());
+  }
+
+  // string token = 2;
+  if (this->token().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->token());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void LoginTokenToRedisRs::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.LoginTokenToRedisRs)
+  GOOGLE_DCHECK_NE(&from, this);
+  const LoginTokenToRedisRs* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LoginTokenToRedisRs>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.LoginTokenToRedisRs)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.LoginTokenToRedisRs)
+    MergeFrom(*source);
+  }
+}
+
+void LoginTokenToRedisRs::MergeFrom(const LoginTokenToRedisRs& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.LoginTokenToRedisRs)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.account().size() > 0) {
+
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+  if (from.token().size() > 0) {
+
+    token_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.token_);
+  }
+}
+
+void LoginTokenToRedisRs::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.LoginTokenToRedisRs)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void LoginTokenToRedisRs::CopyFrom(const LoginTokenToRedisRs& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.LoginTokenToRedisRs)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool LoginTokenToRedisRs::IsInitialized() const {
+  return true;
+}
+
+void LoginTokenToRedisRs::InternalSwap(LoginTokenToRedisRs* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  account_.Swap(&other->account_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  token_.Swap(&other->token_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata LoginTokenToRedisRs::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void AccountQueryOnlineToRedis::InitAsDefaultInstance() {
+}
+class AccountQueryOnlineToRedis::_Internal {
+ public:
+};
+
+AccountQueryOnlineToRedis::AccountQueryOnlineToRedis()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.AccountQueryOnlineToRedis)
+}
+AccountQueryOnlineToRedis::AccountQueryOnlineToRedis(const AccountQueryOnlineToRedis& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.account().empty()) {
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+  // @@protoc_insertion_point(copy_constructor:Proto.AccountQueryOnlineToRedis)
+}
+
+void AccountQueryOnlineToRedis::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AccountQueryOnlineToRedis_msg_2eproto.base);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+AccountQueryOnlineToRedis::~AccountQueryOnlineToRedis() {
+  // @@protoc_insertion_point(destructor:Proto.AccountQueryOnlineToRedis)
+  SharedDtor();
+}
+
+void AccountQueryOnlineToRedis::SharedDtor() {
+  account_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void AccountQueryOnlineToRedis::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const AccountQueryOnlineToRedis& AccountQueryOnlineToRedis::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AccountQueryOnlineToRedis_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void AccountQueryOnlineToRedis::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.AccountQueryOnlineToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* AccountQueryOnlineToRedis::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string account = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_account(), ptr, ctx, "Proto.AccountQueryOnlineToRedis.account");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool AccountQueryOnlineToRedis::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.AccountQueryOnlineToRedis)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string account = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_account()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->account().data(), static_cast<int>(this->account().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "Proto.AccountQueryOnlineToRedis.account"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.AccountQueryOnlineToRedis)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.AccountQueryOnlineToRedis)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void AccountQueryOnlineToRedis::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.AccountQueryOnlineToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.AccountQueryOnlineToRedis.account");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->account(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.AccountQueryOnlineToRedis)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* AccountQueryOnlineToRedis::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.AccountQueryOnlineToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.AccountQueryOnlineToRedis.account");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->account(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.AccountQueryOnlineToRedis)
+  return target;
+}
+
+size_t AccountQueryOnlineToRedis::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.AccountQueryOnlineToRedis)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->account());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AccountQueryOnlineToRedis::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.AccountQueryOnlineToRedis)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AccountQueryOnlineToRedis* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AccountQueryOnlineToRedis>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.AccountQueryOnlineToRedis)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.AccountQueryOnlineToRedis)
+    MergeFrom(*source);
+  }
+}
+
+void AccountQueryOnlineToRedis::MergeFrom(const AccountQueryOnlineToRedis& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.AccountQueryOnlineToRedis)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.account().size() > 0) {
+
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+}
+
+void AccountQueryOnlineToRedis::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.AccountQueryOnlineToRedis)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AccountQueryOnlineToRedis::CopyFrom(const AccountQueryOnlineToRedis& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.AccountQueryOnlineToRedis)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AccountQueryOnlineToRedis::IsInitialized() const {
+  return true;
+}
+
+void AccountQueryOnlineToRedis::InternalSwap(AccountQueryOnlineToRedis* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  account_.Swap(&other->account_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata AccountQueryOnlineToRedis::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void AccountQueryOnlineToRedisRs::InitAsDefaultInstance() {
+}
+class AccountQueryOnlineToRedisRs::_Internal {
+ public:
+};
+
+AccountQueryOnlineToRedisRs::AccountQueryOnlineToRedisRs()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.AccountQueryOnlineToRedisRs)
+}
+AccountQueryOnlineToRedisRs::AccountQueryOnlineToRedisRs(const AccountQueryOnlineToRedisRs& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.account().empty()) {
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+  return_code_ = from.return_code_;
+  // @@protoc_insertion_point(copy_constructor:Proto.AccountQueryOnlineToRedisRs)
+}
+
+void AccountQueryOnlineToRedisRs::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AccountQueryOnlineToRedisRs_msg_2eproto.base);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  return_code_ = 0;
+}
+
+AccountQueryOnlineToRedisRs::~AccountQueryOnlineToRedisRs() {
+  // @@protoc_insertion_point(destructor:Proto.AccountQueryOnlineToRedisRs)
+  SharedDtor();
+}
+
+void AccountQueryOnlineToRedisRs::SharedDtor() {
+  account_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void AccountQueryOnlineToRedisRs::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const AccountQueryOnlineToRedisRs& AccountQueryOnlineToRedisRs::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AccountQueryOnlineToRedisRs_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void AccountQueryOnlineToRedisRs::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.AccountQueryOnlineToRedisRs)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  return_code_ = 0;
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* AccountQueryOnlineToRedisRs::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string account = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_account(), ptr, ctx, "Proto.AccountQueryOnlineToRedisRs.account");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .Proto.AccountQueryOnlineToRedisRs.ReturnCode return_code = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+          set_return_code(static_cast<::Proto::AccountQueryOnlineToRedisRs_ReturnCode>(val));
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool AccountQueryOnlineToRedisRs::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.AccountQueryOnlineToRedisRs)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string account = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_account()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->account().data(), static_cast<int>(this->account().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "Proto.AccountQueryOnlineToRedisRs.account"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .Proto.AccountQueryOnlineToRedisRs.ReturnCode return_code = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+          int value = 0;
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_return_code(static_cast< ::Proto::AccountQueryOnlineToRedisRs_ReturnCode >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.AccountQueryOnlineToRedisRs)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.AccountQueryOnlineToRedisRs)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void AccountQueryOnlineToRedisRs::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.AccountQueryOnlineToRedisRs)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.AccountQueryOnlineToRedisRs.account");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->account(), output);
+  }
+
+  // .Proto.AccountQueryOnlineToRedisRs.ReturnCode return_code = 2;
+  if (this->return_code() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
+      2, this->return_code(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.AccountQueryOnlineToRedisRs)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* AccountQueryOnlineToRedisRs::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.AccountQueryOnlineToRedisRs)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.AccountQueryOnlineToRedisRs.account");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->account(), target);
+  }
+
+  // .Proto.AccountQueryOnlineToRedisRs.ReturnCode return_code = 2;
+  if (this->return_code() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+      2, this->return_code(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.AccountQueryOnlineToRedisRs)
+  return target;
+}
+
+size_t AccountQueryOnlineToRedisRs::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.AccountQueryOnlineToRedisRs)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->account());
+  }
+
+  // .Proto.AccountQueryOnlineToRedisRs.ReturnCode return_code = 2;
+  if (this->return_code() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->return_code());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AccountQueryOnlineToRedisRs::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.AccountQueryOnlineToRedisRs)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AccountQueryOnlineToRedisRs* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AccountQueryOnlineToRedisRs>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.AccountQueryOnlineToRedisRs)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.AccountQueryOnlineToRedisRs)
+    MergeFrom(*source);
+  }
+}
+
+void AccountQueryOnlineToRedisRs::MergeFrom(const AccountQueryOnlineToRedisRs& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.AccountQueryOnlineToRedisRs)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.account().size() > 0) {
+
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+  if (from.return_code() != 0) {
+    set_return_code(from.return_code());
+  }
+}
+
+void AccountQueryOnlineToRedisRs::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.AccountQueryOnlineToRedisRs)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AccountQueryOnlineToRedisRs::CopyFrom(const AccountQueryOnlineToRedisRs& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.AccountQueryOnlineToRedisRs)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AccountQueryOnlineToRedisRs::IsInitialized() const {
+  return true;
+}
+
+void AccountQueryOnlineToRedisRs::InternalSwap(AccountQueryOnlineToRedisRs* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  account_.Swap(&other->account_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(return_code_, other->return_code_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata AccountQueryOnlineToRedisRs::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void AccountSyncOnlineToRedis::InitAsDefaultInstance() {
+}
+class AccountSyncOnlineToRedis::_Internal {
+ public:
+};
+
+AccountSyncOnlineToRedis::AccountSyncOnlineToRedis()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.AccountSyncOnlineToRedis)
+}
+AccountSyncOnlineToRedis::AccountSyncOnlineToRedis(const AccountSyncOnlineToRedis& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.account().empty()) {
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+  // @@protoc_insertion_point(copy_constructor:Proto.AccountSyncOnlineToRedis)
+}
+
+void AccountSyncOnlineToRedis::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AccountSyncOnlineToRedis_msg_2eproto.base);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+AccountSyncOnlineToRedis::~AccountSyncOnlineToRedis() {
+  // @@protoc_insertion_point(destructor:Proto.AccountSyncOnlineToRedis)
+  SharedDtor();
+}
+
+void AccountSyncOnlineToRedis::SharedDtor() {
+  account_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void AccountSyncOnlineToRedis::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const AccountSyncOnlineToRedis& AccountSyncOnlineToRedis::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AccountSyncOnlineToRedis_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void AccountSyncOnlineToRedis::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.AccountSyncOnlineToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* AccountSyncOnlineToRedis::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string account = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_account(), ptr, ctx, "Proto.AccountSyncOnlineToRedis.account");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool AccountSyncOnlineToRedis::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.AccountSyncOnlineToRedis)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string account = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_account()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->account().data(), static_cast<int>(this->account().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "Proto.AccountSyncOnlineToRedis.account"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.AccountSyncOnlineToRedis)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.AccountSyncOnlineToRedis)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void AccountSyncOnlineToRedis::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.AccountSyncOnlineToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.AccountSyncOnlineToRedis.account");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->account(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.AccountSyncOnlineToRedis)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* AccountSyncOnlineToRedis::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.AccountSyncOnlineToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.AccountSyncOnlineToRedis.account");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->account(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.AccountSyncOnlineToRedis)
+  return target;
+}
+
+size_t AccountSyncOnlineToRedis::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.AccountSyncOnlineToRedis)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->account());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AccountSyncOnlineToRedis::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.AccountSyncOnlineToRedis)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AccountSyncOnlineToRedis* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AccountSyncOnlineToRedis>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.AccountSyncOnlineToRedis)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.AccountSyncOnlineToRedis)
+    MergeFrom(*source);
+  }
+}
+
+void AccountSyncOnlineToRedis::MergeFrom(const AccountSyncOnlineToRedis& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.AccountSyncOnlineToRedis)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.account().size() > 0) {
+
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+}
+
+void AccountSyncOnlineToRedis::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.AccountSyncOnlineToRedis)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AccountSyncOnlineToRedis::CopyFrom(const AccountSyncOnlineToRedis& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.AccountSyncOnlineToRedis)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AccountSyncOnlineToRedis::IsInitialized() const {
+  return true;
+}
+
+void AccountSyncOnlineToRedis::InternalSwap(AccountSyncOnlineToRedis* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  account_.Swap(&other->account_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata AccountSyncOnlineToRedis::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void AccountDeleteOnlineToRedis::InitAsDefaultInstance() {
+}
+class AccountDeleteOnlineToRedis::_Internal {
+ public:
+};
+
+AccountDeleteOnlineToRedis::AccountDeleteOnlineToRedis()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.AccountDeleteOnlineToRedis)
+}
+AccountDeleteOnlineToRedis::AccountDeleteOnlineToRedis(const AccountDeleteOnlineToRedis& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.account().empty()) {
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+  // @@protoc_insertion_point(copy_constructor:Proto.AccountDeleteOnlineToRedis)
+}
+
+void AccountDeleteOnlineToRedis::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AccountDeleteOnlineToRedis_msg_2eproto.base);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+AccountDeleteOnlineToRedis::~AccountDeleteOnlineToRedis() {
+  // @@protoc_insertion_point(destructor:Proto.AccountDeleteOnlineToRedis)
+  SharedDtor();
+}
+
+void AccountDeleteOnlineToRedis::SharedDtor() {
+  account_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void AccountDeleteOnlineToRedis::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const AccountDeleteOnlineToRedis& AccountDeleteOnlineToRedis::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AccountDeleteOnlineToRedis_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void AccountDeleteOnlineToRedis::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.AccountDeleteOnlineToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* AccountDeleteOnlineToRedis::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string account = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_account(), ptr, ctx, "Proto.AccountDeleteOnlineToRedis.account");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool AccountDeleteOnlineToRedis::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.AccountDeleteOnlineToRedis)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string account = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_account()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->account().data(), static_cast<int>(this->account().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "Proto.AccountDeleteOnlineToRedis.account"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.AccountDeleteOnlineToRedis)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.AccountDeleteOnlineToRedis)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void AccountDeleteOnlineToRedis::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.AccountDeleteOnlineToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.AccountDeleteOnlineToRedis.account");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->account(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.AccountDeleteOnlineToRedis)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* AccountDeleteOnlineToRedis::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.AccountDeleteOnlineToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.AccountDeleteOnlineToRedis.account");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->account(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.AccountDeleteOnlineToRedis)
+  return target;
+}
+
+size_t AccountDeleteOnlineToRedis::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.AccountDeleteOnlineToRedis)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->account());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AccountDeleteOnlineToRedis::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.AccountDeleteOnlineToRedis)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AccountDeleteOnlineToRedis* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AccountDeleteOnlineToRedis>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.AccountDeleteOnlineToRedis)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.AccountDeleteOnlineToRedis)
+    MergeFrom(*source);
+  }
+}
+
+void AccountDeleteOnlineToRedis::MergeFrom(const AccountDeleteOnlineToRedis& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.AccountDeleteOnlineToRedis)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.account().size() > 0) {
+
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+}
+
+void AccountDeleteOnlineToRedis::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.AccountDeleteOnlineToRedis)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AccountDeleteOnlineToRedis::CopyFrom(const AccountDeleteOnlineToRedis& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.AccountDeleteOnlineToRedis)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AccountDeleteOnlineToRedis::IsInitialized() const {
+  return true;
+}
+
+void AccountDeleteOnlineToRedis::InternalSwap(AccountDeleteOnlineToRedis* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  account_.Swap(&other->account_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata AccountDeleteOnlineToRedis::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void PlayerSyncOnlineToRedis::InitAsDefaultInstance() {
+}
+class PlayerSyncOnlineToRedis::_Internal {
+ public:
+};
+
+PlayerSyncOnlineToRedis::PlayerSyncOnlineToRedis()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.PlayerSyncOnlineToRedis)
+}
+PlayerSyncOnlineToRedis::PlayerSyncOnlineToRedis(const PlayerSyncOnlineToRedis& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.account().empty()) {
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+  version_ = from.version_;
+  // @@protoc_insertion_point(copy_constructor:Proto.PlayerSyncOnlineToRedis)
+}
+
+void PlayerSyncOnlineToRedis::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_PlayerSyncOnlineToRedis_msg_2eproto.base);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  version_ = 0;
+}
+
+PlayerSyncOnlineToRedis::~PlayerSyncOnlineToRedis() {
+  // @@protoc_insertion_point(destructor:Proto.PlayerSyncOnlineToRedis)
+  SharedDtor();
+}
+
+void PlayerSyncOnlineToRedis::SharedDtor() {
+  account_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void PlayerSyncOnlineToRedis::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const PlayerSyncOnlineToRedis& PlayerSyncOnlineToRedis::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_PlayerSyncOnlineToRedis_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void PlayerSyncOnlineToRedis::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.PlayerSyncOnlineToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  version_ = 0;
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* PlayerSyncOnlineToRedis::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string account = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_account(), ptr, ctx, "Proto.PlayerSyncOnlineToRedis.account");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 version = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          version_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool PlayerSyncOnlineToRedis::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.PlayerSyncOnlineToRedis)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string account = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_account()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->account().data(), static_cast<int>(this->account().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "Proto.PlayerSyncOnlineToRedis.account"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 version = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &version_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.PlayerSyncOnlineToRedis)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.PlayerSyncOnlineToRedis)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void PlayerSyncOnlineToRedis::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.PlayerSyncOnlineToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.PlayerSyncOnlineToRedis.account");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->account(), output);
+  }
+
+  // int32 version = 2;
+  if (this->version() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(2, this->version(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.PlayerSyncOnlineToRedis)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* PlayerSyncOnlineToRedis::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.PlayerSyncOnlineToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.PlayerSyncOnlineToRedis.account");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->account(), target);
+  }
+
+  // int32 version = 2;
+  if (this->version() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->version(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.PlayerSyncOnlineToRedis)
+  return target;
+}
+
+size_t PlayerSyncOnlineToRedis::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.PlayerSyncOnlineToRedis)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->account());
+  }
+
+  // int32 version = 2;
+  if (this->version() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->version());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void PlayerSyncOnlineToRedis::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.PlayerSyncOnlineToRedis)
+  GOOGLE_DCHECK_NE(&from, this);
+  const PlayerSyncOnlineToRedis* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<PlayerSyncOnlineToRedis>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.PlayerSyncOnlineToRedis)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.PlayerSyncOnlineToRedis)
+    MergeFrom(*source);
+  }
+}
+
+void PlayerSyncOnlineToRedis::MergeFrom(const PlayerSyncOnlineToRedis& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.PlayerSyncOnlineToRedis)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.account().size() > 0) {
+
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+  if (from.version() != 0) {
+    set_version(from.version());
+  }
+}
+
+void PlayerSyncOnlineToRedis::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.PlayerSyncOnlineToRedis)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void PlayerSyncOnlineToRedis::CopyFrom(const PlayerSyncOnlineToRedis& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.PlayerSyncOnlineToRedis)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool PlayerSyncOnlineToRedis::IsInitialized() const {
+  return true;
+}
+
+void PlayerSyncOnlineToRedis::InternalSwap(PlayerSyncOnlineToRedis* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  account_.Swap(&other->account_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(version_, other->version_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata PlayerSyncOnlineToRedis::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void PlayerDeleteOnlineToRedis::InitAsDefaultInstance() {
+}
+class PlayerDeleteOnlineToRedis::_Internal {
+ public:
+};
+
+PlayerDeleteOnlineToRedis::PlayerDeleteOnlineToRedis()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.PlayerDeleteOnlineToRedis)
+}
+PlayerDeleteOnlineToRedis::PlayerDeleteOnlineToRedis(const PlayerDeleteOnlineToRedis& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.account().empty()) {
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+  version_ = from.version_;
+  // @@protoc_insertion_point(copy_constructor:Proto.PlayerDeleteOnlineToRedis)
+}
+
+void PlayerDeleteOnlineToRedis::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_PlayerDeleteOnlineToRedis_msg_2eproto.base);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  version_ = 0;
+}
+
+PlayerDeleteOnlineToRedis::~PlayerDeleteOnlineToRedis() {
+  // @@protoc_insertion_point(destructor:Proto.PlayerDeleteOnlineToRedis)
+  SharedDtor();
+}
+
+void PlayerDeleteOnlineToRedis::SharedDtor() {
+  account_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void PlayerDeleteOnlineToRedis::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const PlayerDeleteOnlineToRedis& PlayerDeleteOnlineToRedis::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_PlayerDeleteOnlineToRedis_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void PlayerDeleteOnlineToRedis::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.PlayerDeleteOnlineToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  version_ = 0;
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* PlayerDeleteOnlineToRedis::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string account = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_account(), ptr, ctx, "Proto.PlayerDeleteOnlineToRedis.account");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 version = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          version_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool PlayerDeleteOnlineToRedis::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.PlayerDeleteOnlineToRedis)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string account = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_account()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->account().data(), static_cast<int>(this->account().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "Proto.PlayerDeleteOnlineToRedis.account"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 version = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &version_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.PlayerDeleteOnlineToRedis)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.PlayerDeleteOnlineToRedis)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void PlayerDeleteOnlineToRedis::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.PlayerDeleteOnlineToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.PlayerDeleteOnlineToRedis.account");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->account(), output);
+  }
+
+  // int32 version = 2;
+  if (this->version() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(2, this->version(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.PlayerDeleteOnlineToRedis)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* PlayerDeleteOnlineToRedis::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.PlayerDeleteOnlineToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.PlayerDeleteOnlineToRedis.account");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->account(), target);
+  }
+
+  // int32 version = 2;
+  if (this->version() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->version(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.PlayerDeleteOnlineToRedis)
+  return target;
+}
+
+size_t PlayerDeleteOnlineToRedis::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.PlayerDeleteOnlineToRedis)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->account());
+  }
+
+  // int32 version = 2;
+  if (this->version() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->version());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void PlayerDeleteOnlineToRedis::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.PlayerDeleteOnlineToRedis)
+  GOOGLE_DCHECK_NE(&from, this);
+  const PlayerDeleteOnlineToRedis* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<PlayerDeleteOnlineToRedis>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.PlayerDeleteOnlineToRedis)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.PlayerDeleteOnlineToRedis)
+    MergeFrom(*source);
+  }
+}
+
+void PlayerDeleteOnlineToRedis::MergeFrom(const PlayerDeleteOnlineToRedis& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.PlayerDeleteOnlineToRedis)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.account().size() > 0) {
+
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+  if (from.version() != 0) {
+    set_version(from.version());
+  }
+}
+
+void PlayerDeleteOnlineToRedis::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.PlayerDeleteOnlineToRedis)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void PlayerDeleteOnlineToRedis::CopyFrom(const PlayerDeleteOnlineToRedis& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.PlayerDeleteOnlineToRedis)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool PlayerDeleteOnlineToRedis::IsInitialized() const {
+  return true;
+}
+
+void PlayerDeleteOnlineToRedis::InternalSwap(PlayerDeleteOnlineToRedis* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  account_.Swap(&other->account_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(version_, other->version_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata PlayerDeleteOnlineToRedis::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void GameTokenToRedis::InitAsDefaultInstance() {
+}
+class GameTokenToRedis::_Internal {
+ public:
+};
+
+GameTokenToRedis::GameTokenToRedis()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.GameTokenToRedis)
+}
+GameTokenToRedis::GameTokenToRedis(const GameTokenToRedis& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.account().empty()) {
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+  // @@protoc_insertion_point(copy_constructor:Proto.GameTokenToRedis)
+}
+
+void GameTokenToRedis::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameTokenToRedis_msg_2eproto.base);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+GameTokenToRedis::~GameTokenToRedis() {
+  // @@protoc_insertion_point(destructor:Proto.GameTokenToRedis)
+  SharedDtor();
+}
+
+void GameTokenToRedis::SharedDtor() {
+  account_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void GameTokenToRedis::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const GameTokenToRedis& GameTokenToRedis::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameTokenToRedis_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void GameTokenToRedis::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.GameTokenToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* GameTokenToRedis::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string account = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_account(), ptr, ctx, "Proto.GameTokenToRedis.account");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool GameTokenToRedis::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.GameTokenToRedis)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string account = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_account()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->account().data(), static_cast<int>(this->account().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "Proto.GameTokenToRedis.account"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.GameTokenToRedis)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.GameTokenToRedis)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void GameTokenToRedis::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.GameTokenToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.GameTokenToRedis.account");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->account(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.GameTokenToRedis)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* GameTokenToRedis::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.GameTokenToRedis)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.GameTokenToRedis.account");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->account(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.GameTokenToRedis)
+  return target;
+}
+
+size_t GameTokenToRedis::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.GameTokenToRedis)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->account());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void GameTokenToRedis::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.GameTokenToRedis)
+  GOOGLE_DCHECK_NE(&from, this);
+  const GameTokenToRedis* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<GameTokenToRedis>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.GameTokenToRedis)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.GameTokenToRedis)
+    MergeFrom(*source);
+  }
+}
+
+void GameTokenToRedis::MergeFrom(const GameTokenToRedis& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.GameTokenToRedis)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.account().size() > 0) {
+
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+}
+
+void GameTokenToRedis::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.GameTokenToRedis)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void GameTokenToRedis::CopyFrom(const GameTokenToRedis& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.GameTokenToRedis)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool GameTokenToRedis::IsInitialized() const {
+  return true;
+}
+
+void GameTokenToRedis::InternalSwap(GameTokenToRedis* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  account_.Swap(&other->account_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata GameTokenToRedis::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void TokenInfo::InitAsDefaultInstance() {
+}
+class TokenInfo::_Internal {
+ public:
+};
+
+TokenInfo::TokenInfo()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.TokenInfo)
+}
+TokenInfo::TokenInfo(const TokenInfo& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  token_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.token().empty()) {
+    token_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.token_);
+  }
+  player_sn_ = from.player_sn_;
+  // @@protoc_insertion_point(copy_constructor:Proto.TokenInfo)
+}
+
+void TokenInfo::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TokenInfo_msg_2eproto.base);
+  token_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  player_sn_ = PROTOBUF_ULONGLONG(0);
+}
+
+TokenInfo::~TokenInfo() {
+  // @@protoc_insertion_point(destructor:Proto.TokenInfo)
+  SharedDtor();
+}
+
+void TokenInfo::SharedDtor() {
+  token_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void TokenInfo::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const TokenInfo& TokenInfo::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_TokenInfo_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void TokenInfo::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.TokenInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  token_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  player_sn_ = PROTOBUF_ULONGLONG(0);
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TokenInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string token = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_token(), ptr, ctx, "Proto.TokenInfo.token");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // uint64 player_sn = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          player_sn_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool TokenInfo::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.TokenInfo)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string token = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_token()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->token().data(), static_cast<int>(this->token().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "Proto.TokenInfo.token"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 player_sn = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &player_sn_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.TokenInfo)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.TokenInfo)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void TokenInfo::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.TokenInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string token = 1;
+  if (this->token().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->token().data(), static_cast<int>(this->token().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.TokenInfo.token");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->token(), output);
+  }
+
+  // uint64 player_sn = 2;
+  if (this->player_sn() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(2, this->player_sn(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.TokenInfo)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* TokenInfo::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.TokenInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string token = 1;
+  if (this->token().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->token().data(), static_cast<int>(this->token().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.TokenInfo.token");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->token(), target);
+  }
+
+  // uint64 player_sn = 2;
+  if (this->player_sn() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(2, this->player_sn(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.TokenInfo)
+  return target;
+}
+
+size_t TokenInfo::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.TokenInfo)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string token = 1;
+  if (this->token().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->token());
+  }
+
+  // uint64 player_sn = 2;
+  if (this->player_sn() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->player_sn());
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void TokenInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.TokenInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  const TokenInfo* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<TokenInfo>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.TokenInfo)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.TokenInfo)
+    MergeFrom(*source);
+  }
+}
+
+void TokenInfo::MergeFrom(const TokenInfo& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.TokenInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.token().size() > 0) {
+
+    token_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.token_);
+  }
+  if (from.player_sn() != 0) {
+    set_player_sn(from.player_sn());
+  }
+}
+
+void TokenInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.TokenInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TokenInfo::CopyFrom(const TokenInfo& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.TokenInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TokenInfo::IsInitialized() const {
+  return true;
+}
+
+void TokenInfo::InternalSwap(TokenInfo* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  token_.Swap(&other->token_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(player_sn_, other->player_sn_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata TokenInfo::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+void GameTokenToRedisRs::InitAsDefaultInstance() {
+  ::Proto::_GameTokenToRedisRs_default_instance_._instance.get_mutable()->token_info_ = const_cast< ::Proto::TokenInfo*>(
+      ::Proto::TokenInfo::internal_default_instance());
+}
+class GameTokenToRedisRs::_Internal {
+ public:
+  static const ::Proto::TokenInfo& token_info(const GameTokenToRedisRs* msg);
+};
+
+const ::Proto::TokenInfo&
+GameTokenToRedisRs::_Internal::token_info(const GameTokenToRedisRs* msg) {
+  return *msg->token_info_;
+}
+GameTokenToRedisRs::GameTokenToRedisRs()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:Proto.GameTokenToRedisRs)
+}
+GameTokenToRedisRs::GameTokenToRedisRs(const GameTokenToRedisRs& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from.account().empty()) {
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+  if (from.has_token_info()) {
+    token_info_ = new ::Proto::TokenInfo(*from.token_info_);
+  } else {
+    token_info_ = nullptr;
+  }
+  // @@protoc_insertion_point(copy_constructor:Proto.GameTokenToRedisRs)
+}
+
+void GameTokenToRedisRs::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameTokenToRedisRs_msg_2eproto.base);
+  account_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  token_info_ = nullptr;
+}
+
+GameTokenToRedisRs::~GameTokenToRedisRs() {
+  // @@protoc_insertion_point(destructor:Proto.GameTokenToRedisRs)
+  SharedDtor();
+}
+
+void GameTokenToRedisRs::SharedDtor() {
+  account_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete token_info_;
+}
+
+void GameTokenToRedisRs::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const GameTokenToRedisRs& GameTokenToRedisRs::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameTokenToRedisRs_msg_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void GameTokenToRedisRs::Clear() {
+// @@protoc_insertion_point(message_clear_start:Proto.GameTokenToRedisRs)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  account_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (GetArenaNoVirtual() == nullptr && token_info_ != nullptr) {
+    delete token_info_;
+  }
+  token_info_ = nullptr;
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* GameTokenToRedisRs::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string account = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_account(), ptr, ctx, "Proto.GameTokenToRedisRs.account");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .Proto.TokenInfo token_info = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ctx->ParseMessage(mutable_token_info(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool GameTokenToRedisRs::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:Proto.GameTokenToRedisRs)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string account = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_account()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->account().data(), static_cast<int>(this->account().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "Proto.GameTokenToRedisRs.account"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .Proto.TokenInfo token_info = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_token_info()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:Proto.GameTokenToRedisRs)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:Proto.GameTokenToRedisRs)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void GameTokenToRedisRs::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:Proto.GameTokenToRedisRs)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.GameTokenToRedisRs.account");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->account(), output);
+  }
+
+  // .Proto.TokenInfo token_info = 2;
+  if (this->has_token_info()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, _Internal::token_info(this), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:Proto.GameTokenToRedisRs)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* GameTokenToRedisRs::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Proto.GameTokenToRedisRs)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->account().data(), static_cast<int>(this->account().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Proto.GameTokenToRedisRs.account");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->account(), target);
+  }
+
+  // .Proto.TokenInfo token_info = 2;
+  if (this->has_token_info()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, _Internal::token_info(this), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Proto.GameTokenToRedisRs)
+  return target;
+}
+
+size_t GameTokenToRedisRs::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Proto.GameTokenToRedisRs)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string account = 1;
+  if (this->account().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->account());
+  }
+
+  // .Proto.TokenInfo token_info = 2;
+  if (this->has_token_info()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *token_info_);
+  }
+
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void GameTokenToRedisRs::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.GameTokenToRedisRs)
+  GOOGLE_DCHECK_NE(&from, this);
+  const GameTokenToRedisRs* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<GameTokenToRedisRs>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.GameTokenToRedisRs)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.GameTokenToRedisRs)
+    MergeFrom(*source);
+  }
+}
+
+void GameTokenToRedisRs::MergeFrom(const GameTokenToRedisRs& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Proto.GameTokenToRedisRs)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.account().size() > 0) {
+
+    account_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.account_);
+  }
+  if (from.has_token_info()) {
+    mutable_token_info()->::Proto::TokenInfo::MergeFrom(from.token_info());
+  }
+}
+
+void GameTokenToRedisRs::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.GameTokenToRedisRs)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void GameTokenToRedisRs::CopyFrom(const GameTokenToRedisRs& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Proto.GameTokenToRedisRs)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool GameTokenToRedisRs::IsInitialized() const {
+  return true;
+}
+
+void GameTokenToRedisRs::InternalSwap(GameTokenToRedisRs* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  account_.Swap(&other->account_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(token_info_, other->token_info_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata GameTokenToRedisRs::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace Proto
 PROTOBUF_NAMESPACE_OPEN
@@ -11601,6 +15251,39 @@ template<> PROTOBUF_NOINLINE ::Proto::LoginByToken* Arena::CreateMaybeMessage< :
 }
 template<> PROTOBUF_NOINLINE ::Proto::LoginByTokenRs* Arena::CreateMaybeMessage< ::Proto::LoginByTokenRs >(Arena* arena) {
   return Arena::CreateInternal< ::Proto::LoginByTokenRs >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Proto::LoginTokenToRedis* Arena::CreateMaybeMessage< ::Proto::LoginTokenToRedis >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::LoginTokenToRedis >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Proto::LoginTokenToRedisRs* Arena::CreateMaybeMessage< ::Proto::LoginTokenToRedisRs >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::LoginTokenToRedisRs >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Proto::AccountQueryOnlineToRedis* Arena::CreateMaybeMessage< ::Proto::AccountQueryOnlineToRedis >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::AccountQueryOnlineToRedis >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Proto::AccountQueryOnlineToRedisRs* Arena::CreateMaybeMessage< ::Proto::AccountQueryOnlineToRedisRs >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::AccountQueryOnlineToRedisRs >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Proto::AccountSyncOnlineToRedis* Arena::CreateMaybeMessage< ::Proto::AccountSyncOnlineToRedis >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::AccountSyncOnlineToRedis >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Proto::AccountDeleteOnlineToRedis* Arena::CreateMaybeMessage< ::Proto::AccountDeleteOnlineToRedis >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::AccountDeleteOnlineToRedis >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Proto::PlayerSyncOnlineToRedis* Arena::CreateMaybeMessage< ::Proto::PlayerSyncOnlineToRedis >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::PlayerSyncOnlineToRedis >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Proto::PlayerDeleteOnlineToRedis* Arena::CreateMaybeMessage< ::Proto::PlayerDeleteOnlineToRedis >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::PlayerDeleteOnlineToRedis >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Proto::GameTokenToRedis* Arena::CreateMaybeMessage< ::Proto::GameTokenToRedis >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::GameTokenToRedis >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Proto::TokenInfo* Arena::CreateMaybeMessage< ::Proto::TokenInfo >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::TokenInfo >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Proto::GameTokenToRedisRs* Arena::CreateMaybeMessage< ::Proto::GameTokenToRedisRs >(Arena* arena) {
+  return Arena::CreateInternal< ::Proto::GameTokenToRedisRs >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

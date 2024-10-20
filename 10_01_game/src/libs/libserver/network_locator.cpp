@@ -2,7 +2,7 @@
 #include "network_listen.h"
 #include <algorithm>
 #include <utility>
-#include "message_component.h"
+#include "message_system.h"
 #include "message_system_help.h"
 #include "component_help.h"
 #include "socket_object.h"
@@ -21,12 +21,10 @@ void NetworkLocator::Awake()
     _listens.clear();
 
     // 创建消息回调函数对象
-    auto pMsgCallBack = new MessageCallBackFunction();
-    // 为当前实体添加消息组件，注册回调函数
-    AddComponent<MessageComponent>(pMsgCallBack);
+    auto pMgrSystem = GetSystemManager()->GetMessageSystem();
 
     // 注册处理函数，处理 MI_AppRegister 消息
-    pMsgCallBack->RegisterFunction(Proto::MsgId::MI_AppRegister, BindFunP1(this, &NetworkLocator::HandleAppRegister));
+    pMgrSystem->RegisterFunction(this,Proto::MsgId::MI_AppRegister, BindFunP1(this, &NetworkLocator::HandleAppRegister));
 }
 
 /**

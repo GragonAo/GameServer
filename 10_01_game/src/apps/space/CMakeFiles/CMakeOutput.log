@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/3.17.5/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/3.17.5/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/local/bin/g++ 
@@ -23,37 +23,37 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/3.17.5/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/3.17.5/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_1f2d8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1f2d8.dir/build.make CMakeFiles/cmTC_1f2d8.dir/build
-gmake[1]: Entering directory '/root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1f2d8.dir/testCCompiler.c.o
-/usr/local/bin/gcc    -o CMakeFiles/cmTC_1f2d8.dir/testCCompiler.c.o   -c /root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_1f2d8
-/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_1f2d8.dir/link.txt --verbose=1
-/usr/local/bin/gcc      -rdynamic CMakeFiles/cmTC_1f2d8.dir/testCCompiler.c.o  -o cmTC_1f2d8 
-gmake[1]: Leaving directory '/root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_5bf5a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5bf5a.dir/build.make CMakeFiles/cmTC_5bf5a.dir/build
+gmake[1]: Entering directory '/home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5bf5a.dir/testCCompiler.c.o
+/usr/local/bin/gcc    -o CMakeFiles/cmTC_5bf5a.dir/testCCompiler.c.o   -c /home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_5bf5a
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_5bf5a.dir/link.txt --verbose=1
+/usr/local/bin/gcc      -rdynamic CMakeFiles/cmTC_5bf5a.dir/testCCompiler.c.o  -o cmTC_5bf5a 
+gmake[1]: Leaving directory '/home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp'
 
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_107d5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_107d5.dir/build.make CMakeFiles/cmTC_107d5.dir/build
-gmake[1]: Entering directory '/root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o
-/usr/local/bin/gcc   -v -o CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake3/Modules/CMakeCCompilerABI.c
+Run Build Command(s):/usr/bin/gmake cmTC_0a064/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0a064.dir/build.make CMakeFiles/cmTC_0a064.dir/build
+gmake[1]: Entering directory '/home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o
+/usr/local/bin/gcc   -v -o CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake3/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/usr/local/bin/gcc
 Target: x86_64-pc-linux-gnu
 Configured with: ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib
 Thread model: posix
 gcc version 9.1.0 (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/cc1 -quiet -v /usr/share/cmake3/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o -version -o /tmp/cc0NEbRl.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/cc1 -quiet -v /usr/share/cmake3/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccLut0TA.s
 GNU C17 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)
 	compiled by GNU C version 9.1.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
 
@@ -71,15 +71,15 @@ GNU C17 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 29e3611a0ff8fcb1f70d858cac61603d
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o /tmp/cc0NEbRl.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o /tmp/ccLut0TA.s
 GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1
 COMPILER_PATH=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/local/lib64/../lib64/:/usr/local/lib/../lib64/:/usr/local/lib64/../lib64/:/usr/local/lib/../lib64/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/lib64/:/usr/local/lib/:/usr/local/lib64/:/usr/local/lib/:./:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-Linking C executable cmTC_107d5
-/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_107d5.dir/link.txt --verbose=1
-/usr/local/bin/gcc     -v -rdynamic CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o  -o cmTC_107d5 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_0a064
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_0a064.dir/link.txt --verbose=1
+/usr/local/bin/gcc     -v -rdynamic CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o  -o cmTC_0a064 
 Using built-in specs.
 COLLECT_GCC=/usr/local/bin/gcc
 COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper
@@ -89,10 +89,10 @@ Thread model: posix
 gcc version 9.1.0 (GCC) 
 COMPILER_PATH=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/local/lib64/../lib64/:/usr/local/lib/../lib64/:/usr/local/lib64/../lib64/:/usr/local/lib/../lib64/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/lib64/:/usr/local/lib/:/usr/local/lib64/:/usr/local/lib/:./:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_107d5' '-mtune=generic' '-march=x86-64'
- /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUBMiHu.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_107d5 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o -L/usr/local/lib64/../lib64 -L/usr/local/lib/../lib64 -L/usr/local/lib64/../lib64 -L/usr/local/lib/../lib64 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/lib64 -L/usr/local/lib -L/usr/local/lib64 -L/usr/local/lib -L. -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_107d5' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory '/root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0a064' '-mtune=generic' '-march=x86-64'
+ /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXBGmNX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0a064 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o -L/usr/local/lib64/../lib64 -L/usr/local/lib/../lib64 -L/usr/local/lib64/../lib64 -L/usr/local/lib/../lib64 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/lib64 -L/usr/local/lib -L/usr/local/lib64 -L/usr/local/lib -L. -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0a064' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory '/home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp'
 
 
 
@@ -113,20 +113,20 @@ Parsed C implicit include dir info from above output: rv=done
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_107d5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_107d5.dir/build.make CMakeFiles/cmTC_107d5.dir/build]
-  ignore line: [gmake[1]: Entering directory '/root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/local/bin/gcc   -v -o CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake3/Modules/CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_0a064/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0a064.dir/build.make CMakeFiles/cmTC_0a064.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/local/bin/gcc   -v -o CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake3/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/local/bin/gcc]
   ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Configured with: ../configure --enable-checking=release --enable-languages=c c++ --disable-multilib]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 9.1.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/cc1 -quiet -v /usr/share/cmake3/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o -version -o /tmp/cc0NEbRl.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/cc1 -quiet -v /usr/share/cmake3/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccLut0TA.s]
   ignore line: [GNU C17 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)]
   ignore line: [	compiled by GNU C version 9.1.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
   ignore line: []
@@ -144,15 +144,15 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 29e3611a0ff8fcb1f70d858cac61603d]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o /tmp/cc0NEbRl.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o /tmp/ccLut0TA.s]
   ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1]
   ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/local/lib64/../lib64/:/usr/local/lib/../lib64/:/usr/local/lib64/../lib64/:/usr/local/lib/../lib64/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/lib64/:/usr/local/lib/:/usr/local/lib64/:/usr/local/lib/:./:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking C executable cmTC_107d5]
-  ignore line: [/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_107d5.dir/link.txt --verbose=1]
-  ignore line: [/usr/local/bin/gcc     -v -rdynamic CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o  -o cmTC_107d5 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_0a064]
+  ignore line: [/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_0a064.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/bin/gcc     -v -rdynamic CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o  -o cmTC_0a064 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/local/bin/gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper]
@@ -162,13 +162,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 9.1.0 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/local/lib64/../lib64/:/usr/local/lib/../lib64/:/usr/local/lib64/../lib64/:/usr/local/lib/../lib64/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/lib64/:/usr/local/lib/:/usr/local/lib64/:/usr/local/lib/:./:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_107d5' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUBMiHu.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_107d5 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o -L/usr/local/lib64/../lib64 -L/usr/local/lib/../lib64 -L/usr/local/lib64/../lib64 -L/usr/local/lib/../lib64 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/lib64 -L/usr/local/lib -L/usr/local/lib64 -L/usr/local/lib -L. -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0a064' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXBGmNX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0a064 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o -L/usr/local/lib64/../lib64 -L/usr/local/lib/../lib64 -L/usr/local/lib64/../lib64 -L/usr/local/lib/../lib64 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/lib64 -L/usr/local/lib -L/usr/local/lib64 -L/usr/local/lib -L. -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o]
     arg [/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccUBMiHu.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccXBGmNX.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -181,7 +181,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_107d5] ==> ignore
+    arg [cmTC_0a064] ==> ignore
     arg [/lib/../lib64/crt1.o] ==> ignore
     arg [/lib/../lib64/crti.o] ==> ignore
     arg [/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o] ==> ignore
@@ -199,7 +199,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
     arg [-L.] ==> ignore
     arg [-L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..] ==> dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..]
-    arg [CMakeFiles/cmTC_107d5.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_0a064.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -230,34 +230,34 @@ Parsed C implicit link information from above output:
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_d35a3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d35a3.dir/build.make CMakeFiles/cmTC_d35a3.dir/build
-gmake[1]: Entering directory '/root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d35a3.dir/testCXXCompiler.cxx.o
-/usr/local/bin/g++     -o CMakeFiles/cmTC_d35a3.dir/testCXXCompiler.cxx.o -c /root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_d35a3
-/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_d35a3.dir/link.txt --verbose=1
-/usr/local/bin/g++       -rdynamic CMakeFiles/cmTC_d35a3.dir/testCXXCompiler.cxx.o  -o cmTC_d35a3 
-gmake[1]: Leaving directory '/root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_7fb22/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7fb22.dir/build.make CMakeFiles/cmTC_7fb22.dir/build
+gmake[1]: Entering directory '/home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7fb22.dir/testCXXCompiler.cxx.o
+/usr/local/bin/g++     -o CMakeFiles/cmTC_7fb22.dir/testCXXCompiler.cxx.o -c /home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_7fb22
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_7fb22.dir/link.txt --verbose=1
+/usr/local/bin/g++       -rdynamic CMakeFiles/cmTC_7fb22.dir/testCXXCompiler.cxx.o  -o cmTC_7fb22 
+gmake[1]: Leaving directory '/home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp'
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_5cd89/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5cd89.dir/build.make CMakeFiles/cmTC_5cd89.dir/build
-gmake[1]: Entering directory '/root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o
-/usr/local/bin/g++    -v -o CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp
+Run Build Command(s):/usr/bin/gmake cmTC_6c009/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6c009.dir/build.make CMakeFiles/cmTC_6c009.dir/build
+gmake[1]: Entering directory '/home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o
+/usr/local/bin/g++    -v -o CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/local/bin/g++
 Target: x86_64-pc-linux-gnu
 Configured with: ../configure --enable-checking=release --enable-languages=c,c++ --disable-multilib
 Thread model: posix
 gcc version 9.1.0 (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccNy1swy.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccYk5Vpl.s
 GNU C++14 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)
 	compiled by GNU C version 9.1.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
 
@@ -278,15 +278,15 @@ GNU C++14 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: b9b9483c954cb56327aff3ddfbe2d353
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccNy1swy.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccYk5Vpl.s
 GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1
 COMPILER_PATH=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/local/lib64/../lib64/:/usr/local/lib/../lib64/:/usr/local/lib64/../lib64/:/usr/local/lib/../lib64/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/lib64/:/usr/local/lib/:/usr/local/lib64/:/usr/local/lib/:./:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-Linking CXX executable cmTC_5cd89
-/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_5cd89.dir/link.txt --verbose=1
-/usr/local/bin/g++      -v -rdynamic CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_5cd89 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_6c009
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_6c009.dir/link.txt --verbose=1
+/usr/local/bin/g++      -v -rdynamic CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6c009 
 Using built-in specs.
 COLLECT_GCC=/usr/local/bin/g++
 COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper
@@ -296,10 +296,10 @@ Thread model: posix
 gcc version 9.1.0 (GCC) 
 COMPILER_PATH=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/local/lib64/../lib64/:/usr/local/lib/../lib64/:/usr/local/lib64/../lib64/:/usr/local/lib/../lib64/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/lib64/:/usr/local/lib/:/usr/local/lib64/:/usr/local/lib/:./:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_5cd89' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cchkcqd8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5cd89 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o -L/usr/local/lib64/../lib64 -L/usr/local/lib/../lib64 -L/usr/local/lib64/../lib64 -L/usr/local/lib/../lib64 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/lib64 -L/usr/local/lib -L/usr/local/lib64 -L/usr/local/lib -L. -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_5cd89' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory '/root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6c009' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1UzlEI.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6c009 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o -L/usr/local/lib64/../lib64 -L/usr/local/lib/../lib64 -L/usr/local/lib64/../lib64 -L/usr/local/lib/../lib64 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/lib64 -L/usr/local/lib -L/usr/local/lib64 -L/usr/local/lib -L. -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6c009' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory '/home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp'
 
 
 
@@ -326,20 +326,20 @@ Parsed CXX implicit include dir info from above output: rv=done
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_5cd89/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5cd89.dir/build.make CMakeFiles/cmTC_5cd89.dir/build]
-  ignore line: [gmake[1]: Entering directory '/root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/local/bin/g++    -v -o CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_6c009/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6c009.dir/build.make CMakeFiles/cmTC_6c009.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/local/bin/g++    -v -o CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/local/bin/g++]
   ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Configured with: ../configure --enable-checking=release --enable-languages=c c++ --disable-multilib]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 9.1.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccNy1swy.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccYk5Vpl.s]
   ignore line: [GNU C++14 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)]
   ignore line: [	compiled by GNU C version 9.1.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
   ignore line: []
@@ -360,15 +360,15 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: b9b9483c954cb56327aff3ddfbe2d353]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccNy1swy.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccYk5Vpl.s]
   ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1]
   ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/local/lib64/../lib64/:/usr/local/lib/../lib64/:/usr/local/lib64/../lib64/:/usr/local/lib/../lib64/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/lib64/:/usr/local/lib/:/usr/local/lib64/:/usr/local/lib/:./:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking CXX executable cmTC_5cd89]
-  ignore line: [/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_5cd89.dir/link.txt --verbose=1]
-  ignore line: [/usr/local/bin/g++      -v -rdynamic CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_5cd89 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_6c009]
+  ignore line: [/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_6c009.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/bin/g++      -v -rdynamic CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6c009 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/local/bin/g++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper]
@@ -378,13 +378,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 9.1.0 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/local/lib64/../lib64/:/usr/local/lib/../lib64/:/usr/local/lib64/../lib64/:/usr/local/lib/../lib64/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/lib64/:/usr/local/lib/:/usr/local/lib64/:/usr/local/lib/:./:/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_5cd89' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cchkcqd8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5cd89 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o -L/usr/local/lib64/../lib64 -L/usr/local/lib/../lib64 -L/usr/local/lib64/../lib64 -L/usr/local/lib/../lib64 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/lib64 -L/usr/local/lib -L/usr/local/lib64 -L/usr/local/lib -L. -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6c009' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1UzlEI.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6c009 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o -L/usr/local/lib64/../lib64 -L/usr/local/lib/../lib64 -L/usr/local/lib64/../lib64 -L/usr/local/lib/../lib64 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/lib64 -L/usr/local/lib -L/usr/local/lib64 -L/usr/local/lib -L. -L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o]
     arg [/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/local/libexec/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cchkcqd8.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc1UzlEI.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -397,7 +397,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_5cd89] ==> ignore
+    arg [cmTC_6c009] ==> ignore
     arg [/lib/../lib64/crt1.o] ==> ignore
     arg [/lib/../lib64/crti.o] ==> ignore
     arg [/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbegin.o] ==> ignore
@@ -415,7 +415,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
     arg [-L.] ==> ignore
     arg [-L/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..] ==> dir [/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..]
-    arg [CMakeFiles/cmTC_5cd89.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_6c009.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]

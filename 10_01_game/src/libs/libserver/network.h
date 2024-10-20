@@ -4,12 +4,16 @@
 #include "common.h"
 #include "entity.h"
 #include "cache_swap.h"
-#include "network_type.h"
 #include "network_help.h"
 #include "connect_obj.h"
+#include "trace_component.h"
+#include "check_time_component.h"
 
+// 针对非 Windows 平台的宏定义
 #if ENGINE_PLATFORM != PLATFORM_WIN32
-// 非 Windows 平台的头文件和宏定义
+
+#define MAX_CLIENT  5120  // 最大客户端连接数
+
 #include <errno.h>
 #include <fcntl.h>
 #include <stdio.h>
@@ -17,206 +21,146 @@
 #include <string.h>
 #include <unistd.h> 
 
-#include <arpa/inet.h>
-#include <netinet/in.h>
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <netinet/tcp.h>
+#include <arpa/inet.h>  // 提供网络操作的函数和结构体定义
+#include <netinet/in.h> // 提供 IP 地址和端口的结构定义
+#include <sys/types.h>  // 基本系统数据类型
+#include <sys/socket.h> // 套接字相关函数和结构体
+#include <netinet/tcp.h> // TCP/IP 协议
 
 #ifdef EPOLL
-#include <sys/epoll.h>
+#include <sys/epoll.h>  // epoll 系统调用相关头文件
 #endif
 
-// 套接字相关的宏定义，用于简化跨平台代码
-#define _sock_init( )               // 非 Windows 平台下套接字初始化为空
+// 非 Windows 平台下的套接字操作封装
+#define _sock_init( )  // 初始化套接字 (Linux 不需要操作)
 #define _sock_nonblock( sockfd ) { int flags = fcntl(sockfd, F_GETFL, 0); fcntl(sockfd, F_SETFL, flags | O_NONBLOCK); } // 设置非阻塞模式
-#define _sock_exit( )               // 非 Windows 平台下的套接字清理为空
-#define _sock_err( )	errno         // 获取套接字错误码
-#define _sock_close( sockfd ) ::close( sockfd ) // 关闭套接字
-#define _sock_is_blocked()	(errno == EAGAIN || errno == 0) // 判断是否是非阻塞错误
+#define _sock_exit( )  // 退出套接字 (Linux 不需要操作)
+#define _sock_err( ) errno  // 获取套接字错误码
+#define _sock_close( sockfd ) ::close( sockfd )  // 关闭套接字
+#define _sock_is_blocked()	(errno == EAGAIN || errno == 0)  // 判断是否阻塞
 
 #ifdef EPOLL
 // 移除连接对象的宏定义
-#define RemoveConnectObj(iter) \
-    iter->second->ComponentBackToPool( ); \
-    DeleteEvent(_epfd, iter->first); \
-    iter = _connects.erase( iter ); 
+#define RemoveConnectObj(socket) \
+    _connects[socket]->ComponentBackToPool( ); \
+    _connects[socket] = nullptr; \
+    DeleteEvent(_epfd, socket); \
+    _sockets.erase(socket); 
 #else
 // 移除连接对象的宏定义
-#define RemoveConnectObj(iter) \
-    iter->second->ComponentBackToPool( ); \
-    iter = _connects.erase( iter ); 
+#define RemoveConnectObj(socket) \
+    _connects[socket]->ComponentBackToPool( ); \
+    _connects[socket] = nullptr; \
+    _sockets.erase(socket); 
+    
+#define RemoveConnectObjByItem(iter) \
+    _connects[*iter]->ComponentBackToPool(); \
+    _connects[*iter] = nullptr; \
+    iter = _sockets.erase(iter);
 #endif
 
 
+
+
 #else
 
-// Windows 平台下的套接字相关宏定义
-#define _sock_init( )	{ WSADATA wsaData; WSAStartup( MAKEWORD(2, 2), &wsaData ); } // 初始化 Winsock
-#define _sock_nonblock( sockfd )	{ unsigned long param = 1; ioctlsocket(sockfd, FIONBIO, (unsigned long *)&param); } // 设置非阻塞模式
-#define _sock_exit( )	{ WSACleanup(); } // 清理 Winsock
-#define _sock_err( )	WSAGetLastError() // 获取套接字错误码
-#define _sock_close( sockfd ) ::closesocket( sockfd ) // 关闭套接字
-#define _sock_is_blocked()	(WSAGetLastError() == WSAEWOULDBLOCK) // 判断是否是非阻塞错误
+// 针对 Windows 平台的宏定义
+#define MAX_CLIENT  10000  // 最大客户端连接数
+
+#define _sock_init( )	{ WSADATA wsaData; WSAStartup( MAKEWORD(2, 2), &wsaData ); }  // 初始化 Windows 套接字
+#define _sock_nonblock( sockfd )	{ unsigned long param = 1; ioctlsocket(sockfd, FIONBIO, (unsigned long *)&param); }  // 设置非阻塞模式
+#define _sock_exit( )	{ WSACleanup(); }  // 关闭套接字库
+#define _sock_err( )	WSAGetLastError()  // 获取套接字错误码
+#define _sock_close( sockfd ) ::closesocket( sockfd )  // 关闭套接字
+#define _sock_is_blocked()	(WSAGetLastError() == WSAEWOULDBLOCK)  // 判断是否阻塞
 
 // 移除连接对象的宏定义
-#define RemoveConnectObj(iter) \
-    iter->second->ComponentBackToPool( ); \
-    iter = _connects.erase( iter ); 
-
+#define RemoveConnectObj(socket) \
+    _connects[socket]->ComponentBackToPool( ); \
+    _connects[socket] = nullptr; \
+    _sockets.erase(socket); 
 #endif
 
+// 针对不同平台的 setsockopt 类型定义
 #if ENGINE_PLATFORM != PLATFORM_WIN32
-#define SetsockOptType void *  // 非 Windows 平台的 Setsockopt 参数类型
+#define SetsockOptType void *
 #else
-#define SetsockOptType const char *  // Windows 平台的 Setsockopt 参数类型
+#define SetsockOptType const char *
 #endif
 
+// 前向声明 Packet 类
 class Packet;
 
-/**
- * @brief Network 类，用于管理网络连接和数据传输。
- * 
- * 该类继承自 Entity，并实现了 INetwork 接口，提供了基础的网络功能，包括创建连接、发送数据包等。
- */
+// Network 类定义，继承 Entity 和 INetwork
 class Network : public Entity<Network>, public INetwork
+#if LOG_TRACE_COMPONENT_OPEN
+    , public CheckTimeComponent  // 如果开启日志跟踪组件，继承 CheckTimeComponent
+#endif
 {
 public:
-    /**
-     * @brief 将当前对象返回对象池，释放资源。
-     */
+    // 重置对象池时调用的函数
     void BackToPool() override;
-
-    /**
-     * @brief 发送数据包，通过网络连接发送 Packet 对象。
-     * 
-     * @param pPacket 需要发送的 Packet 对象引用。
-     */
+    
+    // 发送数据包
     void SendPacket(Packet*& pPacket) override;
-
-    /**
-     * @brief 获取当前网络连接的类型。
-     * 
-     * @return NetworkType 网络连接类型，如 TcpListen。
-     */
+    
+    // 获取网络类型
     NetworkType GetNetworkType() const { return _networkType; }
 
 protected:
-    /**
-     * @brief 设置套接字的选项，例如禁用 Nagle 算法，设置超时等。
-     * 
-     * @param socket 套接字描述符。
-     */
+    // 设置套接字选项
     void SetSocketOpt(SOCKET socket);
-
-    /**
-     * @brief 创建一个新的套接字，并根据不同平台进行适配。
-     * 
-     * @return SOCKET 创建的套接字描述符。
-     */
+    
+    // 创建套接字
     SOCKET CreateSocket();
-
-    /**
-     * @brief 检查套接字的有效性。
-     * 
-     * @param socket 需要检查的套接字。
-     * @return bool 如果套接字有效返回 true，否则返回 false。
-     */
+    
+    // 检查套接字状态
     bool CheckSocket(SOCKET socket);
-
-    /**
-     * @brief 创建并管理一个连接对象。
-     * 
-     * @param socket 套接字描述符。
-     * @param key 对象键，用于标识该连接。
-     * @param iState 连接状态，如已连接、连接中等。
-     * @return bool 创建成功返回 true，否则返回 false。
-     */
+    
+    // 创建连接对象
     bool CreateConnectObj(SOCKET socket, ObjectKey key, ConnectStateType iState);
 
-    // packet 操作
-
-    /**
-     * @brief 处理断开连接的数据包。
-     * 
-     * @param pPacket 包含断开连接信息的 Packet 对象。
-     */
+    // 数据包处理
     void HandleDisconnect(Packet* pPacket);
 
 #ifdef EPOLL
-    /**
-     * @brief 初始化 Epoll，适用于 Linux 平台的多路复用 I/O。
-     */
+    // epoll 相关方法 (Linux 下的 I/O 多路复用)
     void InitEpoll();
-
-    /**
-     * @brief Epoll 的事件循环，用于处理网络 I/O 事件。
-     */
     void Epoll();
-
-    /**
-     * @brief 添加 Epoll 事件。
-     * 
-     * @param epollfd Epoll 文件描述符。
-     * @param fd 需要监听的文件描述符。
-     * @param flag 事件标志，如可读、可写等。
-     */
     void AddEvent(int epollfd, int fd, int flag);
-
-    /**
-     * @brief 修改 Epoll 事件。
-     * 
-     * @param epollfd Epoll 文件描述符。
-     * @param fd 需要监听的文件描述符。
-     * @param flag 事件标志。
-     */
     void ModifyEvent(int epollfd, int fd, int flag);
-
-    /**
-     * @brief 删除 Epoll 事件。
-     * 
-     * @param epollfd Epoll 文件描述符。
-     * @param fd 需要移除的文件描述符。
-     */
     void DeleteEvent(int epollfd, int fd);
-
-    /**
-     * @brief Epoll 事件回调函数，需要子类实现。
-     * 
-     * @param fd 文件描述符。
-     * @param index 事件索引。
-     */
-    virtual void OnEpoll(SOCKET fd, int index) { };
+    virtual void OnEpoll(SOCKET fd, int index) { };  // 虚拟函数，用于 epoll 事件回调
 #else    
-    /**
-     * @brief 使用 Select 模型来处理网络 I/O 事件，适用于非 Epoll 环境。
-     */
+    // select 相关方法 (Windows 下的 I/O 多路复用)
     void Select();
 #endif
 
-    /**
-     * @brief 网络更新方法，定期调用以处理网络事件和数据。
-     */
+    // 网络更新函数
     void OnNetworkUpdate();
 
 protected:
-    // 当前网络连接的对象集合，使用套接字作为键
-    std::map<SOCKET, ConnectObj*> _connects;
+    // 存储连接对象的数组
+    ConnectObj* _connects[MAX_CLIENT]{};
+    
+    // 记录活动套接字
+    std::set<SOCKET> _sockets;
 
 #ifdef EPOLL
-#define MAX_CLIENT  5120  // 最大客户端连接数
-#define MAX_EVENT   5120  // 最大事件数
-    struct epoll_event _events[MAX_EVENT]; // Epoll 事件数组
-    int _epfd{ -1 }; // Epoll 文件描述符
+    // epoll 使用的事件数组和 epoll 文件描述符
+    #define MAX_EVENT   5120
+    struct epoll_event _events[MAX_EVENT];
+    int _epfd{ -1 };
 #else
-    SOCKET _fdMax{ INVALID_SOCKET }; // 最大套接字文件描述符
-    fd_set readfds, writefds, exceptfds; // 套接字集合，用于 Select
+    // select 使用的文件描述符集
+    SOCKET _fdMax{ INVALID_SOCKET };
+    fd_set readfds, writefds, exceptfds;
 #endif
 
-    // 网络包的缓存队列，存储待发送的消息
+    // 锁和缓存交换，用于发送消息
     std::mutex _sendMsgMutex;
     CacheSwap<Packet> _sendMsgList;
 
-    // 当前网络的类型，默认为 TcpListen
+    // 网络类型（默认为 TCP 监听）
     NetworkType _networkType{ NetworkType::TcpListen };
 };

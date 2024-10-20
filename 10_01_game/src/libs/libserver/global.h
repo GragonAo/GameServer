@@ -19,6 +19,8 @@ public:
 
     // 生成唯一的序列号 (SN)
     uint64 GenerateSN(); // SN = 64位，包含时间戳 + 服务器ID + ticket
+    
+    static std::string GenerateUUID();  //生成UUID
 
     // 获取当前应用类型
     APP_TYPE GetCurAppType() const;

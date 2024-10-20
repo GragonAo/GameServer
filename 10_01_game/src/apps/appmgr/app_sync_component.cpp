@@ -1,7 +1,6 @@
 #include "app_sync_component.h"
-#include "libserver/message_component.h"
 #include "libserver/message_system_help.h"
-
+#include "libserver/message_system.h"
 // AppSyncComponent类实现：处理应用信息的同步、命令、HTTP请求等功能
 
 void AppSyncComponent::Awake()
@@ -14,19 +13,16 @@ void AppSyncComponent::Awake()
     _jsonWriter = jsonBuilder.newStreamWriter();
 
     // 注册消息回调处理
-    auto pMsgCallBack = new MessageCallBackFunction();
-
-    // 为当前组件添加MessageComponent，用于处理各种消息
-    AddComponent<MessageComponent>(pMsgCallBack);
+    auto pMsgSystem = GetSystemManager()->GetMessageSystem();
 
     // 注册HTTP登录请求的回调处理函数，收到此消息时调用HandleHttpRequestLogin函数
-    pMsgCallBack->RegisterFunction(Proto::MsgId::MI_HttpRequestLogin, BindFunP1(this, &AppSyncComponent::HandleHttpRequestLogin));
+    pMsgSystem->RegisterFunction(this,Proto::MsgId::MI_HttpRequestLogin, BindFunP1(this, &AppSyncComponent::HandleHttpRequestLogin));
 
     // 注册应用信息同步消息的回调处理函数，收到此消息时调用HandleAppInfoSync函数
-    pMsgCallBack->RegisterFunction(Proto::MsgId::MI_AppInfoSync, BindFunP1(this, &AppSyncComponent::HandleAppInfoSync));
+    pMsgSystem->RegisterFunction(this,Proto::MsgId::MI_AppInfoSync, BindFunP1(this, &AppSyncComponent::HandleAppInfoSync));
 
     // 注册命令消息的回调处理函数，收到此消息时调用HandleCmdApp函数
-    pMsgCallBack->RegisterFunction(Proto::MsgId::MI_CmdApp, BindFunP1(this, &AppSyncComponent::HandleCmdApp));
+    pMsgSystem->RegisterFunction(this,Proto::MsgId::MI_CmdApp, BindFunP1(this, &AppSyncComponent::HandleCmdApp));
 }
 
 void AppSyncComponent::BackToPool()

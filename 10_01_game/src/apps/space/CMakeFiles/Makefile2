@@ -64,10 +64,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/workspace/GameServer/10_01_game/src/apps/space
+CMAKE_SOURCE_DIR = /home/workspace/GameServer/10_01_game/src/apps/space
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/workspace/GameServer/10_01_game/src/apps/space
+CMAKE_BINARY_DIR = /home/workspace/GameServer/10_01_game/src/apps/space
 
 #=============================================================================
 # Directory level rules for the build root directory

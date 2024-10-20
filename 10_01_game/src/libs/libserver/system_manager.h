@@ -49,7 +49,7 @@ protected:
     EntitySystem* _pEntitySystem;
 
     // 系统列表，保存管理的所有系统
-    std::list<ISystem*> _systems;
+    std::list<System*> _systems;
 
     // 随机数生成引擎指针
     std::default_random_engine* _pRandomEngine;

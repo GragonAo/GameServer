@@ -1,0 +1,29 @@
+2024-10-20 16:31:04 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-20 16:31:04 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-20 16:31:04 -> [DEBUG] -  Initialize thread:LogicThread thread num:1
+2024-10-20 16:31:04 -> [DEBUG] -  Initialize thread:MysqlThread thread num:1
+2024-10-20 16:31:04 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-20 16:31:04 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-20 16:31:04 -> [DEBUG] -  MysqlConnector::Awake. id:139630882903808
+2024-10-20 16:31:04 -> [INFO] -  epoll model. listen 127.0.0.1:5401 SOMAXCONN:1024
+2024-10-20 16:31:04 -> [INFO] -  epoll model. listen 127.0.0.1:7071 SOMAXCONN:1024
+2024-10-20 16:31:04 -> [DEBUG] -  RedisConnector::Connect. 127.0.0.1:6379. starting...
+2024-10-20 16:31:04 -> [DEBUG] -  	RedisConnector::Connect: successfully!
+2024-10-20 16:31:04 -> [DEBUG] -  RedisConnector::Connect. 127.0.0.1:6379. starting...
+2024-10-20 16:31:04 -> [DEBUG] -  	RedisConnector::Connect: successfully!
+2024-10-20 16:31:04 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:139630882903808
+2024-10-20 16:31:05 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-20 16:31:05 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-20 16:31:37 -> [DEBUG] -  ------------------------------------
+2024-10-20 16:31:37 -> [DEBUG] -  appId:   0 type:allinone online:0
+2024-10-20 16:31:52 -> [DEBUG] -  ------------------------------------
+2024-10-20 16:31:52 -> [DEBUG] -   网络类型:TcpListen
+2024-10-20 16:31:52 -> [DEBUG] -  	socket size:0
+2024-10-20 16:32:32 -> [DEBUG] -  enter game. account:test8 token:f211b7f4-8d1f-48d9-8b28-ef315312cfdd
+2024-10-20 16:32:32 -> [DEBUG] -  创建玩家，账户：test0 名称：test0 性别：1
+2024-10-20 16:32:32 -> [INFO] -  HandlePlayerCreate sn:113338820346250689 account:test0 name:test0
+2024-10-20 16:32:32 -> [DEBUG] -  enter game. account:test1 token:9a5de348-a6a7-4fc7-ab53-bd022b5366e0
+2024-10-20 16:32:32 -> [DEBUG] -  enter game. account:test0 token:8e7666c0-f2b3-45f8-8a4f-3453a5f4102a
+2024-10-20 16:32:32 -> [DEBUG] -  enter game. account:test5 token:fbc0496f-ffc8-4c31-ac7e-1a5c2cdba65e
+2024-10-20 16:32:32 -> [DEBUG] -  enter game. account:test7 token:ab94826a-5326-49e5-a73c-36c1f6753800
+2024-10-20 16:34:07 -> [ERROR] -  [0;31m输入错误，未找到命令: -exit-exit[0m

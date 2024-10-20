@@ -38,8 +38,7 @@ void TimerComponent::Add(Timer& data)
 void TimerComponent::Awake()
 {
     // 添加 UpdateComponent，并将其 Update 函数绑定为 TimerComponent 的 Update 函数
-    auto pUpdateComponent = AddComponent<UpdateComponent>();
-    pUpdateComponent->UpdataFunction = BindFunP0(this, &TimerComponent::Update);
+    AddComponent<UpdateComponent>(BindFunP0(this, &TimerComponent::Update));
 }
 
 // 重置计时器组件，将时间堆清空

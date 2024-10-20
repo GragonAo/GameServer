@@ -2,89 +2,101 @@ syntax = "proto3";
 
 package Proto;
 
-// 定义消息的ID枚举
+// 消息 ID 枚举定义
 enum MsgId {
 
-	// proto3的枚举，必须有一个值为0
+	// proto3中枚举，第一个值必须是0
 	None = 0; 
 
-	MI_NetworkConnect			= 1;	// 网络连接
-	MI_NetworkConnected			= 2;	// 连接成功
+	MI_NetworkConnect			= 1;	// 网络连接请求
+	MI_NetworkConnected			= 2;	// 网络连接成功的响应
 
-	MI_NetworkListen			= 3;	// 网络开始监听
-	MI_NetworkListenKey			= 4;	// 网络监听并接收一个Key值
-
-	/*
-	* 网络断开的network通知，应用程序主动关闭连接
-	* 关闭可能是由于网络问题、协议错误或其他原因
-	*/
-	MI_NetworkDisconnect		= 10;   // 网络断开
-	MI_NetworkDisconnectEx		= 11;   // 扩展的网络断开
+	MI_NetworkListen			= 3;	// 服务器监听请求，开始监听一个端口
+	MI_NetworkListenKey			= 4;	// 服务器监听成功后返回的Key值
 
 	/*
-	* 逻辑层的断开，应用程序逻辑层主动要求断开连接
-	* 比如协议中没有错误，但逻辑需要断开
+	* 当网络断开时，Network层会通知上层业务逻辑
+	* 断开原因可能是客户端主动断开连接，或由于协议错误导致
 	*/
-	MI_NetworkRequestDisconnect	= 20;	// 逻辑层请求断开连接
+	MI_NetworkDisconnect		= 10;	// 网络断开事件
+	MI_NetworkDisconnectEx		= 11;	// 扩展的网络断开事件
+
+	/*
+	* 上层业务逻辑要求断开网络连接
+	* 该消息从业务逻辑发送到 Network 层，请求断开连接
+	*/
+	MI_NetworkRequestDisconnect	= 20;	// 业务层请求断开连接
 
 	MI_RemoveComponent			= 50;	// 移除组件
 	MI_CreateComponent			= 51;	// 创建组件
 
-	MI_Ping						= 101;  // 心跳检测
-	MI_AppRegister				= 102;	// 应用注册到管理器
-	MI_AppInfoSync				= 103;  // 应用信息同步
-	MI_AppInfoListSync			= 104;  // 应用信息列表同步
+	MI_Ping						= 101;  // 网络心跳检测消息
+	MI_AppRegister				= 102;	// App向管理器注册消息
+	MI_AppInfoSync				= 103;  // App之间的信息同步
+	MI_AppInfoListSync			= 104;  // App之间的列表信息同步
 
-	// 登录相关消息
-	C2L_AccountCheck					= 1001;  // 1.验证账户，客户端到登录服务器
-	C2L_AccountCheckRs					= 1002;  // AccountCheckRs 返回给客户端
+	// login 登录相关消息
+	C2L_AccountCheck					= 1000;  // 1. 验证账号，客户端到Login服务器
+	C2L_AccountCheckRs					= 1001;  // 验证账号的响应，返回给客户端
 
-	MI_AccountQueryOnlineToRedis		= 1003;  // 2.验证账户之前，在Redis中查询账户是否已在线
-	MI_AccountQueryOnlineToRedisRs		= 1004;  // 查询结果返回
+	MI_AccountQueryOnlineToRedis		= 1002;  // 2. 验证账号时，向Redis查询该账号是否已经在线
+	MI_AccountQueryOnlineToRedisRs		= 1003;  // Redis返回的账号在线状态查询响应
 
-	L2C_GameToken           			= 1009;  // 4.将token和Game信息发送给客户端
+	L2DB_QueryPlayerList	    	= 1010;  // 1. 查询角色列表，Login到数据库服务器
+	L2DB_QueryPlayerListRs		    = 1011;  // 数据库返回的角色列表
 
-	L2DB_QueryPlayerList				= 1010;  // 从数据库查询玩家列表
-	L2DB_QueryPlayerListRs				= 1011;  // 玩家列表查询结果返回
+	L2C_PlayerList                  = 1012;  // 角色列表返回给客户端
 
-	C2G_LoginByToken					= 1016;	 // 1.通过Token登录游戏
-	C2G_LoginByTokenRs				    = 1017;	 // LoginByToken结果返回
+	C2L_CreatePlayer				= 1014;  // 2. 创建新角色，客户端到Login服务器
+	C2L_CreatePlayerRs				= 1015;  // 创建角色的响应，返回给客户端
 
-	G2DB_QueryPlayer					= 1101;  // 1.查询玩家信息
-	G2DB_QueryPlayerRs					= 1102;  // 玩家信息查询结果返回
+	L2DB_CreatePlayer			    = 1016;  // 3. 创建角色的请求，Login到数据库服务器
+	L2DB_CreatePlayerRs             = 1017;  // 数据库返回的创建角色结果
 
-	L2C_PlayerList                      = 1103;  // 2.返回玩家列表给客户端
+	C2L_SelectPlayer				= 1018;  // 4. 选择角色登录游戏，客户端到Login服务器
+	C2L_SelectPlayerRs				= 1019;  // 选择角色登录游戏的响应
 
-	C2L_CreatePlayer					= 1105;  // 3.创建新角色
-	C2L_CreatePlayerRs					= 1106;  // CreatePlayerRs 返回给客户端
+	MI_LoginTokenToRedis		    = 1022;	 // 1. 将登录Token存储到Redis
+	MI_LoginTokenToRedisRs		    = 1023;	 // Redis返回的存储Token响应
 
-	L2DB_CreatePlayer				    = 1107;  // 4.数据库中创建新角色
-	L2DB_CreatePlayerRs                 = 1108;  // 创建结果返回
+	L2C_GameToken               	= 1024;  // 2. 将游戏Token发送到客户端，供游戏服务器验证
 
-	C2L_SelectPlayer					= 1109;  // 5.选择角色
-	C2L_SelectPlayerRs					= 1110;  // 选择角色结果返回
+	// game 游戏相关消息
+	C2G_LoginByToken				= 1100;	 // 1. 通过Token登录游戏，客户端到Game服务器
+	C2G_LoginByTokenRs			    = 1101;	 // 登录结果返回给客户端
 
-	G2DB_SavePlayer						= 1800;  // 保存玩家信息到数据库
+	MI_GameTokenToRedis		        = 1102;	 // 2. 将游戏Token存储到Redis
+	MI_GameTokenToRedisRs	        = 1103;	 // Redis返回的存储游戏Token响应
 
-	MI_WorldProxySyncToGather			= 3002;	 // world代理同步到集群
+	G2DB_SavePlayer					= 1800;  // 保存玩家数据到数据库
 
-	// 机器人状态同步
-	MI_RobotSyncState					= 5001;	// 机器人状态同步到机器人管理器
+	MI_WorldProxySyncToGather	    = 3002;	 // World Proxy服务器同步数据到Gather服务器
 
-	// http监听服务
-	MI_HttpBegin        				= 10000; // HTTP请求开始
-	MI_HttpInnerResponse 				= 10001; // 内部响应请求
-	MI_HttpRequestBad    				= 10002; // 错误的HTTP请求
-	MI_HttpRequestLogin	 				= 10003; // 登录请求
+	// redis Redis 相关消息
+	MI_AccountSyncOnlineToRedis		= 4001;  // 同步 account 的在线状态到 Redis
+	MI_AccountDeleteOnlineToRedis	= 4002;  // 从 Redis 中删除 account 的在线状态
 
-	MI_HttpEnd          				= 10499; // HTTP请求结束
+	MI_PlayerSyncOnlineToRedis		= 4003;  // 同步玩家的在线状态到 Redis
+	MI_PlayerDeleteOnlineToRedis	= 4004;  // 从 Redis 中删除玩家的在线状态
 
-	// http连接器，用于外部服务请求和响应
-	MI_HttpOuterRequest      			= 10500; // 外部HTTP请求
-	MI_HttpOuterResponse     			= 10501; // 外部HTTP响应
+	// robot 机器人相关消息
+	MI_RobotSyncState	= 5001;	// Robot状态同步到 Robot 管理器
+    MI_RobotCreate      = 5002; // 请求创建新的 Robot
 
-	// 命令相关消息
-	MI_CmdThread        				= 20001; // 线程命令
-	MI_CmdApp           				= 20002; // 应用命令
-	MI_CmdWorldProxy    				= 20003; // 世界代理命令
+	// http listen HTTP 请求处理消息
+	MI_HttpBegin         = 10000; // HTTP 请求开始
+	MI_HttpInnerResponse = 10001; // 内部 HTTP 响应
+	MI_HttpRequestBad    = 10002; // 错误的 HTTP 请求
+	MI_HttpRequestLogin	 = 10003; // HTTP 请求登录
+
+	MI_HttpEnd           = 10499; // HTTP 请求结束
+
+	// http connector HTTP 连接器相关消息
+	MI_HttpOuterRequest      = 10500; // 外部 HTTP 请求处理
+	MI_HttpOuterResponse     = 10501; // 外部 HTTP 响应处理
+
+	// cmd 控制台命令处理消息
+	MI_CmdThread        = 20001; // 线程命令处理
+	MI_CmdApp           = 20002; // App 相关命令处理
+	MI_CmdWorldProxy    = 20003; // World Proxy 相关命令处理
 }

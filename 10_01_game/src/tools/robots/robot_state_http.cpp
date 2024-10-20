@@ -6,6 +6,7 @@
 // 当进入 HTTP 连接状态时触发的逻辑
 void RobotStateHttpConnecting::OnEnterState()
 {
+    
     // 获取 YAML 配置文件
     const auto pYaml = ComponentHelp::GetYaml();
 

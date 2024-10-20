@@ -173,3 +173,143 @@
 2024-10-18 08:32:00 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
 2024-10-18 08:32:00 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
 2024-10-18 08:32:00 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-18 21:15:35 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 21:15:35 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 21:15:35 -> [ERROR] -  [0;31mAdd same component. type:15MessageCallBack[0m
+2024-10-18 21:15:35 -> [DEBUG] -  Initialize thread:LogicThread thread num:1
+2024-10-18 21:15:35 -> [DEBUG] -  Initialize thread:MysqlThread thread num:3
+2024-10-18 21:15:35 -> [ERROR] -  [0;31mAdd same component. type:15MessageCallBack[0m
+2024-10-18 21:15:35 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-18 21:15:35 -> [DEBUG] -  MySQL 更新连接：127.0.0.1:33060 启动中... 线程ID：140436927862976
+2024-10-18 21:15:35 -> [ERROR] -  [0;31mAdd same component. type:15MessageCallBack[0m
+2024-10-18 21:15:35 -> [ERROR] -  [0;31mAdd same component. type:15MessageCallBack[0m
+2024-10-18 21:15:35 -> [ERROR] -  [0;31mAdd same component. type:15MessageCallBack[0m
+2024-10-18 21:15:35 -> [ERROR] -  [0;31mAdd same component. type:15MessageCallBack[0m
+2024-10-18 21:15:35 -> [DEBUG] -  MySQL 更新成功！ 地址：127.0.0.1:33060
+2024-10-18 21:15:35 -> [DEBUG] -  MysqlConnector::Awake. id:140436706424576
+2024-10-18 21:15:35 -> [ERROR] -  [0;31mAdd same component. type:15MessageCallBack[0m
+2024-10-18 21:15:35 -> [ERROR] -  [0;31mAdd same component. type:15MessageCallBack[0m
+2024-10-18 21:15:35 -> [ERROR] -  [0;31mAdd same component. type:15MessageCallBack[0m
+2024-10-18 21:15:35 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:140436706424576
+2024-10-18 21:15:35 -> [DEBUG] -  MysqlConnector::Awake. id:140436783302400
+2024-10-18 21:15:35 -> [ERROR] -  [0;31mAdd same component. type:15MessageCallBack[0m
+2024-10-18 21:15:35 -> [ERROR] -  [0;31mAdd same component. type:15MessageCallBack[0m
+2024-10-18 21:15:35 -> [ERROR] -  [0;31mAdd same component. type:15MessageCallBack[0m
+2024-10-18 21:15:35 -> [DEBUG] -  MysqlConnector::Awake. id:140436791695104
+2024-10-18 21:15:35 -> [ERROR] -  [0;31mAdd same component. type:15MessageCallBack[0m
+2024-10-18 21:15:35 -> [ERROR] -  [0;31mAdd same component. type:15MessageCallBack[0m
+2024-10-18 21:15:35 -> [INFO] -  epoll model. listen 127.0.0.1:5800 SOMAXCONN:1024
+2024-10-18 21:15:35 -> [ERROR] -  [0;31mAdd same component. type:15MessageCallBack[0m
+2024-10-18 21:15:35 -> [ERROR] -  [0;31mAdd same component. type:15MessageCallBack[0m
+2024-10-18 21:15:35 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:140436783302400
+2024-10-18 21:15:35 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:140436791695104
+2024-10-18 21:15:35 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-18 21:15:35 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-18 21:15:35 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-18 21:15:35 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-18 21:15:35 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-18 21:15:35 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-18 21:33:29 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 21:33:29 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 21:33:29 -> [DEBUG] -  Initialize thread:LogicThread thread num:1
+2024-10-18 21:33:29 -> [DEBUG] -  Initialize thread:MysqlThread thread num:3
+2024-10-18 21:33:29 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-18 21:33:29 -> [DEBUG] -  MySQL 更新连接：127.0.0.1:33060 启动中... 线程ID：140659681396928
+2024-10-18 21:33:29 -> [DEBUG] -  MySQL 更新成功！ 地址：127.0.0.1:33060
+2024-10-18 21:33:29 -> [DEBUG] -  MysqlConnector::Awake. id:140659528443648
+2024-10-18 21:33:29 -> [DEBUG] -  MysqlConnector::Awake. id:140659545229056
+2024-10-18 21:33:29 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:140659528443648
+2024-10-18 21:33:29 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:140659545229056
+2024-10-18 21:33:29 -> [DEBUG] -  MysqlConnector::Awake. id:140659536836352
+2024-10-18 21:33:29 -> [INFO] -  epoll model. listen 127.0.0.1:5800 SOMAXCONN:1024
+2024-10-18 21:33:29 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:140659536836352
+2024-10-18 21:33:29 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-18 21:33:29 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-18 21:33:29 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-18 21:33:29 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-18 21:33:29 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-18 21:33:29 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-18 22:47:57 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 22:47:57 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 22:47:57 -> [DEBUG] -  Initialize thread:LogicThread thread num:1
+2024-10-18 22:47:57 -> [DEBUG] -  Initialize thread:MysqlThread thread num:3
+2024-10-18 22:47:57 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-18 22:47:57 -> [DEBUG] -  MySQL 更新连接：127.0.0.1:33060 启动中... 线程ID：140490405341376
+2024-10-18 22:47:57 -> [DEBUG] -  MySQL 更新成功！ 地址：127.0.0.1:33060
+2024-10-18 22:47:57 -> [DEBUG] -  MysqlConnector::Awake. id:140490192189184
+2024-10-18 22:47:57 -> [DEBUG] -  MysqlConnector::Awake. id:140490269173504
+2024-10-18 22:47:57 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:140490192189184
+2024-10-18 22:47:57 -> [DEBUG] -  MysqlConnector::Awake. id:140490183796480
+2024-10-18 22:47:57 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:140490183796480
+2024-10-18 22:47:57 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:140490269173504
+2024-10-18 22:47:57 -> [ERROR] -  [0;31m::bind failed. err:98[0m
+2024-10-18 22:47:58 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-18 22:47:58 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-18 22:47:58 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-18 22:47:58 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-18 22:47:58 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-18 22:47:58 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-18 22:49:03 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 22:49:03 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 22:49:03 -> [DEBUG] -  Initialize thread:LogicThread thread num:1
+2024-10-18 22:49:03 -> [DEBUG] -  Initialize thread:MysqlThread thread num:3
+2024-10-18 22:49:03 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-18 22:49:03 -> [DEBUG] -  MySQL 更新连接：127.0.0.1:33060 启动中... 线程ID：139768198695104
+2024-10-18 22:49:03 -> [DEBUG] -  MySQL 更新成功！ 地址：127.0.0.1:33060
+2024-10-18 22:49:03 -> [DEBUG] -  MysqlConnector::Awake. id:139768054134528
+2024-10-18 22:49:03 -> [DEBUG] -  MysqlConnector::Awake. id:139768045741824
+2024-10-18 22:49:03 -> [DEBUG] -  MysqlConnector::Awake. id:139768062527232
+2024-10-18 22:49:03 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:139768054134528
+2024-10-18 22:49:03 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:139768062527232
+2024-10-18 22:49:03 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:139768045741824
+2024-10-18 22:49:03 -> [INFO] -  epoll model. listen 127.0.0.1:5800 SOMAXCONN:1024
+2024-10-18 22:49:03 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-18 22:49:03 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-18 22:49:03 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-18 22:49:03 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-18 22:49:03 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-18 22:49:03 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-19 14:30:47 -> [ERROR] -  [0;31mQuery error:The client was disconnected by the server because of inactivity. See wait_timeout and interactive_timeout for configuring this behavior. sql:select sn, name, base, item, misc from player where account = 'test'[0m
+2024-10-19 14:30:47 -> [ERROR] -  [0;31m!!! Failed. MysqlConnector::HandleQueryPlayerList. sql:select sn, name, base, item, misc from player where account = 'test'[0m
+2024-10-19 14:32:10 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 14:32:10 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 14:32:10 -> [DEBUG] -  Initialize thread:LogicThread thread num:1
+2024-10-19 14:32:10 -> [DEBUG] -  Initialize thread:MysqlThread thread num:3
+2024-10-19 14:32:10 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-19 14:32:10 -> [DEBUG] -  MySQL 更新连接：127.0.0.1:33060 启动中... 线程ID：140089774713024
+2024-10-19 14:32:10 -> [DEBUG] -  MySQL 更新成功！ 地址：127.0.0.1:33060
+2024-10-19 14:32:10 -> [DEBUG] -  MysqlConnector::Awake. id:140089552271104
+2024-10-19 14:32:10 -> [DEBUG] -  MysqlConnector::Awake. id:140089638545152
+2024-10-19 14:32:10 -> [DEBUG] -  MysqlConnector::Awake. id:140089630152448
+2024-10-19 14:32:10 -> [INFO] -  epoll model. listen 127.0.0.1:5800 SOMAXCONN:1024
+2024-10-19 14:32:10 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:140089552271104
+2024-10-19 14:32:10 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:140089638545152
+2024-10-19 14:32:10 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:140089630152448
+2024-10-19 14:32:10 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-19 14:32:10 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-19 14:32:10 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-19 14:32:10 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-19 14:32:10 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-19 14:32:10 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-19 17:22:03 -> [ERROR] -  [0;31m输入错误，未找到命令: -eixt[0m
+2024-10-19 17:22:06 -> [ERROR] -  [0;31m输入错误，未找到命令: exit[0m
+2024-10-19 17:22:22 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:22:22 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:22:22 -> [DEBUG] -  Initialize thread:LogicThread thread num:1
+2024-10-19 17:22:22 -> [DEBUG] -  Initialize thread:MysqlThread thread num:3
+2024-10-19 17:22:22 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-19 17:22:22 -> [DEBUG] -  MySQL 更新连接：127.0.0.1:33060 启动中... 线程ID：139643860302016
+2024-10-19 17:22:22 -> [DEBUG] -  MySQL 更新成功！ 地址：127.0.0.1:33060
+2024-10-19 17:22:22 -> [DEBUG] -  MysqlConnector::Awake. id:139643707348736
+2024-10-19 17:22:22 -> [DEBUG] -  MysqlConnector::Awake. id:139643724134144
+2024-10-19 17:22:22 -> [INFO] -  epoll model. listen 127.0.0.1:5800 SOMAXCONN:1024
+2024-10-19 17:22:22 -> [DEBUG] -  MysqlConnector::Awake. id:139643715741440
+2024-10-19 17:22:22 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:139643707348736
+2024-10-19 17:22:22 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:139643724134144
+2024-10-19 17:22:22 -> [DEBUG] -  MysqlConnector::Connect. 127.0.0.1:33060 starting... id:139643715741440
+2024-10-19 17:22:22 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-19 17:22:22 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-19 17:22:22 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-19 17:22:22 -> [DEBUG] -  MysqlConnector::Connect: successfully! addr:127.0.0.1:33060
+2024-10-19 17:22:22 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!
+2024-10-19 17:22:22 -> [DEBUG] -  	MysqlConnector::InitStmts successfully!

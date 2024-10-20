@@ -63,10 +63,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/workspace/GameServer/10_01_game/src/apps/appmgr
+CMAKE_SOURCE_DIR = /home/workspace/GameServer/10_01_game/src/apps/appmgr
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/workspace/GameServer/10_01_game/src/apps/appmgr
+CMAKE_BINARY_DIR = /home/workspace/GameServer/10_01_game/src/apps/appmgr
 
 # Include any dependencies generated for this target.
 include CMakeFiles/appmgrd.dir/depend.make
@@ -79,767 +79,782 @@ include CMakeFiles/appmgrd.dir/flags.make
 
 CMakeFiles/appmgrd.dir/app_sync_component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
 CMakeFiles/appmgrd.dir/app_sync_component.cpp.o: app_sync_component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/appmgrd.dir/app_sync_component.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/app_sync_component.cpp.o -c /root/workspace/GameServer/10_01_game/src/apps/appmgr/app_sync_component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/appmgrd.dir/app_sync_component.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/app_sync_component.cpp.o -c /home/workspace/GameServer/10_01_game/src/apps/appmgr/app_sync_component.cpp
 
 CMakeFiles/appmgrd.dir/app_sync_component.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/app_sync_component.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/apps/appmgr/app_sync_component.cpp > CMakeFiles/appmgrd.dir/app_sync_component.cpp.i
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/apps/appmgr/app_sync_component.cpp > CMakeFiles/appmgrd.dir/app_sync_component.cpp.i
 
 CMakeFiles/appmgrd.dir/app_sync_component.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/app_sync_component.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/apps/appmgr/app_sync_component.cpp -o CMakeFiles/appmgrd.dir/app_sync_component.cpp.s
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/apps/appmgr/app_sync_component.cpp -o CMakeFiles/appmgrd.dir/app_sync_component.cpp.s
 
 CMakeFiles/appmgrd.dir/console_cmd_app.cpp.o: CMakeFiles/appmgrd.dir/flags.make
 CMakeFiles/appmgrd.dir/console_cmd_app.cpp.o: console_cmd_app.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/appmgrd.dir/console_cmd_app.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/console_cmd_app.cpp.o -c /root/workspace/GameServer/10_01_game/src/apps/appmgr/console_cmd_app.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/appmgrd.dir/console_cmd_app.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/console_cmd_app.cpp.o -c /home/workspace/GameServer/10_01_game/src/apps/appmgr/console_cmd_app.cpp
 
 CMakeFiles/appmgrd.dir/console_cmd_app.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/console_cmd_app.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/apps/appmgr/console_cmd_app.cpp > CMakeFiles/appmgrd.dir/console_cmd_app.cpp.i
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/apps/appmgr/console_cmd_app.cpp > CMakeFiles/appmgrd.dir/console_cmd_app.cpp.i
 
 CMakeFiles/appmgrd.dir/console_cmd_app.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/console_cmd_app.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/apps/appmgr/console_cmd_app.cpp -o CMakeFiles/appmgrd.dir/console_cmd_app.cpp.s
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/apps/appmgr/console_cmd_app.cpp -o CMakeFiles/appmgrd.dir/console_cmd_app.cpp.s
 
 CMakeFiles/appmgrd.dir/main.cpp.o: CMakeFiles/appmgrd.dir/flags.make
 CMakeFiles/appmgrd.dir/main.cpp.o: main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/appmgrd.dir/main.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/main.cpp.o -c /root/workspace/GameServer/10_01_game/src/apps/appmgr/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/appmgrd.dir/main.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/main.cpp.o -c /home/workspace/GameServer/10_01_game/src/apps/appmgr/main.cpp
 
 CMakeFiles/appmgrd.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/main.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/apps/appmgr/main.cpp > CMakeFiles/appmgrd.dir/main.cpp.i
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/apps/appmgr/main.cpp > CMakeFiles/appmgrd.dir/main.cpp.i
 
 CMakeFiles/appmgrd.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/main.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/apps/appmgr/main.cpp -o CMakeFiles/appmgrd.dir/main.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o"
-	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o -c /root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.i"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.s"
-	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.s
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o: CMakeFiles/appmgrd.dir/flags.make
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o: /root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o"
-	/usr/local/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o   -c /root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.i"
-	/usr/local/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c > CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.i
-
-CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.s"
-	/usr/local/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c -o CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.s
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/apps/appmgr/main.cpp -o CMakeFiles/appmgrd.dir/main.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o"
+	/usr/local/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o -c /home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.i"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.s"
+	/usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.s
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o: CMakeFiles/appmgrd.dir/flags.make
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o: /home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o"
+	/usr/local/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o   -c /home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.i"
+	/usr/local/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c > CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.i
+
+CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.s"
+	/usr/local/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c -o CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.s
 
 # Object files for target appmgrd
 appmgrd_OBJECTS = \
 "CMakeFiles/appmgrd.dir/app_sync_component.cpp.o" \
 "CMakeFiles/appmgrd.dir/console_cmd_app.cpp.o" \
 "CMakeFiles/appmgrd.dir/main.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o" \
-"CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o"
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o" \
+"CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o"
 
 # External object files for target appmgrd
 appmgrd_EXTERNAL_OBJECTS =
 
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/app_sync_component.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/console_cmd_app.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/main.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/build.make
-/root/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Linking CXX executable /root/workspace/GameServer/10_01_game/bin/appmgrd"
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/app_sync_component.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/console_cmd_app.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/main.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/build.make
+/home/workspace/GameServer/10_01_game/bin/appmgrd: CMakeFiles/appmgrd.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Linking CXX executable /home/workspace/GameServer/10_01_game/bin/appmgrd"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/appmgrd.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/appmgrd.dir/build: /root/workspace/GameServer/10_01_game/bin/appmgrd
+CMakeFiles/appmgrd.dir/build: /home/workspace/GameServer/10_01_game/bin/appmgrd
 
 .PHONY : CMakeFiles/appmgrd.dir/build
 
@@ -848,6 +863,6 @@ CMakeFiles/appmgrd.dir/clean:
 .PHONY : CMakeFiles/appmgrd.dir/clean
 
 CMakeFiles/appmgrd.dir/depend:
-	cd /root/workspace/GameServer/10_01_game/src/apps/appmgr && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/workspace/GameServer/10_01_game/src/apps/appmgr /root/workspace/GameServer/10_01_game/src/apps/appmgr /root/workspace/GameServer/10_01_game/src/apps/appmgr /root/workspace/GameServer/10_01_game/src/apps/appmgr /root/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles/appmgrd.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/workspace/GameServer/10_01_game/src/apps/appmgr && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/workspace/GameServer/10_01_game/src/apps/appmgr /home/workspace/GameServer/10_01_game/src/apps/appmgr /home/workspace/GameServer/10_01_game/src/apps/appmgr /home/workspace/GameServer/10_01_game/src/apps/appmgr /home/workspace/GameServer/10_01_game/src/apps/appmgr/CMakeFiles/appmgrd.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/appmgrd.dir/depend
 

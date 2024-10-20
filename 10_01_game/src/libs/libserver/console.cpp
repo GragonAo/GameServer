@@ -93,8 +93,7 @@ void Console::Awake()
         });
 
     // 添加更新组件，用于定时处理命令队列中的命令
-    auto pUpdateComponent = AddComponent<UpdateComponent>();
-    pUpdateComponent->UpdataFunction = BindFunP0(this, &Console::Update);
+    AddComponent<UpdateComponent>(BindFunP0(this, &Console::Update));
 }
 
 // 回收控制台资源

@@ -68,10 +68,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/workspace/GameServer/10_01_game/src/apps/game
+CMAKE_SOURCE_DIR = /home/workspace/GameServer/10_01_game/src/apps/game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/workspace/GameServer/10_01_game/src/apps/game
+CMAKE_BINARY_DIR = /home/workspace/GameServer/10_01_game/src/apps/game
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/GameServer/10_01_game/src/apps/game/CMakeFiles /root/workspace/GameServer/10_01_game/src/apps/game/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/GameServer/10_01_game/src/apps/game/CMakeFiles /home/workspace/GameServer/10_01_game/src/apps/game/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/GameServer/10_01_game/src/apps/game/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/GameServer/10_01_game/src/apps/game/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -170,6 +170,1464 @@ console_cmd_world_proxy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/console_cmd_world_proxy.cpp.s
 .PHONY : console_cmd_world_proxy.cpp.s
 
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player.o: home/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player.i: home/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player.s: home/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.o: home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.i: home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.s: home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.o: home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.i: home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.s: home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.o: home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.i: home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.s: home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.o: home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.i: home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.s: home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.o: home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.i: home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.s: home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.o: home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.i: home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.s: home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.o: home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.i: home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.s: home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/component.o: home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/component.i: home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/component.s: home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.o: home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.i: home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.s: home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.o: home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.i: home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.s: home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.o: home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.i: home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.s: home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/console.o: home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/console.i: home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/console.s: home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.o: home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.i: home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.s: home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.o: home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.i: home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.s: home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.o: home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.i: home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.s: home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.o: home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.i: home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.s: home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/entity.o: home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/entity.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/entity.i: home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/entity.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/entity.s: home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/entity.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.o: home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.i: home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.s: home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/global.o: home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/global.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/global.i: home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/global.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/global.s: home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/global.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/log4.o: home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/log4.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/log4.i: home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/log4.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/log4.s: home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/log4.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.o: home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.i: home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.s: home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.o: home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.i: home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.s: home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.o: home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.i: home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.s: home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.o: home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.i: home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.s: home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.o: home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.i: home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.s: home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/network.o: home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/network.i: home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/network.s: home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.o: home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.i: home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.s: home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.o: home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.i: home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.s: home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.o: home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.i: home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.s: home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.o: home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.i: home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.s: home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.o: home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.i: home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.s: home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.o: home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.i: home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.s: home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/packet.o: home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/packet.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/packet.i: home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/packet.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/packet.s: home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/packet.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.o: home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.i: home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.s: home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.o: home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.i: home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.s: home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.o: home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.i: home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.s: home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.o: home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.i: home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.s: home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.o: home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.i: home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.s: home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.o: home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.i: home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.s: home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.o: home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.i: home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.s: home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.o: home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.i: home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.s: home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.o: home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.i: home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.s: home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.o: home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.i: home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.s: home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread.o: home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread.i: home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread.s: home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.o: home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.i: home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.s: home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.o: home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.i: home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.s: home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.o: home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.i: home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.s: home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.o: home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.i: home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.s: home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.o: home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.i: home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.s: home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.o: home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.i: home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.s: home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.o: home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.i: home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.s: home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.o: home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.i: home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.s: home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.s
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.o: home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.o
+
+# target to build an object file
+home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.i: home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.i
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.i
+
+# target to preprocess a source file
+home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.i
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.i
+
+home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.s: home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.s
+
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.s
+
+# target to generate assembly for a file
+home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.s
+.PHONY : home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.s
+
 lobby.o: lobby.cpp.o
 
 .PHONY : lobby.o
@@ -224,1436 +1682,86 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player.o: root/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.o
+player_component_onlinegame.o: player_component_onlinegame.cpp.o
 
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player.i: root/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player.s: root/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.o: root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.o
+.PHONY : player_component_onlinegame.o
 
 # target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.o
+player_component_onlinegame.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/player_component_onlinegame.cpp.o
+.PHONY : player_component_onlinegame.cpp.o
 
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.i: root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.i
+player_component_onlinegame.i: player_component_onlinegame.cpp.i
 
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.i
+.PHONY : player_component_onlinegame.i
 
 # target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.i
+player_component_onlinegame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/player_component_onlinegame.cpp.i
+.PHONY : player_component_onlinegame.cpp.i
 
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.s: root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.s
+player_component_onlinegame.s: player_component_onlinegame.cpp.s
 
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.s
+.PHONY : player_component_onlinegame.s
 
 # target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.cpp.s
+player_component_onlinegame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/player_component_onlinegame.cpp.s
+.PHONY : player_component_onlinegame.cpp.s
 
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.o: root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.o
+player_component_token.o: player_component_token.cpp.o
 
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.o
+.PHONY : player_component_token.o
 
 # target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.o
+player_component_token.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/player_component_token.cpp.o
+.PHONY : player_component_token.cpp.o
 
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.i: root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.i
+player_component_token.i: player_component_token.cpp.i
 
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.i
+.PHONY : player_component_token.i
 
 # target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.i
+player_component_token.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/player_component_token.cpp.i
+.PHONY : player_component_token.cpp.i
 
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.s: root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.s
+player_component_token.s: player_component_token.cpp.s
 
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.s
+.PHONY : player_component_token.s
 
 # target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.cpp.s
+player_component_token.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/player_component_token.cpp.s
+.PHONY : player_component_token.cpp.s
 
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.o: root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.o
+redis_game.o: redis_game.cpp.o
 
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.o
+.PHONY : redis_game.o
 
 # target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.o
+redis_game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/redis_game.cpp.o
+.PHONY : redis_game.cpp.o
 
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.i: root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.i
+redis_game.i: redis_game.cpp.i
 
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.s: root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.o: root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.i: root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.i
+.PHONY : redis_game.i
 
 # target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.i
+redis_game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/redis_game.cpp.i
+.PHONY : redis_game.cpp.i
 
-root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.s: root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.s
+redis_game.s: redis_game.cpp.s
 
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.o: root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.i: root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.s: root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.s
+.PHONY : redis_game.s
 
 # target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.o: root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.i: root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.s: root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/component.o: root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/component.i: root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/component.s: root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.o: root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.i: root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.s: root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.o: root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.i: root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.s: root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.o: root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.i: root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.s: root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/console.o: root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/console.i: root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/console.s: root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.o: root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.i: root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.s: root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.o: root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.i: root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.s: root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.o: root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.i: root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.s: root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.o: root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.i: root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.s: root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/entity.o: root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/entity.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/entity.i: root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/entity.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/entity.s: root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/entity.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/entity.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.o: root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.i: root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.s: root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/global.o: root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/global.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/global.i: root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/global.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/global.s: root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/global.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/global.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/log4.o: root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/log4.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/log4.i: root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/log4.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/log4.s: root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/log4.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/log4.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.o: root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.i: root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.s: root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.o: root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.i: root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.s: root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.o: root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.i: root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.s: root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.o: root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.i: root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.s: root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.o: root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.i: root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.s: root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.o: root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.i: root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.s: root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.c.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/network.o: root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/network.i: root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/network.s: root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.o: root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.i: root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.s: root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.o: root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.i: root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.s: root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.o: root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.i: root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.s: root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.o: root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.i: root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.s: root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.o: root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.i: root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.s: root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.o: root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.i: root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.s: root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/packet.o: root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/packet.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/packet.i: root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/packet.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/packet.s: root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/packet.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/packet.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.o: root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.i: root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.s: root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.cc.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.o: root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.i: root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.s: root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.cc.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.o: root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.i: root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.s: root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.cc.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.o: root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.i: root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.s: root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.o: root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.i: root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.s: root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.o: root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.i: root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.s: root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.o: root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.i: root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.s: root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.o: root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.i: root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.s: root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.o: root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.i: root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.s: root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread.o: root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread.i: root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread.s: root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.o: root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.i: root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.s: root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.o: root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.i: root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.s: root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.o: root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.i: root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.s: root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.o: root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.i: root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.s: root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.o: root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.i: root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.s: root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.o: root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.i: root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.s: root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.o: root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.i: root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.s: root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.o: root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.i: root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.s: root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.cpp.s
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.o: root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.o
-
-# target to build an object file
-root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.o
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.i: root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.i
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.i
-
-# target to preprocess a source file
-root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.i
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.i
-
-root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.s: root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.s
-
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.s
-
-# target to generate assembly for a file
-root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.s
-.PHONY : root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.cpp.s
+redis_game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamed.dir/build.make CMakeFiles/gamed.dir/redis_game.cpp.s
+.PHONY : redis_game.cpp.s
 
 world_component_gather.o: world_component_gather.cpp.o
 
@@ -1721,171 +1829,183 @@ help:
 	@echo "... console_cmd_world_proxy.o"
 	@echo "... console_cmd_world_proxy.i"
 	@echo "... console_cmd_world_proxy.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/player.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/player.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/player.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/check_time_component.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/component.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/component.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/component.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/component_help.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/console.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/console.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/console.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/create_component.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/entity.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/entity.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/entity.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/global.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/global.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/global.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/log4.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/log4.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/log4.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/message_system.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/network.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/network.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/network.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/packet.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/packet.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/packet.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/redis_connector.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/res_path.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/server_app.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/thread.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/thread.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/thread.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/update_component.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/update_system.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/util_string.s"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.o"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.i"
+	@echo "... home/workspace/GameServer/10_01_game/src/libs/libserver/yaml.s"
 	@echo "... lobby.o"
 	@echo "... lobby.i"
 	@echo "... lobby.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/player.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/player.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/player.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/player_collector_component.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/player_compoet_proto_list.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/player_componet.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/vector3.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libplayer/world_base.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/base_buffer.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/component.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/component.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/component.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/component_collection.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/component_help.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/connect_obj.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/console.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/console.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/console.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_thread.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/console_cmd_trace.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/console_thread_component.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/create_component.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/entity.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/entity.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/entity.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/entity_system.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/global.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/global.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/global.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/log4.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/log4.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/log4.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/log4_help.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/message_callback.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/message_component.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/message_system.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/message_system_help.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/mongoose/mongoose.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/network.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/network.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/network.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/network_buffer.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/network_connector.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/network_listen.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/network_locator.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_collector.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/object_pool_packet.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/packet.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/packet.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/packet.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/db.pb.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/msg.pb.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/protobuf/proto_id.pb.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/res_path.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/server_app.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/sn_object.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/socket_object.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/sync_component.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/system_manager.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/thread.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/thread.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/thread.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/thread_collector_exclusive.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/thread_mgr.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/timer_component.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/trace_component.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/update_component.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/update_system.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/util_string.s"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.o"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.i"
-	@echo "... root/workspace/GameServer/10_01_game/src/libs/libserver/yaml.s"
+	@echo "... player_component_onlinegame.o"
+	@echo "... player_component_onlinegame.i"
+	@echo "... player_component_onlinegame.s"
+	@echo "... player_component_token.o"
+	@echo "... player_component_token.i"
+	@echo "... player_component_token.s"
+	@echo "... redis_game.o"
+	@echo "... redis_game.i"
+	@echo "... redis_game.s"
 	@echo "... world_component_gather.o"
 	@echo "... world_component_gather.i"
 	@echo "... world_component_gather.s"

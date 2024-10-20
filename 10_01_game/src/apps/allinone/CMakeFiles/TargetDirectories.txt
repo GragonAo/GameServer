@@ -1,0 +1,3 @@
+/home/workspace/GameServer/10_01_game/src/apps/allinone/CMakeFiles/rebuild_cache.dir
+/home/workspace/GameServer/10_01_game/src/apps/allinone/CMakeFiles/edit_cache.dir
+/home/workspace/GameServer/10_01_game/src/apps/allinone/CMakeFiles/allinoned.dir

@@ -1,7 +1,7 @@
 #include "test_http_login.h"
 #include "libserver/message_system_help.h"
 #include "libserver/component_help.h"
-#include "libserver/message_component.h"
+#include "libserver/message_system.h"
 
 void TestHttpLogin::Awake(std::string account, std::string password)
 {
@@ -12,22 +12,22 @@ void TestHttpLogin::Awake(std::string account, std::string password)
     _objKey = { ObjectKeyType::Account , {0, _account} };
 
     // 注册消息回调函数，用于处理网络相关事件
-    auto pMsgCallBack = new MessageCallBackFunctionFilterObj<TestHttpLogin>();
-    AddComponent<MessageComponent>(pMsgCallBack);  // 添加消息组件，用于管理消息处理
+    // auto pMsgCallBack = new MessageCallBackFunctionFilterObj<TestHttpLogin>();
+    // AddComponent<MessageComponent>(pMsgCallBack);  // 添加消息组件，用于管理消息处理
 
-    // 指定获取包中对象的函数，用于确保消息被正确路由到对应对象
-    pMsgCallBack->GetPacketObject = [this](NetworkIdentify* pIdentify)
-    {
-        if (_objKey == pIdentify->GetObjectKey())  // 比较对象标识
-            return this;
+    // // 指定获取包中对象的函数，用于确保消息被正确路由到对应对象
+    // pMsgCallBack->GetPacketObject = [this](NetworkIdentify* pIdentify)
+    // {
+    //     if (_objKey == pIdentify->GetObjectKey())  // 比较对象标识
+    //         return this;
 
-        return static_cast<TestHttpLogin*>(nullptr);  // 如果不匹配则返回空指针
-    };
+    //     return static_cast<TestHttpLogin*>(nullptr);  // 如果不匹配则返回空指针
+    // };
 
-    // 注册处理网络断开、连接和 HTTP 响应的消息回调
-    pMsgCallBack->RegisterFunctionWithObj(Proto::MsgId::MI_NetworkDisconnect, BindFunP2(this, &TestHttpLogin::HandleNetworkDisconnect));
-    pMsgCallBack->RegisterFunctionWithObj(Proto::MsgId::MI_NetworkConnected, BindFunP2(this, &TestHttpLogin::HandleNetworkConnected));
-    pMsgCallBack->RegisterFunctionWithObj(Proto::MsgId::MI_HttpOuterResponse, BindFunP2(this, &TestHttpLogin::HandleHttpOuterResponse));
+    // // 注册处理网络断开、连接和 HTTP 响应的消息回调
+    // pMsgCallBack->RegisterFunctionWithObj(Proto::MsgId::MI_NetworkDisconnect, BindFunP2(this, &TestHttpLogin::HandleNetworkDisconnect));
+    // pMsgCallBack->RegisterFunctionWithObj(Proto::MsgId::MI_NetworkConnected, BindFunP2(this, &TestHttpLogin::HandleNetworkConnected));
+    // pMsgCallBack->RegisterFunctionWithObj(Proto::MsgId::MI_HttpOuterResponse, BindFunP2(this, &TestHttpLogin::HandleHttpOuterResponse));
 
     // 获取配置文件中的登录 URL
     auto pYaml = ComponentHelp::GetYaml();

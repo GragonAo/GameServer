@@ -93,3 +93,235 @@
 2024-10-18 08:37:13 -> [DEBUG] -  enter game. account:test73
 2024-10-18 08:59:52 -> [DEBUG] -  Removed appType:appmgr appId:0
 2024-10-18 08:59:52 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-18 21:34:03 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 21:34:03 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 21:34:03 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-18 21:34:03 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-18 21:34:03 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-18 21:34:03 -> [INFO] -  epoll model. listen 127.0.0.1:5601 SOMAXCONN:1024
+2024-10-18 21:34:03 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:6 networkType:TcpConnector connect type:App value:25769803776
+2024-10-18 21:34:03 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:8 networkType:TcpConnector connect type:App value:4294967296
+2024-10-18 22:48:19 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-18 22:48:21 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-18 22:48:27 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-18 22:48:35 -> [ERROR] -  [0;31mcan't find network. appType:appmgr appId:0[0m
+2024-10-18 22:48:37 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-18 22:49:50 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 22:49:50 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 22:49:50 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-18 22:49:50 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-18 22:49:50 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-18 22:49:50 -> [ERROR] -  [0;31mcan't find appType yaml's config. appType:game id:0[0m
+2024-10-18 22:49:50 -> [ERROR] -  [0;31mfailed to get config of listen. appType:game appId:0[0m
+2024-10-18 22:49:50 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:5 networkType:TcpConnector connect type:App value:25769803776
+2024-10-18 22:49:50 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:6 networkType:TcpConnector connect type:App value:4294967296
+2024-10-18 22:49:54 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-18 22:49:54 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-18 22:50:05 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 22:50:05 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 22:50:05 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-18 22:50:05 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-18 22:50:05 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-18 22:50:05 -> [INFO] -  epoll model. listen 127.0.0.1:5601 SOMAXCONN:1024
+2024-10-18 22:50:05 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:5 networkType:TcpConnector connect type:App value:25769803776
+2024-10-18 22:50:05 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:8 networkType:TcpConnector connect type:App value:4294967296
+2024-10-19 00:28:57 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 00:28:57 -> [ERROR] -  [0;31mcan't find network. appType:appmgr appId:0[0m
+2024-10-19 00:28:59 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:5 networkType:TcpConnector connect type:App value:25769803776
+2024-10-19 14:32:08 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-19 14:32:10 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:8 networkType:TcpConnector connect type:App value:4294967296
+2024-10-19 14:32:14 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 14:32:15 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:5 networkType:TcpConnector connect type:App value:25769803776
+2024-10-19 14:32:28 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 14:32:28 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-19 14:32:36 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 14:32:36 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 14:32:36 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-19 14:32:36 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-19 14:32:36 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-19 14:32:36 -> [INFO] -  epoll model. listen 127.0.0.1:5601 SOMAXCONN:1024
+2024-10-19 14:32:36 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:6 networkType:TcpConnector connect type:App value:25769803776
+2024-10-19 14:32:36 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:8 networkType:TcpConnector connect type:App value:4294967296
+2024-10-19 14:44:20 -> [DEBUG] -  enter game. account:test
+2024-10-19 14:46:52 -> [DEBUG] -  enter game. account:test1
+2024-10-19 14:46:52 -> [DEBUG] -  enter game. account:test2
+2024-10-19 14:46:52 -> [DEBUG] -  enter game. account:test7
+2024-10-19 14:46:52 -> [DEBUG] -  enter game. account:test6
+2024-10-19 14:46:52 -> [DEBUG] -  enter game. account:test4
+2024-10-19 17:21:57 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 17:21:57 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-19 17:22:55 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:22:55 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:22:55 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-19 17:22:55 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-19 17:22:55 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-19 17:22:55 -> [INFO] -  epoll model. listen 127.0.0.1:5601 SOMAXCONN:1024
+2024-10-19 17:22:55 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:5 networkType:TcpConnector connect type:App value:25769803776
+2024-10-19 17:22:55 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:8 networkType:TcpConnector connect type:App value:4294967296
+2024-10-19 17:25:04 -> [DEBUG] -  ------------------------------------
+2024-10-19 17:25:04 -> [DEBUG] -   网络类型:TcpListen
+2024-10-19 17:25:04 -> [DEBUG] -  	socket size:1
+2024-10-19 17:25:21 -> [WARN] -  [0;32mnot found. account:test[0m
+2024-10-19 17:25:41 -> [DEBUG] -  ------------------------------------
+2024-10-19 17:25:41 -> [DEBUG] -   线程 ID:139636083978752
+2024-10-19 17:25:41 -> [DEBUG] -   线程类型:MainThread
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    1    7Console
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    4    16IMessageCallBack
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    1    4Yaml
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    1    4Log4
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    1    14TraceComponent
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    1    14NetworkLocator
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    1    7ResPath
+2024-10-19 17:25:41 -> [DEBUG] -   实体总数:10
+2024-10-19 17:25:41 -> [DEBUG] -  ------------------------------------
+2024-10-19 17:25:41 -> [DEBUG] -   线程 ID:139635981657856
+2024-10-19 17:25:41 -> [DEBUG] -   线程类型:ListenThread
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    1    13NetworkListen
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    5    16IMessageCallBack
+2024-10-19 17:25:41 -> [DEBUG] -  [0;32m  网络类型:TcpListen[0m
+2024-10-19 17:25:41 -> [DEBUG] -  	socket size:1
+2024-10-19 17:25:41 -> [DEBUG] -   实体总数:6
+2024-10-19 17:25:41 -> [DEBUG] -  ------------------------------------
+2024-10-19 17:25:41 -> [DEBUG] -   线程 ID:139635998443264
+2024-10-19 17:25:41 -> [DEBUG] -   线程类型:LogicThread
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    1    24PlayerCollectorComponent
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    1    5Lobby
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    1    20WorldComponentGather
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    6    16IMessageCallBack
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    1    27PlayerComponentOnlineInGame
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    1    6Player
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    1    20PlayerComponentToken
+2024-10-19 17:25:41 -> [DEBUG] -   实体总数:12
+2024-10-19 17:25:41 -> [DEBUG] -  ------------------------------------
+2024-10-19 17:25:41 -> [DEBUG] -   线程 ID:139635990050560
+2024-10-19 17:25:41 -> [DEBUG] -   线程类型:LogicThread
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    5    16IMessageCallBack
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    1    16WorldProxyGather
+2024-10-19 17:25:41 -> [DEBUG] -   实体总数:6
+2024-10-19 17:25:41 -> [DEBUG] -  ------------------------------------
+2024-10-19 17:25:41 -> [DEBUG] -   线程 ID:139635973265152
+2024-10-19 17:25:41 -> [DEBUG] -   线程类型:ConnectThread
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    1    16NetworkConnector
+2024-10-19 17:25:41 -> [DEBUG] -   数量:    5    16IMessageCallBack
+2024-10-19 17:25:41 -> [DEBUG] -   实体总数:6
+2024-10-19 17:26:56 -> [ERROR] -  [0;31m输入错误，未找到命令: tace -packet 9[0m
+2024-10-19 17:28:06 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 17:28:06 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-19 17:29:21 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:29:21 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:29:21 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-19 17:29:21 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-19 17:29:21 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-19 17:29:21 -> [INFO] -  epoll model. listen 127.0.0.1:5601 SOMAXCONN:1024
+2024-10-19 17:29:21 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:11 networkType:TcpConnector connect type:App value:25769803776
+2024-10-19 17:29:21 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:12 networkType:TcpConnector connect type:App value:4294967296
+2024-10-19 17:36:47 -> [ERROR] -  [0;31m输入错误，未找到命令: q[0m
+2024-10-19 17:36:50 -> [ERROR] -  [0;31m输入错误，未找到命令: exit[0m
+2024-10-19 17:36:52 -> [ERROR] -  [0;31m输入错误，未找到命令: -exit[0m
+2024-10-19 17:36:52 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 17:36:52 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-19 17:38:07 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:38:07 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:38:07 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-19 17:38:07 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-19 17:38:07 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-19 17:38:07 -> [INFO] -  epoll model. listen 127.0.0.1:5601 SOMAXCONN:1024
+2024-10-19 17:38:07 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:12 networkType:TcpConnector connect type:App value:25769803776
+2024-10-19 17:38:07 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:13 networkType:TcpConnector connect type:App value:4294967296
+2024-10-19 17:38:53 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 17:38:53 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-19 17:39:08 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:39:08 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:39:08 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-19 17:39:08 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-19 17:39:08 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-19 17:39:08 -> [INFO] -  epoll model. listen 127.0.0.1:5601 SOMAXCONN:1024
+2024-10-19 17:39:08 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:9 networkType:TcpConnector connect type:App value:25769803776
+2024-10-19 17:39:08 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:12 networkType:TcpConnector connect type:App value:4294967296
+2024-10-19 17:40:30 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 17:40:30 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-19 17:40:53 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:40:53 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:40:53 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-19 17:40:53 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-19 17:40:53 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-19 17:40:53 -> [INFO] -  epoll model. listen 127.0.0.1:5601 SOMAXCONN:1024
+2024-10-19 17:40:53 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:10 networkType:TcpConnector connect type:App value:25769803776
+2024-10-19 17:40:53 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:12 networkType:TcpConnector connect type:App value:4294967296
+2024-10-19 17:42:03 -> [ERROR] -  [0;31m输入错误，未找到命令: -exit[0m
+2024-10-19 17:42:03 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 17:42:03 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-19 17:42:11 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:42:11 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:42:11 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-19 17:42:11 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-19 17:42:11 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-19 17:42:11 -> [INFO] -  epoll model. listen 127.0.0.1:5601 SOMAXCONN:1024
+2024-10-19 17:42:11 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:11 networkType:TcpConnector connect type:App value:25769803776
+2024-10-19 17:42:11 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:12 networkType:TcpConnector connect type:App value:4294967296
+2024-10-19 17:43:47 -> [ERROR] -  [0;31m输入错误，未找到命令: n[0m
+2024-10-19 17:44:45 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 17:44:45 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-19 17:45:44 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:45:44 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:45:44 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-19 17:45:44 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-19 17:45:44 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-19 17:45:44 -> [DEBUG] -  RedisConnector::Connect. 127.0.0.1:6379. starting...
+2024-10-19 17:45:44 -> [INFO] -  epoll model. listen 127.0.0.1:5601 SOMAXCONN:1024
+2024-10-19 17:45:44 -> [DEBUG] -  	RedisConnector::Connect: successfully!
+2024-10-19 17:45:44 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:8 networkType:TcpConnector connect type:App value:25769803776
+2024-10-19 17:45:44 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:9 networkType:TcpConnector connect type:App value:4294967296
+2024-10-19 17:45:55 -> [DEBUG] -  enter game. account:test token:436bce86-5dea-469d-85a5-2c6de6e9a071
+2024-10-19 17:46:31 -> [WARN] -  [0;32mnot found. account:test[0m
+2024-10-19 17:48:44 -> [DEBUG] -  enter game. account:test11 token:263d46af-7fc7-404f-83df-b63658ecad3a
+2024-10-19 17:48:44 -> [DEBUG] -  enter game. account:test20 token:45da43b3-c8b9-4fe8-8e6f-91a1806e4ca4
+2024-10-19 17:48:44 -> [DEBUG] -  enter game. account:test33 token:1dcc4303-8a57-4a96-ac74-09ecfeaf502c
+2024-10-19 17:48:44 -> [DEBUG] -  enter game. account:test34 token:9bdaaffb-09f0-4db7-b127-728c63a80d68
+2024-10-19 17:48:45 -> [DEBUG] -  enter game. account:test37 token:068ac287-b35d-44ce-9323-aa31761186ea
+2024-10-19 17:48:45 -> [DEBUG] -  enter game. account:test21 token:309a272a-94a4-4c06-b5fb-66edf7289a93
+2024-10-19 17:48:45 -> [DEBUG] -  enter game. account:test39 token:cdc1b51a-de35-4660-b42e-92c21e254f1e
+2024-10-19 17:48:45 -> [DEBUG] -  enter game. account:test12 token:dd65553f-93ed-4f8c-9791-52a3d05ad8cb
+2024-10-19 17:48:45 -> [DEBUG] -  enter game. account:test2 token:00b6ab9b-afe0-44c4-a437-52f75764fac4
+2024-10-19 17:48:45 -> [DEBUG] -  enter game. account:test35 token:a7cd7725-da9f-4f4d-ada7-250cfaf98b80
+2024-10-19 17:48:45 -> [DEBUG] -  enter game. account:test63 token:e3fcd572-1b6d-429c-8f8c-c04071dd7b56
+2024-10-19 17:48:45 -> [DEBUG] -  enter game. account:test71 token:92eb1c99-cc57-4315-8f46-3a3be54fd19e
+2024-10-19 17:48:45 -> [DEBUG] -  enter game. account:test38 token:6e86d5ec-49ac-4249-acca-4adc182feebc
+2024-10-19 17:48:45 -> [DEBUG] -  enter game. account:test70 token:85d66b1b-0319-42d9-8bf9-26b6669d542f
+2024-10-19 17:48:45 -> [DEBUG] -  enter game. account:test42 token:fb35ffc6-2bd7-42fc-89b0-4656013be1d1
+2024-10-19 17:48:45 -> [DEBUG] -  enter game. account:test22 token:92a960d2-05cd-4e99-9020-b60c6ed364d5
+2024-10-19 17:48:45 -> [DEBUG] -  enter game. account:test81 token:16d1f900-ac3e-4460-b2ba-16667c2fa8a9
+2024-10-19 17:48:45 -> [DEBUG] -  enter game. account:test73 token:69f48b53-1dda-44b9-ac15-8b1240fb171d
+2024-10-19 17:48:45 -> [DEBUG] -  enter game. account:test74 token:493701ea-f820-441e-8f13-5722c3447815
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test96 token:bba31855-7a72-469f-94ce-3a8db0fb16b6
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test84 token:9ef8455c-1693-4f2e-b786-bc10fe550b4b
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test52 token:3d0eb77d-009b-45e3-8a7d-dbac83c9856a
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test53 token:e4eb5192-31dc-4bb9-94d7-b2ca62511fb5
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test18 token:fbde3777-e868-4c0e-b938-27734c8f366f
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test95 token:b12f447c-4bc1-48b4-9fab-61b0aec28219
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test23 token:6e439e88-4e35-4e3b-b049-76b7ad80ddeb
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test43 token:929429f5-9975-413b-81ee-c2516b606917
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test85 token:e90e4288-240a-4d05-94ea-ec4f0cae60e7
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test45 token:60eac1a8-67b3-4d00-8ff6-ee99c9d9e8cc
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test76 token:ed6de7d1-230d-4ec8-a1d7-43c53104cacf
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test65 token:7ac2e8fd-49d0-4d9b-b508-c42987466f53
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test67 token:33687722-bb74-4143-ba33-3eef44066e12
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test87 token:dacd1d23-3a5e-42c5-8324-57994a5bd2f6
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test78 token:ea95381f-13ca-4004-ba76-46a20860e84b
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test4 token:44b67725-c1e9-4292-abea-228453e02c04
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test9 token:bbee8259-e8a6-42d0-9a71-084a6b6bd5e8
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test69 token:67ad8e7f-3534-44e8-b353-ac6b87bc2e89
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test25 token:2956ff8e-27f3-4982-8f72-c89bbaab0262
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test5 token:9cd1aa96-720c-45bb-a14f-f14e2e683299
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test48 token:508558c2-9038-48a8-ad1c-75dcb75fdaea
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test55 token:56aa500b-cfb4-43a5-80f3-d28b779eacf2
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test47 token:c61425b8-c573-4316-bffa-cc20c356f03c
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test56 token:eac17f54-dea7-4ae9-bd75-21ca47610b97
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test27 token:c70eaf47-df07-4848-ab9d-b1dfc09406a8
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test59 token:18698e6c-06d6-4d20-bbe2-705f432c42ff
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test88 token:d431676b-8ad9-44aa-9052-23d83a5c5b19
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test57 token:9638e6a7-9b44-4aae-b9d3-38bd948a4098
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test58 token:97afcdc7-6dc2-44c7-84e0-b6db7c9485aa
+2024-10-19 17:48:46 -> [DEBUG] -  enter game. account:test3 token:fe7322a0-2c88-4cc5-9beb-f1735227ebea
+2024-10-19 17:49:49 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 17:49:49 -> [DEBUG] -  Removed appType:dbmgr appId:0

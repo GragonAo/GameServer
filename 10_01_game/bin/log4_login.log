@@ -832,3 +832,463 @@
 2024-10-18 08:38:40 -> [DEBUG] -  	socket size:53
 2024-10-18 08:59:54 -> [DEBUG] -  Removed appType:appmgr appId:0
 2024-10-18 08:59:54 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-18 21:33:54 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 21:33:54 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 21:33:54 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-18 21:33:54 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-18 21:33:54 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-18 21:33:54 -> [INFO] -  epoll model. listen 127.0.0.1:5401 SOMAXCONN:1024
+2024-10-18 21:33:54 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:9 networkType:TcpConnector connect type:App value:25769803776
+2024-10-18 21:33:54 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:10 networkType:TcpConnector connect type:App value:4294967296
+2024-10-18 22:48:19 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-18 22:48:21 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-18 22:48:27 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-18 22:49:28 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 22:49:28 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 22:49:28 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-18 22:49:28 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-18 22:49:28 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-18 22:49:28 -> [INFO] -  epoll model. listen 127.0.0.1:5401 SOMAXCONN:1024
+2024-10-18 22:49:28 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:8 networkType:TcpConnector connect type:App value:25769803776
+2024-10-18 22:49:28 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:10 networkType:TcpConnector connect type:App value:4294967296
+2024-10-18 22:49:40 -> [DEBUG] -  ------------------------------------
+2024-10-18 22:49:40 -> [DEBUG] -   网络类型:TcpListen
+2024-10-18 22:49:40 -> [DEBUG] -  	socket size:0
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:53 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:53 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:54 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:54 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:58 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:02 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:02 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:02 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:02 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:28:02 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:02 -> [ERROR] -  [0;31mfailed to send packet. can't find connect. socket:12 networkType:TcpListen connect type:None value:0[0m
+2024-10-19 00:28:02 -> [WARN] -  [0;32maccount check failed. same account:test.  socket:11 networkType:TcpListen connect type:Account value:test[0m
+2024-10-19 00:28:21 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 00:28:21 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-19 00:28:27 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 00:28:27 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 00:28:27 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-19 00:28:27 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-19 00:28:27 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-19 00:28:27 -> [INFO] -  epoll model. listen 127.0.0.1:5401 SOMAXCONN:1024
+2024-10-19 00:28:27 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:10 networkType:TcpConnector connect type:App value:25769803776
+2024-10-19 00:28:27 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:11 networkType:TcpConnector connect type:App value:4294967296
+2024-10-19 00:28:45 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 00:28:45 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-19 00:28:47 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 00:28:47 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 00:28:47 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-19 00:28:47 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-19 00:28:47 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-19 00:28:47 -> [INFO] -  epoll model. listen 127.0.0.1:5401 SOMAXCONN:1024
+2024-10-19 00:28:47 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:9 networkType:TcpConnector connect type:App value:25769803776
+2024-10-19 00:28:47 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:10 networkType:TcpConnector connect type:App value:4294967296
+2024-10-19 00:28:57 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 00:28:59 -> [ERROR] -  [0;31mcan't find network. appType:appmgr appId:0[0m
+2024-10-19 00:28:59 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:9 networkType:TcpConnector connect type:App value:25769803776
+2024-10-19 14:32:08 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-19 14:32:10 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:10 networkType:TcpConnector connect type:App value:4294967296
+2024-10-19 14:32:14 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 14:32:14 -> [ERROR] -  [0;31mcan't find network. appType:appmgr appId:0[0m
+2024-10-19 14:32:15 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:9 networkType:TcpConnector connect type:App value:25769803776
+2024-10-19 14:32:19 -> [ERROR] -  [0;31m输入错误，未找到命令: -exit[0m
+2024-10-19 14:32:19 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 14:32:19 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-19 14:32:21 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 14:32:21 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 14:32:21 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-19 14:32:21 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-19 14:32:21 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-19 14:32:21 -> [INFO] -  epoll model. listen 127.0.0.1:5401 SOMAXCONN:1024
+2024-10-19 14:32:21 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:9 networkType:TcpConnector connect type:App value:25769803776
+2024-10-19 14:32:21 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:10 networkType:TcpConnector connect type:App value:4294967296
+2024-10-19 14:46:28 -> [DEBUG] -  ------------------------------------
+2024-10-19 14:46:28 -> [DEBUG] -   网络类型:TcpListen
+2024-10-19 14:46:28 -> [DEBUG] -  	socket size:0
+2024-10-19 14:46:59 -> [DEBUG] -  ------------------------------------
+2024-10-19 14:46:59 -> [DEBUG] -   网络类型:TcpListen
+2024-10-19 14:46:59 -> [DEBUG] -  	socket size:5
+2024-10-19 14:47:02 -> [DEBUG] -  ------------------------------------
+2024-10-19 14:47:02 -> [DEBUG] -   网络类型:TcpListen
+2024-10-19 14:47:02 -> [DEBUG] -  	socket size:5
+2024-10-19 14:47:03 -> [DEBUG] -  ------------------------------------
+2024-10-19 14:47:03 -> [DEBUG] -   网络类型:TcpListen
+2024-10-19 14:47:03 -> [DEBUG] -  	socket size:5
+2024-10-19 17:21:54 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 17:21:54 -> [DEBUG] -  Removed appType:dbmgr appId:0
+2024-10-19 17:22:42 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:22:42 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:22:42 -> [DEBUG] -  Initialize thread:LogicThread thread num:2
+2024-10-19 17:22:42 -> [DEBUG] -  Initialize thread:ListenThread thread num:1
+2024-10-19 17:22:42 -> [DEBUG] -  Initialize thread:ConnectThread thread num:1
+2024-10-19 17:22:42 -> [DEBUG] -  RedisConnector::Connect. 127.0.0.1:6379. starting...
+2024-10-19 17:22:42 -> [INFO] -  epoll model. listen 127.0.0.1:5401 SOMAXCONN:1024
+2024-10-19 17:22:42 -> [DEBUG] -  	RedisConnector::Connect: successfully!
+2024-10-19 17:22:42 -> [DEBUG] -  Connected to appType:appmgr appId:0  socket:10 networkType:TcpConnector connect type:App value:25769803776
+2024-10-19 17:22:42 -> [DEBUG] -  Connected to appType:dbmgr appId:0  socket:11 networkType:TcpConnector connect type:App value:4294967296
+2024-10-19 17:48:44 -> [DEBUG] -  创建玩家，账户：test0 名称：test0 性别：1
+2024-10-19 17:49:50 -> [DEBUG] -  Removed appType:appmgr appId:0
+2024-10-19 17:49:50 -> [DEBUG] -  Removed appType:dbmgr appId:0

@@ -399,3 +399,215 @@
 2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
 2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
 2024-10-18 08:37:13 -> [DEBUG] -  HandleGameToken. token: ip:127.0.0.1 port:5601
+2024-10-18 21:34:12 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 21:34:12 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 21:34:12 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 21:34:12 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 21:44:31 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 21:44:31 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 21:44:31 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 21:44:31 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 22:06:04 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 22:06:04 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 22:06:04 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 22:06:04 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 22:50:22 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 22:50:22 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 22:50:22 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 22:50:22 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 22:52:57 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 22:52:57 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 22:52:57 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 22:52:57 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 22:53:00 -> [ERROR] -  [0;31m输入错误，未找到命令: n[0m
+2024-10-18 22:59:56 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 22:59:56 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 22:59:56 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 22:59:56 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 23:00:05 -> [ERROR] -  [0;31m输入错误，未找到命令: n[0m
+2024-10-18 23:14:06 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 23:14:06 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 23:14:06 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 23:14:06 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 23:15:10 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 23:15:10 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 23:15:10 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 23:15:10 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 23:28:55 -> [ERROR] -  [0;31m输入错误，未找到命令: q[0m
+2024-10-18 23:29:13 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 23:29:13 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 23:29:13 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 23:29:13 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 23:56:22 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 23:56:22 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 23:56:22 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 23:56:22 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-18 23:57:21 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-18 23:57:21 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-18 23:57:21 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-18 23:57:21 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 00:01:01 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 00:01:01 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 00:01:01 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 00:01:01 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 00:14:59 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 00:14:59 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 00:14:59 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 00:14:59 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 00:19:30 -> [ERROR] -  [0;31m输入错误，未找到命令: n[0m
+2024-10-19 00:19:30 -> [ERROR] -  [0;31m输入错误，未找到命令: n[0m
+2024-10-19 00:19:44 -> [ERROR] -  [0;31m输入错误，未找到命令: n[0m
+2024-10-19 00:27:50 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 00:27:50 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 00:27:50 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 00:27:50 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 00:27:53 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:53 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:53 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:55 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:55 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:55 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:55 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:55 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:55 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:55 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:56 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:56 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:56 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:56 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:56 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:56 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:57 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:57 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:57 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:57 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:57 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:58 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:58 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:59 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:27:59 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:27:59 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:28:00 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:28:00 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:28:00 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:28:00 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:28:00 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:28:01 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:28:01 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:28:01 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:28:01 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:28:01 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:28:01 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:28:01 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:28:02 -> [DEBUG] -  account check result account:test code:4
+2024-10-19 00:28:02 -> [WARN] -  [0;32maccount check failed. account:test code:ARC_LOGGING[0m
+2024-10-19 00:29:11 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 00:29:11 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 00:29:11 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 00:29:11 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 14:30:42 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 14:30:42 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 14:30:42 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 14:30:42 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 14:32:44 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 14:32:44 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 14:32:44 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 14:32:44 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 14:44:16 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 14:44:16 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 14:44:16 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 14:44:16 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 17:23:00 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:23:00 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:23:00 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 17:23:00 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 17:29:37 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:29:37 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:29:37 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 17:29:37 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 17:30:02 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:30:02 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:30:02 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 17:30:02 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 17:30:30 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:30:30 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:30:30 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 17:30:30 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 17:37:28 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:37:28 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:37:28 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 17:37:28 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 17:37:45 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:37:45 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:37:45 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 17:37:45 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 17:38:29 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:38:29 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:38:29 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 17:38:29 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 17:38:38 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:38:38 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:38:38 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 17:38:38 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 17:39:15 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:39:15 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:39:15 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 17:39:15 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 17:39:33 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:39:33 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:39:33 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 17:39:33 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 17:39:45 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:39:45 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:39:45 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 17:39:45 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 17:40:58 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:40:58 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:40:58 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 17:40:58 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 17:41:07 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:41:07 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:41:07 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 17:41:07 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 17:42:16 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:42:16 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:42:16 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 17:42:16 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 17:42:25 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:42:25 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:42:25 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 17:42:25 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-19 17:45:50 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-19 17:45:50 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-19 17:45:50 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-19 17:45:50 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-20 16:32:01 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-20 16:32:01 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-20 16:32:01 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-20 16:32:01 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2
+2024-10-20 16:32:16 -> [DEBUG] -  Log4::Initialize is Ok.
+2024-10-20 16:32:16 -> [DEBUG] -  Yaml awake is Ok.
+2024-10-20 16:32:16 -> [DEBUG] -  Initialize thread:LogicThread thread num:10
+2024-10-20 16:32:16 -> [DEBUG] -  Initialize thread:ConnectThread thread num:2

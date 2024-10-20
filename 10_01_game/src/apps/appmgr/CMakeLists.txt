@@ -33,7 +33,7 @@ include_directories(/usr/local/include)  # 包含系统头文件目录
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../../../bin")
 
 # 设置编译选项：启用 Wall 警告，使用 C++14 标准，启用多线程，并链接一些库（protobuf、jsoncpp、yaml-cpp、log4cplus）
-set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -ljsoncpp -lyaml-cpp -llog4cplus -DEPOLL")
+set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -lyaml-cpp -llog4cplus -ljsoncpp -lhiredis -luuid -DEPOLL -Wno-unknown-pragmas")
 
 # 设置 Debug 模式下的编译选项：启用调试符号和优化选项
 set(CMAKE_CXX_FLAGS_DEBUG "-D_DEBUG -O0 -g -ggdb")

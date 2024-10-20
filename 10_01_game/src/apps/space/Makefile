@@ -68,10 +68,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/workspace/GameServer/10_01_game/src/apps/space
+CMAKE_SOURCE_DIR = /home/workspace/GameServer/10_01_game/src/apps/space
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/workspace/GameServer/10_01_game/src/apps/space
+CMAKE_BINARY_DIR = /home/workspace/GameServer/10_01_game/src/apps/space
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles /root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles /home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/GameServer/10_01_game/src/apps/space/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

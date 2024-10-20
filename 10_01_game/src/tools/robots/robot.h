@@ -1,51 +1,35 @@
 #pragma once
 
-#include "libserver/state_template.h"
-#include "libserver/robot_state_type.h"
-#include "libplayer/player.h"
-#include "robot_state.h"
+// 包含必要的头文件
+#include "libserver/state_template.h"  // 状态模板的基类
+#include "libserver/robot_state_type.h"  // 机器人状态类型定义
 
-class Robot : public Player, public StateTemplateMgr<RobotStateType, RobotState, Robot>, public IAwakeFromPoolSystem<std::string>
+#include "libplayer/player.h"  // 玩家类的定义
+
+#include "robot_state.h"  // 机器人状态的定义
+
+// 定义 Robot 类，继承自 Player、StateTemplateMgr，并实现 IAwakeFromPoolSystem 接口
+class Robot : public Player, 
+              public StateTemplateMgr<RobotStateType, RobotState, Robot>,  // 状态管理模板
+              virtual public IAwakeFromPoolSystem<std::string>  // 从对象池中唤醒的系统接口
 {
 public:
-    // 判断机器人是否为单例（此处设定为 false，表示可以有多个机器人实例）
-    static bool IsSingle() { return false; }
-
-    // 从对象池中唤醒时调用的初始化方法
+    // 重写从对象池唤醒的方法
     void Awake(std::string account) override;
-    
-    // 回收到对象池时调用，用于清理对象状态
+
+    // 重写返回对象池的方法
     void BackToPool() override;
-    
-    // 更新方法，每帧调用，执行状态检查等逻辑
+
+    // 更新方法，进行每帧更新逻辑
     void Update();
 
-    // 处理网络断开时的操作
+    // 网络断开连接处理方法
     void NetworkDisconnect();
 
+    // 设置套接字键
+    void SetSocketKey(SocketKey key);
+
 protected:
-    // 注册机器人状态机中的状态
+    // 注册状态，重写父类的注册方法
     void RegisterState() override;
-
-private:
-    // 处理网络连接成功时的操作
-    void HandleNetworkConnected(Robot* pRobot, Packet* pPacket);
-    
-    // 处理网络断开时的操作
-    void HandleNetworkDisconnect(Robot* pRobot, Packet* pPacket);
-    
-    // 处理 HTTP 外部响应
-    void HandleHttpOuterResponse(Robot* pRobot, Packet* pPacket);
-
-    // 处理账号验证响应
-    void HandleAccountCheckRs(Robot* pRobot, Packet* pPacket);
-    
-    // 处理玩家列表响应
-    void HandlePlayerList(Robot* pRobot, Packet* pPacket);
-    
-    // 处理游戏 Token 响应
-    void HandleGameToken(Robot* pRobot, Packet* pPacket);
-    
-    // 处理通过 Token 登录的响应
-    void HandleLoginByTokenRs(Robot* pRobot, Packet* pPacket);
 };

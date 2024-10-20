@@ -1,32 +1,52 @@
 #include "message_callback.h"
-#include <iterator>
 
-#include "packet.h"
-#include "thread_mgr.h"
-
-// 注册消息处理函数
-void MessageCallBackFunction::RegisterFunction(int msgId, HandleFunction function)
+/**
+ * @brief 唤醒方法，初始化消息处理回调函数。
+ * 
+ * 该方法在对象池恢复时调用，接收一个消息处理函数并将其赋值给私有成员 `_handleFunction`。
+ * 
+ * @param fun 消息处理回调函数，参数为 `Packet*` 类型的网络包指针。
+ */
+void MessageCallBack::Awake(MsgCallbackFun fun)
 {
-    _callbackHandle[msgId] = function; // 将消息ID与处理函数绑定
+    _handleFunction = fun;  // 将传入的回调函数保存到类的私有成员变量中
 }
 
-// 检查包的消息ID是否被关注
-bool MessageCallBackFunction::IsFollowMsgId(Packet* packet)
+/**
+ * @brief 回收方法，将对象返回对象池时清理回调函数。
+ * 
+ * 该方法在对象被回收至对象池时调用，将 `_handleFunction` 置为 `nullptr`，避免使用无效的函数指针。
+ */
+void MessageCallBack::BackToPool()
 {
-    return _callbackHandle.find(packet->GetMsgId()) != _callbackHandle.end(); // 判断消息ID是否存在于处理函数映射中
+    _handleFunction = nullptr;  // 清理回调函数，防止下次使用时误调用旧函数
 }
 
-// 处理接收到的包
-void MessageCallBackFunction::ProcessPacket(Packet* packet)
+/**
+ * @brief 处理网络包。
+ * 
+ * 该方法根据是否启用了日志跟踪组件，记录处理的消息ID和包信息，并调用存储的回调函数 `_handleFunction` 处理具体的 `Packet` 数据。
+ * 
+ * @param pPacket 指向接收到的网络包 `Packet`。
+ */
+void MessageCallBack::ProcessPacket(Packet* pPacket)
 {
-    // 查找对应消息ID的处理函数
-    const auto handleIter = _callbackHandle.find(packet->GetMsgId());
-    if (handleIter == _callbackHandle.end())
-    {
-        std::cout << "packet is not handler. msg id: " << packet->GetMsgId() << std::endl; // 未找到处理函数，输出警告信息
-    }
-    else
-    {
-        handleIter->second(packet); // 调用找到的处理函数
-    }
+#ifdef LOG_TRACE_COMPONENT_OPEN
+    // 使用 ProtoBuf 获取消息ID的描述符
+    const google::protobuf::EnumDescriptor* descriptor = Proto::MsgId_descriptor();
+    
+    // 查找消息ID对应的名字
+    const auto name = descriptor->FindValueByNumber(pPacket->GetMsgId())->name();
+
+    // 构建跟踪消息，包含包的序列号和消息ID
+    const auto traceMsg = std::string("process. ")
+        .append(" sn:").append(std::to_string(pPacket->GetSN()))  // 包的序列号
+        .append(" msgId:").append(name);  // 消息ID的名字
+
+    // 将构建的消息通过跟踪组件记录日志
+    ComponentHelp::GetTraceComponent()->Trace(TraceType::Packet, pPacket->GetSocketKey().Socket, traceMsg);
+#endif
+
+    // 调用存储的回调函数处理网络包
+    _handleFunction(pPacket);
 }

@@ -1,6 +1,9 @@
 #include "lobby.h"
 
-#include "libserver/message_component.h"
+#include "player_component_onlinegame.h"
+#include "player_component_token.h"
+#include "libserver/entity_system.h"
+#include "libserver/message_system.h"
 #include "libserver/message_system_help.h"
 #include "libplayer/player_collector_component.h"
 #include "libplayer/player_component_proto_list.h"
@@ -16,14 +19,16 @@ void Lobby::Awake()
     AddComponent<WorldComponentGather>();
 
     // 创建消息回调函数对象，用于处理网络消息
-    auto pMsgCallBack = new MessageCallBackFunction();
-    AddComponent<MessageComponent>(pMsgCallBack);
+    auto pMsgSystem = GetSystemManager()->GetMessageSystem();
 
     // 注册处理网络断开事件的回调函数，关联消息 ID 为 MI_NetworkDisconnect
-    pMsgCallBack->RegisterFunction(Proto::MsgId::MI_NetworkDisconnect, BindFunP1(this, &Lobby::HandleNetworkDisconnect));
+    pMsgSystem->RegisterFunction(this,Proto::MsgId::MI_NetworkDisconnect, BindFunP1(this, &Lobby::HandleNetworkDisconnect));
 
     // 注册处理通过 Token 登录的回调函数，关联消息 ID 为 C2G_LoginByToken
-    pMsgCallBack->RegisterFunction(Proto::MsgId::C2G_LoginByToken, BindFunP1(this, &Lobby::HandleLoginByToken));
+    pMsgSystem->RegisterFunction(this,Proto::MsgId::C2G_LoginByToken, BindFunP1(this, &Lobby::HandleLoginByToken));
+
+    //注册处理Token到Redis的响应
+    pMsgSystem->RegisterFunction(this, Proto::MsgId::MI_GameTokenToRedisRs, BindFunP1(this, &Lobby::HandleGameTokenToRedisRs));
 }
 
 // BackToPool 函数在对象回收到池中时调用，负责清空等待分配世界的玩家列表
@@ -57,14 +62,53 @@ void Lobby::HandleLoginByToken(Packet* pPacket)
         MessageSystemHelp::DispatchPacket(Proto::MsgId::MI_NetworkRequestDisconnect, pPacket);
         return;
     }
+    //添加 用于处理玩家的 Token、玩家在游戏中的在线状态的组件
+    pPlayer->AddComponent<PlayerComponentToken>(proto.token());
+    pPlayer->AddComponent<PlayerComponentOnlineInGame>(pPlayer->GetAccount(), 1);
 
-    // 输出玩家进入游戏的调试日志
-    LOG_DEBUG("enter game. account:" << proto.account().c_str());
+    Proto::GameTokenToRedis protoToken;
+    protoToken.set_account(pPlayer->GetAccount().c_str());
+    MessageSystemHelp::DispatchPacket(Proto::MsgId::MI_GameTokenToRedis, protoToken, nullptr);
+}
 
-    // 构建登录响应协议，并设置返回码
+void Lobby::HandleGameTokenToRedisRs(Packet* pPacket)
+{
+    // 解析从 Redis 返回的游戏 Token 响应消息
+    auto protoRs = pPacket->ParseToProto<Proto::GameTokenToRedisRs>();
+
+    // 根据账号获取对应的玩家对象
+    auto pPlayer = GetComponent<PlayerCollectorComponent>()->GetPlayerByAccount(protoRs.account());
+    if (pPlayer == nullptr)
+    {
+        // 如果找不到玩家对象，记录错误日志并返回
+        LOG_ERROR("HandleGameRequestTokenToRedisRs. pPlayer == nullptr. account:" << protoRs.account().c_str());
+        return;
+    }
+
+    // 准备返回的登录结果消息，默认 Token 错误
     Proto::LoginByTokenRs protoLoginGameRs;
-    protoLoginGameRs.set_return_code(Proto::LoginByTokenRs::LGRC_OK);
+    protoLoginGameRs.set_return_code(Proto::LoginByTokenRs::LGRC_TOKEN_WRONG);
 
-    // 发送登录成功的响应包给客户端
+    // 获取玩家的 Token 组件，校验从 Redis 返回的 Token 是否有效
+    const auto pTokenComponent = pPlayer->GetComponent<PlayerComponentToken>();
+    if (pTokenComponent->IsTokenValid(protoRs.token_info().token()))
+    {
+        // 如果 Token 有效，则设置返回码为成功
+        protoLoginGameRs.set_return_code(Proto::LoginByTokenRs::LGRC_OK);
+    }
+
+    // 发送登录 Token 校验结果给客户端
     MessageSystemHelp::SendPacket(Proto::MsgId::C2G_LoginByTokenRs, pPacket, protoLoginGameRs);
+
+    // 如果 Token 校验失败，则不继续后续操作
+    if (protoLoginGameRs.return_code() != Proto::LoginByTokenRs::LGRC_OK)
+        return;
+
+    // 如果登录成功，记录玩家进入游戏的日志
+    LOG_DEBUG("enter game. account:" << pPlayer->GetAccount().c_str() << " token:" << protoRs.token_info().token().c_str());
+
+    // 查询玩家的具体信息
+    // Proto::QueryPlayer protoQuery;
+    // protoQuery.set_player_sn(protoRs.token_info().player_sn());
+    // MessageSystemHelp::SendPacket(Proto::MsgId::G2DB_QueryPlayer, protoQuery, APP_DB_MGR);
 }

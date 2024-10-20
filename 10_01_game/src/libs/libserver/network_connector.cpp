@@ -9,7 +9,7 @@
 #include "update_component.h"
 #include "component_help.h"
 #include "message_callback.h"
-#include "message_component.h"
+#include "message_system.h"
 
 // 初始化网络连接器
 void NetworkConnector::Awake(int iType, int mixConnectAppType)
@@ -22,14 +22,12 @@ void NetworkConnector::Awake(int iType, int mixConnectAppType)
     pNetworkLocator->AddConnectorLocator(this, _networkType);
 
     // 添加 UpdateComponent，用于更新网络连接状态
-    auto pUpdateComponent = AddComponent<UpdateComponent>();
-    pUpdateComponent->UpdataFunction = BindFunP0(this, &NetworkConnector::Update);
+    AddComponent<UpdateComponent>(BindFunP0(this, &NetworkConnector::Update));
 
     // 添加 MessageComponent，并注册处理网络连接的消息回调函数
-    auto pMsgCallBack = new MessageCallBackFunction();
-    AddComponent<MessageComponent>(pMsgCallBack);
-    pMsgCallBack->RegisterFunction(Proto::MsgId::MI_NetworkConnect, BindFunP1(this, &NetworkConnector::HandleNetworkConnect));
-    pMsgCallBack->RegisterFunction(Proto::MsgId::MI_NetworkRequestDisconnect, BindFunP1(this, &NetworkConnector::HandleDisconnect));
+    auto pMsgSystem = GetSystemManager()->GetMessageSystem();
+    pMsgSystem->RegisterFunction(this,Proto::MsgId::MI_NetworkConnect, BindFunP1(this, &NetworkConnector::HandleNetworkConnect));
+    pMsgSystem->RegisterFunction(this,Proto::MsgId::MI_NetworkRequestDisconnect, BindFunP1(this, &NetworkConnector::HandleDisconnect));
 
 #ifdef EPOLL
     std::cout << "epoll model. connector:" << GetNetworkTypeName(_networkType) << std::endl;

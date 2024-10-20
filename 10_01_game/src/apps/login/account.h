@@ -1,5 +1,6 @@
 #pragma once
 
+#include "libplayer/player.h"
 #include "libserver/entity.h"
 #include "libserver/protobuf/msg.pb.h"
 #include "libserver/socket_object.h"
@@ -20,16 +21,13 @@ public:
 private:
     // 同步应用程序信息到 AppMgr
     void SyncAppInfoToAppMgr();
-
     // 处理从 AppMgr 同步来的应用程序信息列表
     void HandleAppInfoListSync(Packet *pPacket);
 
     // 处理网络连接事件
     void HandleNetworkConnected(Packet *pPacket);
-
     // 处理网络断开连接事件
     void HandleNetworkDisconnect(Packet *pPacket);
-
     // 在网络断开时处理与该账户关联的网络标识
     void SocketDisconnect(std::string account, NetworkIdentify *pIdentify);
 
@@ -38,18 +36,23 @@ private:
 
     // 处理账户检查请求
     void HandleAccountCheck(Packet *pPacket);
-
+    // 处理查询账户是否在线的响应
+    void HandleAccountQueryOnlineToRedisRs(Packet* pPacket);
     // 处理查询玩家列表的响应
     void HandleQueryPlayerListRs(Packet *pPacket);
 
     // 处理创建玩家请求
     void HandleCreatePlayer(Packet *pPacket);
-
     // 处理创建玩家的响应
     void HandleCreatePlayerRs(Packet *pPacket);
 
     // 处理选择玩家请求
     void HandleSelectPlayer(Packet *pPacket);
+    //处理请求Token
+    void RequestToken(Player* pPlayer) const;
+    //处理Token到Redis的响应
+    void HandleTokenToRedisRs(Packet* pPacket);
+
 
 private:
     // 处理账户检查的具体逻辑，返回检查结果代码

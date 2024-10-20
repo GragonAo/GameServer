@@ -7,11 +7,11 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/root/workspace/GameServer/10_01_game/src/apps/login/../../libs 
+C_INCLUDES = -I/home/workspace/GameServer/10_01_game/src/apps/login/../../libs 
 
-CXX_FLAGS = -Wall -std=c++14 -pthread -lprotobuf -ljsoncpp -lyaml-cpp -llog4cplus -DEPOLL -D_DEBUG -O0 -g -ggdb  
+CXX_FLAGS = -Wall -std=c++14 -pthread -lprotobuf -lyaml-cpp -llog4cplus -ljsoncpp -lhiredis -luuid -DEPOLL -Wno-unknown-pragmas -D_DEBUG -O0 -g -ggdb  
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/root/workspace/GameServer/10_01_game/src/apps/login/../../libs 
+CXX_INCLUDES = -I/home/workspace/GameServer/10_01_game/src/apps/login/../../libs 
 

@@ -41,7 +41,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../../../bin")
 # -lyaml-cpp: 链接yaml-cpp库
 # -llog4cplus: 链接log4cplus库
 # -DEPOLL: 定义EPOLL宏
-set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -ljsoncpp -lyaml-cpp -llog4cplus -DEPOLL")
+set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -pthread -lprotobuf -lyaml-cpp -llog4cplus -ljsoncpp -lhiredis -luuid -DEPOLL -Wno-unknown-pragmas")
 
 # 设置Debug模式的编译器标志
 # -D_DEBUG: 定义_DEBUG宏，用于调试
